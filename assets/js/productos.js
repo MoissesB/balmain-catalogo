@@ -2,6 +2,7 @@
   const cache = {
     products: null,
     content: null,
+    inventory: null,
   };
 
   const innovaContact = {
@@ -16,6 +17,9 @@
       en: "Hello, I am interested in receiving B2B information about the Balmain Eyewear collection.",
     },
   };
+
+  const inventoryStorageKey = "balmainInventoryLocal";
+  const inventoryStatuses = ["normal", "hidden", "soldout", "lowstock"];
 
   function root() {
     return document.body.dataset.base || "";
@@ -53,6 +57,18 @@
       cache.content = await response.json();
     }
     return cache.content;
+  }
+
+  async function getInventory() {
+    if (!cache.inventory) {
+      try {
+        const response = await fetch(url("data/inventario.json"), { cache: "no-store" });
+        cache.inventory = response.ok ? await response.json() : { productos: {} };
+      } catch (_error) {
+        cache.inventory = { productos: {} };
+      }
+    }
+    return cache.inventory;
   }
 
   function contact() {
@@ -192,6 +208,80 @@
     return pick(contact().mensajeWhatsapp) || innovaContact.mensajeWhatsapp.es;
   }
 
+  function normalizeInventoryStatus(status) {
+    return inventoryStatuses.includes(status) ? status : "normal";
+  }
+
+  function readLocalInventory() {
+    try {
+      return JSON.parse(localStorage.getItem(inventoryStorageKey) || "{}");
+    } catch (_error) {
+      return {};
+    }
+  }
+
+  function writeLocalInventory(map) {
+    localStorage.setItem(inventoryStorageKey, JSON.stringify(map || {}));
+  }
+
+  function currentInventory() {
+    return {
+      ...(cache.inventory?.productos || {}),
+      ...readLocalInventory(),
+    };
+  }
+
+  function productStatus(productOrSlug) {
+    const slug = typeof productOrSlug === "string" ? productOrSlug : productOrSlug?.slug;
+    const entry = currentInventory()[slug] || {};
+    return normalizeInventoryStatus(entry.estado || entry.status);
+  }
+
+  function statusLabel(status) {
+    const labels = {
+      normal: { es: "Normal", en: "Normal" },
+      hidden: { es: "Oculto temporalmente", en: "Temporarily hidden" },
+      soldout: { es: "Agotado", en: "Sold out" },
+      lowstock: { es: "Pocas unidades", en: "Low stock" },
+    };
+    return pick(labels[normalizeInventoryStatus(status)]);
+  }
+
+  function visibleProducts(products) {
+    return (products || []).filter((product) => productStatus(product) !== "hidden");
+  }
+
+  function setLocalInventoryState(slugs, status) {
+    const cleanStatus = normalizeInventoryStatus(status);
+    const map = readLocalInventory();
+    (Array.isArray(slugs) ? slugs : [slugs]).filter(Boolean).forEach((slug) => {
+      const hasPublishedState = Boolean(cache.inventory?.productos?.[slug]);
+      if (cleanStatus === "normal" && !hasPublishedState) {
+        delete map[slug];
+      } else {
+        map[slug] = {
+          estado: cleanStatus,
+          updatedAt: new Date().toISOString(),
+        };
+      }
+    });
+    writeLocalInventory(map);
+    window.dispatchEvent(new CustomEvent("balmain:inventorychange"));
+  }
+
+  function resetLocalInventory() {
+    localStorage.removeItem(inventoryStorageKey);
+    window.dispatchEvent(new CustomEvent("balmain:inventorychange"));
+  }
+
+  function exportInventory() {
+    return {
+      version: new Date().toISOString().slice(0, 10),
+      nota: "Estados publicados para GitHub Pages. Los cambios temporales del panel local deben copiarse aqui y luego comitearse.",
+      productos: currentInventory(),
+    };
+  }
+
   function variantCodes(product, limit = 4) {
     const codes = (product.variantes || []).map((variant) => variant.codigo).filter(Boolean);
     const visible = codes.slice(0, limit).join(" · ");
@@ -210,6 +300,9 @@
   }
 
   function productCard(product, compact = false) {
+    const status = productStatus(product);
+    const isSoldOut = status === "soldout";
+    const statusText = statusLabel(status);
     const images = cardImages(product);
     const title = escapeHtml(product.nombre);
     const category = escapeHtml(pick(product.categoriaLabel));
@@ -218,6 +311,13 @@
     const codes = escapeHtml(variantCodes(product, compact ? 3 : 4));
     const variants = product.variantes || [];
     const infoHref = whatsappHref(productMessage(product, variants[0]));
+    const requestLabel = isSoldOut
+      ? lang() === "en"
+        ? "Check next availability"
+        : "Consultar proxima disponibilidad"
+      : lang() === "en"
+        ? "Request info"
+        : "Solicitar informacion";
     const imageClass = images.length ? `image-count-${Math.min(images.length, 3)} ${images.length > 1 ? "has-alt" : ""}` : "";
     const imageMarkup = images.length
       ? images
@@ -229,10 +329,11 @@
       : placeholder(title);
 
     return `
-      <article class="product-card ${compact ? "compact" : ""}">
+      <article class="product-card ${compact ? "compact" : ""} inventory-${status}" data-product-slug="${escapeHtml(product.slug)}">
         <a class="product-media ${imageClass}" href="${productHref(product.slug)}" aria-label="${title}">
           <span class="product-image-stack">${imageMarkup}</span>
           <span class="tag">${product.coleccion || "SS26"}</span>
+          ${status !== "normal" ? `<span class="inventory-badge inventory-badge-${status}">${escapeHtml(statusText)}</span>` : ""}
         </a>
         <div class="product-card-copy">
           <p class="eyebrow">${category}</p>
@@ -245,7 +346,7 @@
           </div>
           <div class="card-actions">
             <a class="text-link" href="${productHref(product.slug)}">${lang() === "en" ? "View details" : "Ver detalles"}</a>
-            <a class="text-link muted" href="${infoHref}" target="_blank" rel="noopener">${lang() === "en" ? "Request info" : "Solicitar informacion"}</a>
+            <a class="text-link muted" href="${infoHref}" target="_blank" rel="noopener">${requestLabel}</a>
           </div>
           <div class="product-card-tooltip">
             <strong>${title}</strong>
@@ -261,7 +362,8 @@
   }
 
   async function renderHome() {
-    const [products, content] = await Promise.all([getProducts(), getContent()]);
+    const [allProducts, content] = await Promise.all([getProducts(), getContent(), getInventory()]);
+    const products = visibleProducts(allProducts);
     const categoriesTarget = document.getElementById("homeCategories");
     const featuredTarget = document.getElementById("featuredProducts");
     if (categoriesTarget) {
@@ -275,7 +377,7 @@
           return `
             <article class="category-card" data-category="${escapeHtml(category.slug)}">
               <a href="${href}" class="category-media">
-                ${category.imagen ? `<img src="${asset(category.imagen)}" alt="${escapeHtml(pick(category.label))}" loading="lazy" decoding="async">` : placeholder(pick(category.label))}
+                ${(category.imagenCard || category.imagen) ? `<img src="${asset(category.imagenCard || category.imagen)}" alt="${escapeHtml(pick(category.label))}" loading="lazy" decoding="async">` : placeholder(pick(category.label))}
               </a>
               <div>
                 <p class="eyebrow">${grouped[category.slug] || 0} ${lang() === "en" ? "models" : "modelos"}</p>
@@ -304,7 +406,8 @@
   }
 
   async function renderCatalog() {
-    const products = await getProducts();
+    const [allProducts] = await Promise.all([getProducts(), getInventory()]);
+    const products = visibleProducts(allProducts);
     const grid = document.getElementById("catalogGrid");
     if (!grid) return;
     const input = document.getElementById("catalogSearch");
@@ -367,8 +470,8 @@
 
   async function renderCategory() {
     const categorySlug = document.body.dataset.category;
-    const [allProducts, content] = await Promise.all([getProducts(), getContent()]);
-    const products = allProducts.filter((product) => product.categoria === categorySlug);
+    const [allProducts, content] = await Promise.all([getProducts(), getContent(), getInventory()]);
+    const products = visibleProducts(allProducts).filter((product) => product.categoria === categorySlug);
     const category = content.categorias?.[categorySlug];
     const target = document.getElementById("categoryProducts");
     const section = document.querySelector(".category-products");
@@ -492,7 +595,7 @@
   }
 
   async function renderProduct() {
-    const [products, content] = await Promise.all([getProducts(), getContent()]);
+    const [products, content] = await Promise.all([getProducts(), getContent(), getInventory()]);
     const params = new URLSearchParams(window.location.search);
     const slug = params.get("slug") || "b-aura";
     const product = products.find((item) => item.slug === slug);
@@ -504,12 +607,22 @@
     }
 
     const variants = product.variantes || [];
+    const status = productStatus(product);
+    const statusText = statusLabel(status);
+    const isSoldOut = status === "soldout";
     const firstVariant = variants[0] || {};
     const firstImages = variantImages(firstVariant);
     const heroImage = firstImages[0]?.src || imageFor(product);
-    const related = products.filter((item) => (product.relacionados || []).includes(item.slug)).slice(0, 4);
+    const related = visibleProducts(products).filter((item) => (product.relacionados || []).includes(item.slug)).slice(0, 4);
     const layout = `layout-${(product.orden % 3) + 1}`;
     const productWhatsapp = whatsappHref(productMessage(product, firstVariant));
+    const productCtaText = isSoldOut
+      ? lang() === "en"
+        ? "Check next availability"
+        : "Consultar proxima disponibilidad"
+      : lang() === "en"
+        ? "Request information"
+        : "Solicitar informacion";
     const category = content.categorias?.[product.categoria] || {};
     const pageTitle = `${product.nombre} ${product.coleccion || "SS26"} | BALMAIN Eyewear B2B Innova`;
     const pageDescription = seoDescription(product);
@@ -522,8 +635,12 @@
 
     target.innerHTML = `
       <section class="product-hero ${layout}">
+        <div class="product-hero-media zoom-frame">
+          ${heroImage ? `<img id="mainProductImage" src="${asset(heroImage)}" alt="${escapeHtml(product.nombre)}" decoding="async" fetchpriority="high">` : placeholder(product.nombre)}
+        </div>
         <div class="product-hero-copy">
           <p class="eyebrow">${escapeHtml(pick(product.categoriaLabel))} · ${escapeHtml(product.coleccion)} · ${lang() === "en" ? "Distributed by Innova" : "Distribuido por Innova"}</p>
+          ${status !== "normal" ? `<span class="product-status-pill product-status-${status}">${escapeHtml(statusText)}</span>` : ""}
           <h1>${escapeHtml(product.nombre)}</h1>
           <p>${escapeHtml(pick(product.marketingDescription) || pick(product.descripcion))}</p>
           <dl class="selected-variant-card">
@@ -531,13 +648,10 @@
             <div><dt>${lang() === "en" ? "Color" : "Color"}</dt><dd id="selectedVariantColor">${escapeHtml(pick(firstVariant.color))}</dd></div>
           </dl>
           <div class="hero-actions">
-            <a class="button button-dark" id="productWhatsApp" href="${productWhatsapp}" target="_blank" rel="noopener">${lang() === "en" ? "Request information" : "Solicitar informacion"}</a>
+            <a class="button button-dark" id="productWhatsApp" href="${productWhatsapp}" target="_blank" rel="noopener">${productCtaText}</a>
             <a class="button button-outline" href="mailto:${contact().email}?subject=${encodeURIComponent(`Consulta B2B ${product.nombre}`)}">${lang() === "en" ? "Email Innova" : "Enviar email a Innova"}</a>
           </div>
           ${variants.length ? variantSelectorMarkup(product, variants) : ""}
-        </div>
-        <div class="product-hero-media zoom-frame">
-          ${heroImage ? `<img id="mainProductImage" src="${asset(heroImage)}" alt="${escapeHtml(product.nombre)}" decoding="async" fetchpriority="high">` : placeholder(product.nombre)}
         </div>
       </section>
 
@@ -745,6 +859,14 @@
     whatsappHref,
     productMessage,
     genericMessage,
+    getInventory,
+    currentInventory,
+    productStatus,
+    statusLabel,
+    visibleProducts,
+    setLocalInventoryState,
+    resetLocalInventory,
+    exportInventory,
     renderHome,
     renderCatalog,
     renderCategory,

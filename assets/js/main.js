@@ -26,6 +26,14 @@
       if (page === "producto") await window.BalmainCatalog.renderProduct();
       await window.BalmainCatalog.renderContactSurfaces();
     });
+
+    window.addEventListener("balmain:inventorychange", async () => {
+      if (page === "home") await window.BalmainCatalog.renderHome();
+      if (page === "catalogo") await window.BalmainCatalog.renderCatalog();
+      if (page === "categoria") await window.BalmainCatalog.renderCategory();
+      if (page === "producto") await window.BalmainCatalog.renderProduct();
+      await window.BalmainSearch?.refresh?.();
+    });
   }
 
   document.addEventListener("DOMContentLoaded", init);

@@ -129,6 +129,7 @@
         "en": "Visual architecture, precision metalwork, and high-impact silhouettes for optical partners seeking statement pieces."
       },
       "imagen": "assets/images/marketing/category-avant-garde.jpg",
+      "imagenCard": "assets/images/catalogo/avant-garde.jpg",
       "imagenMarketing": "assets/images/marketing/editorial-olivier.jpg",
       "b2b": {
         "es": "Seleccion para opticas que buscan piezas de alto impacto, metales de precision y argumentos de escaparate premium.",
@@ -160,6 +161,7 @@
         "en": "Signature models with recognizable Maison codes: distinctive luxury, limited editions, and jewelry-like details."
       },
       "imagen": "assets/images/marketing/category-iconic.jpg",
+      "imagenCard": "assets/images/catalogo/iconic.jpg",
       "imagenMarketing": "assets/images/marketing/editorial-bgrand.jpg",
       "b2b": {
         "es": "Modelos de firma con codigos Balmain reconocibles para clientes que buscan piezas distintivas y memorables.",
@@ -191,6 +193,7 @@
         "en": "Commercial elegance, refined acetates, and desirable shapes for expanding a premium professional assortment."
       },
       "imagen": "assets/images/marketing/category-aspirational.jpg",
+      "imagenCard": "assets/images/catalogo/aspirational.jpg",
       "imagenMarketing": "assets/images/marketing/editorial-pulse.jpg",
       "b2b": {
         "es": "Siluetas deseables y lectura comercial refinada para ampliar una seleccion premium de venta profesional.",
@@ -222,6 +225,7 @@
         "en": "Fashion-led launches with a young editorial attitude, designed for windows, launches, and seasonal presentations."
       },
       "imagen": "assets/images/marketing/category-fashion-drops.jpg",
+      "imagenCard": "assets/images/catalogo/fashion-drops.jpg",
       "imagenMarketing": "assets/images/marketing/home-hero.jpg",
       "b2b": {
         "es": "Capsulas visuales para activar vitrinas, lanzamientos de temporada y conversaciones comerciales con mayor energia editorial.",

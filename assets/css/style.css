@@ -2187,3 +2187,337 @@ body {
     padding-left: 98px;
   }
 }
+
+/* Final round: favicon-ready layout, category cards, inventory panel */
+.category-card .category-media {
+  aspect-ratio: 4 / 5;
+  min-height: 0;
+  background: #f7f6f3;
+}
+
+.category-card .category-media img,
+.category-card[data-category="aspirational"] .category-media img,
+.category-card[data-category="fashion-drops"] .category-media img {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  object-fit: cover;
+  background: #f7f6f3;
+}
+
+.category-card[data-category="aspirational"] .category-media img {
+  object-position: center 47%;
+}
+
+.category-card[data-category="fashion-drops"] .category-media img {
+  object-position: center 44%;
+}
+
+.product-hero,
+.product-hero.layout-2 {
+  grid-template-columns: minmax(0, 1.58fr) minmax(360px, 0.86fr);
+  gap: 34px;
+  align-items: start;
+}
+
+.product-hero-copy {
+  max-width: 620px;
+  padding-top: 18px;
+}
+
+.product-hero-copy h1 {
+  font-size: clamp(44px, 5vw, 76px);
+}
+
+.product-hero-copy > p:not(.eyebrow) {
+  max-width: 560px;
+  font-size: 15px;
+}
+
+.product-hero-media {
+  min-height: 720px;
+  overflow: hidden;
+}
+
+.product-hero-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 2.5%;
+}
+
+.selected-variant-card {
+  grid-template-columns: 1fr;
+}
+
+.product-media {
+  position: relative;
+}
+
+.inventory-badge,
+.product-status-pill,
+.inventory-admin-status,
+.search-result em {
+  display: inline-flex;
+  align-items: center;
+  width: max-content;
+  min-height: 26px;
+  padding: 0 10px;
+  border: 1px solid rgba(17, 17, 17, 0.16);
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--ink);
+  font-size: 10px;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.inventory-badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 4;
+}
+
+.inventory-badge-soldout,
+.product-status-soldout,
+.inventory-soldout .inventory-admin-status {
+  background: #111;
+  border-color: #111;
+  color: #fff;
+}
+
+.inventory-badge-lowstock,
+.product-status-lowstock,
+.inventory-lowstock .inventory-admin-status {
+  background: #fff8e8;
+  border-color: var(--gold);
+  color: #765927;
+}
+
+.inventory-badge-hidden,
+.product-status-hidden,
+.inventory-hidden .inventory-admin-status {
+  background: #f1efea;
+  color: #5d5850;
+}
+
+.product-status-pill {
+  margin-bottom: 16px;
+}
+
+.product-card.inventory-soldout .product-image-stack {
+  opacity: 0.82;
+}
+
+.search-result em {
+  margin-top: 5px;
+}
+
+.admin-access-overlay,
+.inventory-admin-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 120;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgba(17, 17, 17, 0.54);
+}
+
+.admin-access-overlay[hidden],
+.inventory-admin-overlay[hidden] {
+  display: none;
+}
+
+.admin-access-card,
+.inventory-admin-panel {
+  width: min(100%, 520px);
+  background: #fff;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  box-shadow: 0 36px 90px rgba(17, 17, 17, 0.24);
+}
+
+.admin-access-card {
+  position: relative;
+  display: grid;
+  gap: 14px;
+  padding: 34px;
+}
+
+.admin-access-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+}
+
+.admin-access-card h2,
+.inventory-admin-head h2 {
+  font-size: clamp(28px, 4vw, 44px);
+}
+
+.admin-access-card input,
+.inventory-admin-export {
+  width: 100%;
+  border: 1px solid var(--line);
+  background: #fbfaf8;
+  padding: 14px;
+  color: var(--ink);
+}
+
+.admin-access-card small,
+.inventory-admin-message {
+  min-height: 20px;
+  color: #8a2f1d;
+}
+
+.inventory-admin-panel {
+  width: min(1180px, calc(100vw - 32px));
+  max-height: calc(100svh - 32px);
+  display: grid;
+  grid-template-rows: auto auto auto minmax(0, 1fr) auto;
+}
+
+.inventory-admin-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 16px;
+  padding: 26px;
+  border-bottom: 1px solid var(--line);
+}
+
+.inventory-admin-head p:not(.eyebrow) {
+  max-width: 760px;
+  color: var(--muted);
+}
+
+.inventory-admin-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 16px 26px;
+  border-bottom: 1px solid var(--line);
+}
+
+.inventory-admin-message {
+  margin: 0;
+  padding: 0 26px 12px;
+}
+
+.inventory-admin-list {
+  overflow: auto;
+  padding: 0 26px 26px;
+}
+
+.inventory-admin-row {
+  display: grid;
+  grid-template-columns: 20px 92px minmax(0, 1fr) auto;
+  gap: 16px;
+  align-items: center;
+  min-height: 112px;
+  border: 1px solid var(--line);
+  margin-bottom: 10px;
+  padding: 12px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.inventory-admin-row:has(input:checked) {
+  border-color: var(--gold);
+  box-shadow: inset 3px 0 0 var(--gold);
+}
+
+.inventory-admin-thumb {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1.35 / 1;
+  background: #f8f8f6;
+  border: 1px solid var(--line);
+  overflow: hidden;
+}
+
+.inventory-admin-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 8px;
+}
+
+.inventory-admin-copy {
+  min-width: 0;
+}
+
+.inventory-admin-copy strong,
+.inventory-admin-copy small {
+  display: block;
+}
+
+.inventory-admin-copy small {
+  color: var(--muted);
+  overflow-wrap: anywhere;
+}
+
+.inventory-admin-export {
+  min-height: 180px;
+  margin: 0;
+  border-width: 1px 0 0;
+  font-family: Consolas, monospace;
+  font-size: 12px;
+  resize: vertical;
+}
+
+@media (max-width: 1100px) {
+  .product-hero,
+  .product-hero.layout-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .product-hero-media {
+    min-height: 560px;
+  }
+}
+
+@media (max-width: 760px) {
+  .category-card .category-media {
+    aspect-ratio: 4 / 4.6;
+  }
+
+  .product-hero {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .product-hero-media {
+    min-height: auto;
+    aspect-ratio: 1 / 0.82;
+  }
+
+  .product-hero-copy h1 {
+    font-size: clamp(42px, 14vw, 62px);
+  }
+
+  .inventory-admin-overlay,
+  .admin-access-overlay {
+    padding: 10px;
+  }
+
+  .inventory-admin-panel {
+    width: calc(100vw - 20px);
+    max-height: calc(100svh - 20px);
+  }
+
+  .inventory-admin-head,
+  .inventory-admin-actions,
+  .inventory-admin-list {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .inventory-admin-row {
+    grid-template-columns: 20px 74px minmax(0, 1fr);
+  }
+
+  .inventory-admin-status {
+    grid-column: 3;
+  }
+}
