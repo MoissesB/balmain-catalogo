@@ -80,7 +80,44 @@
         "brigade-i",
         "brigade-i-rx",
         "brigade-iii"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Admiral aporta arquitectura visual, materiales premium y presencia tecnica para opticas que buscan piezas protagonistas.",
+        "en": "Admiral brings visual architecture, premium materials, and technical presence for optical partners seeking statement pieces."
+      },
+      "marketingDescription": {
+        "es": "Admiral se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 3 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Admiral is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 3 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Admiral combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Admiral combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Ideal para vitrinas de lujo, trunk shows y compradores que buscan piezas de alto impacto.",
+        "en": "Ideal for luxury windows, trunk shows, and buyers seeking high-impact pieces."
+      },
+      "materiales": [
+        "TITANIUM WITH JAPANESE ACETATE INSERT",
+        "TITANIUM WITH JAPANESE ACETATE TIP",
+        "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS"
+      ],
+      "technicalDetails": {
+        "frame": "TITANIUM WITH JAPANESE ACETATE INSERT",
+        "temple": "TITANIUM WITH JAPANESE ACETATE TIP",
+        "nosePads": "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "lenses": "",
+        "size": "50 □ 20 - 140 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Admiral de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Admiral. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 110.",
+        "en": "SS26 catalogue, page 110."
+      }
     },
     {
       "slug": "admiral-ii",
@@ -162,7 +199,44 @@
         "brigade-i",
         "brigade-i-rx",
         "brigade-iii"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Admiral II aporta arquitectura visual, materiales premium y presencia tecnica para opticas que buscan piezas protagonistas.",
+        "en": "Admiral II brings visual architecture, premium materials, and technical presence for optical partners seeking statement pieces."
+      },
+      "marketingDescription": {
+        "es": "Admiral II se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 3 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Admiral II is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 3 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Admiral II combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Admiral II combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Ideal para vitrinas de lujo, trunk shows y compradores que buscan piezas de alto impacto.",
+        "en": "Ideal for luxury windows, trunk shows, and buyers seeking high-impact pieces."
+      },
+      "materiales": [
+        "TITANIUM WITH JAPANESE ACETATE INSERT",
+        "TITANIUM WITH JAPANESE ACETATE TIP",
+        "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS"
+      ],
+      "technicalDetails": {
+        "frame": "TITANIUM WITH JAPANESE ACETATE INSERT",
+        "temple": "TITANIUM WITH JAPANESE ACETATE TIP",
+        "nosePads": "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "lenses": "",
+        "size": "54 □ 19 - 140 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Admiral II de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Admiral II. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 109.",
+        "en": "SS26 catalogue, page 109."
+      }
     },
     {
       "slug": "brigade-i",
@@ -231,7 +305,7 @@
             "en": "White Gold and Bone Frame w/ Dark Brown to Clear AR Lenses"
           },
           "imagenes": {
-            "hero": "assets/images/productos/avant-garde/brigade-i/bps-110c-52/BRIGADE I BPS-110C-52(1).jpg",
+            "hero": "assets/images/productos/avant-garde/brigade-i/bps-110c-52/BRIGADE I BPS-110C-52-FRONT.jpg",
             "frontal": "assets/images/productos/avant-garde/brigade-i/bps-110c-52/BRIGADE I BPS-110C-52-FRONT.jpg"
           },
           "fuente": "PDF catalogo SS26"
@@ -256,7 +330,45 @@
         "admiral-ii",
         "brigade-i-rx",
         "brigade-iii"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Brigade I aporta arquitectura visual, materiales premium y presencia tecnica para opticas que buscan piezas protagonistas.",
+        "en": "Brigade I brings visual architecture, premium materials, and technical presence for optical partners seeking statement pieces."
+      },
+      "marketingDescription": {
+        "es": "Brigade I se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 4 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Brigade I is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 4 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Brigade I combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Brigade I combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Ideal para vitrinas de lujo, trunk shows y compradores que buscan piezas de alto impacto.",
+        "en": "Ideal for luxury windows, trunk shows, and buyers seeking high-impact pieces."
+      },
+      "materiales": [
+        "JAPANESE TITANIUM",
+        "JAPANESE ACETATE + TITANIUM",
+        "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "2-BASE HIGH CONTRAST CR-39 BPS-110D"
+      ],
+      "technicalDetails": {
+        "frame": "JAPANESE TITANIUM",
+        "temple": "JAPANESE ACETATE + TITANIUM",
+        "nosePads": "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "lenses": "2-BASE HIGH CONTRAST CR-39 BPS-110D",
+        "size": "52 □ 20 - 140 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Brigade I de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Brigade I. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 44.",
+        "en": "SS26 catalogue, page 44."
+      }
     },
     {
       "slug": "brigade-i-rx",
@@ -344,7 +456,44 @@
         "admiral-ii",
         "brigade-i",
         "brigade-iii"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Brigade I RX aporta arquitectura visual, materiales premium y presencia tecnica para opticas que buscan piezas protagonistas.",
+        "en": "Brigade I RX brings visual architecture, premium materials, and technical presence for optical partners seeking statement pieces."
+      },
+      "marketingDescription": {
+        "es": "Brigade I RX se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 4 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Brigade I RX is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 4 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Brigade I RX combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Brigade I RX combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Ideal para vitrinas de lujo, trunk shows y compradores que buscan piezas de alto impacto.",
+        "en": "Ideal for luxury windows, trunk shows, and buyers seeking high-impact pieces."
+      },
+      "materiales": [
+        "JAPANESE TITANIUM",
+        "JAPANESE ACETATE + TITANIUM",
+        "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS"
+      ],
+      "technicalDetails": {
+        "frame": "JAPANESE TITANIUM",
+        "temple": "JAPANESE ACETATE + TITANIUM",
+        "nosePads": "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "lenses": "",
+        "size": "52 □ 20 - 140 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Brigade I RX de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Brigade I RX. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 45.",
+        "en": "SS26 catalogue, page 45."
+      }
     },
     {
       "slug": "brigade-iii",
@@ -420,7 +569,45 @@
         "admiral-ii",
         "brigade-i",
         "brigade-i-rx"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Brigade III aporta arquitectura visual, materiales premium y presencia tecnica para opticas que buscan piezas protagonistas.",
+        "en": "Brigade III brings visual architecture, premium materials, and technical presence for optical partners seeking statement pieces."
+      },
+      "marketingDescription": {
+        "es": "Brigade III se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 3 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Brigade III is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 3 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Brigade III combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Brigade III combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Ideal para vitrinas de lujo, trunk shows y compradores que buscan piezas de alto impacto.",
+        "en": "Ideal for luxury windows, trunk shows, and buyers seeking high-impact pieces."
+      },
+      "materiales": [
+        "JAPANESE TITANIUM",
+        "TITANIUM WITH JAPANESE ACETATE TIP",
+        "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "4-BASE HIGH CONTRAST CR"
+      ],
+      "technicalDetails": {
+        "frame": "JAPANESE TITANIUM",
+        "temple": "TITANIUM WITH JAPANESE ACETATE TIP",
+        "nosePads": "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "lenses": "4-BASE HIGH CONTRAST CR",
+        "size": "52 □ 21 - 140 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Brigade III de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Brigade III. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 43.",
+        "en": "SS26 catalogue, page 43."
+      }
     },
     {
       "slug": "brigade-iv",
@@ -547,7 +734,45 @@
         "admiral-ii",
         "brigade-i",
         "brigade-i-rx"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Brigade IV aporta arquitectura visual, materiales premium y presencia tecnica para opticas que buscan piezas protagonistas.",
+        "en": "Brigade IV brings visual architecture, premium materials, and technical presence for optical partners seeking statement pieces."
+      },
+      "marketingDescription": {
+        "es": "Brigade IV se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 6 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Brigade IV is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 6 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Brigade IV combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Brigade IV combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Ideal para vitrinas de lujo, trunk shows y compradores que buscan piezas de alto impacto.",
+        "en": "Ideal for luxury windows, trunk shows, and buyers seeking high-impact pieces."
+      },
+      "materiales": [
+        "JAPANESE TITANIUM",
+        "JAPANESE ACETATE + TITANIUM",
+        "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "4-BASE NYLON"
+      ],
+      "technicalDetails": {
+        "frame": "JAPANESE TITANIUM",
+        "temple": "JAPANESE ACETATE + TITANIUM",
+        "nosePads": "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "lenses": "4-BASE NYLON",
+        "size": "52 □ 20 - 140 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Brigade IV de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Brigade IV. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 35, 42.",
+        "en": "SS26 catalogue, page 35, 42."
+      }
     },
     {
       "slug": "brigade-iv-rx",
@@ -631,7 +856,44 @@
         "admiral-ii",
         "brigade-i",
         "brigade-i-rx"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Brigade IV RX aporta arquitectura visual, materiales premium y presencia tecnica para opticas que buscan piezas protagonistas.",
+        "en": "Brigade IV RX brings visual architecture, premium materials, and technical presence for optical partners seeking statement pieces."
+      },
+      "marketingDescription": {
+        "es": "Brigade IV RX se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 3 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Brigade IV RX is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 3 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Brigade IV RX combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Brigade IV RX combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Ideal para vitrinas de lujo, trunk shows y compradores que buscan piezas de alto impacto.",
+        "en": "Ideal for luxury windows, trunk shows, and buyers seeking high-impact pieces."
+      },
+      "materiales": [
+        "JAPANESE TITANIUM",
+        "JAPANESE TITANIUM + JAPANESE ACETATE",
+        "CERAMIC w/TITANIUM NOSE PAD ARMS BPX-120F-"
+      ],
+      "technicalDetails": {
+        "frame": "JAPANESE TITANIUM",
+        "temple": "JAPANESE TITANIUM + JAPANESE ACETATE",
+        "nosePads": "CERAMIC w/TITANIUM NOSE PAD ARMS BPX-120F-",
+        "lenses": "",
+        "size": "52 □ 20 - 140 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Brigade IV RX de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Brigade IV RX. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 36.",
+        "en": "SS26 catalogue, page 36."
+      }
     },
     {
       "slug": "brigade-v",
@@ -713,7 +975,44 @@
         "admiral-ii",
         "brigade-i",
         "brigade-i-rx"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Brigade V aporta arquitectura visual, materiales premium y presencia tecnica para opticas que buscan piezas protagonistas.",
+        "en": "Brigade V brings visual architecture, premium materials, and technical presence for optical partners seeking statement pieces."
+      },
+      "marketingDescription": {
+        "es": "Brigade V se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 3 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Brigade V is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 3 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Brigade V combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Brigade V combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Ideal para vitrinas de lujo, trunk shows y compradores que buscan piezas de alto impacto.",
+        "en": "Ideal for luxury windows, trunk shows, and buyers seeking high-impact pieces."
+      },
+      "materiales": [
+        "JAPANESE TITANIUM",
+        "JAPANESE ACETATE + TITANIUM",
+        "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS"
+      ],
+      "technicalDetails": {
+        "frame": "JAPANESE TITANIUM",
+        "temple": "JAPANESE ACETATE + TITANIUM",
+        "nosePads": "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "lenses": "",
+        "size": "56 □ 18 - 140 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Brigade V de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Brigade V. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 40.",
+        "en": "SS26 catalogue, page 40."
+      }
     },
     {
       "slug": "brigade-v-rx",
@@ -788,7 +1087,44 @@
         "admiral-ii",
         "brigade-i",
         "brigade-i-rx"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Brigade V RX aporta arquitectura visual, materiales premium y presencia tecnica para opticas que buscan piezas protagonistas.",
+        "en": "Brigade V RX brings visual architecture, premium materials, and technical presence for optical partners seeking statement pieces."
+      },
+      "marketingDescription": {
+        "es": "Brigade V RX se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 3 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Brigade V RX is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 3 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Brigade V RX combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Brigade V RX combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Ideal para vitrinas de lujo, trunk shows y compradores que buscan piezas de alto impacto.",
+        "en": "Ideal for luxury windows, trunk shows, and buyers seeking high-impact pieces."
+      },
+      "materiales": [
+        "JAPANESE TITANIUM",
+        "JAPANESE ACETATE + TITANIUM",
+        "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS BPX-142C-"
+      ],
+      "technicalDetails": {
+        "frame": "JAPANESE TITANIUM",
+        "temple": "JAPANESE ACETATE + TITANIUM",
+        "nosePads": "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS BPX-142C-",
+        "lenses": "",
+        "size": "56 □ 18 - 140 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Brigade V RX de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Brigade V RX. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 41.",
+        "en": "SS26 catalogue, page 41."
+      }
     },
     {
       "slug": "brigade-vi",
@@ -878,7 +1214,44 @@
         "admiral-ii",
         "brigade-i",
         "brigade-i-rx"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Brigade VI aporta arquitectura visual, materiales premium y presencia tecnica para opticas que buscan piezas protagonistas.",
+        "en": "Brigade VI brings visual architecture, premium materials, and technical presence for optical partners seeking statement pieces."
+      },
+      "marketingDescription": {
+        "es": "Brigade VI se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 4 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Brigade VI is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 4 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Brigade VI combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Brigade VI combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Ideal para vitrinas de lujo, trunk shows y compradores que buscan piezas de alto impacto.",
+        "en": "Ideal for luxury windows, trunk shows, and buyers seeking high-impact pieces."
+      },
+      "materiales": [
+        "JAPANESE TITANIUM",
+        "JAPANESE ACETATE + TITANIUM",
+        "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS"
+      ],
+      "technicalDetails": {
+        "frame": "JAPANESE TITANIUM",
+        "temple": "JAPANESE ACETATE + TITANIUM",
+        "nosePads": "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "lenses": "",
+        "size": "56 □ 16 - 140 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Brigade VI de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Brigade VI. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 39.",
+        "en": "SS26 catalogue, page 39."
+      }
     },
     {
       "slug": "brigade-vii",
@@ -972,7 +1345,45 @@
         "admiral-ii",
         "brigade-i",
         "brigade-i-rx"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Brigade VII aporta arquitectura visual, materiales premium y presencia tecnica para opticas que buscan piezas protagonistas.",
+        "en": "Brigade VII brings visual architecture, premium materials, and technical presence for optical partners seeking statement pieces."
+      },
+      "marketingDescription": {
+        "es": "Brigade VII se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 4 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Brigade VII is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 4 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Brigade VII combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Brigade VII combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Ideal para vitrinas de lujo, trunk shows y compradores que buscan piezas de alto impacto.",
+        "en": "Ideal for luxury windows, trunk shows, and buyers seeking high-impact pieces."
+      },
+      "materiales": [
+        "JAPANESE TITANIUM",
+        "JAPANESE ACETATE + TITANIUM",
+        "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "4-BASE HIGH CONTRAST CR"
+      ],
+      "technicalDetails": {
+        "frame": "JAPANESE TITANIUM",
+        "temple": "JAPANESE ACETATE + TITANIUM",
+        "nosePads": "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "lenses": "4-BASE HIGH CONTRAST CR",
+        "size": "57 □ 16 - 140 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Brigade VII de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Brigade VII. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 38.",
+        "en": "SS26 catalogue, page 38."
+      }
     },
     {
       "slug": "capitaine",
@@ -1077,7 +1488,45 @@
         "admiral-ii",
         "brigade-i",
         "brigade-i-rx"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Capitaine aporta arquitectura visual, materiales premium y presencia tecnica para opticas que buscan piezas protagonistas.",
+        "en": "Capitaine brings visual architecture, premium materials, and technical presence for optical partners seeking statement pieces."
+      },
+      "marketingDescription": {
+        "es": "Capitaine se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 5 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Capitaine is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 5 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Capitaine combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Capitaine combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Ideal para vitrinas de lujo, trunk shows y compradores que buscan piezas de alto impacto.",
+        "en": "Ideal for luxury windows, trunk shows, and buyers seeking high-impact pieces."
+      },
+      "materiales": [
+        "TITANIUM WITH SIDESHIELD",
+        "JAPANESE ACETATE + TITANIUM",
+        "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "2-BASE NYLON"
+      ],
+      "technicalDetails": {
+        "frame": "TITANIUM WITH SIDESHIELD",
+        "temple": "JAPANESE ACETATE + TITANIUM",
+        "nosePads": "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "lenses": "2-BASE NYLON",
+        "size": "62 □ 12 - 145 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Capitaine de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Capitaine. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 102.",
+        "en": "SS26 catalogue, page 102."
+      }
     },
     {
       "slug": "fixe",
@@ -1147,7 +1596,44 @@
         "admiral-ii",
         "brigade-i",
         "brigade-i-rx"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Fixe RX aporta arquitectura visual, materiales premium y presencia tecnica para opticas que buscan piezas protagonistas.",
+        "en": "Fixe RX brings visual architecture, premium materials, and technical presence for optical partners seeking statement pieces."
+      },
+      "marketingDescription": {
+        "es": "Fixe RX se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 2 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Fixe RX is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 2 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Fixe RX combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Fixe RX combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Ideal para vitrinas de lujo, trunk shows y compradores que buscan piezas de alto impacto.",
+        "en": "Ideal for luxury windows, trunk shows, and buyers seeking high-impact pieces."
+      },
+      "materiales": [
+        "RIMELESS",
+        "TITANIUM WITH JAPANESE ACETATE TIP",
+        "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS"
+      ],
+      "technicalDetails": {
+        "frame": "RIMELESS",
+        "temple": "TITANIUM WITH JAPANESE ACETATE TIP",
+        "nosePads": "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "lenses": "",
+        "size": "54 □ 19 - 140 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Fixe RX de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Fixe RX. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 128.",
+        "en": "SS26 catalogue, page 128."
+      }
     },
     {
       "slug": "gendarme",
@@ -1202,7 +1688,45 @@
         "admiral-ii",
         "brigade-i",
         "brigade-i-rx"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Gendarme aporta arquitectura visual, materiales premium y presencia tecnica para opticas que buscan piezas protagonistas.",
+        "en": "Gendarme brings visual architecture, premium materials, and technical presence for optical partners seeking statement pieces."
+      },
+      "marketingDescription": {
+        "es": "Gendarme se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 1 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Gendarme is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 1 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Gendarme combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Gendarme combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Ideal para vitrinas de lujo, trunk shows y compradores que buscan piezas de alto impacto.",
+        "en": "Ideal for luxury windows, trunk shows, and buyers seeking high-impact pieces."
+      },
+      "materiales": [
+        "JAPANESE TITANIUM + JAPANESE",
+        "TITANIUM WITH JAPANESE ACETATE TIP",
+        "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "2-BASE HIGH CONTRAST CR"
+      ],
+      "technicalDetails": {
+        "frame": "JAPANESE TITANIUM + JAPANESE",
+        "temple": "TITANIUM WITH JAPANESE ACETATE TIP",
+        "nosePads": "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "lenses": "2-BASE HIGH CONTRAST CR",
+        "size": "66 □ 10 - 145 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Gendarme de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Gendarme. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 105.",
+        "en": "SS26 catalogue, page 105."
+      }
     },
     {
       "slug": "hymn",
@@ -1286,7 +1810,44 @@
         "admiral-ii",
         "brigade-i",
         "brigade-i-rx"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Hymn aporta arquitectura visual, materiales premium y presencia tecnica para opticas que buscan piezas protagonistas.",
+        "en": "Hymn brings visual architecture, premium materials, and technical presence for optical partners seeking statement pieces."
+      },
+      "marketingDescription": {
+        "es": "Hymn se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 3 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Hymn is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 3 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Hymn combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Hymn combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Ideal para vitrinas de lujo, trunk shows y compradores que buscan piezas de alto impacto.",
+        "en": "Ideal for luxury windows, trunk shows, and buyers seeking high-impact pieces."
+      },
+      "materiales": [
+        "TITANIUM WITH JAPANESE ACETATE INSERT",
+        "JAPANESE ACETATE WITH TITANIUM",
+        "CERAMIC w/TITANIUM NOSE PAD ARMS"
+      ],
+      "technicalDetails": {
+        "frame": "TITANIUM WITH JAPANESE ACETATE INSERT",
+        "temple": "JAPANESE ACETATE WITH TITANIUM",
+        "nosePads": "CERAMIC w/TITANIUM NOSE PAD ARMS",
+        "lenses": "",
+        "size": "55 □ 18 - 145 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Hymn de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Hymn. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 34.",
+        "en": "SS26 catalogue, page 34."
+      }
     },
     {
       "slug": "legion-ii",
@@ -1381,7 +1942,44 @@
         "admiral-ii",
         "brigade-i",
         "brigade-i-rx"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Legion II aporta arquitectura visual, materiales premium y presencia tecnica para opticas que buscan piezas protagonistas.",
+        "en": "Legion II brings visual architecture, premium materials, and technical presence for optical partners seeking statement pieces."
+      },
+      "marketingDescription": {
+        "es": "Legion II se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 4 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Legion II is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 4 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Legion II combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Legion II combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Ideal para vitrinas de lujo, trunk shows y compradores que buscan piezas de alto impacto.",
+        "en": "Ideal for luxury windows, trunk shows, and buyers seeking high-impact pieces."
+      },
+      "materiales": [
+        "TITANIUM WITH JAPANESE ACETATE INSERT",
+        "TITANIUM WITH JAPANESE ACETATE TIP",
+        "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS BPX-113D-"
+      ],
+      "technicalDetails": {
+        "frame": "TITANIUM WITH JAPANESE ACETATE INSERT",
+        "temple": "TITANIUM WITH JAPANESE ACETATE TIP",
+        "nosePads": "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS BPX-113D-",
+        "lenses": "",
+        "size": "52 □ 19 - 145 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Legion II de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Legion II. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 121.",
+        "en": "SS26 catalogue, page 121."
+      }
     },
     {
       "slug": "legion-iv",
@@ -1456,7 +2054,43 @@
         "admiral-ii",
         "brigade-i",
         "brigade-i-rx"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Legion IV aporta arquitectura visual, materiales premium y presencia tecnica para opticas que buscan piezas protagonistas.",
+        "en": "Legion IV brings visual architecture, premium materials, and technical presence for optical partners seeking statement pieces."
+      },
+      "marketingDescription": {
+        "es": "Legion IV se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 3 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Legion IV is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 3 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Legion IV combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Legion IV combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Ideal para vitrinas de lujo, trunk shows y compradores que buscan piezas de alto impacto.",
+        "en": "Ideal for luxury windows, trunk shows, and buyers seeking high-impact pieces."
+      },
+      "materiales": [
+        "JAPANESE ACETATE WITH TITANIUM RIM",
+        "JAPANESE ACETATE + TITANIUM Blue Swirl - Brushed Silver"
+      ],
+      "technicalDetails": {
+        "frame": "JAPANESE ACETATE WITH TITANIUM RIM",
+        "temple": "JAPANESE ACETATE + TITANIUM Blue Swirl - Brushed Silver",
+        "nosePads": "",
+        "lenses": "",
+        "size": "53 □ 19 - 145 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Legion IV de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Legion IV. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 120.",
+        "en": "SS26 catalogue, page 120."
+      }
     },
     {
       "slug": "legion-v",
@@ -1537,7 +2171,43 @@
         "admiral-ii",
         "brigade-i",
         "brigade-i-rx"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Legion V aporta arquitectura visual, materiales premium y presencia tecnica para opticas que buscan piezas protagonistas.",
+        "en": "Legion V brings visual architecture, premium materials, and technical presence for optical partners seeking statement pieces."
+      },
+      "marketingDescription": {
+        "es": "Legion V se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 3 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Legion V is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 3 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Legion V combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Legion V combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Ideal para vitrinas de lujo, trunk shows y compradores que buscan piezas de alto impacto.",
+        "en": "Ideal for luxury windows, trunk shows, and buyers seeking high-impact pieces."
+      },
+      "materiales": [
+        "JAPANESE ACETATE WITH TITANIUM RIM",
+        "JAPANESE ACETATE + TITANIUM"
+      ],
+      "technicalDetails": {
+        "frame": "JAPANESE ACETATE WITH TITANIUM RIM",
+        "temple": "JAPANESE ACETATE + TITANIUM",
+        "nosePads": "",
+        "lenses": "",
+        "size": "51 □ 21 - 140 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Legion V de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Legion V. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 119.",
+        "en": "SS26 catalogue, page 119."
+      }
     },
     {
       "slug": "major",
@@ -1631,7 +2301,44 @@
         "admiral-ii",
         "brigade-i",
         "brigade-i-rx"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Major aporta arquitectura visual, materiales premium y presencia tecnica para opticas que buscan piezas protagonistas.",
+        "en": "Major brings visual architecture, premium materials, and technical presence for optical partners seeking statement pieces."
+      },
+      "marketingDescription": {
+        "es": "Major se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 4 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Major is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 4 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Major combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Major combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Ideal para vitrinas de lujo, trunk shows y compradores que buscan piezas de alto impacto.",
+        "en": "Ideal for luxury windows, trunk shows, and buyers seeking high-impact pieces."
+      },
+      "materiales": [
+        "JAPANESE TITANIUM",
+        "JAPANESE TITANIUM BPS-147D-",
+        "MULTI-BASE HIGHT CONTRAST NYLON Yellow Gold w/ Amber –"
+      ],
+      "technicalDetails": {
+        "frame": "JAPANESE TITANIUM",
+        "temple": "JAPANESE TITANIUM BPS-147D-",
+        "nosePads": "",
+        "lenses": "MULTI-BASE HIGHT CONTRAST NYLON Yellow Gold w/ Amber –",
+        "size": "142 □ 145 (calibre - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Major de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Major. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 104.",
+        "en": "SS26 catalogue, page 104."
+      }
     },
     {
       "slug": "monsieur",
@@ -1725,7 +2432,44 @@
         "admiral-ii",
         "brigade-i",
         "brigade-i-rx"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Monsieur aporta arquitectura visual, materiales premium y presencia tecnica para opticas que buscan piezas protagonistas.",
+        "en": "Monsieur brings visual architecture, premium materials, and technical presence for optical partners seeking statement pieces."
+      },
+      "marketingDescription": {
+        "es": "Monsieur se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 4 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Monsieur is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 4 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Monsieur combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Monsieur combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Ideal para vitrinas de lujo, trunk shows y compradores que buscan piezas de alto impacto.",
+        "en": "Ideal for luxury windows, trunk shows, and buyers seeking high-impact pieces."
+      },
+      "materiales": [
+        "JAPANESE TITANIUM",
+        "JAPANESE ACETATE + TITANIUM DETAILS",
+        "4-BASE HIGH CONTRAST CR-39 BPX-153D"
+      ],
+      "technicalDetails": {
+        "frame": "JAPANESE TITANIUM",
+        "temple": "JAPANESE ACETATE + TITANIUM DETAILS",
+        "nosePads": "",
+        "lenses": "4-BASE HIGH CONTRAST CR-39 BPX-153D",
+        "size": "53 □ 18 - 145 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Monsieur de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Monsieur. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 107.",
+        "en": "SS26 catalogue, page 107."
+      }
     },
     {
       "slug": "officier",
@@ -1806,7 +2550,45 @@
         "admiral-ii",
         "brigade-i",
         "brigade-i-rx"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Officier aporta arquitectura visual, materiales premium y presencia tecnica para opticas que buscan piezas protagonistas.",
+        "en": "Officier brings visual architecture, premium materials, and technical presence for optical partners seeking statement pieces."
+      },
+      "marketingDescription": {
+        "es": "Officier se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 3 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Officier is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 3 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Officier combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Officier combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Ideal para vitrinas de lujo, trunk shows y compradores que buscan piezas de alto impacto.",
+        "en": "Ideal for luxury windows, trunk shows, and buyers seeking high-impact pieces."
+      },
+      "materiales": [
+        "TITANIUM WITH JAPANESE ACETATE INSERT",
+        "TITANIUM WITH JAPANESE ACETATE TIP",
+        "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "4-BASE HIGH CONTRAST CR-39 BPS-108C"
+      ],
+      "technicalDetails": {
+        "frame": "TITANIUM WITH JAPANESE ACETATE INSERT",
+        "temple": "TITANIUM WITH JAPANESE ACETATE TIP",
+        "nosePads": "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "lenses": "4-BASE HIGH CONTRAST CR-39 BPS-108C",
+        "size": "58 □ 18 - 140 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Officier de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Officier. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 101.",
+        "en": "SS26 catalogue, page 101."
+      }
     },
     {
       "slug": "olivier-iii",
@@ -1887,7 +2669,43 @@
         "admiral-ii",
         "brigade-i",
         "brigade-i-rx"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Olivier III aporta arquitectura visual, materiales premium y presencia tecnica para opticas que buscan piezas protagonistas.",
+        "en": "Olivier III brings visual architecture, premium materials, and technical presence for optical partners seeking statement pieces."
+      },
+      "marketingDescription": {
+        "es": "Olivier III se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 3 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Olivier III is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 3 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Olivier III combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Olivier III combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Ideal para vitrinas de lujo, trunk shows y compradores que buscan piezas de alto impacto.",
+        "en": "Ideal for luxury windows, trunk shows, and buyers seeking high-impact pieces."
+      },
+      "materiales": [
+        "JAPANESE ACETATE",
+        "2-BASE HIGH CONTRAST CR-39 BPS-191C"
+      ],
+      "technicalDetails": {
+        "frame": "JAPANESE ACETATE",
+        "temple": "JAPANESE ACETATE",
+        "nosePads": "",
+        "lenses": "2-BASE HIGH CONTRAST CR-39 BPS-191C",
+        "size": "52 □ 19 - 145 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Olivier III de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Olivier III. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 71.",
+        "en": "SS26 catalogue, page 71."
+      }
     },
     {
       "slug": "pierre",
@@ -1969,7 +2787,45 @@
         "admiral-ii",
         "brigade-i",
         "brigade-i-rx"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Pierre aporta arquitectura visual, materiales premium y presencia tecnica para opticas que buscan piezas protagonistas.",
+        "en": "Pierre brings visual architecture, premium materials, and technical presence for optical partners seeking statement pieces."
+      },
+      "marketingDescription": {
+        "es": "Pierre se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 3 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Pierre is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 3 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Pierre combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Pierre combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Ideal para vitrinas de lujo, trunk shows y compradores que buscan piezas de alto impacto.",
+        "en": "Ideal for luxury windows, trunk shows, and buyers seeking high-impact pieces."
+      },
+      "materiales": [
+        "RIMELESS + TITANIUM DETAILS",
+        "JAPANESE TITANIUM WITH ACETATE BPS-150G-",
+        "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS Gold - Crystal Brown w/ Amber",
+        "4-BASE HIGH CONTRAST CR-39 Bronze Mirror - AR"
+      ],
+      "technicalDetails": {
+        "frame": "RIMELESS + TITANIUM DETAILS",
+        "temple": "JAPANESE TITANIUM WITH ACETATE BPS-150G-",
+        "nosePads": "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS Gold - Crystal Brown w/ Amber",
+        "lenses": "4-BASE HIGH CONTRAST CR-39 Bronze Mirror - AR",
+        "size": "53 □ 19 - 140 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Pierre de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Pierre. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 64.",
+        "en": "SS26 catalogue, page 64."
+      }
     },
     {
       "slug": "pierre-ii",
@@ -2050,7 +2906,45 @@
         "admiral-ii",
         "brigade-i",
         "brigade-i-rx"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Pierre II aporta arquitectura visual, materiales premium y presencia tecnica para opticas que buscan piezas protagonistas.",
+        "en": "Pierre II brings visual architecture, premium materials, and technical presence for optical partners seeking statement pieces."
+      },
+      "marketingDescription": {
+        "es": "Pierre II se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 3 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Pierre II is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 3 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Pierre II combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Pierre II combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Ideal para vitrinas de lujo, trunk shows y compradores que buscan piezas de alto impacto.",
+        "en": "Ideal for luxury windows, trunk shows, and buyers seeking high-impact pieces."
+      },
+      "materiales": [
+        "RIMELESS + TITANIUM DETAILS",
+        "JAPANESE TITANIUM WITH JAPANESE ACETATE",
+        "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "4-BASE HIGH CONTRAST CR"
+      ],
+      "technicalDetails": {
+        "frame": "RIMELESS + TITANIUM DETAILS",
+        "temple": "JAPANESE TITANIUM WITH JAPANESE ACETATE",
+        "nosePads": "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "lenses": "4-BASE HIGH CONTRAST CR",
+        "size": "58 □ 18 - 140 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Pierre II de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Pierre II. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 63.",
+        "en": "SS26 catalogue, page 63."
+      }
     },
     {
       "slug": "pierre-rx",
@@ -2156,7 +3050,44 @@
         "admiral-ii",
         "brigade-i",
         "brigade-i-rx"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Pierre RX aporta arquitectura visual, materiales premium y presencia tecnica para opticas que buscan piezas protagonistas.",
+        "en": "Pierre RX brings visual architecture, premium materials, and technical presence for optical partners seeking statement pieces."
+      },
+      "marketingDescription": {
+        "es": "Pierre RX se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 5 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Pierre RX is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 5 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Pierre RX combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Pierre RX combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Ideal para vitrinas de lujo, trunk shows y compradores que buscan piezas de alto impacto.",
+        "en": "Ideal for luxury windows, trunk shows, and buyers seeking high-impact pieces."
+      },
+      "materiales": [
+        "RIMELESS + TITANIUM DETAILS",
+        "color D: BUFFALO HORN",
+        "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS"
+      ],
+      "technicalDetails": {
+        "frame": "RIMELESS + TITANIUM DETAILS",
+        "temple": "color D: BUFFALO HORN",
+        "nosePads": "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "lenses": "",
+        "size": "53 □ 19 - 140 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Pierre RX de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Pierre RX. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 65.",
+        "en": "SS26 catalogue, page 65."
+      }
     },
     {
       "slug": "premier",
@@ -2251,7 +3182,45 @@
         "admiral-ii",
         "brigade-i",
         "brigade-i-rx"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Premier aporta arquitectura visual, materiales premium y presencia tecnica para opticas que buscan piezas protagonistas.",
+        "en": "Premier brings visual architecture, premium materials, and technical presence for optical partners seeking statement pieces."
+      },
+      "marketingDescription": {
+        "es": "Premier se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 4 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Premier is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 4 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Premier combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Premier combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Ideal para vitrinas de lujo, trunk shows y compradores que buscan piezas de alto impacto.",
+        "en": "Ideal for luxury windows, trunk shows, and buyers seeking high-impact pieces."
+      },
+      "materiales": [
+        "JAPANESE TITANIUM WITH INJECTION",
+        "JAPANESE TITANIUM WITH ACETATE",
+        "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "4-BASE HIGH CONTRAST CR-39 Matte Black - Shiny 18k Gold –"
+      ],
+      "technicalDetails": {
+        "frame": "JAPANESE TITANIUM WITH INJECTION",
+        "temple": "JAPANESE TITANIUM WITH ACETATE",
+        "nosePads": "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "lenses": "4-BASE HIGH CONTRAST CR-39 Matte Black - Shiny 18k Gold –",
+        "size": "59 □ 16 - 140 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Premier de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Premier. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 100.",
+        "en": "SS26 catalogue, page 100."
+      }
     },
     {
       "slug": "rhythm",
@@ -2335,7 +3304,45 @@
         "admiral-ii",
         "brigade-i",
         "brigade-i-rx"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Rhythm aporta arquitectura visual, materiales premium y presencia tecnica para opticas que buscan piezas protagonistas.",
+        "en": "Rhythm brings visual architecture, premium materials, and technical presence for optical partners seeking statement pieces."
+      },
+      "marketingDescription": {
+        "es": "Rhythm se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 3 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Rhythm is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 3 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Rhythm combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Rhythm combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Ideal para vitrinas de lujo, trunk shows y compradores que buscan piezas de alto impacto.",
+        "en": "Ideal for luxury windows, trunk shows, and buyers seeking high-impact pieces."
+      },
+      "materiales": [
+        "JAPANESE TITANIUM",
+        "TITANIUM WITH JAPANESE ACETATE TIP",
+        "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "4-BASE HIGH CONTRAST CR"
+      ],
+      "technicalDetails": {
+        "frame": "JAPANESE TITANIUM",
+        "temple": "TITANIUM WITH JAPANESE ACETATE TIP",
+        "nosePads": "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "lenses": "4-BASE HIGH CONTRAST CR",
+        "size": "53 □ 18 - 145 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Rhythm de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Rhythm. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 21.",
+        "en": "SS26 catalogue, page 21."
+      }
     },
     {
       "slug": "saint-jean",
@@ -2401,7 +3408,44 @@
         "admiral-ii",
         "brigade-i",
         "brigade-i-rx"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Saint-Jean aporta arquitectura visual, materiales premium y presencia tecnica para opticas que buscan piezas protagonistas.",
+        "en": "Saint-Jean brings visual architecture, premium materials, and technical presence for optical partners seeking statement pieces."
+      },
+      "marketingDescription": {
+        "es": "Saint-Jean se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 2 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Saint-Jean is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 2 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Saint-Jean combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Saint-Jean combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Ideal para vitrinas de lujo, trunk shows y compradores que buscan piezas de alto impacto.",
+        "en": "Ideal for luxury windows, trunk shows, and buyers seeking high-impact pieces."
+      },
+      "materiales": [
+        "JAPANESE TITANIUM + ACETATE",
+        "JAPANESE ACETATE + TITANIUM",
+        "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS"
+      ],
+      "technicalDetails": {
+        "frame": "JAPANESE TITANIUM + ACETATE",
+        "temple": "JAPANESE ACETATE + TITANIUM",
+        "nosePads": "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "lenses": "",
+        "size": "50 □ 24 - 140 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Saint-Jean de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Saint-Jean. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 112.",
+        "en": "SS26 catalogue, page 112."
+      }
     },
     {
       "slug": "saint-jean-ii",
@@ -2469,7 +3513,43 @@
         "admiral-ii",
         "brigade-i",
         "brigade-i-rx"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Saint-Jean II aporta arquitectura visual, materiales premium y presencia tecnica para opticas que buscan piezas protagonistas.",
+        "en": "Saint-Jean II brings visual architecture, premium materials, and technical presence for optical partners seeking statement pieces."
+      },
+      "marketingDescription": {
+        "es": "Saint-Jean II se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 2 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Saint-Jean II is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 2 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Saint-Jean II combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Saint-Jean II combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Ideal para vitrinas de lujo, trunk shows y compradores que buscan piezas de alto impacto.",
+        "en": "Ideal for luxury windows, trunk shows, and buyers seeking high-impact pieces."
+      },
+      "materiales": [
+        "JAPANESE ACETATE + TITANIUM",
+        "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS"
+      ],
+      "technicalDetails": {
+        "frame": "JAPANESE ACETATE + TITANIUM",
+        "temple": "JAPANESE ACETATE + TITANIUM",
+        "nosePads": "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "lenses": "",
+        "size": "48 □ 22 - 140 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Saint-Jean II de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Saint-Jean II. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 111.",
+        "en": "SS26 catalogue, page 111."
+      }
     },
     {
       "slug": "sergeant",
@@ -2552,7 +3632,45 @@
         "admiral-ii",
         "brigade-i",
         "brigade-i-rx"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Sergeant aporta arquitectura visual, materiales premium y presencia tecnica para opticas que buscan piezas protagonistas.",
+        "en": "Sergeant brings visual architecture, premium materials, and technical presence for optical partners seeking statement pieces."
+      },
+      "marketingDescription": {
+        "es": "Sergeant se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 3 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Sergeant is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 3 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Sergeant combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Sergeant combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Ideal para vitrinas de lujo, trunk shows y compradores que buscan piezas de alto impacto.",
+        "en": "Ideal for luxury windows, trunk shows, and buyers seeking high-impact pieces."
+      },
+      "materiales": [
+        "TITANIUM WITH JAPANESE ACETATE INSERT",
+        "TITANIUM WITH JAPANESE ACETATE TIP",
+        "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "4-BASE HIGH CONTRAST CR"
+      ],
+      "technicalDetails": {
+        "frame": "TITANIUM WITH JAPANESE ACETATE INSERT",
+        "temple": "TITANIUM WITH JAPANESE ACETATE TIP",
+        "nosePads": "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "lenses": "4-BASE HIGH CONTRAST CR",
+        "size": "60 □ 16 - 145 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Sergeant de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Sergeant. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 32.",
+        "en": "SS26 catalogue, page 32."
+      }
     },
     {
       "slug": "sergeant-ii",
@@ -2633,7 +3751,43 @@
         "admiral-ii",
         "brigade-i",
         "brigade-i-rx"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Sergeant II aporta arquitectura visual, materiales premium y presencia tecnica para opticas que buscan piezas protagonistas.",
+        "en": "Sergeant II brings visual architecture, premium materials, and technical presence for optical partners seeking statement pieces."
+      },
+      "marketingDescription": {
+        "es": "Sergeant II se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 3 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Sergeant II is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 3 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Sergeant II combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Sergeant II combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Ideal para vitrinas de lujo, trunk shows y compradores que buscan piezas de alto impacto.",
+        "en": "Ideal for luxury windows, trunk shows, and buyers seeking high-impact pieces."
+      },
+      "materiales": [
+        "JAPANESE TITANIUM",
+        "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS"
+      ],
+      "technicalDetails": {
+        "frame": "JAPANESE TITANIUM",
+        "temple": "JAPANESE TITANIUM",
+        "nosePads": "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "lenses": "",
+        "size": "55 □ 19 - 145 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Sergeant II de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Sergeant II. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 30.",
+        "en": "SS26 catalogue, page 30."
+      }
     },
     {
       "slug": "sergeant-iii",
@@ -2717,7 +3871,43 @@
         "admiral-ii",
         "brigade-i",
         "brigade-i-rx"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Sergeant III aporta arquitectura visual, materiales premium y presencia tecnica para opticas que buscan piezas protagonistas.",
+        "en": "Sergeant III brings visual architecture, premium materials, and technical presence for optical partners seeking statement pieces."
+      },
+      "marketingDescription": {
+        "es": "Sergeant III se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 3 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Sergeant III is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 3 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Sergeant III combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Sergeant III combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Ideal para vitrinas de lujo, trunk shows y compradores que buscan piezas de alto impacto.",
+        "en": "Ideal for luxury windows, trunk shows, and buyers seeking high-impact pieces."
+      },
+      "materiales": [
+        "JAPANESE TITANIUM",
+        "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS"
+      ],
+      "technicalDetails": {
+        "frame": "JAPANESE TITANIUM",
+        "temple": "JAPANESE TITANIUM",
+        "nosePads": "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "lenses": "",
+        "size": "52 □ 21 - 145 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Sergeant III de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Sergeant III. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 29.",
+        "en": "SS26 catalogue, page 29."
+      }
     },
     {
       "slug": "soldier",
@@ -2813,7 +4003,45 @@
         "admiral-ii",
         "brigade-i",
         "brigade-i-rx"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Soldier aporta arquitectura visual, materiales premium y presencia tecnica para opticas que buscan piezas protagonistas.",
+        "en": "Soldier brings visual architecture, premium materials, and technical presence for optical partners seeking statement pieces."
+      },
+      "marketingDescription": {
+        "es": "Soldier se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 4 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Soldier is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 4 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Soldier combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Soldier combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Ideal para vitrinas de lujo, trunk shows y compradores que buscan piezas de alto impacto.",
+        "en": "Ideal for luxury windows, trunk shows, and buyers seeking high-impact pieces."
+      },
+      "materiales": [
+        "JAPANESE ACETATE + TITANIUM",
+        "JAPANESE TITANIUM + ACETATE TIP",
+        "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "4-BASE HIGH CONTRAST CR-39 BPS-160D"
+      ],
+      "technicalDetails": {
+        "frame": "JAPANESE ACETATE + TITANIUM",
+        "temple": "JAPANESE TITANIUM + ACETATE TIP",
+        "nosePads": "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "lenses": "4-BASE HIGH CONTRAST CR-39 BPS-160D",
+        "size": "59 □ 21 - 140 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Soldier de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Soldier. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 85.",
+        "en": "SS26 catalogue, page 85."
+      }
     },
     {
       "slug": "triomphe",
@@ -2895,7 +4123,44 @@
         "admiral-ii",
         "brigade-i",
         "brigade-i-rx"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Triomphe aporta arquitectura visual, materiales premium y presencia tecnica para opticas que buscan piezas protagonistas.",
+        "en": "Triomphe brings visual architecture, premium materials, and technical presence for optical partners seeking statement pieces."
+      },
+      "marketingDescription": {
+        "es": "Triomphe se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 3 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Triomphe is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 3 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Triomphe combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Triomphe combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Ideal para vitrinas de lujo, trunk shows y compradores que buscan piezas de alto impacto.",
+        "en": "Ideal for luxury windows, trunk shows, and buyers seeking high-impact pieces."
+      },
+      "materiales": [
+        "JAPANESE ACETATE + TITANIUM",
+        "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "2-BASE HIGH CONTRAST CR"
+      ],
+      "technicalDetails": {
+        "frame": "JAPANESE ACETATE + TITANIUM",
+        "temple": "JAPANESE ACETATE + TITANIUM",
+        "nosePads": "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "lenses": "2-BASE HIGH CONTRAST CR",
+        "size": "61 □ 17 - 145 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Triomphe de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Triomphe. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 69.",
+        "en": "SS26 catalogue, page 69."
+      }
     },
     {
       "slug": "triomphe-ii",
@@ -2977,7 +4242,45 @@
         "admiral-ii",
         "brigade-i",
         "brigade-i-rx"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Triomphe II aporta arquitectura visual, materiales premium y presencia tecnica para opticas que buscan piezas protagonistas.",
+        "en": "Triomphe II brings visual architecture, premium materials, and technical presence for optical partners seeking statement pieces."
+      },
+      "marketingDescription": {
+        "es": "Triomphe II se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 3 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Triomphe II is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 3 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Triomphe II combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Triomphe II combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Ideal para vitrinas de lujo, trunk shows y compradores que buscan piezas de alto impacto.",
+        "en": "Ideal for luxury windows, trunk shows, and buyers seeking high-impact pieces."
+      },
+      "materiales": [
+        "JAPANESE TITANIUM w/ ENAMEL",
+        "JAPANESE ACETATE + TITANIUM",
+        "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "4-BASE HIGH CONTRAST CR-39 BPS-190C"
+      ],
+      "technicalDetails": {
+        "frame": "JAPANESE TITANIUM w/ ENAMEL",
+        "temple": "JAPANESE ACETATE + TITANIUM",
+        "nosePads": "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "lenses": "4-BASE HIGH CONTRAST CR-39 BPS-190C",
+        "size": "57 □ 17 - 140 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Triomphe II de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Triomphe II. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 67.",
+        "en": "SS26 catalogue, page 67."
+      }
     },
     {
       "slug": "victoire",
@@ -3059,7 +4362,44 @@
         "admiral-ii",
         "brigade-i",
         "brigade-i-rx"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Victoire aporta arquitectura visual, materiales premium y presencia tecnica para opticas que buscan piezas protagonistas.",
+        "en": "Victoire brings visual architecture, premium materials, and technical presence for optical partners seeking statement pieces."
+      },
+      "marketingDescription": {
+        "es": "Victoire se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 3 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Victoire is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 3 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Victoire combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Victoire combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Ideal para vitrinas de lujo, trunk shows y compradores que buscan piezas de alto impacto.",
+        "en": "Ideal for luxury windows, trunk shows, and buyers seeking high-impact pieces."
+      },
+      "materiales": [
+        "JAPANESE TITANIUM",
+        "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "4-BASE HIGH CONTRAST CR"
+      ],
+      "technicalDetails": {
+        "frame": "JAPANESE TITANIUM",
+        "temple": "JAPANESE TITANIUM",
+        "nosePads": "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "lenses": "4-BASE HIGH CONTRAST CR",
+        "size": "60 □ 14 - 143 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Victoire de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Victoire. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 83.",
+        "en": "SS26 catalogue, page 83."
+      }
     },
     {
       "slug": "arcade",
@@ -3157,7 +4497,45 @@
         "espion",
         "idol-ltd",
         "le-masque"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Arcade aporta codigos Balmain reconocibles, detalles joya y una lectura de lujo distintiva para assortments selectivos.",
+        "en": "Arcade brings recognizable Balmain codes, jewelry-like details, and distinctive luxury appeal for selective assortments."
+      },
+      "marketingDescription": {
+        "es": "Arcade se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 4 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Arcade is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 4 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Arcade combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Arcade combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Pensado para construir una seleccion con identidad de Maison y argumentos de venta memorables.",
+        "en": "Designed to build an assortment with Maison identity and memorable sales arguments."
+      },
+      "materiales": [
+        "RIMELESS + TITANIUM DETAILS",
+        "TITANIUM WITH JAPANESE ACETATE",
+        "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "4-BASE NYLON"
+      ],
+      "technicalDetails": {
+        "frame": "RIMELESS + TITANIUM DETAILS",
+        "temple": "TITANIUM WITH JAPANESE ACETATE",
+        "nosePads": "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "lenses": "4-BASE NYLON",
+        "size": "55 □ 18 - 140 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Arcade de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Arcade. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 23.",
+        "en": "SS26 catalogue, page 23."
+      }
     },
     {
       "slug": "colonel-ltd",
@@ -3240,7 +4618,45 @@
         "espion",
         "idol-ltd",
         "le-masque"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Colonel LTD aporta codigos Balmain reconocibles, detalles joya y una lectura de lujo distintiva para assortments selectivos.",
+        "en": "Colonel LTD brings recognizable Balmain codes, jewelry-like details, and distinctive luxury appeal for selective assortments."
+      },
+      "marketingDescription": {
+        "es": "Colonel LTD se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 3 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Colonel LTD is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 3 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Colonel LTD combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Colonel LTD combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Pensado para construir una seleccion con identidad de Maison y argumentos de venta memorables.",
+        "en": "Designed to build an assortment with Maison identity and memorable sales arguments."
+      },
+      "materiales": [
+        "JAPANESE TITANIUM",
+        "TITANIUM WITH JAPANESE ACETATE TIP",
+        "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "3-BASE NYLON Rose Gold - Brown Swirl - Dark Brown"
+      ],
+      "technicalDetails": {
+        "frame": "JAPANESE TITANIUM",
+        "temple": "TITANIUM WITH JAPANESE ACETATE TIP",
+        "nosePads": "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "lenses": "3-BASE NYLON Rose Gold - Brown Swirl - Dark Brown",
+        "size": "63 □ 12 - 140 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Colonel LTD de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Colonel LTD. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 76.",
+        "en": "SS26 catalogue, page 76."
+      }
     },
     {
       "slug": "espion",
@@ -3321,7 +4737,44 @@
         "colonel-ltd",
         "idol-ltd",
         "le-masque"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Espion LTD aporta codigos Balmain reconocibles, detalles joya y una lectura de lujo distintiva para assortments selectivos.",
+        "en": "Espion LTD brings recognizable Balmain codes, jewelry-like details, and distinctive luxury appeal for selective assortments."
+      },
+      "marketingDescription": {
+        "es": "Espion LTD se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 3 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Espion LTD is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 3 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Espion LTD combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Espion LTD combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Pensado para construir una seleccion con identidad de Maison y argumentos de venta memorables.",
+        "en": "Designed to build an assortment with Maison identity and memorable sales arguments."
+      },
+      "materiales": [
+        "POLYAMIDE INJECTION",
+        "CELLULOSE PROPIONATE INJECTION REMOVABLE NOSE: RUBBER",
+        "6-BASE HIGH CONTRAST NYLON"
+      ],
+      "technicalDetails": {
+        "frame": "POLYAMIDE INJECTION",
+        "temple": "CELLULOSE PROPIONATE INJECTION REMOVABLE NOSE: RUBBER",
+        "nosePads": "",
+        "lenses": "6-BASE HIGH CONTRAST NYLON",
+        "size": "138 □ - 118 (calibre - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Espion LTD de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Espion LTD. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 89.",
+        "en": "SS26 catalogue, page 89."
+      }
     },
     {
       "slug": "idol-ltd",
@@ -3405,7 +4858,45 @@
         "colonel-ltd",
         "espion",
         "le-masque"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Idol LTD aporta codigos Balmain reconocibles, detalles joya y una lectura de lujo distintiva para assortments selectivos.",
+        "en": "Idol LTD brings recognizable Balmain codes, jewelry-like details, and distinctive luxury appeal for selective assortments."
+      },
+      "marketingDescription": {
+        "es": "Idol LTD se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 3 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Idol LTD is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 3 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Idol LTD combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Idol LTD combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Pensado para construir una seleccion con identidad de Maison y argumentos de venta memorables.",
+        "en": "Designed to build an assortment with Maison identity and memorable sales arguments."
+      },
+      "materiales": [
+        "JAPANESE TITANIUM WITH INJECTION",
+        "JAPANESE TITANIUM WITH INJECTION tip",
+        "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "4-BASE HIGH CONTRAST CR-39 BPS-201C"
+      ],
+      "technicalDetails": {
+        "frame": "JAPANESE TITANIUM WITH INJECTION",
+        "temple": "JAPANESE TITANIUM WITH INJECTION tip",
+        "nosePads": "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "lenses": "4-BASE HIGH CONTRAST CR-39 BPS-201C",
+        "size": "60 □ 14 - 140 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Idol LTD de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Idol LTD. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 17.",
+        "en": "SS26 catalogue, page 17."
+      }
     },
     {
       "slug": "le-masque",
@@ -3513,7 +5004,45 @@
         "colonel-ltd",
         "espion",
         "idol-ltd"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Le Masque aporta codigos Balmain reconocibles, detalles joya y una lectura de lujo distintiva para assortments selectivos.",
+        "en": "Le Masque brings recognizable Balmain codes, jewelry-like details, and distinctive luxury appeal for selective assortments."
+      },
+      "marketingDescription": {
+        "es": "Le Masque se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 5 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Le Masque is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 5 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Le Masque combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Le Masque combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Pensado para construir una seleccion con identidad de Maison y argumentos de venta memorables.",
+        "en": "Designed to build an assortment with Maison identity and memorable sales arguments."
+      },
+      "materiales": [
+        "JAPANESE TITANIUM",
+        "JAPANESE ACETATE + TITANIUM",
+        "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS BPS-146D-",
+        "2-BASE NYLON Gold - Crystal Grey with Gold Flakes w/ Shield: Amber"
+      ],
+      "technicalDetails": {
+        "frame": "JAPANESE TITANIUM",
+        "temple": "JAPANESE ACETATE + TITANIUM",
+        "nosePads": "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS BPS-146D-",
+        "lenses": "2-BASE NYLON Gold - Crystal Grey with Gold Flakes w/ Shield: Amber",
+        "size": "147 □ - 142 (calibre - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Le Masque de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Le Masque. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 92.",
+        "en": "SS26 catalogue, page 92."
+      }
     },
     {
       "slug": "legend",
@@ -3595,7 +5124,45 @@
         "colonel-ltd",
         "espion",
         "idol-ltd"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Legend aporta codigos Balmain reconocibles, detalles joya y una lectura de lujo distintiva para assortments selectivos.",
+        "en": "Legend brings recognizable Balmain codes, jewelry-like details, and distinctive luxury appeal for selective assortments."
+      },
+      "marketingDescription": {
+        "es": "Legend se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 3 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Legend is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 3 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Legend combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Legend combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Pensado para construir una seleccion con identidad de Maison y argumentos de venta memorables.",
+        "en": "Designed to build an assortment with Maison identity and memorable sales arguments."
+      },
+      "materiales": [
+        "TITANIUM WITH SIDESHIELD",
+        "JAPANESE ACETATE + TITANIUM",
+        "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "4-BASE HIGH CONTRAST CR-39 BPS-181C"
+      ],
+      "technicalDetails": {
+        "frame": "TITANIUM WITH SIDESHIELD",
+        "temple": "JAPANESE ACETATE + TITANIUM",
+        "nosePads": "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "lenses": "4-BASE HIGH CONTRAST CR-39 BPS-181C",
+        "size": "62 □ 13 - 140 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Legend de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Legend. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 57.",
+        "en": "SS26 catalogue, page 57."
+      }
     },
     {
       "slug": "olivier",
@@ -3690,7 +5257,44 @@
         "colonel-ltd",
         "espion",
         "idol-ltd"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Olivier aporta codigos Balmain reconocibles, detalles joya y una lectura de lujo distintiva para assortments selectivos.",
+        "en": "Olivier brings recognizable Balmain codes, jewelry-like details, and distinctive luxury appeal for selective assortments."
+      },
+      "marketingDescription": {
+        "es": "Olivier se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 4 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Olivier is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 4 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Olivier combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Olivier combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Pensado para construir una seleccion con identidad de Maison y argumentos de venta memorables.",
+        "en": "Designed to build an assortment with Maison identity and memorable sales arguments."
+      },
+      "materiales": [
+        "JAPANESE ACETATE",
+        "JAPANESE ACETATE BPS-159D-",
+        "2-BASE HIGH CONTRAST CR-39 Leather Brown - White Gold w/"
+      ],
+      "technicalDetails": {
+        "frame": "JAPANESE ACETATE",
+        "temple": "JAPANESE ACETATE BPS-159D-",
+        "nosePads": "",
+        "lenses": "2-BASE HIGH CONTRAST CR-39 Leather Brown - White Gold w/",
+        "size": "42 □ 28 - 145 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Olivier de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Olivier. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 74.",
+        "en": "SS26 catalogue, page 74."
+      }
     },
     {
       "slug": "olivier-ii",
@@ -3746,7 +5350,43 @@
         "colonel-ltd",
         "espion",
         "idol-ltd"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Olivier II LTD aporta codigos Balmain reconocibles, detalles joya y una lectura de lujo distintiva para assortments selectivos.",
+        "en": "Olivier II LTD brings recognizable Balmain codes, jewelry-like details, and distinctive luxury appeal for selective assortments."
+      },
+      "marketingDescription": {
+        "es": "Olivier II LTD se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 1 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Olivier II LTD is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 1 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Olivier II LTD combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Olivier II LTD combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Pensado para construir una seleccion con identidad de Maison y argumentos de venta memorables.",
+        "en": "Designed to build an assortment with Maison identity and memorable sales arguments."
+      },
+      "materiales": [
+        "JAPANESE ACETATE + TITANIUM",
+        "2-BASE HIGH CONTRAST CR"
+      ],
+      "technicalDetails": {
+        "frame": "JAPANESE ACETATE + TITANIUM",
+        "temple": "JAPANESE ACETATE + TITANIUM",
+        "nosePads": "",
+        "lenses": "2-BASE HIGH CONTRAST CR",
+        "size": "42 □ 28 - 145 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Olivier II LTD de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Olivier II LTD. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 72.",
+        "en": "SS26 catalogue, page 72."
+      }
     },
     {
       "slug": "or",
@@ -3857,7 +5497,45 @@
         "colonel-ltd",
         "espion",
         "idol-ltd"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "O.R. aporta codigos Balmain reconocibles, detalles joya y una lectura de lujo distintiva para assortments selectivos.",
+        "en": "O.R. brings recognizable Balmain codes, jewelry-like details, and distinctive luxury appeal for selective assortments."
+      },
+      "marketingDescription": {
+        "es": "O.R. se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 5 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "O.R. is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 5 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de O.R. combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "O.R. combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Pensado para construir una seleccion con identidad de Maison y argumentos de venta memorables.",
+        "en": "Designed to build an assortment with Maison identity and memorable sales arguments."
+      },
+      "materiales": [
+        "JAPANESE TITANIUM WITH INJECTION",
+        "JAPANESE TITANIUM WITH ACETATE",
+        "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "4-BASE HIGH CONTRAST CR-39 BPS-104H"
+      ],
+      "technicalDetails": {
+        "frame": "JAPANESE TITANIUM WITH INJECTION",
+        "temple": "JAPANESE TITANIUM WITH ACETATE",
+        "nosePads": "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "lenses": "4-BASE HIGH CONTRAST CR-39 BPS-104H",
+        "size": "59 □ 16 - 140 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo O.R. de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model O.R.. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 87.",
+        "en": "SS26 catalogue, page 87."
+      }
     },
     {
       "slug": "wonder-boy",
@@ -3913,7 +5591,44 @@
         "colonel-ltd",
         "espion",
         "idol-ltd"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Wonder Boy LTD aporta codigos Balmain reconocibles, detalles joya y una lectura de lujo distintiva para assortments selectivos.",
+        "en": "Wonder Boy LTD brings recognizable Balmain codes, jewelry-like details, and distinctive luxury appeal for selective assortments."
+      },
+      "marketingDescription": {
+        "es": "Wonder Boy LTD se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 1 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Wonder Boy LTD is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 1 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Wonder Boy LTD combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Wonder Boy LTD combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Pensado para construir una seleccion con identidad de Maison y argumentos de venta memorables.",
+        "en": "Designed to build an assortment with Maison identity and memorable sales arguments."
+      },
+      "materiales": [
+        "JAPANESE TITANIUM",
+        "JAPANESE TITANIUM + SIDE LENSES and PLASTIC TEMPLE TIP",
+        "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS BPS-102N-146 SUN MASK: 2-BASE HIGH CONTRAST CR-39 Rose Gold - Black - Champagne Mirror Side Lens w/PB pattern"
+      ],
+      "technicalDetails": {
+        "frame": "JAPANESE TITANIUM",
+        "temple": "JAPANESE TITANIUM + SIDE LENSES and PLASTIC TEMPLE TIP",
+        "nosePads": "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS BPS-102N-146 SUN MASK: 2-BASE HIGH CONTRAST CR-39 Rose Gold - Black - Champagne Mirror Side Lens w/PB pattern",
+        "lenses": "",
+        "size": "146 - 145 (lens - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Wonder Boy LTD de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Wonder Boy LTD. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 58.",
+        "en": "SS26 catalogue, page 58."
+      }
     },
     {
       "slug": "b-army",
@@ -3994,7 +5709,43 @@
         "b-army-iii",
         "b-army-rx",
         "b-eye"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "B-Army aporta siluetas refinadas, acabados premium y una lectura comercial elegante para seleccion profesional.",
+        "en": "B-Army brings refined silhouettes, premium finishes, and elegant commercial appeal for professional assortments."
+      },
+      "marketingDescription": {
+        "es": "B-Army se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 3 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "B-Army is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 3 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de B-Army combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "B-Army combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Adecuado para opticas que necesitan amplitud premium, rotacion comercial y una lectura elegante.",
+        "en": "Suited to optical partners needing premium breadth, commercial rotation, and elegant appeal."
+      },
+      "materiales": [
+        "JAPANESE ACETATE",
+        "4-BASE HIGH CONTRAST CR"
+      ],
+      "technicalDetails": {
+        "frame": "JAPANESE ACETATE",
+        "temple": "JAPANESE ACETATE",
+        "nosePads": "",
+        "lenses": "4-BASE HIGH CONTRAST CR",
+        "size": "52 □ 17 - 147 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo B-Army de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model B-Army. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 80.",
+        "en": "SS26 catalogue, page 80."
+      }
     },
     {
       "slug": "b-army-ii",
@@ -4062,7 +5813,43 @@
         "b-army-iii",
         "b-army-rx",
         "b-eye"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "B-Army II aporta siluetas refinadas, acabados premium y una lectura comercial elegante para seleccion profesional.",
+        "en": "B-Army II brings refined silhouettes, premium finishes, and elegant commercial appeal for professional assortments."
+      },
+      "marketingDescription": {
+        "es": "B-Army II se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 2 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "B-Army II is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 2 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de B-Army II combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "B-Army II combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Adecuado para opticas que necesitan amplitud premium, rotacion comercial y una lectura elegante.",
+        "en": "Suited to optical partners needing premium breadth, commercial rotation, and elegant appeal."
+      },
+      "materiales": [
+        "JAPANESE ACETATE",
+        "4-BASE HIGH CONTRAST CR"
+      ],
+      "technicalDetails": {
+        "frame": "JAPANESE ACETATE",
+        "temple": "JAPANESE ACETATE",
+        "nosePads": "",
+        "lenses": "4-BASE HIGH CONTRAST CR",
+        "size": "54 □ 20 - 145 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo B-Army II de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model B-Army II. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 79.",
+        "en": "SS26 catalogue, page 79."
+      }
     },
     {
       "slug": "b-army-iii",
@@ -4143,7 +5930,43 @@
         "b-army-ii",
         "b-army-rx",
         "b-eye"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "B-Army III aporta siluetas refinadas, acabados premium y una lectura comercial elegante para seleccion profesional.",
+        "en": "B-Army III brings refined silhouettes, premium finishes, and elegant commercial appeal for professional assortments."
+      },
+      "marketingDescription": {
+        "es": "B-Army III se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 3 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "B-Army III is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 3 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de B-Army III combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "B-Army III combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Adecuado para opticas que necesitan amplitud premium, rotacion comercial y una lectura elegante.",
+        "en": "Suited to optical partners needing premium breadth, commercial rotation, and elegant appeal."
+      },
+      "materiales": [
+        "JAPANESE ACETATE",
+        "4-BASE HIGH CONTRAST CR"
+      ],
+      "technicalDetails": {
+        "frame": "JAPANESE ACETATE",
+        "temple": "JAPANESE ACETATE",
+        "nosePads": "",
+        "lenses": "4-BASE HIGH CONTRAST CR",
+        "size": "54 □ 18 - 145 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo B-Army III de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model B-Army III. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 78.",
+        "en": "SS26 catalogue, page 78."
+      }
     },
     {
       "slug": "b-army-rx",
@@ -4220,7 +6043,43 @@
         "b-army-ii",
         "b-army-iii",
         "b-eye"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "B-Army RX aporta siluetas refinadas, acabados premium y una lectura comercial elegante para seleccion profesional.",
+        "en": "B-Army RX brings refined silhouettes, premium finishes, and elegant commercial appeal for professional assortments."
+      },
+      "marketingDescription": {
+        "es": "B-Army RX se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 3 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "B-Army RX is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 3 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de B-Army RX combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "B-Army RX combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Adecuado para opticas que necesitan amplitud premium, rotacion comercial y una lectura elegante.",
+        "en": "Suited to optical partners needing premium breadth, commercial rotation, and elegant appeal."
+      },
+      "materiales": [
+        "JAPANESE ACETATE",
+        "4-BASE HIGH CONTRAST CR-39 BPX-164D"
+      ],
+      "technicalDetails": {
+        "frame": "JAPANESE ACETATE",
+        "temple": "JAPANESE ACETATE",
+        "nosePads": "",
+        "lenses": "4-BASE HIGH CONTRAST CR-39 BPX-164D",
+        "size": "52 □ 17 - 147 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo B-Army RX de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model B-Army RX. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 81.",
+        "en": "SS26 catalogue, page 81."
+      }
     },
     {
       "slug": "b-eye",
@@ -4315,7 +6174,44 @@
         "b-army-ii",
         "b-army-iii",
         "b-army-rx"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "B-Eye aporta siluetas refinadas, acabados premium y una lectura comercial elegante para seleccion profesional.",
+        "en": "B-Eye brings refined silhouettes, premium finishes, and elegant commercial appeal for professional assortments."
+      },
+      "marketingDescription": {
+        "es": "B-Eye se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 4 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "B-Eye is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 4 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de B-Eye combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "B-Eye combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Adecuado para opticas que necesitan amplitud premium, rotacion comercial y una lectura elegante.",
+        "en": "Suited to optical partners needing premium breadth, commercial rotation, and elegant appeal."
+      },
+      "materiales": [
+        "JAPANESE ACETATE + TITANIUM DETAIL",
+        "JAPANESE ACETATE + TITANIUM DETAIL Leather Brown - White Gold",
+        "2-BASE HIGH CONTRAST CR-39 w/ Dark Brown to Light Brown - AR"
+      ],
+      "technicalDetails": {
+        "frame": "JAPANESE ACETATE + TITANIUM DETAIL",
+        "temple": "JAPANESE ACETATE + TITANIUM DETAIL Leather Brown - White Gold",
+        "nosePads": "",
+        "lenses": "2-BASE HIGH CONTRAST CR-39 w/ Dark Brown to Light Brown - AR",
+        "size": "54 □ 18 - 145 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo B-Eye de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model B-Eye. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 96.",
+        "en": "SS26 catalogue, page 96."
+      }
     },
     {
       "slug": "b-grand",
@@ -4409,7 +6305,44 @@
         "b-army-ii",
         "b-army-iii",
         "b-army-rx"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "B-Grand aporta siluetas refinadas, acabados premium y una lectura comercial elegante para seleccion profesional.",
+        "en": "B-Grand brings refined silhouettes, premium finishes, and elegant commercial appeal for professional assortments."
+      },
+      "marketingDescription": {
+        "es": "B-Grand se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 4 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "B-Grand is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 4 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de B-Grand combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "B-Grand combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Adecuado para opticas que necesitan amplitud premium, rotacion comercial y una lectura elegante.",
+        "en": "Suited to optical partners needing premium breadth, commercial rotation, and elegant appeal."
+      },
+      "materiales": [
+        "JAPANESE ACETATE + TITANIUM DETAILS",
+        "JAPANESE ACETATE BPS-144D-",
+        "4-BASE HIGH CONTRAST CR-39 Matte Black - Black Rhodium"
+      ],
+      "technicalDetails": {
+        "frame": "JAPANESE ACETATE + TITANIUM DETAILS",
+        "temple": "JAPANESE ACETATE BPS-144D-",
+        "nosePads": "",
+        "lenses": "4-BASE HIGH CONTRAST CR-39 Matte Black - Black Rhodium",
+        "size": "57 □ 14 - 145 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo B-Grand de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model B-Grand. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 97.",
+        "en": "SS26 catalogue, page 97."
+      }
     },
     {
       "slug": "b-i",
@@ -4506,7 +6439,43 @@
         "b-army-ii",
         "b-army-iii",
         "b-army-rx"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "B-I aporta siluetas refinadas, acabados premium y una lectura comercial elegante para seleccion profesional.",
+        "en": "B-I brings refined silhouettes, premium finishes, and elegant commercial appeal for professional assortments."
+      },
+      "marketingDescription": {
+        "es": "B-I se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 6 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "B-I is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 6 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de B-I combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "B-I combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Adecuado para opticas que necesitan amplitud premium, rotacion comercial y una lectura elegante.",
+        "en": "Suited to optical partners needing premium breadth, commercial rotation, and elegant appeal."
+      },
+      "materiales": [
+        "JAPANESE ACETATE",
+        "4-BASE HIGH CONTRAST CR"
+      ],
+      "technicalDetails": {
+        "frame": "JAPANESE ACETATE",
+        "temple": "JAPANESE ACETATE",
+        "nosePads": "",
+        "lenses": "4-BASE HIGH CONTRAST CR",
+        "size": "56 □ 18 - 145 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo B-I de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model B-I. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 93, 94.",
+        "en": "SS26 catalogue, page 93, 94."
+      }
     },
     {
       "slug": "b-muse",
@@ -4587,7 +6556,44 @@
         "b-army-ii",
         "b-army-iii",
         "b-army-rx"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "B-Muse aporta siluetas refinadas, acabados premium y una lectura comercial elegante para seleccion profesional.",
+        "en": "B-Muse brings refined silhouettes, premium finishes, and elegant commercial appeal for professional assortments."
+      },
+      "marketingDescription": {
+        "es": "B-Muse se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 3 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "B-Muse is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 3 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de B-Muse combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "B-Muse combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Adecuado para opticas que necesitan amplitud premium, rotacion comercial y una lectura elegante.",
+        "en": "Suited to optical partners needing premium breadth, commercial rotation, and elegant appeal."
+      },
+      "materiales": [
+        "JAPANESE ACETATE + TITANIUM DETAILS",
+        "JAPANESE ACETATE",
+        "4-BASE HIGH CONTRAST CR-39 Cloudy Nude - White Gold"
+      ],
+      "technicalDetails": {
+        "frame": "JAPANESE ACETATE + TITANIUM DETAILS",
+        "temple": "JAPANESE ACETATE",
+        "nosePads": "",
+        "lenses": "4-BASE HIGH CONTRAST CR-39 Cloudy Nude - White Gold",
+        "size": "55 □ 16 - 145 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo B-Muse de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model B-Muse. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 98.",
+        "en": "SS26 catalogue, page 98."
+      }
     },
     {
       "slug": "formee",
@@ -4668,7 +6674,42 @@
         "b-army-ii",
         "b-army-iii",
         "b-army-rx"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Formee aporta siluetas refinadas, acabados premium y una lectura comercial elegante para seleccion profesional.",
+        "en": "Formee brings refined silhouettes, premium finishes, and elegant commercial appeal for professional assortments."
+      },
+      "marketingDescription": {
+        "es": "Formee se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 3 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Formee is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 3 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Formee combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Formee combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Adecuado para opticas que necesitan amplitud premium, rotacion comercial y una lectura elegante.",
+        "en": "Suited to optical partners needing premium breadth, commercial rotation, and elegant appeal."
+      },
+      "materiales": [
+        "JAPANESE ACETATE"
+      ],
+      "technicalDetails": {
+        "frame": "JAPANESE ACETATE",
+        "temple": "JAPANESE ACETATE",
+        "nosePads": "",
+        "lenses": "",
+        "size": "52 □ 19 - 145 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Formee de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Formee. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 115.",
+        "en": "SS26 catalogue, page 115."
+      }
     },
     {
       "slug": "francoise",
@@ -4749,7 +6790,44 @@
         "b-army-ii",
         "b-army-iii",
         "b-army-rx"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Francoise aporta siluetas refinadas, acabados premium y una lectura comercial elegante para seleccion profesional.",
+        "en": "Francoise brings refined silhouettes, premium finishes, and elegant commercial appeal for professional assortments."
+      },
+      "marketingDescription": {
+        "es": "Francoise se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 3 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Francoise is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 3 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Francoise combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Francoise combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Adecuado para opticas que necesitan amplitud premium, rotacion comercial y una lectura elegante.",
+        "en": "Suited to optical partners needing premium breadth, commercial rotation, and elegant appeal."
+      },
+      "materiales": [
+        "JAPANESE ACETATE + TITANIUM",
+        "TITANIUM WITH JAPANESE ACETATE TIP",
+        "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS"
+      ],
+      "technicalDetails": {
+        "frame": "JAPANESE ACETATE + TITANIUM",
+        "temple": "TITANIUM WITH JAPANESE ACETATE TIP",
+        "nosePads": "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "lenses": "",
+        "size": "54 □ 17 - 145 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Francoise de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Francoise. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 27.",
+        "en": "SS26 catalogue, page 27."
+      }
     },
     {
       "slug": "francoise-ii",
@@ -4871,7 +6949,45 @@
         "b-army-ii",
         "b-army-iii",
         "b-army-rx"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Francoise II aporta siluetas refinadas, acabados premium y una lectura comercial elegante para seleccion profesional.",
+        "en": "Francoise II brings refined silhouettes, premium finishes, and elegant commercial appeal for professional assortments."
+      },
+      "marketingDescription": {
+        "es": "Francoise II se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 7 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Francoise II is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 7 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Francoise II combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Francoise II combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Adecuado para opticas que necesitan amplitud premium, rotacion comercial y una lectura elegante.",
+        "en": "Suited to optical partners needing premium breadth, commercial rotation, and elegant appeal."
+      },
+      "materiales": [
+        "JAPANESE ACETATE + TITANIUM",
+        "TITANIUM WITH JAPANESE ACETATE TIP",
+        "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "4-BASE HIGH CONTRAST CR-39 BPX-184C"
+      ],
+      "technicalDetails": {
+        "frame": "JAPANESE ACETATE + TITANIUM",
+        "temple": "TITANIUM WITH JAPANESE ACETATE TIP",
+        "nosePads": "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "lenses": "4-BASE HIGH CONTRAST CR-39 BPX-184C",
+        "size": "57 □ 14 - 145 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Francoise II de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Francoise II. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 25.",
+        "en": "SS26 catalogue, page 25."
+      }
     },
     {
       "slug": "francoise-iii",
@@ -4955,7 +7071,43 @@
         "b-army-ii",
         "b-army-iii",
         "b-army-rx"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Francoise III aporta siluetas refinadas, acabados premium y una lectura comercial elegante para seleccion profesional.",
+        "en": "Francoise III brings refined silhouettes, premium finishes, and elegant commercial appeal for professional assortments."
+      },
+      "marketingDescription": {
+        "es": "Francoise III se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 3 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Francoise III is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 3 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Francoise III combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Francoise III combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Adecuado para opticas que necesitan amplitud premium, rotacion comercial y una lectura elegante.",
+        "en": "Suited to optical partners needing premium breadth, commercial rotation, and elegant appeal."
+      },
+      "materiales": [
+        "JAPANESE ACETATE + TITANIUM",
+        "TITANIUM WITH JAPANESE ACETATE TIP"
+      ],
+      "technicalDetails": {
+        "frame": "JAPANESE ACETATE + TITANIUM",
+        "temple": "TITANIUM WITH JAPANESE ACETATE TIP",
+        "nosePads": "",
+        "lenses": "",
+        "size": "57 □ 17 - 145 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Francoise III de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Francoise III. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 24.",
+        "en": "SS26 catalogue, page 24."
+      }
     },
     {
       "slug": "imperial",
@@ -5011,7 +7163,44 @@
         "b-army-ii",
         "b-army-iii",
         "b-army-rx"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Imperial aporta siluetas refinadas, acabados premium y una lectura comercial elegante para seleccion profesional.",
+        "en": "Imperial brings refined silhouettes, premium finishes, and elegant commercial appeal for professional assortments."
+      },
+      "marketingDescription": {
+        "es": "Imperial se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 1 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Imperial is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 1 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Imperial combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Imperial combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Adecuado para opticas que necesitan amplitud premium, rotacion comercial y una lectura elegante.",
+        "en": "Suited to optical partners needing premium breadth, commercial rotation, and elegant appeal."
+      },
+      "materiales": [
+        "JAPANESE ACETATE",
+        "JAPANESE TITANIUM WITH ACETATE BPS-145F-",
+        "4-BASE HIGH CONTRAST CR-39 Leather Brown - Brown w/ Dark Brown to Light Brown - AR"
+      ],
+      "technicalDetails": {
+        "frame": "JAPANESE ACETATE",
+        "temple": "JAPANESE TITANIUM WITH ACETATE BPS-145F-",
+        "nosePads": "",
+        "lenses": "4-BASE HIGH CONTRAST CR-39 Leather Brown - Brown w/ Dark Brown to Light Brown - AR",
+        "size": "53 □ 17 - 143 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Imperial de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Imperial. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 19.",
+        "en": "SS26 catalogue, page 19."
+      }
     },
     {
       "slug": "imperial-ii",
@@ -5095,7 +7284,44 @@
         "b-army-ii",
         "b-army-iii",
         "b-army-rx"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Imperial II aporta siluetas refinadas, acabados premium y una lectura comercial elegante para seleccion profesional.",
+        "en": "Imperial II brings refined silhouettes, premium finishes, and elegant commercial appeal for professional assortments."
+      },
+      "marketingDescription": {
+        "es": "Imperial II se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 3 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Imperial II is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 3 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Imperial II combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Imperial II combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Adecuado para opticas que necesitan amplitud premium, rotacion comercial y una lectura elegante.",
+        "en": "Suited to optical partners needing premium breadth, commercial rotation, and elegant appeal."
+      },
+      "materiales": [
+        "ACETATE",
+        "TITANIUM WITH ACETATE",
+        "4-BASE HIGH CONTRAST CR-39 BPS-196C"
+      ],
+      "technicalDetails": {
+        "frame": "ACETATE",
+        "temple": "TITANIUM WITH ACETATE",
+        "nosePads": "",
+        "lenses": "4-BASE HIGH CONTRAST CR-39 BPS-196C",
+        "size": "53 □ 21 - 143 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Imperial II de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Imperial II. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 18.",
+        "en": "SS26 catalogue, page 18."
+      }
     },
     {
       "slug": "majestic",
@@ -5177,7 +7403,43 @@
         "b-army-ii",
         "b-army-iii",
         "b-army-rx"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Majestic aporta siluetas refinadas, acabados premium y una lectura comercial elegante para seleccion profesional.",
+        "en": "Majestic brings refined silhouettes, premium finishes, and elegant commercial appeal for professional assortments."
+      },
+      "marketingDescription": {
+        "es": "Majestic se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 3 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Majestic is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 3 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Majestic combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Majestic combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Adecuado para opticas que necesitan amplitud premium, rotacion comercial y una lectura elegante.",
+        "en": "Suited to optical partners needing premium breadth, commercial rotation, and elegant appeal."
+      },
+      "materiales": [
+        "JAPANESE ACETATE + TITANIUM DETAIL",
+        "JAPANESE ACETATE"
+      ],
+      "technicalDetails": {
+        "frame": "JAPANESE ACETATE + TITANIUM DETAIL",
+        "temple": "JAPANESE ACETATE",
+        "nosePads": "",
+        "lenses": "",
+        "size": "54 □ 20 - 145 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Majestic de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Majestic. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 117.",
+        "en": "SS26 catalogue, page 117."
+      }
     },
     {
       "slug": "pulse",
@@ -5260,7 +7522,43 @@
         "b-army-ii",
         "b-army-iii",
         "b-army-rx"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Pulse aporta siluetas refinadas, acabados premium y una lectura comercial elegante para seleccion profesional.",
+        "en": "Pulse brings refined silhouettes, premium finishes, and elegant commercial appeal for professional assortments."
+      },
+      "marketingDescription": {
+        "es": "Pulse se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 3 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Pulse is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 3 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Pulse combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Pulse combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Adecuado para opticas que necesitan amplitud premium, rotacion comercial y una lectura elegante.",
+        "en": "Suited to optical partners needing premium breadth, commercial rotation, and elegant appeal."
+      },
+      "materiales": [
+        "JAPANESE ACETATE + TITANIUM DETAIL",
+        "4-BASE HIGH CONTRAST CR-39 BPS-185C"
+      ],
+      "technicalDetails": {
+        "frame": "JAPANESE ACETATE + TITANIUM DETAIL",
+        "temple": "JAPANESE ACETATE + TITANIUM DETAIL",
+        "nosePads": "",
+        "lenses": "4-BASE HIGH CONTRAST CR-39 BPS-185C",
+        "size": "57 □ 16 - 145 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Pulse de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Pulse. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 55.",
+        "en": "SS26 catalogue, page 55."
+      }
     },
     {
       "slug": "sentinelle-ii",
@@ -5369,7 +7667,43 @@
         "b-army-ii",
         "b-army-iii",
         "b-army-rx"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Sentinelle II aporta siluetas refinadas, acabados premium y una lectura comercial elegante para seleccion profesional.",
+        "en": "Sentinelle II brings refined silhouettes, premium finishes, and elegant commercial appeal for professional assortments."
+      },
+      "marketingDescription": {
+        "es": "Sentinelle II se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 6 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Sentinelle II is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 6 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Sentinelle II combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Sentinelle II combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Adecuado para opticas que necesitan amplitud premium, rotacion comercial y una lectura elegante.",
+        "en": "Suited to optical partners needing premium breadth, commercial rotation, and elegant appeal."
+      },
+      "materiales": [
+        "JAPANESE ACETATE + TITANIUM",
+        "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS BPX-115C-"
+      ],
+      "technicalDetails": {
+        "frame": "JAPANESE ACETATE + TITANIUM",
+        "temple": "JAPANESE ACETATE + TITANIUM",
+        "nosePads": "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS BPX-115C-",
+        "lenses": "",
+        "size": "51 □ 17 - 140 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Sentinelle II de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Sentinelle II. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 127.",
+        "en": "SS26 catalogue, page 127."
+      }
     },
     {
       "slug": "sentinelle-iv",
@@ -5450,7 +7784,43 @@
         "b-army-ii",
         "b-army-iii",
         "b-army-rx"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Sentinelle IV aporta siluetas refinadas, acabados premium y una lectura comercial elegante para seleccion profesional.",
+        "en": "Sentinelle IV brings refined silhouettes, premium finishes, and elegant commercial appeal for professional assortments."
+      },
+      "marketingDescription": {
+        "es": "Sentinelle IV se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 3 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Sentinelle IV is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 3 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Sentinelle IV combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Sentinelle IV combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Adecuado para opticas que necesitan amplitud premium, rotacion comercial y una lectura elegante.",
+        "en": "Suited to optical partners needing premium breadth, commercial rotation, and elegant appeal."
+      },
+      "materiales": [
+        "JAPANESE ACETATE + TITANIUM",
+        "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS"
+      ],
+      "technicalDetails": {
+        "frame": "JAPANESE ACETATE + TITANIUM",
+        "temple": "JAPANESE ACETATE + TITANIUM",
+        "nosePads": "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "lenses": "",
+        "size": "51 □ 17 - 140 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Sentinelle IV de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Sentinelle IV. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 126.",
+        "en": "SS26 catalogue, page 126."
+      }
     },
     {
       "slug": "sentinelle-v",
@@ -5559,7 +7929,44 @@
         "b-army-ii",
         "b-army-iii",
         "b-army-rx"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Sentinelle V aporta siluetas refinadas, acabados premium y una lectura comercial elegante para seleccion profesional.",
+        "en": "Sentinelle V brings refined silhouettes, premium finishes, and elegant commercial appeal for professional assortments."
+      },
+      "marketingDescription": {
+        "es": "Sentinelle V se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 6 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Sentinelle V is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 6 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Sentinelle V combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Sentinelle V combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Adecuado para opticas que necesitan amplitud premium, rotacion comercial y una lectura elegante.",
+        "en": "Suited to optical partners needing premium breadth, commercial rotation, and elegant appeal."
+      },
+      "materiales": [
+        "JAPANESE ACETATE",
+        "JAPANESE ACETATE + TITANIUM",
+        "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS"
+      ],
+      "technicalDetails": {
+        "frame": "JAPANESE ACETATE",
+        "temple": "JAPANESE ACETATE + TITANIUM",
+        "nosePads": "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "lenses": "",
+        "size": "48 □ 22 - 140 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Sentinelle V de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Sentinelle V. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 124.",
+        "en": "SS26 catalogue, page 124."
+      }
     },
     {
       "slug": "tempo",
@@ -5667,7 +8074,44 @@
         "b-army-ii",
         "b-army-iii",
         "b-army-rx"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Tempo aporta siluetas refinadas, acabados premium y una lectura comercial elegante para seleccion profesional.",
+        "en": "Tempo brings refined silhouettes, premium finishes, and elegant commercial appeal for professional assortments."
+      },
+      "marketingDescription": {
+        "es": "Tempo se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 6 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Tempo is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 6 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Tempo combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Tempo combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Adecuado para opticas que necesitan amplitud premium, rotacion comercial y una lectura elegante.",
+        "en": "Suited to optical partners needing premium breadth, commercial rotation, and elegant appeal."
+      },
+      "materiales": [
+        "JAPANESE ACETATE",
+        "JAPANESE ACETATE + TITANIUM",
+        "4-BASE HIGH CONTRAST CR-39 BPX-182C"
+      ],
+      "technicalDetails": {
+        "frame": "JAPANESE ACETATE",
+        "temple": "JAPANESE ACETATE + TITANIUM",
+        "nosePads": "",
+        "lenses": "4-BASE HIGH CONTRAST CR-39 BPX-182C",
+        "size": "52 □ 17 - 145 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Tempo de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Tempo. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 108.",
+        "en": "SS26 catalogue, page 108."
+      }
     },
     {
       "slug": "yvonne",
@@ -5749,7 +8193,43 @@
         "b-army-ii",
         "b-army-iii",
         "b-army-rx"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Yvonne aporta siluetas refinadas, acabados premium y una lectura comercial elegante para seleccion profesional.",
+        "en": "Yvonne brings refined silhouettes, premium finishes, and elegant commercial appeal for professional assortments."
+      },
+      "marketingDescription": {
+        "es": "Yvonne se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 3 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Yvonne is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 3 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Yvonne combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Yvonne combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Adecuado para opticas que necesitan amplitud premium, rotacion comercial y una lectura elegante.",
+        "en": "Suited to optical partners needing premium breadth, commercial rotation, and elegant appeal."
+      },
+      "materiales": [
+        "JAPANESE ACETATE",
+        "JAPANESE ACETATE + TITANIUM"
+      ],
+      "technicalDetails": {
+        "frame": "JAPANESE ACETATE",
+        "temple": "JAPANESE ACETATE + TITANIUM",
+        "nosePads": "",
+        "lenses": "",
+        "size": "52 □ 19 - 145 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Yvonne de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Yvonne. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 123.",
+        "en": "SS26 catalogue, page 123."
+      }
     },
     {
       "slug": "chevalier",
@@ -5818,7 +8298,44 @@
         "b-army-ii",
         "b-army-iii",
         "b-army-rx"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "Chevalier aporta siluetas refinadas, acabados premium y una lectura comercial elegante para seleccion profesional.",
+        "en": "Chevalier brings refined silhouettes, premium finishes, and elegant commercial appeal for professional assortments."
+      },
+      "marketingDescription": {
+        "es": "Chevalier se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 3 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "Chevalier is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 3 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de Chevalier combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "Chevalier combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Adecuado para opticas que necesitan amplitud premium, rotacion comercial y una lectura elegante.",
+        "en": "Suited to optical partners needing premium breadth, commercial rotation, and elegant appeal."
+      },
+      "materiales": [
+        "JAPANESE ACETATE + TITANIUM",
+        "JAPANESE ACETATE",
+        "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS"
+      ],
+      "technicalDetails": {
+        "frame": "JAPANESE ACETATE + TITANIUM",
+        "temple": "JAPANESE ACETATE",
+        "nosePads": "CERAMIC w/BETA-TITANIUM NOSE PAD ARMS",
+        "lenses": "",
+        "size": "48 □ 22 - 140 (lens - bridge - temple)",
+        "country": "JAPAN"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo Chevalier de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model Chevalier. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 114.",
+        "en": "SS26 catalogue, page 114."
+      }
     },
     {
       "slug": "b-aura",
@@ -5902,7 +8419,43 @@
         "b-fame",
         "b-scene",
         "b-spirit"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "B-Aura aporta energia editorial, formas visuales y variantes pensadas para activar escaparates y presentaciones.",
+        "en": "B-Aura brings editorial energy, visual shapes, and variants designed for windows and presentations."
+      },
+      "marketingDescription": {
+        "es": "B-Aura se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 3 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "B-Aura is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 3 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de B-Aura combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "B-Aura combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Recomendado para lanzamientos, escaparates y presentaciones que necesitan impacto visual inmediato.",
+        "en": "Recommended for launches, windows, and presentations requiring immediate visual impact."
+      },
+      "materiales": [
+        "ACETATE",
+        "4-BASE NYLON + A/R BPS-200C"
+      ],
+      "technicalDetails": {
+        "frame": "ACETATE",
+        "temple": "ACETATE",
+        "nosePads": "",
+        "lenses": "4-BASE NYLON + A/R BPS-200C",
+        "size": "51 □ 19 - 145 (lens - bridge - temple)",
+        "country": "ITALY"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo B-Aura de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model B-Aura. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 13.",
+        "en": "SS26 catalogue, page 13."
+      }
     },
     {
       "slug": "b-bold",
@@ -5970,7 +8523,43 @@
         "b-fame",
         "b-scene",
         "b-spirit"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "B-Bold aporta energia editorial, formas visuales y variantes pensadas para activar escaparates y presentaciones.",
+        "en": "B-Bold brings editorial energy, visual shapes, and variants designed for windows and presentations."
+      },
+      "marketingDescription": {
+        "es": "B-Bold se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 2 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "B-Bold is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 2 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de B-Bold combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "B-Bold combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Recomendado para lanzamientos, escaparates y presentaciones que necesitan impacto visual inmediato.",
+        "en": "Recommended for launches, windows, and presentations requiring immediate visual impact."
+      },
+      "materiales": [
+        "ACETATE",
+        "4-BASE NYLON"
+      ],
+      "technicalDetails": {
+        "frame": "ACETATE",
+        "temple": "ACETATE",
+        "nosePads": "",
+        "lenses": "4-BASE NYLON",
+        "size": "51 □ 24 - 145 (lens - bridge - temple)",
+        "country": "ITALY"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo B-Bold de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model B-Bold. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 53.",
+        "en": "SS26 catalogue, page 53."
+      }
     },
     {
       "slug": "b-fame",
@@ -6065,7 +8654,43 @@
         "b-bold",
         "b-scene",
         "b-spirit"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "B-Fame aporta energia editorial, formas visuales y variantes pensadas para activar escaparates y presentaciones.",
+        "en": "B-Fame brings editorial energy, visual shapes, and variants designed for windows and presentations."
+      },
+      "marketingDescription": {
+        "es": "B-Fame se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 4 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "B-Fame is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 4 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de B-Fame combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "B-Fame combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Recomendado para lanzamientos, escaparates y presentaciones que necesitan impacto visual inmediato.",
+        "en": "Recommended for launches, windows, and presentations requiring immediate visual impact."
+      },
+      "materiales": [
+        "ACETATE",
+        "4-BASE HIGH CONTRAST CR"
+      ],
+      "technicalDetails": {
+        "frame": "ACETATE",
+        "temple": "ACETATE",
+        "nosePads": "",
+        "lenses": "4-BASE HIGH CONTRAST CR",
+        "size": "54 □ 15 - 145 (lens - bridge - temple)",
+        "country": "ITALY"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo B-Fame de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model B-Fame. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 49.",
+        "en": "SS26 catalogue, page 49."
+      }
     },
     {
       "slug": "b-scene",
@@ -6149,7 +8774,43 @@
         "b-bold",
         "b-fame",
         "b-spirit"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "B-Scene aporta energia editorial, formas visuales y variantes pensadas para activar escaparates y presentaciones.",
+        "en": "B-Scene brings editorial energy, visual shapes, and variants designed for windows and presentations."
+      },
+      "marketingDescription": {
+        "es": "B-Scene se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 3 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "B-Scene is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 3 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de B-Scene combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "B-Scene combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Recomendado para lanzamientos, escaparates y presentaciones que necesitan impacto visual inmediato.",
+        "en": "Recommended for launches, windows, and presentations requiring immediate visual impact."
+      },
+      "materiales": [
+        "ACETATE",
+        "4-BASE NYLON + A/R BPS-199C"
+      ],
+      "technicalDetails": {
+        "frame": "ACETATE",
+        "temple": "ACETATE",
+        "nosePads": "",
+        "lenses": "4-BASE NYLON + A/R BPS-199C",
+        "size": "56 □ 18 - 145 (lens - bridge - temple)",
+        "country": "ITALY"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo B-Scene de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model B-Scene. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 15.",
+        "en": "SS26 catalogue, page 15."
+      }
     },
     {
       "slug": "b-spirit",
@@ -6231,7 +8892,43 @@
         "b-bold",
         "b-fame",
         "b-scene"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "B-Spirit aporta energia editorial, formas visuales y variantes pensadas para activar escaparates y presentaciones.",
+        "en": "B-Spirit brings editorial energy, visual shapes, and variants designed for windows and presentations."
+      },
+      "marketingDescription": {
+        "es": "B-Spirit se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 3 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "B-Spirit is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 3 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de B-Spirit combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "B-Spirit combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Recomendado para lanzamientos, escaparates y presentaciones que necesitan impacto visual inmediato.",
+        "en": "Recommended for launches, windows, and presentations requiring immediate visual impact."
+      },
+      "materiales": [
+        "RUBBERIZED INJECTION",
+        "2-BASE NYLON"
+      ],
+      "technicalDetails": {
+        "frame": "RUBBERIZED INJECTION",
+        "temple": "RUBBERIZED INJECTION",
+        "nosePads": "",
+        "lenses": "2-BASE NYLON",
+        "size": "56 □ 21 - 145 (lens - bridge - temple)",
+        "country": "ITALY"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo B-Spirit de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model B-Spirit. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 51.",
+        "en": "SS26 catalogue, page 51."
+      }
     },
     {
       "slug": "b-stage",
@@ -6300,7 +8997,43 @@
         "b-bold",
         "b-fame",
         "b-scene"
-      ]
+      ],
+      "descripcionCorta": {
+        "es": "B-Stage aporta energia editorial, formas visuales y variantes pensadas para activar escaparates y presentaciones.",
+        "en": "B-Stage brings editorial energy, visual shapes, and variants designed for windows and presentations."
+      },
+      "marketingDescription": {
+        "es": "B-Stage se presenta como modelo SS26 para consulta B2B con Innova. La ficha prioriza imagen frontal, 2 variantes, codigos y especificaciones del catalogo para facilitar revision comercial sin precios visibles.",
+        "en": "B-Stage is presented as an SS26 model for B2B inquiry with Innova. The product sheet prioritizes the front image, 2 variants, codes, and catalogue specifications to support commercial review without visible pricing."
+      },
+      "designStory": {
+        "es": "La propuesta de B-Stage combina el lenguaje Balmain / Valmai Eyewear con una lectura comercial clara: imagen protagonista, variantes organizadas y detalles tecnicos listos para presentacion profesional.",
+        "en": "B-Stage combines the Balmain / Valmai Eyewear language with a clear commercial read: a leading product image, organized variants, and technical details ready for professional presentation."
+      },
+      "commercialUse": {
+        "es": "Recomendado para lanzamientos, escaparates y presentaciones que necesitan impacto visual inmediato.",
+        "en": "Recommended for launches, windows, and presentations requiring immediate visual impact."
+      },
+      "materiales": [
+        "INJECTION",
+        "2-BASE NYLON"
+      ],
+      "technicalDetails": {
+        "frame": "INJECTION",
+        "temple": "INJECTION",
+        "nosePads": "",
+        "lenses": "2-BASE NYLON",
+        "size": "55 □ 17 - 145 (lens - bridge - temple)",
+        "country": "ITALY"
+      },
+      "b2bMessage": {
+        "es": "Hola, estoy interesado en informacion B2B sobre el modelo B-Stage de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+        "en": "Hello, I am interested in B2B information about the Balmain Eyewear model B-Stage. I would like to check availability and variants."
+      },
+      "fuenteCatalogo": {
+        "es": "Catalogo SS26, pagina 47.",
+        "en": "SS26 catalogue, page 47."
+      }
     }
   ]
 }

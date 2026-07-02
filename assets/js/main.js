@@ -17,12 +17,14 @@
     if (page === "catalogo") await window.BalmainCatalog.renderCatalog();
     if (page === "categoria") await window.BalmainCatalog.renderCategory();
     if (page === "producto") await window.BalmainCatalog.renderProduct();
+    await window.BalmainCatalog.renderContactSurfaces();
     await window.BalmainSearch?.initSearch();
 
     window.addEventListener("balmain:languagechange", async () => {
       if (page === "home") await window.BalmainCatalog.renderHome();
       if (page === "categoria") await window.BalmainCatalog.renderCategory();
       if (page === "producto") await window.BalmainCatalog.renderProduct();
+      await window.BalmainCatalog.renderContactSurfaces();
     });
   }
 

@@ -4,4 +4,5 @@ Thumbs.db
 
 # Source campaign media is kept locally. The website uses optimized copies
 # under assets/images so GitHub Pages does not receive multi-GB video folders.
-Marketing/
+/Marketing/
+tmp/
