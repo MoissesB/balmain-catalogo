@@ -114,6 +114,58 @@
     return allImages(product).slice(0, 3);
   }
 
+  function seoDescription(product) {
+    const description =
+      pick(product.metaDescription) ||
+      pick(product.descripcionCorta) ||
+      pick(product.marketingDescription) ||
+      pick(product.descripcion);
+    return String(description || "")
+      .replace(/\s+/g, " ")
+      .trim()
+      .slice(0, 158);
+  }
+
+  function ensureMeta(selector, attrs) {
+    let node = document.head.querySelector(selector);
+    if (!node) {
+      node = document.createElement("meta");
+      Object.entries(attrs).forEach(([key, value]) => node.setAttribute(key, value));
+      document.head.appendChild(node);
+    }
+    return node;
+  }
+
+  function updatePageSeo({ title, description, image, canonical }) {
+    if (title) document.title = title;
+    const cleanDescription = String(description || "").trim();
+    if (cleanDescription) {
+      ensureMeta('meta[name="description"]', { name: "description" }).setAttribute("content", cleanDescription);
+      ensureMeta('meta[property="og:description"]', { property: "og:description" }).setAttribute("content", cleanDescription);
+      ensureMeta('meta[name="twitter:description"]', { name: "twitter:description" }).setAttribute("content", cleanDescription);
+    }
+    if (title) {
+      ensureMeta('meta[property="og:title"]', { property: "og:title" }).setAttribute("content", title);
+      ensureMeta('meta[name="twitter:title"]', { name: "twitter:title" }).setAttribute("content", title);
+    }
+    if (image) {
+      const imageUrl = new URL(asset(image), window.location.href).href;
+      ensureMeta('meta[property="og:image"]', { property: "og:image" }).setAttribute("content", imageUrl);
+      ensureMeta('meta[name="twitter:image"]', { name: "twitter:image" }).setAttribute("content", imageUrl);
+    }
+    ensureMeta('meta[name="twitter:card"]', { name: "twitter:card" }).setAttribute("content", "summary_large_image");
+    ensureMeta('meta[property="og:type"]', { property: "og:type" }).setAttribute("content", "website");
+    if (canonical) {
+      let link = document.head.querySelector('link[rel="canonical"]');
+      if (!link) {
+        link = document.createElement("link");
+        link.rel = "canonical";
+        document.head.appendChild(link);
+      }
+      link.href = canonical;
+    }
+  }
+
   function placeholder(label) {
     return `<div class="image-placeholder"><span>${escapeHtml(label || "BALMAIN")}</span></div>`;
   }
@@ -171,7 +223,7 @@
       ? images
           .map(
             (image, index) =>
-              `<img class="card-img card-img-${index + 1}" src="${asset(image.src)}" alt="${title} ${escapeHtml(image.code || image.slot)}" loading="lazy">`
+              `<img class="card-img card-img-${index + 1}" src="${asset(image.src)}" alt="${title} ${escapeHtml(image.code || image.slot)}" loading="lazy" decoding="async">`
           )
           .join("")
       : placeholder(title);
@@ -181,7 +233,6 @@
         <a class="product-media ${imageClass}" href="${productHref(product.slug)}" aria-label="${title}">
           <span class="product-image-stack">${imageMarkup}</span>
           <span class="tag">${product.coleccion || "SS26"}</span>
-          ${images.length > 1 ? `<span class="media-hint">${lang() === "en" ? "Hover" : "Hover"}</span>` : ""}
         </a>
         <div class="product-card-copy">
           <p class="eyebrow">${category}</p>
@@ -222,9 +273,9 @@
         .map((category) => {
           const href = categoryLink(category.slug);
           return `
-            <article class="category-card">
+            <article class="category-card" data-category="${escapeHtml(category.slug)}">
               <a href="${href}" class="category-media">
-                ${category.imagen ? `<img src="${asset(category.imagen)}" alt="${escapeHtml(pick(category.label))}" loading="lazy">` : placeholder(pick(category.label))}
+                ${category.imagen ? `<img src="${asset(category.imagen)}" alt="${escapeHtml(pick(category.label))}" loading="lazy" decoding="async">` : placeholder(pick(category.label))}
               </a>
               <div>
                 <p class="eyebrow">${grouped[category.slug] || 0} ${lang() === "en" ? "models" : "modelos"}</p>
@@ -299,7 +350,7 @@
           </div>
         </div>
         <div class="category-context-media">
-          ${category.imagenMarketing ? `<img src="${asset(category.imagenMarketing)}" alt="${escapeHtml(pick(category.label))} marketing" loading="lazy">` : placeholder(pick(category.label))}
+          ${category.imagenMarketing ? `<img src="${asset(category.imagenMarketing)}" alt="${escapeHtml(pick(category.label))} marketing" loading="lazy" decoding="async">` : placeholder(pick(category.label))}
         </div>
       </section>
       <section class="section category-materials" id="categoryMaterials">
@@ -324,8 +375,14 @@
     const hero = document.querySelector(".category-hero");
 
     if (category?.imagen && hero) {
-      hero.style.setProperty("--hero-image", `url("${asset(category.imagen)}")`);
-      hero.style.setProperty("--hero-position", categorySlug === "fashion-drops" ? "center 34%" : "center");
+      const heroPositions = {
+        "avant-garde": "center 44%",
+        iconic: "center 48%",
+        aspirational: "center 36%",
+        "fashion-drops": "center 38%",
+      };
+      hero.style.setProperty("--hero-image", `url("${new URL(asset(category.imagen), window.location.href).href}")`);
+      hero.style.setProperty("--hero-position", heroPositions[categorySlug] || "center");
     }
     if (section && category) {
       document.getElementById("categoryContext")?.remove();
@@ -366,7 +423,7 @@
         const image = primaryImageForVariant(variant);
         return `
           <button class="variant-row ${index === 0 ? "active" : ""}" type="button" data-variant-index="${index}" data-variant-code="${escapeHtml(variant.codigo)}">
-            <span class="variant-thumb">${image ? `<img src="${asset(image)}" alt="${escapeHtml(product.nombre)} ${escapeHtml(variant.codigo)}" loading="lazy">` : placeholder(variant.codigo)}</span>
+            <span class="variant-thumb">${image ? `<img src="${asset(image)}" alt="${escapeHtml(product.nombre)} ${escapeHtml(variant.codigo)}" loading="lazy" decoding="async">` : placeholder(variant.codigo)}</span>
             <span>
               <strong>${escapeHtml(variant.codigo)}</strong>
               <small>${escapeHtml(pick(variant.color))}</small>
@@ -377,11 +434,46 @@
       .join("");
   }
 
+  function variantOptionMarkup(product, variant, index) {
+    const image = primaryImageForVariant(variant);
+    return `
+      <button class="variant-option ${index === 0 ? "active" : ""}" type="button" data-variant-index="${index}" data-variant-code="${escapeHtml(variant.codigo)}">
+        <span class="variant-option-thumb">${image ? `<img src="${asset(image)}" alt="${escapeHtml(product.nombre)} ${escapeHtml(variant.codigo)}" loading="lazy" decoding="async">` : placeholder(variant.codigo)}</span>
+        <span class="variant-option-copy">
+          <strong>${escapeHtml(variant.codigo)}</strong>
+          <small>${escapeHtml(pick(variant.color))}</small>
+          <em>${escapeHtml(product.nombre)}</em>
+        </span>
+      </button>
+    `;
+  }
+
+  function variantSelectorMarkup(product, variants) {
+    const firstVariant = variants[0] || {};
+    const firstImage = primaryImageForVariant(firstVariant);
+    return `
+      <div class="variant-select-shell" id="topVariantSelector">
+        <button class="variant-select-toggle" type="button" id="variantSelectToggle" aria-expanded="false" aria-controls="variantSelectMenu">
+          <span class="variant-select-thumb" id="variantSelectThumb">${firstImage ? `<img src="${asset(firstImage)}" alt="${escapeHtml(product.nombre)} ${escapeHtml(firstVariant.codigo || "")}" decoding="async">` : placeholder(firstVariant.codigo || product.nombre)}</span>
+          <span class="variant-select-copy">
+            <span>${lang() === "en" ? "Selected variant" : "Variante seleccionada"}</span>
+            <strong id="variantSelectCode">${escapeHtml(firstVariant.codigo || "")}</strong>
+            <small id="variantSelectColor">${escapeHtml(pick(firstVariant.color))}</small>
+          </span>
+          <span class="variant-select-icon" aria-hidden="true"></span>
+        </button>
+        <div class="variant-select-menu" id="variantSelectMenu" hidden>
+          ${variants.map((variant, index) => variantOptionMarkup(product, variant, index)).join("")}
+        </div>
+      </div>
+    `;
+  }
+
   function galleryMarkup(images) {
     return images
       .map(
         (image, index) =>
-          `<button type="button" class="${index === 0 ? "active" : ""}" data-gallery-src="${asset(image.src)}"><img src="${asset(image.src)}" alt="${escapeHtml(image.label || image.slot)}" loading="lazy"></button>`
+          `<button type="button" class="${index === 0 ? "active" : ""}" data-gallery-src="${asset(image.src)}"><img src="${asset(image.src)}" alt="${escapeHtml(image.label || image.slot)}" loading="lazy" decoding="async"></button>`
       )
       .join("");
   }
@@ -411,7 +503,6 @@
       return;
     }
 
-    document.title = `${product.nombre} | BALMAIN Eyewear B2B`;
     const variants = product.variantes || [];
     const firstVariant = variants[0] || {};
     const firstImages = variantImages(firstVariant);
@@ -420,6 +511,14 @@
     const layout = `layout-${(product.orden % 3) + 1}`;
     const productWhatsapp = whatsappHref(productMessage(product, firstVariant));
     const category = content.categorias?.[product.categoria] || {};
+    const pageTitle = `${product.nombre} ${product.coleccion || "SS26"} | BALMAIN Eyewear B2B Innova`;
+    const pageDescription = seoDescription(product);
+    updatePageSeo({
+      title: pageTitle,
+      description: pageDescription,
+      image: heroImage,
+      canonical: `${window.location.origin}${window.location.pathname}?slug=${encodeURIComponent(product.slug)}`,
+    });
 
     target.innerHTML = `
       <section class="product-hero ${layout}">
@@ -435,20 +534,14 @@
             <a class="button button-dark" id="productWhatsApp" href="${productWhatsapp}" target="_blank" rel="noopener">${lang() === "en" ? "Request information" : "Solicitar informacion"}</a>
             <a class="button button-outline" href="mailto:${contact().email}?subject=${encodeURIComponent(`Consulta B2B ${product.nombre}`)}">${lang() === "en" ? "Email Innova" : "Enviar email a Innova"}</a>
           </div>
+          ${variants.length ? variantSelectorMarkup(product, variants) : ""}
         </div>
         <div class="product-hero-media zoom-frame">
-          ${heroImage ? `<img id="mainProductImage" src="${asset(heroImage)}" alt="${escapeHtml(product.nombre)}">` : placeholder(product.nombre)}
+          ${heroImage ? `<img id="mainProductImage" src="${asset(heroImage)}" alt="${escapeHtml(product.nombre)}" decoding="async" fetchpriority="high">` : placeholder(product.nombre)}
         </div>
       </section>
 
       <section class="section product-gallery-section">
-        <div class="gallery-header">
-          <div>
-            <p class="eyebrow">${lang() === "en" ? "Variant gallery" : "Galeria por variante"}</p>
-            <h2>${lang() === "en" ? "Front, three-quarter, and detail views" : "Vista FRONT, 3-4 y detalle"}</h2>
-          </div>
-          <p>${lang() === "en" ? "Select a variant to update the main image, thumbnails, code, color, and WhatsApp inquiry." : "Selecciona una variante para cambiar imagen principal, miniaturas, codigo, color y consulta por WhatsApp."}</p>
-        </div>
         <div class="gallery-thumbs" id="galleryThumbs"></div>
       </section>
 
@@ -504,7 +597,7 @@
           <h2>${lang() === "en" ? "Premium presentation assets" : "Presentacion premium y estuches"}</h2>
           <p>${lang() === "en" ? "The SS26 catalogue includes premium packaging references for professional presentations and delivery discussions with Innova." : "El catalogo SS26 incluye referencias de packaging premium para presentaciones profesionales y conversaciones de entrega con Innova."}</p>
         </div>
-        <img src="${asset(content.site?.assets?.packaging || "assets/images/marketing/packaging-ss26.jpg")}" alt="BALMAIN Eyewear packaging SS26" loading="lazy">
+        <img src="${asset(content.site?.assets?.packaging || "assets/images/marketing/packaging-ss26.jpg")}" alt="BALMAIN Eyewear packaging SS26" loading="lazy" decoding="async">
       </section>
 
       <section class="section related-products">
@@ -526,6 +619,17 @@
       document.getElementById("selectedVariantColor").textContent = pick(variant.color) || "";
       const cta = document.getElementById("productWhatsApp");
       if (cta) cta.href = whatsappHref(productMessage(product, variant));
+      const selectCode = document.getElementById("variantSelectCode");
+      const selectColor = document.getElementById("variantSelectColor");
+      const selectThumb = document.getElementById("variantSelectThumb");
+      if (selectCode) selectCode.textContent = variant.codigo || "";
+      if (selectColor) selectColor.textContent = pick(variant.color) || "";
+      if (selectThumb) {
+        const thumbImage = primaryImageForVariant(variant);
+        selectThumb.innerHTML = thumbImage
+          ? `<img src="${asset(thumbImage)}" alt="${escapeHtml(product.nombre)} ${escapeHtml(variant.codigo || "")}" decoding="async">`
+          : placeholder(variant.codigo || product.nombre);
+      }
       document.querySelectorAll("[data-variant-index]").forEach((button) => {
         button.classList.toggle("active", Number(button.dataset.variantIndex) === index);
       });
@@ -535,7 +639,58 @@
     document.querySelectorAll("[data-variant-index]").forEach((button) => {
       button.addEventListener("click", () => updateVariant(Number(button.dataset.variantIndex || 0)));
     });
+    const selectorToggle = document.getElementById("variantSelectToggle");
+    const selectorMenu = document.getElementById("variantSelectMenu");
+    selectorToggle?.addEventListener("click", () => {
+      const isOpen = selectorToggle.getAttribute("aria-expanded") === "true";
+      selectorToggle.setAttribute("aria-expanded", String(!isOpen));
+      if (selectorMenu) selectorMenu.hidden = isOpen;
+    });
+    document.addEventListener("click", (event) => {
+      const shell = document.getElementById("topVariantSelector");
+      if (!shell || shell.contains(event.target)) return;
+      selectorToggle?.setAttribute("aria-expanded", "false");
+      if (selectorMenu) selectorMenu.hidden = true;
+    });
+    selectorMenu?.querySelectorAll("[data-variant-index]").forEach((button) => {
+      button.addEventListener("click", () => {
+        selectorToggle?.setAttribute("aria-expanded", "false");
+        if (selectorMenu) selectorMenu.hidden = true;
+      });
+    });
+    bindProductZoom();
     updateVariant(0);
+  }
+
+  function bindProductZoom() {
+    const frame = document.querySelector(".zoom-frame");
+    const image = document.getElementById("mainProductImage");
+    if (!frame || !image) return;
+    let lastPointerType = "mouse";
+
+    frame.addEventListener("pointermove", (event) => {
+      const rect = frame.getBoundingClientRect();
+      const x = ((event.clientX - rect.left) / rect.width) * 100;
+      const y = ((event.clientY - rect.top) / rect.height) * 100;
+      frame.style.setProperty("--zoom-x", `${Math.max(0, Math.min(100, x))}%`);
+      frame.style.setProperty("--zoom-y", `${Math.max(0, Math.min(100, y))}%`);
+      if (event.pointerType !== "touch") frame.classList.add("is-zooming");
+    });
+    frame.addEventListener("pointerenter", (event) => {
+      if (event.pointerType !== "touch") frame.classList.add("is-zooming");
+    });
+    frame.addEventListener("pointerdown", (event) => {
+      lastPointerType = event.pointerType || "mouse";
+    });
+    frame.addEventListener("pointerleave", () => {
+      frame.classList.remove("is-zooming", "touch-zooming");
+      frame.style.setProperty("--zoom-x", "50%");
+      frame.style.setProperty("--zoom-y", "50%");
+    });
+    frame.addEventListener("click", () => {
+      if (lastPointerType === "mouse") return;
+      frame.classList.toggle("touch-zooming");
+    });
   }
 
   async function renderContactSurfaces() {

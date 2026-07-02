@@ -28,7 +28,7 @@
       const codes = (product.variantes || []).map((variant) => variant.codigo).slice(0, 5).join(" · ");
       preview.innerHTML = image
         ? `
-          <img src="${window.BalmainCatalog.asset(image)}" alt="${escapeHtml(product.nombre)}">
+          <img src="${window.BalmainCatalog.asset(image)}" alt="${escapeHtml(product.nombre)}" decoding="async">
           <div>
             <p class="eyebrow">${escapeHtml(pick(product.categoriaLabel))}</p>
             <h3>${escapeHtml(product.nombre)}</h3>
@@ -44,7 +44,7 @@
         .cardImages(product)
         .map(
           (image) =>
-            `<button type="button" class="search-mini-thumb" data-preview-src="${window.BalmainCatalog.asset(image.src)}" aria-label="${escapeHtml(product.nombre)} ${escapeHtml(image.slot)}"><img src="${window.BalmainCatalog.asset(image.src)}" alt="" loading="lazy"></button>`
+            `<button type="button" class="search-mini-thumb" data-preview-src="${window.BalmainCatalog.asset(image.src)}" aria-label="${escapeHtml(product.nombre)} ${escapeHtml(image.slot)}"><img src="${window.BalmainCatalog.asset(image.src)}" alt="" loading="lazy" decoding="async"></button>`
         )
         .join("");
     }
@@ -62,7 +62,7 @@
           return `
             <article class="search-result" data-search-slug="${escapeHtml(product.slug)}">
               <a class="search-result-main" href="${window.BalmainCatalog.productHref(product.slug)}">
-                <span class="search-thumb">${image ? `<img src="${window.BalmainCatalog.asset(image)}" alt="${escapeHtml(product.nombre)}" loading="lazy">` : ""}</span>
+                <span class="search-thumb">${image ? `<img src="${window.BalmainCatalog.asset(image)}" alt="${escapeHtml(product.nombre)}" loading="lazy" decoding="async">` : ""}</span>
                 <span>
                   <strong>${escapeHtml(product.nombre)}</strong>
                   <small>${escapeHtml(pick(product.categoriaLabel))} · ${escapeHtml(codes)}</small>
