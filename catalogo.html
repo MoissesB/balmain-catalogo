@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo B2B | BALMAIN Eyewear SS26</title>
+  <meta name="description" content="Catálogo visual B2B de Balmain Eyewear SS26 con filtros por categoría, variantes reales y contacto comercial Innova.">
+  <link rel="canonical" href="catalogo.html">
+  <meta property="og:title" content="Catálogo B2B BALMAIN Eyewear">
+  <meta property="og:description" content="Explora modelos, variantes y códigos para consulta comercial B2B.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/home/hero-b-aura.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="catalogo" data-base="">
+  <header class="site-header" data-header>
+    <div class="topline" data-text-es="Catálogo B2B SS26 | Sin precios visibles" data-text-en="SS26 B2B Catalogue | No visible pricing">Catálogo B2B SS26 | Sin precios visibles</div>
+    <nav class="nav-shell" aria-label="Navegación principal">
+      <a class="brand" href="index.html" aria-label="BALMAIN Eyewear inicio"><img src="assets/images/marca/balmain-logo.png" alt="BALMAIN Paris"></a>
+      <button class="icon-button menu-toggle" type="button" data-menu-toggle aria-label="Abrir menú"><span></span><span></span></button>
+      <div class="nav-links" data-nav-links>
+        <a href="pages/categorias/avant-garde.html">Avant-Garde</a>
+        <a href="pages/categorias/iconic.html">Iconic</a>
+        <a href="pages/categorias/aspirational.html">Aspirational</a>
+        <a href="pages/categorias/fashion-drops.html">Fashion Drops</a>
+        <a href="index.html#historia" data-text-es="Historia" data-text-en="Heritage">Historia</a>
+        <a href="index.html#materiales" data-text-es="Materiales" data-text-en="Materials">Materiales</a>
+      </div>
+      <div class="nav-actions">
+        <button class="nav-tool" type="button" data-search-open aria-label="Abrir buscador"><span class="tool-icon">⌕</span><span data-text-es="Buscar" data-text-en="Search">Buscar</span></button>
+        <div class="language-switch"><button type="button" data-lang-option="es" class="active">ES</button><button type="button" data-lang-option="en">EN</button></div>
+        <a class="button button-dark" href="index.html#contacto" data-text-es="Contactar a Innova" data-text-en="Contact Innova">Contactar a Innova</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero compact" style="--hero-image: url('assets/images/home/hero-b-aura.jpg')">
+      <div>
+        <p class="eyebrow" data-text-es="Catálogo visual B2B" data-text-en="Visual B2B catalogue">Catálogo visual B2B</p>
+        <h1 data-text-es="Modelos, variantes y códigos para compra profesional" data-text-en="Models, variants, and codes for professional buying">Modelos, variantes y códigos para compra profesional</h1>
+        <p data-text-es="Filtra por categoría, revisa variantes disponibles y abre cada página de producto para consultar especificaciones y disponibilidad comercial." data-text-en="Filter by category, review available variants, and open each product page to check specifications and commercial availability.">Filtra por categoría, revisa variantes disponibles y abre cada página de producto para consultar especificaciones y disponibilidad comercial.</p>
+      </div>
+    </section>
+
+    <section class="catalog-toolbar section-tight">
+      <div class="filter-group" aria-label="Filtros por categoría">
+        <button type="button" class="filter-chip active" data-filter-category="all" data-text-es="Todos" data-text-en="All">Todos</button>
+        <button type="button" class="filter-chip" data-filter-category="avant-garde">Avant-Garde</button>
+        <button type="button" class="filter-chip" data-filter-category="iconic">Iconic</button>
+        <button type="button" class="filter-chip" data-filter-category="aspirational">Aspirational</button>
+        <button type="button" class="filter-chip" data-filter-category="fashion-drops">Fashion Drops</button>
+      </div>
+      <label class="catalog-search">
+        <span>⌕</span>
+        <input id="catalogSearch" type="search" data-text-placeholder-es="Buscar por modelo, código, color o material" data-text-placeholder-en="Search by model, code, color, or material" placeholder="Buscar por modelo, código, color o material">
+      </label>
+      <p class="catalog-count" id="catalogCount"></p>
+    </section>
+
+    <section class="section catalog-list">
+      <div class="product-grid" id="catalogGrid"></div>
+      <div class="empty-state" id="catalogEmpty" hidden>
+        <p data-text-es="No encontramos resultados para esa búsqueda." data-text-en="No results found for that search.">No encontramos resultados para esa búsqueda.</p>
+      </div>
+    </section>
+  </main>
+
+  <div class="search-overlay" data-search-overlay hidden>
+    <div class="search-panel" role="dialog" aria-modal="true" aria-label="Buscador de catálogo">
+      <button class="icon-button search-close" type="button" data-search-close aria-label="Cerrar buscador">×</button>
+      <div class="search-input-wrap"><span>⌕</span><input type="search" data-search-input placeholder="Buscar modelo, código, categoría, color o material"></div>
+      <div class="search-layout"><div class="search-results" data-search-results></div><div class="search-preview" data-search-preview></div></div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div><img src="assets/images/marca/balmain-logo.png" alt="BALMAIN Paris"><p data-text-es="Catálogo B2B sin precios visibles. Información comercial sujeta a confirmación de Innova." data-text-en="B2B catalogue without visible pricing. Commercial information subject to Innova confirmation.">Catálogo B2B sin precios visibles. Información comercial sujeta a confirmación de Innova.</p></div>
+    <div><a href="index.html">Home</a><a href="pages/categorias/avant-garde.html">Avant-Garde</a><a href="pages/categorias/iconic.html">Iconic</a><a href="pages/categorias/aspirational.html">Aspirational</a><a href="pages/categorias/fashion-drops.html">Fashion Drops</a></div>
+    <div><span>Innova</span><span>PENDIENTE_EMAIL_INNOVA</span><span>PENDIENTE_WHATSAPP_INNOVA</span></div>
+  </footer>
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/productos.js"></script>
+  <script src="assets/js/buscador.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

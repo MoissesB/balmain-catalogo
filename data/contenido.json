@@ -1,0 +1,174 @@
+{
+  "site": {
+    "nombre": "BALMAIN Eyewear B2B",
+    "distribuidor": "Innova",
+    "idiomaInicial": "es",
+    "assets": {
+      "hero": "assets/images/home/hero-b-aura.jpg",
+      "francoise": "assets/images/home/francoise-iii.jpg",
+      "olivier": "assets/images/home/olivier-ii-detail.jpg",
+      "avant-garde": "assets/images/catalogo/avant-garde.jpg",
+      "iconic": "assets/images/catalogo/iconic.jpg",
+      "aspirational": "assets/images/catalogo/aspirational.jpg",
+      "fashion-drops": "assets/images/catalogo/fashion-drops.jpg",
+      "brandMark": "assets/images/marca/balmain-logo.png"
+    }
+  },
+  "nav": {
+    "catalogo": {
+      "es": "Catalogo",
+      "en": "Catalogue"
+    },
+    "historia": {
+      "es": "Historia",
+      "en": "Heritage"
+    },
+    "materiales": {
+      "es": "Materiales",
+      "en": "Materials"
+    },
+    "contacto": {
+      "es": "Contacto",
+      "en": "Contact"
+    },
+    "buscar": {
+      "es": "Buscar",
+      "en": "Search"
+    },
+    "cta": {
+      "es": "Solicitar catalogo B2B",
+      "en": "Request B2B catalogue"
+    }
+  },
+  "home": {
+    "hero": {
+      "imagen": "assets/images/home/hero-b-aura.jpg",
+      "es": {
+        "eyebrow": "Catalogo B2B SS26",
+        "titulo": "Balmain Eyewear para opticas, distribuidores y compradores profesionales",
+        "subtitulo": "Una experiencia comercial premium para presentar la coleccion Balmain / Valmai Eyewear con imagenes de alto impacto, variantes reales y contacto directo con Innova.",
+        "ctaPrincipal": "Ver catalogo B2B",
+        "ctaSecundario": "Contactar a Innova"
+      },
+      "en": {
+        "eyebrow": "SS26 B2B Catalogue",
+        "titulo": "Balmain Eyewear for optical stores, distributors, and professional buyers",
+        "subtitulo": "A premium commercial experience presenting Balmain / Valmai Eyewear with high-impact visuals, real variants, and direct Innova contact.",
+        "ctaPrincipal": "View B2B catalogue",
+        "ctaSecundario": "Contact Innova"
+      }
+    },
+    "b2b": {
+      "es": "Este sitio esta orientado a opticas, retailers, cadenas, showrooms y compradores mayoristas. No opera como ecommerce: cada modelo invita a consultar disponibilidad, variantes y condiciones comerciales.",
+      "en": "This site is designed for optical stores, retailers, chains, showrooms, and wholesale buyers. It does not operate as ecommerce: each model invites availability, variant, and commercial inquiries."
+    },
+    "historia": {
+      "es": "La primera coleccion Balmain Eyewear by AKN Group se presento en las pasarelas Fall 2020 de Balmain. Desde entonces, las monturas forman parte del lenguaje visual de la Maison, con disenos de precision, artesanos especializados y materiales premium.",
+      "en": "The first Balmain Eyewear by AKN Group collection appeared on Balmain Fall 2020 runways. Since then, the frames have become part of the Maison visual language, combining precision design, specialist artisans, and premium materials."
+    },
+    "adn": {
+      "es": [
+        "Savoir-faire",
+        "Sensualidad",
+        "Elegancia",
+        "Audacia",
+        "Vision parisina",
+        "Moda y musica",
+        "Gold signature"
+      ],
+      "en": [
+        "Savoir-faire",
+        "Sensuality",
+        "Elegance",
+        "Audacity",
+        "Parisian vision",
+        "Fashion and music",
+        "Gold signature"
+      ]
+    },
+    "materiales": {
+      "es": [
+        "Japanese titanium",
+        "Japanese acetate",
+        "Italian acetate",
+        "Ceramic nose pads",
+        "Japanese lenses",
+        "Sun lenses"
+      ],
+      "en": [
+        "Japanese titanium",
+        "Japanese acetate",
+        "Italian acetate",
+        "Ceramic nose pads",
+        "Japanese lenses",
+        "Sun lenses"
+      ]
+    },
+    "contacto": {
+      "es": {
+        "titulo": "Contacto comercial Innova",
+        "texto": "Solicita disponibilidad, lista comercial, presentacion de coleccion o acceso B2B."
+      },
+      "en": {
+        "titulo": "Innova commercial contact",
+        "texto": "Request availability, commercial list, collection presentation, or B2B access."
+      }
+    }
+  },
+  "categorias": {
+    "avant-garde": {
+      "slug": "avant-garde",
+      "label": {
+        "es": "Avant-Garde",
+        "en": "Avant-Garde"
+      },
+      "descripcion": {
+        "es": "Arquitectura visual, metales de precision y siluetas de alto impacto para opticas que buscan piezas protagonistas.",
+        "en": "Visual architecture, precision metalwork, and high-impact silhouettes for optical partners seeking statement pieces."
+      },
+      "imagen": "assets/images/catalogo/avant-garde.jpg"
+    },
+    "iconic": {
+      "slug": "iconic",
+      "label": {
+        "es": "Iconic",
+        "en": "Iconic"
+      },
+      "descripcion": {
+        "es": "Modelos de firma con codigos reconocibles de la Maison: lujo distintivo, ediciones limitadas y detalles joya.",
+        "en": "Signature models with recognizable Maison codes: distinctive luxury, limited editions, and jewelry-like details."
+      },
+      "imagen": "assets/images/catalogo/iconic.jpg"
+    },
+    "aspirational": {
+      "slug": "aspirational",
+      "label": {
+        "es": "Aspirational",
+        "en": "Aspirational"
+      },
+      "descripcion": {
+        "es": "Elegancia comercial, acetatos refinados y formas deseables para ampliar una seleccion premium de venta profesional.",
+        "en": "Commercial elegance, refined acetates, and desirable shapes for expanding a premium professional assortment."
+      },
+      "imagen": "assets/images/catalogo/aspirational.jpg"
+    },
+    "fashion-drops": {
+      "slug": "fashion-drops",
+      "label": {
+        "es": "Fashion Drops",
+        "en": "Fashion Drops"
+      },
+      "descripcion": {
+        "es": "Lanzamientos de moda con lectura joven, visual y editorial, pensados para activar escaparates y presentaciones.",
+        "en": "Fashion-led launches with a young editorial attitude, designed for windows, launches, and seasonal presentations."
+      },
+      "imagen": "assets/images/catalogo/fashion-drops.jpg"
+    }
+  },
+  "contacto": {
+    "telefono": "PENDIENTE_TELEFONO_INNOVA",
+    "email": "PENDIENTE_EMAIL_INNOVA",
+    "whatsapp": "PENDIENTE_WHATSAPP_INNOVA",
+    "direccion": "PENDIENTE_DIRECCION_INNOVA"
+  }
+}
