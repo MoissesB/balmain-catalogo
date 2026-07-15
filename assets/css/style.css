@@ -1074,15 +1074,15 @@ h3 {
 }
 
 .hero-home::before {
-  filter: saturate(0.86) brightness(0.48);
-  opacity: 0.82;
+  filter: saturate(0.9) brightness(0.68);
+  opacity: 0.94;
   transform: scale(1.02);
 }
 
 .hero-home::after {
   background:
-    linear-gradient(90deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.62) 42%, rgba(0, 0, 0, 0.18)),
-    linear-gradient(0deg, rgba(0, 0, 0, 0.54), transparent 42%);
+    linear-gradient(90deg, rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.38) 42%, rgba(0, 0, 0, 0.08)),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.36), transparent 42%);
 }
 
 .category-hero::before,
@@ -1733,8 +1733,8 @@ h3 {
 
   .hero-home::after {
     background:
-      linear-gradient(90deg, rgba(0, 0, 0, 0.86), rgba(0, 0, 0, 0.55)),
-      linear-gradient(0deg, rgba(0, 0, 0, 0.6), transparent 52%);
+      linear-gradient(90deg, rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.42)),
+      linear-gradient(0deg, rgba(0, 0, 0, 0.44), transparent 52%);
   }
 
   .category-hero {

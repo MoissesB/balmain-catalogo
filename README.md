@@ -1,6 +1,6 @@
 # BALMAIN Eyewear B2B
 
-Sitio estatico HTML/CSS/JavaScript para publicar en GitHub Pages como catalogo B2B premium de Balmain / Valmai Eyewear para Innova.
+Sitio estatico HTML/CSS/JavaScript para publicar en GitHub Pages como catalogo B2B premium de Balmain Eyewear para Innova.
 
 ## Paginas
 
@@ -40,7 +40,7 @@ El repositorio esta preparado para GitHub Pages. Antes de publicar, revisar `git
 
 ```bash
 git add .
-git commit -m "Construir catalogo B2B premium Balmain Valmai"
+git commit -m "Construir catalogo B2B premium Balmain Balmain"
 git push
 ```
 

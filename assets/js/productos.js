@@ -15,11 +15,76 @@
     mensajeWhatsapp: {
       es: "Hola, estoy interesado en recibir informacion B2B sobre la coleccion Balmain Eyewear.",
       en: "Hello, I am interested in receiving B2B information about the Balmain Eyewear collection.",
+      fr: "Bonjour, je souhaite recevoir des informations B2B sur la collection Balmain Eyewear.",
     },
   };
 
   const inventoryStorageKey = "balmainInventoryLocal";
   const inventoryStatuses = ["normal", "hidden", "soldout", "lowstock"];
+  const ui = {
+    selectedVariantSuffix: {
+      es: "Variante seleccionada: {code}.",
+      en: "Selected variant: {code}.",
+      fr: "Variante selectionnee : {code}.",
+    },
+    defaultProductMessage: {
+      es: "Hola, estoy interesado en informacion B2B sobre el modelo {product} de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.",
+      en: "Hello, I am interested in B2B information about the Balmain Eyewear model {product}. I would like to check availability and variants.",
+      fr: "Bonjour, je souhaite recevoir des informations B2B sur le modele {product} de Balmain Eyewear. Je voudrais consulter la disponibilite et les variantes.",
+    },
+    normal: { es: "Normal", en: "Normal", fr: "Normal" },
+    hidden: { es: "Oculto temporalmente", en: "Temporarily hidden", fr: "Masque temporairement" },
+    soldout: { es: "Agotado", en: "Sold out", fr: "Epuise" },
+    lowstock: { es: "Pocas unidades", en: "Low stock", fr: "Peu d'unites" },
+    checkNextAvailability: { es: "Consultar proxima disponibilidad", en: "Check next availability", fr: "Consulter la prochaine disponibilite" },
+    requestInfo: { es: "Solicitar informacion", en: "Request info", fr: "Demander des informations" },
+    requestInformation: { es: "Solicitar informacion", en: "Request information", fr: "Demander des informations" },
+    variants: { es: "variantes", en: "variants", fr: "variantes" },
+    models: { es: "modelos", en: "models", fr: "modeles" },
+    viewDetails: { es: "Ver detalles", en: "View details", fr: "Voir les details" },
+    viewCategory: { es: "Ver categoria", en: "View category", fr: "Voir la categorie" },
+    b2bCategoryFocus: { es: "Enfoque B2B de categoria", en: "B2B category focus", fr: "Focus B2B de la categorie" },
+    modelsAvailable: { es: "modelos disponibles", en: "models available", fr: "modeles disponibles" },
+    commercialCatalogue: { es: "catalogo comercial", en: "commercial catalogue", fr: "catalogue commercial" },
+    materialsSellingCodes: { es: "Materiales y codigos de venta", en: "Materials and selling codes", fr: "Matieres et codes de vente" },
+    buyerArguments: { es: "Argumentos utiles para compradores profesionales", en: "Useful arguments for professional buyers", fr: "Arguments utiles pour acheteurs professionnels" },
+    frame: { es: "Montura", en: "Frame", fr: "Monture" },
+    temple: { es: "Varilla", en: "Temple", fr: "Branche" },
+    nosePads: { es: "Plaquetas", en: "Nose pads", fr: "Plaquettes" },
+    lenses: { es: "Lentes", en: "Lenses", fr: "Verres" },
+    size: { es: "Medida", en: "Size", fr: "Taille" },
+    country: { es: "Pais de origen", en: "Country of origin", fr: "Pays d'origine" },
+    confirmInnova: { es: "Confirmar con Innova", en: "Confirm with Innova", fr: "Confirmer avec Innova" },
+    materialsInquiry: {
+      es: "Materiales disponibles bajo consulta comercial con Innova.",
+      en: "Materials available on commercial inquiry with Innova.",
+      fr: "Matieres disponibles sur consultation commerciale avec Innova.",
+    },
+    selectedVariant: { es: "Variante seleccionada", en: "Selected variant", fr: "Variante selectionnee" },
+    productNotFound: { es: "Producto no encontrado", en: "Product not found", fr: "Produit introuvable" },
+    backToCatalogue: { es: "Volver al catalogo", en: "Back to catalogue", fr: "Retour au catalogue" },
+    distributedByInnova: { es: "Distribuido por Innova", en: "Distributed by Innova", fr: "Distribue par Innova" },
+    selectedCode: { es: "Codigo seleccionado", en: "Selected code", fr: "Code selectionne" },
+    color: { es: "Color", en: "Color", fr: "Couleur" },
+    emailInnova: { es: "Enviar email a Innova", en: "Email Innova", fr: "Envoyer un email a Innova" },
+    commercialDescription: { es: "Descripcion comercial", en: "Commercial description", fr: "Description commerciale" },
+    professionalBuying: { es: "para compra profesional", en: "for professional buying", fr: "pour l'achat professionnel" },
+    variantsTitle: { es: "Variantes", en: "Variants", fr: "Variantes" },
+    availableCodes: { es: "Codigos disponibles", en: "Available codes", fr: "Codes disponibles" },
+    technicalDetails: { es: "Detalles tecnicos", en: "Technical details", fr: "Details techniques" },
+    specificationsCatalogue: { es: "Especificaciones del catalogo", en: "Specifications from catalogue", fr: "Specifications du catalogue" },
+    materials: { es: "Materiales", en: "Materials", fr: "Matieres" },
+    commercialTalkingPoints: { es: "Argumentos comerciales", en: "Commercial talking points", fr: "Arguments commerciaux" },
+    requestAvailabilityInnova: { es: "Solicitar disponibilidad con Innova", en: "Request availability with Innova", fr: "Demander la disponibilite avec Innova" },
+    premiumAssets: { es: "Presentacion premium y estuches", en: "Premium presentation assets", fr: "Presentation premium et etuis" },
+    packagingCopy: {
+      es: "El catalogo SS26 incluye referencias de packaging premium para presentaciones profesionales y conversaciones de entrega con Innova.",
+      en: "The SS26 catalogue includes premium packaging references for professional presentations and delivery discussions with Innova.",
+      fr: "Le catalogue SS26 inclut des references de packaging premium pour les presentations professionnelles et les discussions de livraison avec Innova.",
+    },
+    related: { es: "Relacionados", en: "Related", fr: "Associes" },
+    sameCategory: { es: "Misma categoria", en: "Same category", fr: "Meme categorie" },
+  };
 
   function root() {
     return document.body.dataset.base || "";
@@ -81,6 +146,14 @@
 
   function pick(value) {
     return window.BalmainI18n ? window.BalmainI18n.pick(value) : value?.es || value?.en || value || "";
+  }
+
+  function t(key, replacements = {}) {
+    let value = pick(ui[key]) || "";
+    Object.entries(replacements).forEach(([name, replacement]) => {
+      value = value.replaceAll(`{${name}}`, replacement);
+    });
+    return value;
   }
 
   function primaryImageForVariant(variant) {
@@ -179,6 +252,7 @@
         document.head.appendChild(link);
       }
       link.href = canonical;
+      ensureMeta('meta[property="og:url"]', { property: "og:url" }).setAttribute("content", canonical);
     }
   }
 
@@ -197,11 +271,9 @@
   function productMessage(product, variant) {
     const base =
       pick(product.b2bMessage) ||
-      (lang() === "en"
-        ? `Hello, I am interested in B2B information about the Balmain Eyewear model ${product.nombre}. I would like to check availability and variants.`
-        : `Hola, estoy interesado en informacion B2B sobre el modelo ${product.nombre} de Balmain Eyewear. Quisiera consultar disponibilidad y variantes.`);
+      t("defaultProductMessage", { product: product.nombre });
     if (!variant?.codigo) return base;
-    return lang() === "en" ? `${base} Selected variant: ${variant.codigo}.` : `${base} Variante seleccionada: ${variant.codigo}.`;
+    return `${base} ${t("selectedVariantSuffix", { code: variant.codigo })}`;
   }
 
   function genericMessage() {
@@ -238,13 +310,7 @@
   }
 
   function statusLabel(status) {
-    const labels = {
-      normal: { es: "Normal", en: "Normal" },
-      hidden: { es: "Oculto temporalmente", en: "Temporarily hidden" },
-      soldout: { es: "Agotado", en: "Sold out" },
-      lowstock: { es: "Pocas unidades", en: "Low stock" },
-    };
-    return pick(labels[normalizeInventoryStatus(status)]);
+    return t(normalizeInventoryStatus(status));
   }
 
   function visibleProducts(products) {
@@ -311,13 +377,7 @@
     const codes = escapeHtml(variantCodes(product, compact ? 3 : 4));
     const variants = product.variantes || [];
     const infoHref = whatsappHref(productMessage(product, variants[0]));
-    const requestLabel = isSoldOut
-      ? lang() === "en"
-        ? "Check next availability"
-        : "Consultar proxima disponibilidad"
-      : lang() === "en"
-        ? "Request info"
-        : "Solicitar informacion";
+    const requestLabel = isSoldOut ? t("checkNextAvailability") : t("requestInfo");
     const imageClass = images.length ? `image-count-${Math.min(images.length, 3)} ${images.length > 1 ? "has-alt" : ""}` : "";
     const imageMarkup = images.length
       ? images
@@ -341,11 +401,11 @@
           <p class="product-card-description">${shortDescription}</p>
           <p class="product-card-material">${materials}</p>
           <div class="product-card-meta">
-            <span>${variants.length} ${lang() === "en" ? "variants" : "variantes"}</span>
+            <span>${variants.length} ${t("variants")}</span>
             <small>${codes}</small>
           </div>
           <div class="card-actions">
-            <a class="text-link" href="${productHref(product.slug)}">${lang() === "en" ? "View details" : "Ver detalles"}</a>
+            <a class="text-link" href="${productHref(product.slug)}">${t("viewDetails")}</a>
             <a class="text-link muted" href="${infoHref}" target="_blank" rel="noopener">${requestLabel}</a>
           </div>
           <div class="product-card-tooltip">
@@ -380,10 +440,10 @@
                 ${(category.imagenCard || category.imagen) ? `<img src="${asset(category.imagenCard || category.imagen)}" alt="${escapeHtml(pick(category.label))}" loading="lazy" decoding="async">` : placeholder(pick(category.label))}
               </a>
               <div>
-                <p class="eyebrow">${grouped[category.slug] || 0} ${lang() === "en" ? "models" : "modelos"}</p>
+                <p class="eyebrow">${grouped[category.slug] || 0} ${t("models")}</p>
                 <h3>${escapeHtml(pick(category.label))}</h3>
                 <p>${escapeHtml(pick(category.descripcion))}</p>
-                <a class="text-link" href="${href}">${lang() === "en" ? "View category" : "Ver categoria"}</a>
+                <a class="text-link" href="${href}">${t("viewCategory")}</a>
               </div>
             </article>
           `;
@@ -423,7 +483,7 @@
         return categoryOk && queryOk;
       });
       grid.innerHTML = filtered.map((product) => productCard(product)).join("");
-      if (count) count.textContent = `${filtered.length} ${lang() === "en" ? "models" : "modelos"}`;
+      if (count) count.textContent = `${filtered.length} ${t("models")}`;
       if (empty) empty.hidden = filtered.length > 0;
     }
 
@@ -444,12 +504,12 @@
     return `
       <section class="section category-context" id="categoryContext">
         <div class="category-context-copy">
-          <p class="eyebrow">${lang() === "en" ? "B2B category focus" : "Enfoque B2B de categoria"}</p>
+          <p class="eyebrow">${t("b2bCategoryFocus")}</p>
           <h2>${escapeHtml(pick(category.label))}</h2>
           <p>${escapeHtml(pick(category.b2b) || pick(category.descripcion))}</p>
           <div class="category-stat-row">
-            <span><strong>${products.length}</strong>${lang() === "en" ? "models available" : "modelos disponibles"}</span>
-            <span><strong>SS26</strong>${lang() === "en" ? "commercial catalogue" : "catalogo comercial"}</span>
+            <span><strong>${products.length}</strong>${t("modelsAvailable")}</span>
+            <span><strong>SS26</strong>${t("commercialCatalogue")}</span>
           </div>
         </div>
         <div class="category-context-media">
@@ -458,8 +518,8 @@
       </section>
       <section class="section category-materials" id="categoryMaterials">
         <div>
-          <p class="eyebrow">${lang() === "en" ? "Materials and selling codes" : "Materiales y codigos de venta"}</p>
-          <h2>${lang() === "en" ? "Useful arguments for professional buyers" : "Argumentos utiles para compradores profesionales"}</h2>
+          <p class="eyebrow">${t("materialsSellingCodes")}</p>
+          <h2>${t("buyerArguments")}</h2>
         </div>
         <div class="material-chip-list">
           ${materialItems.map((item) => `<span>${escapeHtml(item)}</span>`).join("")}
@@ -497,16 +557,16 @@
 
   function specsMarkup(product) {
     const labels = {
-      frame: lang() === "en" ? "Frame" : "Montura",
-      temple: lang() === "en" ? "Temple" : "Varilla",
-      nosePads: lang() === "en" ? "Nose pads" : "Plaquetas",
-      lenses: lang() === "en" ? "Lenses" : "Lentes",
-      size: lang() === "en" ? "Size" : "Medida",
-      country: lang() === "en" ? "Country of origin" : "Pais de origen",
+      frame: t("frame"),
+      temple: t("temple"),
+      nosePads: t("nosePads"),
+      lenses: t("lenses"),
+      size: t("size"),
+      country: t("country"),
     };
     return Object.entries(labels)
       .map(([key, label]) => {
-        const value = product.especificaciones?.[key] || (lang() === "en" ? "Confirm with Innova" : "Confirmar con Innova");
+        const value = product.especificaciones?.[key] || t("confirmInnova");
         return `<div><dt>${label}</dt><dd>${escapeHtml(value)}</dd></div>`;
       })
       .join("");
@@ -515,7 +575,7 @@
   function materialsMarkup(product) {
     const items = product.materiales || [];
     if (!items.length) {
-      return `<p>${lang() === "en" ? "Materials available on commercial inquiry with Innova." : "Materiales disponibles bajo consulta comercial con Innova."}</p>`;
+      return `<p>${t("materialsInquiry")}</p>`;
     }
     return `<div class="material-chip-list product-materials">${items.map((item) => `<span>${escapeHtml(item)}</span>`).join("")}</div>`;
   }
@@ -559,7 +619,7 @@
         <button class="variant-select-toggle" type="button" id="variantSelectToggle" aria-expanded="false" aria-controls="variantSelectMenu">
           <span class="variant-select-thumb" id="variantSelectThumb">${firstImage ? `<img src="${asset(firstImage)}" alt="${escapeHtml(product.nombre)} ${escapeHtml(firstVariant.codigo || "")}" decoding="async">` : placeholder(firstVariant.codigo || product.nombre)}</span>
           <span class="variant-select-copy">
-            <span>${lang() === "en" ? "Selected variant" : "Variante seleccionada"}</span>
+            <span>${t("selectedVariant")}</span>
             <strong id="variantSelectCode">${escapeHtml(firstVariant.codigo || "")}</strong>
             <small id="variantSelectColor">${escapeHtml(pick(firstVariant.color))}</small>
           </span>
@@ -602,7 +662,7 @@
     const target = document.getElementById("productRoot");
     if (!target) return;
     if (!product) {
-      target.innerHTML = `<section class="empty-state section"><h1>${lang() === "en" ? "Product not found" : "Producto no encontrado"}</h1><a class="button button-dark" href="${url("catalogo.html")}">${lang() === "en" ? "Back to catalogue" : "Volver al catalogo"}</a></section>`;
+      target.innerHTML = `<section class="empty-state section"><h1>${t("productNotFound")}</h1><a class="button button-dark" href="${url("catalogo.html")}">${t("backToCatalogue")}</a></section>`;
       return;
     }
 
@@ -616,13 +676,7 @@
     const related = visibleProducts(products).filter((item) => (product.relacionados || []).includes(item.slug)).slice(0, 4);
     const layout = `layout-${(product.orden % 3) + 1}`;
     const productWhatsapp = whatsappHref(productMessage(product, firstVariant));
-    const productCtaText = isSoldOut
-      ? lang() === "en"
-        ? "Check next availability"
-        : "Consultar proxima disponibilidad"
-      : lang() === "en"
-        ? "Request information"
-        : "Solicitar informacion";
+    const productCtaText = isSoldOut ? t("checkNextAvailability") : t("requestInformation");
     const category = content.categorias?.[product.categoria] || {};
     const pageTitle = `${product.nombre} ${product.coleccion || "SS26"} | BALMAIN Eyewear B2B Innova`;
     const pageDescription = seoDescription(product);
@@ -639,17 +693,17 @@
           ${heroImage ? `<img id="mainProductImage" src="${asset(heroImage)}" alt="${escapeHtml(product.nombre)}" decoding="async" fetchpriority="high">` : placeholder(product.nombre)}
         </div>
         <div class="product-hero-copy">
-          <p class="eyebrow">${escapeHtml(pick(product.categoriaLabel))} · ${escapeHtml(product.coleccion)} · ${lang() === "en" ? "Distributed by Innova" : "Distribuido por Innova"}</p>
+          <p class="eyebrow">${escapeHtml(pick(product.categoriaLabel))} · ${escapeHtml(product.coleccion)} · ${t("distributedByInnova")}</p>
           ${status !== "normal" ? `<span class="product-status-pill product-status-${status}">${escapeHtml(statusText)}</span>` : ""}
           <h1>${escapeHtml(product.nombre)}</h1>
           <p>${escapeHtml(pick(product.marketingDescription) || pick(product.descripcion))}</p>
           <dl class="selected-variant-card">
-            <div><dt>${lang() === "en" ? "Selected code" : "Codigo seleccionado"}</dt><dd id="selectedVariantCode">${escapeHtml(firstVariant.codigo || "")}</dd></div>
-            <div><dt>${lang() === "en" ? "Color" : "Color"}</dt><dd id="selectedVariantColor">${escapeHtml(pick(firstVariant.color))}</dd></div>
+            <div><dt>${t("selectedCode")}</dt><dd id="selectedVariantCode">${escapeHtml(firstVariant.codigo || "")}</dd></div>
+            <div><dt>${t("color")}</dt><dd id="selectedVariantColor">${escapeHtml(pick(firstVariant.color))}</dd></div>
           </dl>
           <div class="hero-actions">
             <a class="button button-dark" id="productWhatsApp" href="${productWhatsapp}" target="_blank" rel="noopener">${productCtaText}</a>
-            <a class="button button-outline" href="mailto:${contact().email}?subject=${encodeURIComponent(`Consulta B2B ${product.nombre}`)}">${lang() === "en" ? "Email Innova" : "Enviar email a Innova"}</a>
+            <a class="button button-outline" href="mailto:${contact().email}?subject=${encodeURIComponent(`Consulta B2B ${product.nombre}`)}">${t("emailInnova")}</a>
           </div>
           ${variants.length ? variantSelectorMarkup(product, variants) : ""}
         </div>
@@ -661,29 +715,29 @@
 
       <section class="section product-story-grid">
         <div>
-          <p class="eyebrow">${lang() === "en" ? "Commercial description" : "Descripcion comercial"}</p>
-          <h2>${escapeHtml(product.nombre)} ${lang() === "en" ? "for professional buying" : "para compra profesional"}</h2>
+          <p class="eyebrow">${t("commercialDescription")}</p>
+          <h2>${escapeHtml(product.nombre)} ${t("professionalBuying")}</h2>
           <p>${escapeHtml(pick(product.descripcionCorta))}</p>
           <p>${escapeHtml(pick(product.designStory))}</p>
           <p>${escapeHtml(pick(product.commercialUse))}</p>
           ${product.fuenteCatalogo ? `<p class="source-note">${escapeHtml(pick(product.fuenteCatalogo))}</p>` : ""}
         </div>
         <div>
-          <p class="eyebrow">${lang() === "en" ? "Variants" : "Variantes"}</p>
-          <h2>${lang() === "en" ? "Available codes" : "Codigos disponibles"}</h2>
+          <p class="eyebrow">${t("variantsTitle")}</p>
+          <h2>${t("availableCodes")}</h2>
           <div class="variant-list" id="variantList">${variantsMarkup(product)}</div>
         </div>
       </section>
 
       <section class="section product-details-grid">
         <div>
-          <p class="eyebrow">${lang() === "en" ? "Technical details" : "Detalles tecnicos"}</p>
-          <h2>${lang() === "en" ? "Specifications from catalogue" : "Especificaciones del catalogo"}</h2>
+          <p class="eyebrow">${t("technicalDetails")}</p>
+          <h2>${t("specificationsCatalogue")}</h2>
           <dl class="spec-list">${specsMarkup(product)}</dl>
         </div>
         <div>
-          <p class="eyebrow">${lang() === "en" ? "Materials" : "Materiales"}</p>
-          <h2>${lang() === "en" ? "Commercial talking points" : "Argumentos comerciales"}</h2>
+          <p class="eyebrow">${t("materials")}</p>
+          <h2>${t("commercialTalkingPoints")}</h2>
           ${materialsMarkup(product)}
           <div class="category-mini-panel">
             <span>${escapeHtml(pick(category.label) || pick(product.categoriaLabel))}</span>
@@ -695,7 +749,7 @@
       <section class="section b2b-panel innova-b2b-panel">
         <div>
           <p class="eyebrow">Innova B2B</p>
-          <h2>${lang() === "en" ? "Request availability with Innova" : "Solicitar disponibilidad con Innova"}</h2>
+          <h2>${t("requestAvailabilityInnova")}</h2>
           <p>${escapeHtml(pick(product.b2b?.mensaje))}</p>
           <div class="innova-contact-line">
             <a href="mailto:${contact().email}">${escapeHtml(contact().email)}</a>
@@ -708,16 +762,16 @@
       <section class="section packaging-showcase">
         <div>
           <p class="eyebrow">Packaging</p>
-          <h2>${lang() === "en" ? "Premium presentation assets" : "Presentacion premium y estuches"}</h2>
-          <p>${lang() === "en" ? "The SS26 catalogue includes premium packaging references for professional presentations and delivery discussions with Innova." : "El catalogo SS26 incluye referencias de packaging premium para presentaciones profesionales y conversaciones de entrega con Innova."}</p>
+          <h2>${t("premiumAssets")}</h2>
+          <p>${t("packagingCopy")}</p>
         </div>
         <img src="${asset(content.site?.assets?.packaging || "assets/images/marketing/packaging-ss26.jpg")}" alt="BALMAIN Eyewear packaging SS26" loading="lazy" decoding="async">
       </section>
 
       <section class="section related-products">
         <div class="section-heading">
-          <p class="eyebrow">${lang() === "en" ? "Related" : "Relacionados"}</p>
-          <h2>${lang() === "en" ? "Same category" : "Misma categoria"}</h2>
+          <p class="eyebrow">${t("related")}</p>
+          <h2>${t("sameCategory")}</h2>
         </div>
         <div class="product-grid">${related.map((item) => productCard(item, true)).join("")}</div>
       </section>

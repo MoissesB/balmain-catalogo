@@ -19,27 +19,33 @@
   "nav": {
     "catalogo": {
       "es": "Catalogo",
-      "en": "Catalogue"
+      "en": "Catalogue",
+      "fr": "Catalogue"
     },
     "historia": {
       "es": "Historia",
-      "en": "Heritage"
+      "en": "Heritage",
+      "fr": "Histoire"
     },
     "materiales": {
       "es": "Materiales",
-      "en": "Materials"
+      "en": "Materials",
+      "fr": "Matériaux"
     },
     "contacto": {
       "es": "Contacto",
-      "en": "Contact"
+      "en": "Contact",
+      "fr": "Contact"
     },
     "buscar": {
       "es": "Buscar",
-      "en": "Search"
+      "en": "Search",
+      "fr": "Rechercher"
     },
     "cta": {
-      "es": "Solicitar catalogo B2B",
-      "en": "Request B2B catalogue"
+      "es": "Contactar a Innova",
+      "en": "Contact Innova",
+      "fr": "Contacter Innova"
     }
   },
   "home": {
@@ -58,15 +64,24 @@
         "subtitulo": "A B2B commercial catalogue for optical stores, distributors, and professional buyers, with real variants, premium visuals, and direct Innova contact.",
         "ctaPrincipal": "View B2B catalogue",
         "ctaSecundario": "Contact Innova"
+      },
+      "fr": {
+        "eyebrow": "Catalogue B2B SS26",
+        "titulo": "Balmain Eyewear pour opticiens, distributeurs et acheteurs professionnels",
+        "subtitulo": "Catalogue commercial B2B pour opticiens, distributeurs et acheteurs professionnels, avec variantes réelles, contenu visuel premium et contact direct avec Innova.",
+        "ctaPrincipal": "Voir le catalogue B2B",
+        "ctaSecundario": "Contacter Innova"
       }
     },
     "b2b": {
       "es": "Este sitio esta orientado a opticas, retailers, cadenas, showrooms y compradores mayoristas. No opera como ecommerce: cada modelo invita a consultar disponibilidad, variantes y condiciones comerciales.",
-      "en": "This site is designed for optical stores, retailers, chains, showrooms, and wholesale buyers. It does not operate as ecommerce: each model invites availability, variant, and commercial inquiries."
+      "en": "This site is designed for optical stores, retailers, chains, showrooms, and wholesale buyers. It does not operate as ecommerce: each model invites availability, variant, and commercial inquiries.",
+      "fr": "Ce site s'adresse aux opticiens, détaillants, chaînes, showrooms et acheteurs grossistes. Il ne fonctionne pas comme un ecommerce : chaque modèle invite à consulter disponibilité, variantes et conditions commerciales."
     },
     "historia": {
       "es": "La primera coleccion Balmain Eyewear by AKN Group se presento en las pasarelas Fall 2020 de Balmain. Desde entonces, las monturas forman parte del lenguaje visual de la Maison, con disenos de precision, artesanos especializados y materiales premium.",
-      "en": "The first Balmain Eyewear by AKN Group collection appeared on Balmain Fall 2020 runways. Since then, the frames have become part of the Maison visual language, combining precision design, specialist artisans, and premium materials."
+      "en": "The first Balmain Eyewear by AKN Group collection appeared on Balmain Fall 2020 runways. Since then, the frames have become part of the Maison visual language, combining precision design, specialist artisans, and premium materials.",
+      "fr": "La première collection Balmain Eyewear by AKN Group a été présentée sur les podiums Fall 2020 de Balmain. Depuis, les montures font partie du langage visuel de la Maison, avec design de précision, artisans spécialisés et matériaux premium."
     },
     "adn": {
       "es": [
@@ -86,6 +101,15 @@
         "Parisian vision",
         "Fashion and music",
         "Gold signature"
+      ],
+      "fr": [
+        "Savoir-faire",
+        "Sensualité",
+        "Élégance",
+        "Audace",
+        "Vision parisienne",
+        "Mode et musique",
+        "Signature or"
       ]
     },
     "materiales": {
@@ -104,6 +128,14 @@
         "Ceramic nose pads",
         "Japanese lenses",
         "Sun lenses"
+      ],
+      "fr": [
+        "Titane japonais",
+        "Acétate japonais",
+        "Acétate italien",
+        "Plaquettes céramiques",
+        "Verres japonais",
+        "Verres solaires"
       ]
     },
     "contacto": {
@@ -114,6 +146,10 @@
       "en": {
         "titulo": "Innova commercial contact",
         "texto": "Request availability, commercial list, collection presentation, or B2B access."
+      },
+      "fr": {
+        "titulo": "Contact commercial Innova",
+        "texto": "Demande disponibilité, liste commerciale, présentation de collection ou accès B2B."
       }
     }
   },
@@ -122,18 +158,21 @@
       "slug": "avant-garde",
       "label": {
         "es": "Avant-Garde",
-        "en": "Avant-Garde"
+        "en": "Avant-Garde",
+        "fr": "Avant-Garde"
       },
       "descripcion": {
         "es": "Arquitectura visual, metales de precision y siluetas de alto impacto para opticas que buscan piezas protagonistas.",
-        "en": "Visual architecture, precision metalwork, and high-impact silhouettes for optical partners seeking statement pieces."
+        "en": "Visual architecture, precision metalwork, and high-impact silhouettes for optical partners seeking statement pieces.",
+        "fr": "Architecture visuelle, métaux de précision et silhouettes de fort impact pour opticiens recherchant des pièces fortes."
       },
       "imagen": "assets/images/marketing/category-avant-garde.jpg",
       "imagenCard": "assets/images/catalogo/avant-garde.jpg",
       "imagenMarketing": "assets/images/marketing/editorial-olivier.jpg",
       "b2b": {
         "es": "Seleccion para opticas que buscan piezas de alto impacto, metales de precision y argumentos de escaparate premium.",
-        "en": "A selection for optical partners seeking high-impact pieces, precision metals, and premium window storytelling."
+        "en": "A selection for optical partners seeking high-impact pieces, precision metals, and premium window storytelling.",
+        "fr": "Sélection pour opticiens recherchant pièces à fort impact, métaux de précision et arguments premium pour vitrines."
       },
       "materiales": {
         "es": [
@@ -147,6 +186,12 @@
           "Japanese acetate",
           "Ceramic nose pads",
           "Metal details"
+        ],
+        "fr": [
+          "Titane japonais",
+          "Acétate japonais",
+          "Plaquettes céramiques",
+          "Détails métalliques"
         ]
       }
     },
@@ -154,18 +199,21 @@
       "slug": "iconic",
       "label": {
         "es": "Iconic",
-        "en": "Iconic"
+        "en": "Iconic",
+        "fr": "Iconic"
       },
       "descripcion": {
         "es": "Modelos de firma con codigos reconocibles de la Maison: lujo distintivo, ediciones limitadas y detalles joya.",
-        "en": "Signature models with recognizable Maison codes: distinctive luxury, limited editions, and jewelry-like details."
+        "en": "Signature models with recognizable Maison codes: distinctive luxury, limited editions, and jewelry-like details.",
+        "fr": "Modèles signature avec codes reconnaissables de la Maison : luxe distinctif, éditions limitées et détails bijou."
       },
       "imagen": "assets/images/marketing/category-iconic.jpg",
       "imagenCard": "assets/images/catalogo/iconic.jpg",
       "imagenMarketing": "assets/images/marketing/editorial-bgrand.jpg",
       "b2b": {
         "es": "Modelos de firma con codigos Balmain reconocibles para clientes que buscan piezas distintivas y memorables.",
-        "en": "Signature models with recognizable Balmain codes for clients seeking distinctive, memorable eyewear."
+        "en": "Signature models with recognizable Balmain codes for clients seeking distinctive, memorable eyewear.",
+        "fr": "Modèles signature aux codes Balmain reconnaissables pour clients recherchant une lunetterie distinctive et mémorable."
       },
       "materiales": {
         "es": [
@@ -179,6 +227,12 @@
           "PB monogram",
           "Gold details",
           "Statement construction"
+        ],
+        "fr": [
+          "Acétate premium",
+          "Monogramme PB",
+          "Détails dorés",
+          "Construction statement"
         ]
       }
     },
@@ -186,18 +240,21 @@
       "slug": "aspirational",
       "label": {
         "es": "Aspirational",
-        "en": "Aspirational"
+        "en": "Aspirational",
+        "fr": "Aspirational"
       },
       "descripcion": {
         "es": "Elegancia comercial, acetatos refinados y formas deseables para ampliar una seleccion premium de venta profesional.",
-        "en": "Commercial elegance, refined acetates, and desirable shapes for expanding a premium professional assortment."
+        "en": "Commercial elegance, refined acetates, and desirable shapes for expanding a premium professional assortment.",
+        "fr": "Élégance commerciale, acétates raffinés et formes désirables pour élargir une sélection professionnelle premium."
       },
       "imagen": "assets/images/marketing/category-aspirational.jpg",
       "imagenCard": "assets/images/catalogo/aspirational.jpg",
       "imagenMarketing": "assets/images/marketing/editorial-pulse.jpg",
       "b2b": {
         "es": "Siluetas deseables y lectura comercial refinada para ampliar una seleccion premium de venta profesional.",
-        "en": "Desirable silhouettes and refined commercial appeal for expanding a premium professional assortment."
+        "en": "Desirable silhouettes and refined commercial appeal for expanding a premium professional assortment.",
+        "fr": "Silhouettes désirables et lecture commerciale raffinée pour élargir une sélection professionnelle premium."
       },
       "materiales": {
         "es": [
@@ -211,6 +268,12 @@
           "Japanese acetate",
           "Sun lenses",
           "Polished finishes"
+        ],
+        "fr": [
+          "Acétate italien",
+          "Acétate japonais",
+          "Verres solaires",
+          "Finitions polies"
         ]
       }
     },
@@ -218,18 +281,21 @@
       "slug": "fashion-drops",
       "label": {
         "es": "Fashion Drops",
-        "en": "Fashion Drops"
+        "en": "Fashion Drops",
+        "fr": "Fashion Drops"
       },
       "descripcion": {
         "es": "Lanzamientos de moda con lectura joven, visual y editorial, pensados para activar escaparates y presentaciones.",
-        "en": "Fashion-led launches with a young editorial attitude, designed for windows, launches, and seasonal presentations."
+        "en": "Fashion-led launches with a young editorial attitude, designed for windows, launches, and seasonal presentations.",
+        "fr": "Lancements mode avec attitude jeune, visuelle et éditoriale, pensés pour activer vitrines et présentations."
       },
       "imagen": "assets/images/marketing/category-fashion-drops.jpg",
       "imagenCard": "assets/images/catalogo/fashion-drops.jpg",
       "imagenMarketing": "assets/images/marketing/home-hero.jpg",
       "b2b": {
         "es": "Capsulas visuales para activar vitrinas, lanzamientos de temporada y conversaciones comerciales con mayor energia editorial.",
-        "en": "Visual capsules for windows, seasonal launches, and commercial conversations with stronger editorial energy."
+        "en": "Visual capsules for windows, seasonal launches, and commercial conversations with stronger editorial energy.",
+        "fr": "Capsules visuelles pour vitrines, lancements saisonniers et conversations commerciales à forte énergie éditoriale."
       },
       "materiales": {
         "es": [
@@ -243,6 +309,12 @@
           "Editorial shapes",
           "Metal details",
           "Color variants"
+        ],
+        "fr": [
+          "Acétates visuels",
+          "Formes éditoriales",
+          "Détails métalliques",
+          "Variantes couleur"
         ]
       }
     }
@@ -256,7 +328,8 @@
     "direccion": "1206 STIRLING ROAD STE 3B, DANIA BEACH FL 33004, United States",
     "mensajeWhatsapp": {
       "es": "Hola, estoy interesado en recibir informacion B2B sobre la coleccion Balmain Eyewear.",
-      "en": "Hello, I am interested in receiving B2B information about the Balmain Eyewear collection."
+      "en": "Hello, I am interested in receiving B2B information about the Balmain Eyewear collection.",
+      "fr": "Bonjour, je souhaite recevoir des informations B2B sur la collection Balmain Eyewear."
     }
   }
 }
