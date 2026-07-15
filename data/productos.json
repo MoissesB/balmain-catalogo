@@ -305,8 +305,10 @@
             "en": "White Gold and Bone Frame w/ Dark Brown to Clear AR Lenses"
           },
           "imagenes": {
-            "hero": "assets/images/productos/avant-garde/brigade-i/bps-110c-52/BRIGADE I BPS-110C-52-FRONT.jpg",
-            "frontal": "assets/images/productos/avant-garde/brigade-i/bps-110c-52/BRIGADE I BPS-110C-52-FRONT.jpg"
+            "frontal": "assets/images/productos/avant-garde/brigade-i/bps-110c-52/BRIGADE I BPS-110C-52-FRONT.jpg",
+            "lateral": "assets/images/productos/avant-garde/brigade-i/bps-110c-52/BRIGADE I BPS-110C-52-3-4.jpg",
+            "detalle": "assets/images/productos/avant-garde/brigade-i/bps-110c-52/BRIGADE I BPS-110C-52-DET.jpg",
+            "hero": "assets/images/productos/avant-garde/brigade-i/bps-110c-52/BRIGADE I BPS-110C-52-FRONT.jpg"
           },
           "fuente": "PDF catalogo SS26"
         },
@@ -411,8 +413,9 @@
             "en": "Gold and Black Frame"
           },
           "imagenes": {
+            "frontal": "assets/images/productos/avant-garde/brigade-i-rx/bpx-110a-52/BRIGADE I BPX-110A-52-FRONT.png",
             "lateral": "assets/images/productos/avant-garde/brigade-i-rx/bpx-110a-52/BRIGADE I BPX-110A-52-3-4.jpg",
-            "hero": "assets/images/productos/avant-garde/brigade-i-rx/bpx-110a-52/BRIGADE I BPX-110A-52-3-4.jpg"
+            "hero": "assets/images/productos/avant-garde/brigade-i-rx/bpx-110a-52/BRIGADE I BPX-110A-52-FRONT.png"
           },
           "fuente": "PDF catalogo SS26"
         },
@@ -436,8 +439,10 @@
             "en": "White Gold and Bone Frame"
           },
           "imagenes": {
+            "frontal": "assets/images/productos/avant-garde/brigade-i-rx/bpx-110c-52/BRIGADE I BPX-110C-52-FRONT.png",
+            "lateral": "assets/images/productos/avant-garde/brigade-i-rx/bpx-110c-52/BRIGADE I BPX-110C-52-3-4.png",
             "detalle": "assets/images/productos/avant-garde/brigade-i-rx/bpx-110c-52/BRIGADE I BPX-110C-52-DET.jpg",
-            "hero": "assets/images/productos/avant-garde/brigade-i-rx/bpx-110c-52/BRIGADE I BPX-110C-52-DET.jpg"
+            "hero": "assets/images/productos/avant-garde/brigade-i-rx/bpx-110c-52/BRIGADE I BPX-110C-52-FRONT.png"
           },
           "fuente": "PDF catalogo SS26"
         },
@@ -447,7 +452,11 @@
             "es": "Gold 18k w/Black Rhodium –",
             "en": "Gold 18k w/Black Rhodium –"
           },
-          "imagenes": {},
+          "imagenes": {
+            "frontal": "assets/images/productos/avant-garde/brigade-i-rx/bpx-110e-52/BRIGADE I RX BPX-110E-52-FRONT.jpg",
+            "lateral": "assets/images/productos/avant-garde/brigade-i-rx/bpx-110e-52/BRIGADE I RX BPX-110E-52-3-4.jpg",
+            "hero": "assets/images/productos/avant-garde/brigade-i-rx/bpx-110e-52/BRIGADE I RX BPX-110E-52-FRONT.jpg"
+          },
           "fuente": "PDF catalogo SS26"
         }
       ],
@@ -536,8 +545,9 @@
             "en": "Gold and Black Frame w/ G-15 AR Lenses"
           },
           "imagenes": {
+            "frontal": "assets/images/productos/avant-garde/brigade-iii/bps-117a-52/BRIGADE III BPS-117A-52-FRONT.jpg",
             "lateral": "assets/images/productos/avant-garde/brigade-iii/bps-117a-52/BRIGADEIII-BPS-117A-52-3-4.jpg",
-            "hero": "assets/images/productos/avant-garde/brigade-iii/bps-117a-52/BRIGADEIII-BPS-117A-52-3-4.jpg"
+            "hero": "assets/images/productos/avant-garde/brigade-iii/bps-117a-52/BRIGADE III BPS-117A-52-FRONT.jpg"
           },
           "fuente": "PDF catalogo SS26"
         },
@@ -547,7 +557,11 @@
             "es": "Matte Black and Grey Camo Frame w/ Medium Grey AR Lenses",
             "en": "Matte Black and Grey Camo Frame w/ Medium Grey AR Lenses"
           },
-          "imagenes": {},
+          "imagenes": {
+            "frontal": "assets/images/productos/avant-garde/brigade-iii/bps-117c-52/BRIGADE III-BPS-117C-52-FRONT.jpg",
+            "lateral": "assets/images/productos/avant-garde/brigade-iii/bps-117c-52/BRIGADE III-BPS-117C-52-3-4.jpg",
+            "hero": "assets/images/productos/avant-garde/brigade-iii/bps-117c-52/BRIGADE III-BPS-117C-52-FRONT.jpg"
+          },
           "fuente": "PDF catalogo SS26"
         },
         {
@@ -1055,7 +1069,9 @@
             "en": "Gold - Black"
           },
           "imagenes": {
-            "hero": "assets/images/productos/avant-garde/brigade-v-rx/bpx-142a-56/BRIGADE_VBPX-142A-56_1.jpg"
+            "frontal": "assets/images/productos/avant-garde/brigade-v-rx/bpx-142a-56/BRIGADE_VBPX-142A-56-FRONT.jpg",
+            "lateral": "assets/images/productos/avant-garde/brigade-v-rx/bpx-142a-56/BRIGADE_VBPX-142A-56-3-4.jpg",
+            "hero": "assets/images/productos/avant-garde/brigade-v-rx/bpx-142a-56/BRIGADE_VBPX-142A-56-FRONT.jpg"
           },
           "fuente": "PDF catalogo SS26"
         },
@@ -1066,7 +1082,9 @@
             "en": "Matte Black - Black Crystal"
           },
           "imagenes": {
-            "hero": "assets/images/productos/avant-garde/brigade-v-rx/bpx-142b-56/BRIGADE_VBPX-142B-56_2.jpg"
+            "frontal": "assets/images/productos/avant-garde/brigade-v-rx/bpx-142b-56/BRIGADE_VBPX-142B-56-FRONT.jpg",
+            "lateral": "assets/images/productos/avant-garde/brigade-v-rx/bpx-142b-56/BRIADE-VBPX-142B-56-3-4.jpg",
+            "hero": "assets/images/productos/avant-garde/brigade-v-rx/bpx-142b-56/BRIGADE_VBPX-142B-56-FRONT.jpg"
           },
           "fuente": "PDF catalogo SS26"
         },
@@ -1077,7 +1095,9 @@
             "en": "White Gold - Crystal Grey"
           },
           "imagenes": {
-            "hero": "assets/images/productos/avant-garde/brigade-v-rx/bpx-142c-56/BRIGADE_V_BPX-142C-56_2.jpg"
+            "frontal": "assets/images/productos/avant-garde/brigade-v-rx/bpx-142c-56/BRIGADE_V_BPX-142C-56-FRONT.jpg",
+            "lateral": "assets/images/productos/avant-garde/brigade-v-rx/bpx-142c-56/BRIGADE_V_BPX-142C-56-3-4.jpg",
+            "hero": "assets/images/productos/avant-garde/brigade-v-rx/bpx-142c-56/BRIGADE_V_BPX-142C-56-FRONT.jpg"
           },
           "fuente": "PDF catalogo SS26"
         }
@@ -1160,15 +1180,6 @@
         "country": "JAPAN"
       },
       "variantes": [
-        {
-          "codigo": "BPS-147B-142",
-          "color": {
-            "es": "Matte Black w/ Dark Grey Black Flash Mirror - AR",
-            "en": "Matte Black w/ Dark Grey Black Flash Mirror - AR"
-          },
-          "imagenes": {},
-          "fuente": "PDF catalogo SS26"
-        },
         {
           "codigo": "BPX-149A-56",
           "color": {
@@ -1466,7 +1477,11 @@
             "es": "Yellow Gold - Crystal Grey",
             "en": "Yellow Gold - Crystal Grey"
           },
-          "imagenes": {},
+          "imagenes": {
+            "frontal": "assets/images/productos/avant-garde/capitaine/bps-125d-62/Capitaine-BPS-125D-62-FRONT.png",
+            "lateral": "assets/images/productos/avant-garde/capitaine/bps-125d-62/Capitaine-BPS-125D-62-3-4.jpg",
+            "hero": "assets/images/productos/avant-garde/capitaine/bps-125d-62/Capitaine-BPS-125D-62-FRONT.png"
+          },
           "fuente": "PDF catalogo SS26"
         },
         {
@@ -2022,7 +2037,9 @@
             "en": "Black - Gold"
           },
           "imagenes": {
-            "hero": "assets/images/productos/avant-garde/legion-iv/bpx-141a-53/LEGION_IV_BPX-141A-54_1.jpg"
+            "frontal": "assets/images/productos/avant-garde/legion-iv/bpx-141a-53/LEGION_IV_BPX-141A-54_2-FRONT..jpg",
+            "lateral": "assets/images/productos/avant-garde/legion-iv/bpx-141a-53/LEGION_IV_BPX-141A-54_1.jpg",
+            "hero": "assets/images/productos/avant-garde/legion-iv/bpx-141a-53/LEGION_IV_BPX-141A-54_2-FRONT..jpg"
           },
           "fuente": "PDF catalogo SS26"
         },
@@ -2032,7 +2049,11 @@
             "es": "Brown Swirl - Black Rhodium",
             "en": "Brown Swirl - Black Rhodium"
           },
-          "imagenes": {},
+          "imagenes": {
+            "frontal": "assets/images/productos/avant-garde/legion-iv/bpx-141b-53/Legion-IV-BPX-141B-53-front.png",
+            "lateral": "assets/images/productos/avant-garde/legion-iv/bpx-141b-53/Legion-IV-BPX-141B-53-3-4.png",
+            "hero": "assets/images/productos/avant-garde/legion-iv/bpx-141b-53/Legion-IV-BPX-141B-53-front.png"
+          },
           "fuente": "PDF catalogo SS26"
         },
         {
@@ -3013,8 +3034,9 @@
             "en": "Brushed Silver - Blue Swirl"
           },
           "imagenes": {
+            "frontal": "assets/images/productos/avant-garde/pierre-rx/bpx-150c-53/Pierre-RX-BPX-150C-53-front.png",
             "lateral": "assets/images/productos/avant-garde/pierre-rx/bpx-150c-53/PIERRE_BPX_150C_53_1-3-4.jpg",
-            "hero": "assets/images/productos/avant-garde/pierre-rx/bpx-150c-53/PIERRE_BPX_150C_53_1-3-4.jpg"
+            "hero": "assets/images/productos/avant-garde/pierre-rx/bpx-150c-53/Pierre-RX-BPX-150C-53-front.png"
           },
           "fuente": "PDF catalogo SS26"
         },
@@ -3385,7 +3407,10 @@
             "en": "Black Palladium - Dark Brown Swirl"
           },
           "imagenes": {
-            "hero": "assets/images/productos/avant-garde/saint-jean/bpx-122b-50/SAINT-JEAN-BPX-122B-50_a.jpg"
+            "frontal": "assets/images/productos/avant-garde/saint-jean/bpx-122b-50/Saint-Jean-BPX-122B-50-front.png",
+            "lateral": "assets/images/productos/avant-garde/saint-jean/bpx-122b-50/SAINT-JEAN-BPX-122B-50_a.jpg",
+            "detalle": "assets/images/productos/avant-garde/saint-jean/bpx-122b-50/SAINT-JEAN-BPX-122B-50_b.jpg",
+            "hero": "assets/images/productos/avant-garde/saint-jean/bpx-122b-50/Saint-Jean-BPX-122B-50-front.png"
           },
           "fuente": "PDF catalogo SS26"
         },
@@ -6034,7 +6059,11 @@
             "es": "Brown Swirl - 12k Gold - Clear Lenses",
             "en": "Brown Swirl - 12k Gold - Clear Lenses"
           },
-          "imagenes": {},
+          "imagenes": {
+            "frontal": "assets/images/productos/aspirational/b-army-rx/bpx-164d-52/B-Army-RX-BPX-164D-52-front.png",
+            "lateral": "assets/images/productos/aspirational/b-army-rx/bpx-164d-52/B-Army-RX-BPX-164D-52-3-4.png",
+            "hero": "assets/images/productos/aspirational/b-army-rx/bpx-164d-52/B-Army-RX-BPX-164D-52-front.png"
+          },
           "fuente": "PDF catalogo SS26"
         }
       ],
@@ -6385,7 +6414,11 @@
             "es": "Black and Gold Frame w/ Dark Grey to Clear AR Lenses",
             "en": "Black and Gold Frame w/ Dark Grey to Clear AR Lenses"
           },
-          "imagenes": {},
+          "imagenes": {
+            "frontal": "assets/images/productos/aspirational/b-i/bps-100a-56/BPS-100A-56-front.jpg",
+            "lateral": "assets/images/productos/aspirational/b-i/bps-100a-56/BPS-100A-56-2-3-4.jpg",
+            "hero": "assets/images/productos/aspirational/b-i/bps-100a-56/BPS-100A-56-front.jpg"
+          },
           "fuente": "PDF catalogo SS26"
         },
         {
@@ -6394,7 +6427,11 @@
             "es": "Dark Brown Swirl and Gold Frame w/ G-15 AR Lenses",
             "en": "Dark Brown Swirl and Gold Frame w/ G-15 AR Lenses"
           },
-          "imagenes": {},
+          "imagenes": {
+            "frontal": "assets/images/productos/aspirational/b-i/bps-100b-56/BPS-100B-56-FRONT.jpg",
+            "lateral": "assets/images/productos/aspirational/b-i/bps-100b-56/BPS-100B-56-2-3-4.jpg",
+            "hero": "assets/images/productos/aspirational/b-i/bps-100b-56/BPS-100B-56-FRONT.jpg"
+          },
           "fuente": "PDF catalogo SS26"
         },
         {
@@ -6403,7 +6440,11 @@
             "es": "Black and Black Rhodium Frame w/ Dark",
             "en": "Black and Black Rhodium Frame w/ Dark"
           },
-          "imagenes": {},
+          "imagenes": {
+            "frontal": "assets/images/productos/aspirational/b-i/bps-100c-56/BPS-100C-56-FRONT.jpg",
+            "lateral": "assets/images/productos/aspirational/b-i/bps-100c-56/BPS-100C-56-2-3-4.jpg",
+            "hero": "assets/images/productos/aspirational/b-i/bps-100c-56/BPS-100C-56-FRONT.jpg"
+          },
           "fuente": "PDF catalogo SS26"
         },
         {
@@ -6412,7 +6453,11 @@
             "es": "Navy and Gold Frame w/ Brown to Clear Gradient AR Lenses",
             "en": "Navy and Gold Frame w/ Brown to Clear Gradient AR Lenses"
           },
-          "imagenes": {},
+          "imagenes": {
+            "frontal": "assets/images/productos/aspirational/b-i/bps-100e-56/BPS-100E-56-FRONT.jpg",
+            "lateral": "assets/images/productos/aspirational/b-i/bps-100e-56/BPS-100E-56-2-3-4.jpg",
+            "hero": "assets/images/productos/aspirational/b-i/bps-100e-56/BPS-100E-56-FRONT.jpg"
+          },
           "fuente": "PDF catalogo SS26"
         },
         {
@@ -6421,7 +6466,11 @@
             "es": "Medium Brown Swirl - White Gold w/ Dark Brown to clear Lenses - AR",
             "en": "Medium Brown Swirl - White Gold w/ Dark Brown to clear Lenses - AR"
           },
-          "imagenes": {},
+          "imagenes": {
+            "frontal": "assets/images/productos/aspirational/b-i/bps-100f-56/BPS_100F_56_2-FRONT.jpg",
+            "lateral": "assets/images/productos/aspirational/b-i/bps-100f-56/BPS-100F-56-2-3-4.jpg",
+            "hero": "assets/images/productos/aspirational/b-i/bps-100f-56/BPS_100F_56_2-FRONT.jpg"
+          },
           "fuente": "PDF catalogo SS26"
         },
         {
@@ -6430,7 +6479,11 @@
             "es": "Leather Black w/18k Gold - Orange Lenses",
             "en": "Leather Black w/18k Gold - Orange Lenses"
           },
-          "imagenes": {},
+          "imagenes": {
+            "frontal": "assets/images/productos/aspirational/b-i/bps-100g-56/BPS-100G-56-FRONT.jpg",
+            "lateral": "assets/images/productos/aspirational/b-i/bps-100g-56/BPS-100G-56-2-3-4.jpg",
+            "hero": "assets/images/productos/aspirational/b-i/bps-100g-56/BPS-100G-56-FRONT.jpg"
+          },
           "fuente": "PDF catalogo SS26"
         }
       ],
@@ -6878,15 +6931,6 @@
           "fuente": "PDF catalogo SS26"
         },
         {
-          "codigo": "BPX-184A-57",
-          "color": {
-            "es": "Black - 18k Gold - Clear Lenses",
-            "en": "Black - 18k Gold - Clear Lenses"
-          },
-          "imagenes": {},
-          "fuente": "PDF catalogo SS26"
-        },
-        {
           "codigo": "BPX-184A-57-AF",
           "color": {
             "es": "Black - 18k Gold - Clear Lenses",
@@ -6900,15 +6944,6 @@
           "fuente": "PDF catalogo SS26"
         },
         {
-          "codigo": "BPX-184B-57",
-          "color": {
-            "es": "Brown Swirl - 12k Gold - Clear Lenses",
-            "en": "Brown Swirl - 12k Gold - Clear Lenses"
-          },
-          "imagenes": {},
-          "fuente": "PDF catalogo SS26"
-        },
-        {
           "codigo": "BPX-184B-57-AF",
           "color": {
             "es": "Brown Swirl - 12k Gold - Clear Lenses",
@@ -6919,15 +6954,6 @@
             "lateral": "assets/images/productos/aspirational/francoise-ii/bpx-184b-57-af/FRANCOISE II - BPX-184B-57_3-4.jpg",
             "hero": "assets/images/productos/aspirational/francoise-ii/bpx-184b-57-af/FRANCOISE II - BPX-184B-57-AF_front(1).jpg"
           },
-          "fuente": "PDF catalogo SS26"
-        },
-        {
-          "codigo": "BPX-184C-57",
-          "color": {
-            "es": "Crystal Grey - Shiny Black Rhodium - Clear Lenses",
-            "en": "Crystal Grey - Shiny Black Rhodium - Clear Lenses"
-          },
-          "imagenes": {},
           "fuente": "PDF catalogo SS26"
         },
         {
@@ -7030,10 +7056,10 @@
             "en": "Black -18k Gold - Clear Lenses"
           },
           "imagenes": {
-            "lateral": "assets/images/productos/aspirational/francoise-iii/bpx-197a-57/FRANÇOISE III-BPX-197A-57-3-4.jpg",
-            "detalle": "assets/images/productos/aspirational/francoise-iii/bpx-197a-57/FRANÇOISE III-BPX-197A-57-DET.jpg",
-            "frontal": "assets/images/productos/aspirational/francoise-iii/bpx-197a-57/FRANÇOISE III-BPX-197A-57-FRONT.jpg",
-            "hero": "assets/images/productos/aspirational/francoise-iii/bpx-197a-57/FRANÇOISE III-BPX-197A-57-FRONT.jpg"
+            "lateral": "assets/images/productos/aspirational/francoise-iii/bpx-197a-57/FRANCOISE III-BPX-197A-57-3-4.jpg",
+            "detalle": "assets/images/productos/aspirational/francoise-iii/bpx-197a-57/FRANCOISE III-BPX-197A-57-DET.jpg",
+            "frontal": "assets/images/productos/aspirational/francoise-iii/bpx-197a-57/FRANCOISE III-BPX-197A-57-FRONT.jpg",
+            "hero": "assets/images/productos/aspirational/francoise-iii/bpx-197a-57/FRANCOISE III-BPX-197A-57-FRONT.jpg"
           },
           "fuente": "PDF catalogo SS26"
         },
@@ -7044,10 +7070,10 @@
             "en": "Black - Black Palladium - Clear Lenses"
           },
           "imagenes": {
-            "lateral": "assets/images/productos/aspirational/francoise-iii/bpx-197b-57/FRANÇOISE III-BPX-197B-57-3-4.jpg",
-            "detalle": "assets/images/productos/aspirational/francoise-iii/bpx-197b-57/FRANÇOISE III-BPX-197B-57-DET.jpg",
-            "frontal": "assets/images/productos/aspirational/francoise-iii/bpx-197b-57/FRANÇOISE III-BPX-197B-57-FRONT.jpg",
-            "hero": "assets/images/productos/aspirational/francoise-iii/bpx-197b-57/FRANÇOISE III-BPX-197B-57-FRONT.jpg"
+            "lateral": "assets/images/productos/aspirational/francoise-iii/bpx-197b-57/FRANCOISE III-BPX-197B-57-3-4.jpg",
+            "detalle": "assets/images/productos/aspirational/francoise-iii/bpx-197b-57/FRANCOISE III-BPX-197B-57-DET.jpg",
+            "frontal": "assets/images/productos/aspirational/francoise-iii/bpx-197b-57/FRANCOISE III-BPX-197B-57-FRONT.jpg",
+            "hero": "assets/images/productos/aspirational/francoise-iii/bpx-197b-57/FRANCOISE III-BPX-197B-57-FRONT.jpg"
           },
           "fuente": "PDF catalogo SS26"
         },
@@ -7058,10 +7084,10 @@
             "en": "Crystal Mud Green - Black Rhodium - Clear Lenses"
           },
           "imagenes": {
-            "lateral": "assets/images/productos/aspirational/francoise-iii/bpx-197c-57/FRANÇOISE III-BPX-197C-57-3-4.jpg",
-            "detalle": "assets/images/productos/aspirational/francoise-iii/bpx-197c-57/FRANÇOISE III-BPX-197C-57-DET.jpg",
-            "frontal": "assets/images/productos/aspirational/francoise-iii/bpx-197c-57/FRANÇOISE III-BPX-197C-57-FRONT.jpg",
-            "hero": "assets/images/productos/aspirational/francoise-iii/bpx-197c-57/FRANÇOISE III-BPX-197C-57-FRONT.jpg"
+            "lateral": "assets/images/productos/aspirational/francoise-iii/bpx-197c-57/FRANCOISE III-BPX-197C-57-3-4.jpg",
+            "detalle": "assets/images/productos/aspirational/francoise-iii/bpx-197c-57/FRANCOISE III-BPX-197C-57-DET.jpg",
+            "frontal": "assets/images/productos/aspirational/francoise-iii/bpx-197c-57/FRANCOISE III-BPX-197C-57-FRONT.jpg",
+            "hero": "assets/images/productos/aspirational/francoise-iii/bpx-197c-57/FRANCOISE III-BPX-197C-57-FRONT.jpg"
           },
           "fuente": "PDF catalogo SS26"
         }
@@ -7595,15 +7621,6 @@
       },
       "variantes": [
         {
-          "codigo": "BPX-115A-52",
-          "color": {
-            "es": "Black and Gold",
-            "en": "Black and Gold"
-          },
-          "imagenes": {},
-          "fuente": "PDF catalogo SS26"
-        },
-        {
           "codigo": "BPX-115A-52AF",
           "color": {
             "es": "Black and Gold",
@@ -7617,15 +7634,6 @@
           "fuente": "PDF catalogo SS26"
         },
         {
-          "codigo": "BPX-115B-52",
-          "color": {
-            "es": "Dark Brown Swirl and Gold",
-            "en": "Dark Brown Swirl and Gold"
-          },
-          "imagenes": {},
-          "fuente": "PDF catalogo SS26"
-        },
-        {
           "codigo": "BPX-115B-52-AF",
           "color": {
             "es": "Dark Brown Swirl and Gold",
@@ -7636,15 +7644,6 @@
             "frontal": "assets/images/productos/aspirational/sentinelle-ii/bpx-115b-52-af/SENTINELLE II BPX-115B-52-AF-FRONT.jpg",
             "hero": "assets/images/productos/aspirational/sentinelle-ii/bpx-115b-52-af/SENTINELLE II BPX-115B-52-AF-FRONT.jpg"
           },
-          "fuente": "PDF catalogo SS26"
-        },
-        {
-          "codigo": "BPX-115C-52",
-          "color": {
-            "es": "Dark Olive and Black Palladium",
-            "en": "Dark Olive and Black Palladium"
-          },
-          "imagenes": {},
           "fuente": "PDF catalogo SS26"
         },
         {
@@ -7857,15 +7856,6 @@
       },
       "variantes": [
         {
-          "codigo": "BPX-165A-48",
-          "color": {
-            "es": "Black - 18k Gold - Clear Lenses",
-            "en": "Black - 18k Gold - Clear Lenses"
-          },
-          "imagenes": {},
-          "fuente": "PDF catalogo SS26"
-        },
-        {
           "codigo": "BPX-165A-48-AF",
           "color": {
             "es": "Black - 18k Gold - Clear Lenses",
@@ -7880,15 +7870,6 @@
           "fuente": "PDF catalogo SS26"
         },
         {
-          "codigo": "BPX-165B-48",
-          "color": {
-            "es": "Spotted Havana - 18k Gold - Clear Lenses",
-            "en": "Spotted Havana - 18k Gold - Clear Lenses"
-          },
-          "imagenes": {},
-          "fuente": "PDF catalogo SS26"
-        },
-        {
           "codigo": "BPX-165B-48-AF",
           "color": {
             "es": "Spotted Havana - 18k Gold - Clear Lenses",
@@ -7899,15 +7880,6 @@
             "frontal": "assets/images/productos/aspirational/sentinelle-v/bpx-165b-48-af/SENTINELLE-V_BPX-165B_front.jpg",
             "hero": "assets/images/productos/aspirational/sentinelle-v/bpx-165b-48-af/SENTINELLE-V_BPX-165B_front.jpg"
           },
-          "fuente": "PDF catalogo SS26"
-        },
-        {
-          "codigo": "BPX-165C-48",
-          "color": {
-            "es": "Crystal Grey - 12k Gold - Clear Lenses",
-            "en": "Crystal Grey - 12k Gold - Clear Lenses"
-          },
-          "imagenes": {},
           "fuente": "PDF catalogo SS26"
         },
         {
@@ -8003,15 +7975,6 @@
       },
       "variantes": [
         {
-          "codigo": "BPX-182A-52",
-          "color": {
-            "es": "Black - 18k Gold - Clear Lenses",
-            "en": "Black - 18k Gold - Clear Lenses"
-          },
-          "imagenes": {},
-          "fuente": "PDF catalogo SS26"
-        },
-        {
           "codigo": "BPX-182A-52-AF",
           "color": {
             "es": "Black - 18k Gold - Clear Lenses",
@@ -8025,15 +7988,6 @@
           "fuente": "PDF catalogo SS26"
         },
         {
-          "codigo": "BPX-182B-52",
-          "color": {
-            "es": "Brown Swirl - 12k Gold - Clear Lenses",
-            "en": "Brown Swirl - 12k Gold - Clear Lenses"
-          },
-          "imagenes": {},
-          "fuente": "PDF catalogo SS26"
-        },
-        {
           "codigo": "BPX-182B-52-AF",
           "color": {
             "es": "Brown Swirl - 12k Gold - Clear Lenses",
@@ -8044,15 +7998,6 @@
             "frontal": "assets/images/productos/aspirational/tempo/bpx-182b-52-af/TEMPO - BPX-182B-52_front.jpg",
             "hero": "assets/images/productos/aspirational/tempo/bpx-182b-52-af/TEMPO - BPX-182B-52_front.jpg"
           },
-          "fuente": "PDF catalogo SS26"
-        },
-        {
-          "codigo": "BPX-182C-52",
-          "color": {
-            "es": "Crystal Grey - Shiny Black Rhodium - Clear Lenses",
-            "en": "Crystal Grey - Shiny Black Rhodium - Clear Lenses"
-          },
-          "imagenes": {},
           "fuente": "PDF catalogo SS26"
         },
         {
@@ -8271,7 +8216,12 @@
             "es": "Black - Gold",
             "en": "Black - Gold"
           },
-          "imagenes": {},
+          "imagenes": {
+            "frontal": "assets/images/productos/aspirational/chevalier/bpx-158a-48/CHEVALIER BPX-158A-48-front.jpg",
+            "lateral": "assets/images/productos/aspirational/chevalier/bpx-158a-48/CHEVALIER BPX-158A-48_b-3-4.jpg",
+            "detalle": "assets/images/productos/aspirational/chevalier/bpx-158a-48/CHEVALIER BPX-158A-48-det.jpg",
+            "hero": "assets/images/productos/aspirational/chevalier/bpx-158a-48/CHEVALIER BPX-158A-48-front.jpg"
+          },
           "fuente": "PDF catalogo SS26"
         },
         {
@@ -8280,7 +8230,11 @@
             "es": "Black Crystal - Matte Black",
             "en": "Black Crystal - Matte Black"
           },
-          "imagenes": {},
+          "imagenes": {
+            "frontal": "assets/images/productos/aspirational/chevalier/bpx-158b-48/CHEVALIER BPX-158B-48_front.jpg",
+            "lateral": "assets/images/productos/aspirational/chevalier/bpx-158b-48/CHEVALIER BPX-158B-48_3-4.jpg",
+            "hero": "assets/images/productos/aspirational/chevalier/bpx-158b-48/CHEVALIER BPX-158B-48_front.jpg"
+          },
           "fuente": "PDF catalogo SS26"
         },
         {
@@ -8289,7 +8243,11 @@
             "es": "Crystal Grey - White Gold",
             "en": "Crystal Grey - White Gold"
           },
-          "imagenes": {},
+          "imagenes": {
+            "frontal": "assets/images/productos/aspirational/chevalier/bpx-158c-48/CHEVALIER BPX-158C-48_front.jpg",
+            "lateral": "assets/images/productos/aspirational/chevalier/bpx-158c-48/CHEVALIER BPX-158C-48_3-4.jpg",
+            "hero": "assets/images/productos/aspirational/chevalier/bpx-158c-48/CHEVALIER BPX-158C-48_front.jpg"
+          },
           "fuente": "PDF catalogo SS26"
         }
       ],
