@@ -42,7 +42,19 @@
 
   function initHeroVideo() {
     const video = document.querySelector("[data-hero-video]");
-    if (!video || !video.dataset.videoSrc) return;
+    if (!video) return;
+
+    const markReady = () => {
+      video.closest(".hero-home")?.classList.add("has-video");
+    };
+
+    if (!video.dataset.videoSrc) {
+      if (video.readyState >= 2) markReady();
+      video.addEventListener("canplay", markReady, { once: true });
+      const playPromise = video.play();
+      if (playPromise?.catch) playPromise.catch(() => {});
+      return;
+    }
 
     const reduceMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches;
     const connection = navigator.connection || {};
@@ -57,9 +69,7 @@
       video.src = source.includes("#") ? source : `${source}#t=0,18`;
       video.addEventListener(
         "canplay",
-        () => {
-          video.closest(".hero-home")?.classList.add("has-video");
-        },
+        markReady,
         { once: true }
       );
       const playPromise = video.play();

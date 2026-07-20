@@ -2584,3 +2584,36 @@ body {
       linear-gradient(0deg, rgba(0, 0, 0, 0.3), transparent 54%);
   }
 }
+
+/* Home hero: video-only background */
+.hero-home::before {
+  background-image: none;
+  opacity: 0;
+}
+
+.hero-home .hero-video {
+  opacity: 1;
+  filter: saturate(0.98) brightness(0.98);
+}
+
+.hero-home.has-video .hero-video {
+  opacity: 1;
+}
+
+.hero-home::after {
+  background:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.44), rgba(0, 0, 0, 0.16) 48%, rgba(0, 0, 0, 0.02)),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.18), transparent 52%);
+}
+
+@media (max-width: 760px) {
+  .hero-home .hero-video {
+    object-position: center center;
+  }
+
+  .hero-home::after {
+    background:
+      linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.22)),
+      linear-gradient(0deg, rgba(0, 0, 0, 0.26), transparent 58%);
+  }
+}
