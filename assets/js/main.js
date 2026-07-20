@@ -6,6 +6,8 @@
       button.addEventListener("click", () => window.BalmainI18n?.setLang(button.dataset.langOption));
     });
 
+    initHeroVideo();
+
     const menu = document.querySelector("[data-nav-links]");
     document.querySelector("[data-menu-toggle]")?.addEventListener("click", () => {
       menu?.classList.toggle("open");
@@ -37,4 +39,50 @@
   }
 
   document.addEventListener("DOMContentLoaded", init);
+
+  function initHeroVideo() {
+    const video = document.querySelector("[data-hero-video]");
+    if (!video || !video.dataset.videoSrc) return;
+
+    const reduceMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches;
+    const connection = navigator.connection || {};
+    const saveData = connection.saveData;
+    const slowConnection = /(^2g|3g)/.test(connection.effectiveType || "");
+    if (reduceMotion || saveData || slowConnection) return;
+
+    const loadVideo = () => {
+      if (video.dataset.loaded) return;
+      video.dataset.loaded = "true";
+      const source = video.dataset.videoSrc;
+      video.src = source.includes("#") ? source : `${source}#t=0,18`;
+      video.addEventListener(
+        "canplay",
+        () => {
+          video.closest(".hero-home")?.classList.add("has-video");
+        },
+        { once: true }
+      );
+      const playPromise = video.play();
+      if (playPromise?.catch) playPromise.catch(() => {});
+    };
+
+    const scheduleLoad = () => {
+      const delay = window.matchMedia?.("(max-width: 760px)")?.matches ? 1600 : 350;
+      const queue = () => {
+        if ("requestIdleCallback" in window) {
+          window.requestIdleCallback(loadVideo, { timeout: 2200 });
+          return;
+        }
+        loadVideo();
+      };
+      window.setTimeout(queue, delay);
+    };
+
+    if (document.readyState === "complete") {
+      scheduleLoad();
+      return;
+    }
+
+    window.addEventListener("load", scheduleLoad, { once: true });
+  }
 })();
