@@ -184,6 +184,11 @@ function processDetection(result, source, mirrored) {
   }
 
   state.missedFaces += 1;
+  if (source === photo) {
+    stage.classList.remove("face-detected");
+    setTrackingState("searching", "No se detectó un rostro");
+    return;
+  }
   if (state.missedFaces > 5) {
     stage.classList.remove("face-detected");
     setTrackingState("searching", "Buscando un rostro");
@@ -291,6 +296,25 @@ function stopCamera() {
   if (state.activeSource === "camera") state.activeSource = null;
 }
 
+async function requestUserCamera() {
+  try {
+    return await navigator.mediaDevices.getUserMedia({
+      video: {
+        facingMode: "user",
+        width: { ideal: 1280 },
+        height: { ideal: 960 },
+      },
+      audio: false,
+    });
+  } catch (error) {
+    const canRetryWithBasicVideo =
+      error &&
+      ["OverconstrainedError", "ConstraintNotSatisfiedError", "TypeError"].includes(error.name);
+    if (!canRetryWithBasicVideo) throw error;
+    return navigator.mediaDevices.getUserMedia({ video: true, audio: false });
+  }
+}
+
 async function startCamera() {
   if (!navigator.mediaDevices?.getUserMedia) {
     setStatus("Este navegador no permite usar la cámara aquí. Puedes subir una fotografía.", true);
@@ -304,14 +328,7 @@ async function startCamera() {
   setStatus("Solicitando permiso para usar la cámara…");
 
   try {
-    const stream = await navigator.mediaDevices.getUserMedia({
-      video: {
-        facingMode: "user",
-        width: { ideal: 1280 },
-        height: { ideal: 960 },
-      },
-      audio: false,
-    });
+    const stream = await requestUserCamera();
     state.stream = stream;
     state.activeSource = "camera";
     video.srcObject = stream;
@@ -336,16 +353,40 @@ async function startCamera() {
     );
   } catch (error) {
     stopCamera();
-    const denied =
-      error &&
-      (error.name === "NotAllowedError" || error.name === "PermissionDeniedError");
+    const errorName = error?.name || "";
+    const denied = ["NotAllowedError", "PermissionDeniedError"].includes(errorName);
+    const unavailable = ["NotFoundError", "DevicesNotFoundError"].includes(errorName);
+    const busy = ["NotReadableError", "TrackStartError", "AbortError"].includes(errorName);
+
+    if (denied) {
+      setStatus(
+        "El navegador bloqueó la cámara. Permite el acceso en la configuración del sitio y pulsa Activar cámara de nuevo, o sube una fotografía.",
+        true
+      );
+      setTrackingState("idle", "Permite la cámara para activar el seguimiento");
+      return;
+    }
+
+    if (unavailable) {
+      setStatus("No se encontró una cámara disponible en este dispositivo. Puedes subir una fotografía.", true);
+      setTrackingState("error", "Cámara no detectada");
+      return;
+    }
+
+    if (busy) {
+      setStatus(
+        "La cámara está siendo utilizada por otra aplicación. Ciérrala allí y pulsa Activar cámara de nuevo.",
+        true
+      );
+      setTrackingState("idle", "Cierra la otra aplicación y vuelve a intentarlo");
+      return;
+    }
+
     setStatus(
-      denied
-        ? "No se concedió acceso a la cámara. Puedes permitirlo en el navegador o subir una fotografía."
-        : "No fue posible iniciar la cámara o el seguimiento facial. Puedes usar una fotografía y el ajuste manual.",
+      "No fue posible iniciar la cámara. Puedes volver a intentarlo o usar una fotografía con seguimiento automático.",
       true
     );
-    setTrackingState("error", "Ajuste manual disponible");
+    setTrackingState("error", "Seguimiento disponible al subir una fotografía");
   }
 }
 
