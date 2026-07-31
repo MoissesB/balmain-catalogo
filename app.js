@@ -2,6 +2,10 @@
   const STORAGE_KEY = "innova-boutique-order-v1";
   const HERO_PROGRESS_KEY = "innova-boutique-hero-progress-v2";
   const config = window.INNOVA_BOUTIQUE_CONFIG || { brands: {} };
+  if (config.maintenanceMode) {
+    document.documentElement.classList.add("maintenance-active");
+    return;
+  }
   const brandLabels = {
     "alfred-kerbs": "Alfred Kerbs",
     balmain: "Balmain Eyewear",

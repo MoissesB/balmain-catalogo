@@ -4,6 +4,7 @@
   const silhouetteProductionUrl = "https://moissesb.github.io/innova-silhouette-catalogo/";
   window.INNOVA_BOUTIQUE_CONFIG = {
     local,
+    maintenanceMode: true,
     portalUrl: local ? "http://localhost:3100" : window.location.origin,
     allowedOrigins: local
       ? ["http://localhost:3000", "http://localhost:3001", "http://localhost:3100", "http://localhost:3101", "http://localhost:5174"]
