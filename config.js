@@ -3,6 +3,7 @@
   const alfredProductionUrl = "https://alfred-kerbs-innova-eyewear.moisses.chatgpt.site/";
   const silhouetteProductionUrl = "https://moissesb.github.io/innova-silhouette-catalogo/";
   window.INNOVA_BOUTIQUE_CONFIG = {
+    local,
     portalUrl: local ? "http://localhost:3100" : window.location.origin,
     allowedOrigins: local
       ? ["http://localhost:3000", "http://localhost:3001", "http://localhost:3100", "http://localhost:3101", "http://localhost:5174"]

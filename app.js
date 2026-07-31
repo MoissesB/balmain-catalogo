@@ -32,9 +32,18 @@
     return new URL(String(path).replace(/^\/+/, ""), normalizedBase).href;
   }
 
+  function brandRouteDestination(brand, path = "") {
+    if (brand === "silhouette" && !config.local) {
+      const base = brandDestination(brand);
+      const route = String(path).replace(/^\/+/, "");
+      return `${base.replace(/\/+$/, "/")}#/${route}`;
+    }
+    return brandDestination(brand, path);
+  }
+
   document.querySelectorAll("[data-brand-route]").forEach((link) => {
     const [brand, ...pathParts] = link.dataset.brandRoute.split(":");
-    link.href = brandDestination(brand, pathParts.join(":"));
+    link.href = brandRouteDestination(brand, pathParts.join(":"));
   });
 
   document.querySelectorAll("[data-brand-asset]").forEach((image) => {

@@ -79,6 +79,9 @@
     const silhouette = isLocal
       ? "http://localhost:5174"
       : "https://moissesb.github.io/innova-silhouette-catalogo";
+    const silhouetteRoute = (path) => isLocal
+      ? `${silhouette}/${String(path).replace(/^\/+/, "")}`
+      : `${silhouette}/#/${String(path).replace(/^\/+/, "")}`;
 
     document.body.insertAdjacentHTML("afterbegin", `
       <header class="innova-global-header" data-innova-global-header>
@@ -105,9 +108,9 @@
               <div data-innova-mega-brand="silhouette">
                 <span>03 · Austria</span>
                 <a href="${silhouette}"><strong>Silhouette</strong></a>
-                <a href="${silhouette}/catalogo/gafas-graduadas">Gafas graduadas</a>
-                <a href="${silhouette}/catalogo/gafas-de-sol">Gafas de sol</a>
-                <a href="${silhouette}/catalogo/atelier-next">Atelier</a>
+                <a href="${silhouetteRoute("catalogo/gafas-graduadas")}">Gafas graduadas</a>
+                <a href="${silhouetteRoute("catalogo/gafas-de-sol")}">Gafas de sol</a>
+                <a href="${silhouetteRoute("catalogo/atelier-next")}">Atelier</a>
               </div>
               <aside class="innova-global-mega-visual">
                 <div class="innova-global-mega-visual__media" aria-hidden="true">
