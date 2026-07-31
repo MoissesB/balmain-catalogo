@@ -32,11 +32,19 @@
     return new URL(String(path).replace(/^\/+/, ""), normalizedBase).href;
   }
 
+  function brandAssetDestination(brand, path = "") {
+    const base = config.assets?.[brand] || config.brands?.[brand];
+    if (!base) return "#";
+    const normalizedBase = new URL(base, window.location.href);
+    normalizedBase.pathname = `${normalizedBase.pathname.replace(/\/+$/, "")}/`;
+    return new URL(String(path).replace(/^\/+/, ""), normalizedBase).href;
+  }
+
   function brandRouteDestination(brand, path = "") {
-    if (brand === "silhouette" && !config.local) {
+    if (["alfred-kerbs", "silhouette"].includes(brand) && !config.local) {
       const base = brandDestination(brand);
       const route = String(path).replace(/^\/+/, "");
-      return `${base.replace(/\/+$/, "/")}#/${route}`;
+      return route ? `${base.replace(/\/+$/, "/")}#/${route}` : base;
     }
     return brandDestination(brand, path);
   }
@@ -48,7 +56,7 @@
 
   document.querySelectorAll("[data-brand-asset]").forEach((image) => {
     const [brand, ...pathParts] = image.dataset.brandAsset.split(":");
-    image.src = brandDestination(brand, pathParts.join(":"));
+    image.src = brandAssetDestination(brand, pathParts.join(":"));
     image.addEventListener("error", () => {
       if (image.dataset.fallbackApplied) return;
       image.dataset.fallbackApplied = "true";
@@ -74,9 +82,9 @@
 
     if (!track || !products.length) return;
     track.innerHTML = products.map((product) => `
-      <a class="product-preview" href="${escapeAttribute(brandDestination(brand, product.path))}">
+      <a class="product-preview" href="${escapeAttribute(brandRouteDestination(brand, product.path))}">
         <span class="product-preview-media">
-          <img src="${escapeAttribute(brandDestination(brand, product.image))}" alt="${escapeAttribute(`${product.name} · ${brandLabels[brand] || brand}`)}" loading="lazy">
+          <img src="${escapeAttribute(brandAssetDestination(brand, product.image))}" alt="${escapeAttribute(`${product.name} · ${brandLabels[brand] || brand}`)}" loading="lazy">
         </span>
         <span class="product-preview-copy">
           <b>${escapeHtml(product.name)}</b>

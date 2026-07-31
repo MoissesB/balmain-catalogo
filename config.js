@@ -9,6 +9,11 @@
       ? ["http://localhost:3000", "http://localhost:3001", "http://localhost:3100", "http://localhost:3101", "http://localhost:5174"]
       : [window.location.origin, new URL(alfredProductionUrl).origin, new URL(silhouetteProductionUrl).origin],
     brands: {
+      "alfred-kerbs": local ? "http://localhost:3001" : "/alfred-kerbs/",
+      balmain: local ? "http://localhost:3101" : "/balmain/",
+      silhouette: local ? "http://localhost:5174" : "/silhouette/",
+    },
+    assets: {
       "alfred-kerbs": local ? "http://localhost:3001" : alfredProductionUrl,
       balmain: local ? "http://localhost:3101" : "/balmain/",
       silhouette: local ? "http://localhost:5174" : silhouetteProductionUrl,
