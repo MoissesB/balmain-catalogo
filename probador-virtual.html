@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Probador virtual privado de Innova Boutique para visualizar monturas Alfred Kerbs, Balmain Eyewear y Silhouette.">
+    <title>Probador virtual · Innova Boutique</title>
+    <link rel="stylesheet" href="assets/css/virtual-try-on.css">
+  </head>
+  <body>
+    <header class="tryon-header">
+      <a class="tryon-brand" href="index.html" aria-label="Volver a Innova Boutique">
+        <img src="assets/innova-official.png" alt="Innova Eyewear">
+      </a>
+      <div class="tryon-header__title">
+        <span>INNOVA BOUTIQUE</span>
+        <strong>Probador virtual</strong>
+      </div>
+      <a class="tryon-back" data-return-link href="index.html">Volver al producto <span aria-hidden="true">→</span></a>
+    </header>
+
+    <main class="tryon-layout">
+      <section class="tryon-stage-shell" aria-label="Vista previa del probador">
+        <div class="tryon-stage" data-stage>
+          <div class="tryon-empty" data-empty>
+            <span>VISTA PREVIA PRIVADA</span>
+            <h1>Prueba la montura<br>con tu cámara o una foto.</h1>
+            <p>La imagen permanece en este dispositivo y no se envía a Innova Eyewear.</p>
+          </div>
+          <video data-camera autoplay muted playsinline aria-label="Vista de la cámara"></video>
+          <img class="tryon-photo" data-photo alt="Fotografía seleccionada">
+          <div class="tryon-shade" aria-hidden="true"></div>
+          <img class="tryon-frame" data-frame alt="" draggable="false">
+          <div class="tryon-guide" data-guide aria-hidden="true">
+            <span></span><span></span>
+          </div>
+          <div class="tryon-tracking-status" data-tracking-status data-state="idle" hidden>
+            <span aria-hidden="true"></span>
+            <strong data-tracking-label>Ajuste inteligente preparado</strong>
+          </div>
+          <div class="tryon-stage__badge" data-brand-badge>INNOVA BOUTIQUE</div>
+        </div>
+
+        <div class="tryon-source-actions">
+          <button class="primary-action" type="button" data-camera-start>
+            <span aria-hidden="true">◉</span> Activar cámara
+          </button>
+          <label class="secondary-action" for="tryonPhoto">
+            <span aria-hidden="true">＋</span> Subir una foto
+          </label>
+          <input id="tryonPhoto" data-photo-input type="file" accept="image/jpeg,image/png,image/webp" hidden>
+          <button class="text-action" type="button" data-camera-stop hidden>Detener cámara</button>
+        </div>
+        <p class="tryon-status" data-status role="status" aria-live="polite">
+          Elige cámara o fotografía para comenzar.
+        </p>
+      </section>
+
+      <aside class="tryon-panel">
+        <div class="tryon-product">
+          <span data-brand-name>INNOVA BOUTIQUE</span>
+          <h2 data-product-name>Montura seleccionada</h2>
+          <p>La montura detecta tu rostro y acompaña automáticamente su posición, tamaño e inclinación. Los controles permiten afinar el resultado.</p>
+        </div>
+
+        <div class="tryon-controls">
+          <label>
+            <span><b>Escala</b><output data-scale-output>100%</output></span>
+            <input data-control="scale" type="range" min="45" max="190" value="100">
+          </label>
+          <label>
+            <span><b>Posición horizontal</b><output data-x-output>0</output></span>
+            <input data-control="x" type="range" min="-45" max="45" value="0">
+          </label>
+          <label>
+            <span><b>Posición vertical</b><output data-y-output>0</output></span>
+            <input data-control="y" type="range" min="-45" max="45" value="0">
+          </label>
+          <label>
+            <span><b>Rotación</b><output data-rotation-output>0°</output></span>
+            <input data-control="rotation" type="range" min="-18" max="18" value="0">
+          </label>
+          <label>
+            <span><b>Opacidad</b><output data-opacity-output>100%</output></span>
+            <input data-control="opacity" type="range" min="35" max="100" value="100">
+          </label>
+        </div>
+
+        <div class="tryon-panel__actions">
+          <button type="button" data-reset>Restablecer ajuste</button>
+          <button type="button" data-mirror>Invertir cámara</button>
+          <button class="tracking-action is-active" type="button" data-tracking-toggle aria-pressed="true">
+            <span aria-hidden="true"></span> Seguimiento automático
+          </button>
+        </div>
+
+        <div class="tryon-note">
+          <span aria-hidden="true">01</span>
+          <p>Esta visualización orientativa ayuda a valorar proporción y color. El ajuste final debe realizarlo un profesional de la óptica.</p>
+        </div>
+      </aside>
+    </main>
+
+    <footer class="tryon-footer">
+      <strong>INNOVA EYEWEAR</strong>
+      <span>Alfred Kerbs · Balmain Eyewear · Silhouette</span>
+      <a href="mailto:info@innova-eyewear.com">info@innova-eyewear.com</a>
+    </footer>
+
+    <script src="config.js"></script>
+    <script type="module" src="assets/js/virtual-try-on.js"></script>
+  </body>
+</html>

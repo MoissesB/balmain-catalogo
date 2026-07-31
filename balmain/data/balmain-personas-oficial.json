@@ -1,0 +1,889 @@
+{
+  "checkedAt": "2026-07-31T00:05:43.756Z",
+  "sources": [
+    {
+      "audience": "mujer",
+      "url": "https://es.balmain.com/es/mujer/accesorios/gafas/"
+    },
+    {
+      "audience": "hombre",
+      "url": "https://es.balmain.com/es/hombre/accesorios/gafas/"
+    }
+  ],
+  "images": [
+    {
+      "productName": "Brigade IV",
+      "productSlug": "brigade-iv",
+      "variantCode": "BPS-120D-52",
+      "matchKey": "BPS120D",
+      "officialMaster": "GBPS120",
+      "officialAssetId": "GBPS120120DB",
+      "viewCode": "B",
+      "sourceUrl": "https://media.balmain.com/image/upload/f_jpg,q_92,w_1600/sfcc/balmain/hi-res/GBPS120120DB?_i=AG",
+      "categoryUrls": [
+        "https://es.balmain.com/es/hombre/accesorios/gafas/",
+        "https://es.balmain.com/es/mujer/accesorios/gafas/"
+      ],
+      "audiences": [
+        "hombre",
+        "mujer"
+      ],
+      "localPath": "assets/images/productos-oficiales/personas/brigade-iv/bps-120d-52/persona-01.jpg",
+      "bytes": 645022
+    },
+    {
+      "productName": "Brigade IV",
+      "productSlug": "brigade-iv",
+      "variantCode": "BPS-120D-52",
+      "matchKey": "BPS120D",
+      "officialMaster": "GBPS120",
+      "officialAssetId": "GBPS120120DI",
+      "viewCode": "I",
+      "sourceUrl": "https://media.balmain.com/image/upload/f_jpg,q_92,w_1600/sfcc/balmain/hi-res/GBPS120120DI?_i=AG",
+      "categoryUrls": [
+        "https://es.balmain.com/es/hombre/accesorios/gafas/",
+        "https://es.balmain.com/es/mujer/accesorios/gafas/"
+      ],
+      "audiences": [
+        "hombre",
+        "mujer"
+      ],
+      "localPath": "assets/images/productos-oficiales/personas/brigade-iv/bps-120d-52/persona-02.jpg",
+      "bytes": 680832
+    },
+    {
+      "productName": "Brigade IV",
+      "productSlug": "brigade-iv",
+      "variantCode": "BPS-120F-52",
+      "matchKey": "BPS120F",
+      "officialMaster": "GBPS120",
+      "officialAssetId": "GBPS120120FB",
+      "viewCode": "B",
+      "sourceUrl": "https://media.balmain.com/image/upload/f_jpg,q_92,w_1600/sfcc/balmain/hi-res/GBPS120120FB?_i=AG",
+      "categoryUrls": [
+        "https://es.balmain.com/es/hombre/accesorios/gafas/",
+        "https://es.balmain.com/es/mujer/accesorios/gafas/"
+      ],
+      "audiences": [
+        "hombre",
+        "mujer"
+      ],
+      "localPath": "assets/images/productos-oficiales/personas/brigade-iv/bps-120f-52/persona-01.jpg",
+      "bytes": 694160
+    },
+    {
+      "productName": "Brigade IV",
+      "productSlug": "brigade-iv",
+      "variantCode": "BPS-120F-52",
+      "matchKey": "BPS120F",
+      "officialMaster": "GBPS120",
+      "officialAssetId": "GBPS120120FI",
+      "viewCode": "I",
+      "sourceUrl": "https://media.balmain.com/image/upload/f_jpg,q_92,w_1600/sfcc/balmain/hi-res/GBPS120120FI?_i=AG",
+      "categoryUrls": [
+        "https://es.balmain.com/es/hombre/accesorios/gafas/",
+        "https://es.balmain.com/es/mujer/accesorios/gafas/"
+      ],
+      "audiences": [
+        "hombre",
+        "mujer"
+      ],
+      "localPath": "assets/images/productos-oficiales/personas/brigade-iv/bps-120f-52/persona-02.jpg",
+      "bytes": 873501
+    },
+    {
+      "productName": "B-Scene",
+      "productSlug": "b-scene",
+      "variantCode": "BPS-199C-56",
+      "matchKey": "BPS199C",
+      "officialMaster": "GBPS199",
+      "officialAssetId": "GBPS199199CB",
+      "viewCode": "B",
+      "sourceUrl": "https://media.balmain.com/image/upload/f_jpg,q_92,w_1600/sfcc/balmain/hi-res/GBPS199199CB?_i=AG",
+      "categoryUrls": [
+        "https://es.balmain.com/es/hombre/accesorios/gafas/",
+        "https://es.balmain.com/es/mujer/accesorios/gafas/"
+      ],
+      "audiences": [
+        "hombre",
+        "mujer"
+      ],
+      "localPath": "assets/images/productos-oficiales/personas/b-scene/bps-199c-56/persona-01.jpg",
+      "bytes": 666852
+    },
+    {
+      "productName": "B-Scene",
+      "productSlug": "b-scene",
+      "variantCode": "BPS-199C-56",
+      "matchKey": "BPS199C",
+      "officialMaster": "GBPS199",
+      "officialAssetId": "GBPS199199CI",
+      "viewCode": "I",
+      "sourceUrl": "https://media.balmain.com/image/upload/f_jpg,q_92,w_1600/sfcc/balmain/hi-res/GBPS199199CI?_i=AG",
+      "categoryUrls": [
+        "https://es.balmain.com/es/hombre/accesorios/gafas/",
+        "https://es.balmain.com/es/mujer/accesorios/gafas/"
+      ],
+      "audiences": [
+        "hombre",
+        "mujer"
+      ],
+      "localPath": "assets/images/productos-oficiales/personas/b-scene/bps-199c-56/persona-02.jpg",
+      "bytes": 654543
+    },
+    {
+      "productName": "B-Scene",
+      "productSlug": "b-scene",
+      "variantCode": "BPS-199B-56",
+      "matchKey": "BPS199B",
+      "officialMaster": "GBPS199",
+      "officialAssetId": "GBPS199199BB",
+      "viewCode": "B",
+      "sourceUrl": "https://media.balmain.com/image/upload/f_jpg,q_92,w_1600/sfcc/balmain/hi-res/GBPS199199BB?_i=AG",
+      "categoryUrls": [
+        "https://es.balmain.com/es/hombre/accesorios/gafas/",
+        "https://es.balmain.com/es/mujer/accesorios/gafas/"
+      ],
+      "audiences": [
+        "hombre",
+        "mujer"
+      ],
+      "localPath": "assets/images/productos-oficiales/personas/b-scene/bps-199b-56/persona-01.jpg",
+      "bytes": 654795
+    },
+    {
+      "productName": "B-Scene",
+      "productSlug": "b-scene",
+      "variantCode": "BPS-199B-56",
+      "matchKey": "BPS199B",
+      "officialMaster": "GBPS199",
+      "officialAssetId": "GBPS199199BI",
+      "viewCode": "I",
+      "sourceUrl": "https://media.balmain.com/image/upload/f_jpg,q_92,w_1600/sfcc/balmain/hi-res/GBPS199199BI?_i=AG",
+      "categoryUrls": [
+        "https://es.balmain.com/es/hombre/accesorios/gafas/",
+        "https://es.balmain.com/es/mujer/accesorios/gafas/"
+      ],
+      "audiences": [
+        "hombre",
+        "mujer"
+      ],
+      "localPath": "assets/images/productos-oficiales/personas/b-scene/bps-199b-56/persona-02.jpg",
+      "bytes": 809211
+    },
+    {
+      "productName": "B-Scene",
+      "productSlug": "b-scene",
+      "variantCode": "BPS-199A-56",
+      "matchKey": "BPS199A",
+      "officialMaster": "GBPS199",
+      "officialAssetId": "GBPS199199AB",
+      "viewCode": "B",
+      "sourceUrl": "https://media.balmain.com/image/upload/f_jpg,q_92,w_1600/sfcc/balmain/hi-res/GBPS199199AB?_i=AG",
+      "categoryUrls": [
+        "https://es.balmain.com/es/hombre/accesorios/gafas/",
+        "https://es.balmain.com/es/mujer/accesorios/gafas/"
+      ],
+      "audiences": [
+        "hombre",
+        "mujer"
+      ],
+      "localPath": "assets/images/productos-oficiales/personas/b-scene/bps-199a-56/persona-01.jpg",
+      "bytes": 653745
+    },
+    {
+      "productName": "B-Scene",
+      "productSlug": "b-scene",
+      "variantCode": "BPS-199A-56",
+      "matchKey": "BPS199A",
+      "officialMaster": "GBPS199",
+      "officialAssetId": "GBPS199199AI",
+      "viewCode": "I",
+      "sourceUrl": "https://media.balmain.com/image/upload/f_jpg,q_92,w_1600/sfcc/balmain/hi-res/GBPS199199AI?_i=AG",
+      "categoryUrls": [
+        "https://es.balmain.com/es/hombre/accesorios/gafas/",
+        "https://es.balmain.com/es/mujer/accesorios/gafas/"
+      ],
+      "audiences": [
+        "hombre",
+        "mujer"
+      ],
+      "localPath": "assets/images/productos-oficiales/personas/b-scene/bps-199a-56/persona-02.jpg",
+      "bytes": 517194
+    },
+    {
+      "productName": "B-Aura",
+      "productSlug": "b-aura",
+      "variantCode": "BPS-200A-51",
+      "matchKey": "BPS200A",
+      "officialMaster": "GBPS200",
+      "officialAssetId": "GBPS200200AB",
+      "viewCode": "B",
+      "sourceUrl": "https://media.balmain.com/image/upload/f_jpg,q_92,w_1600/sfcc/balmain/hi-res/GBPS200200AB?_i=AG",
+      "categoryUrls": [
+        "https://es.balmain.com/es/hombre/accesorios/gafas/",
+        "https://es.balmain.com/es/mujer/accesorios/gafas/"
+      ],
+      "audiences": [
+        "hombre",
+        "mujer"
+      ],
+      "localPath": "assets/images/productos-oficiales/personas/b-aura/bps-200a-51/persona-01.jpg",
+      "bytes": 679105
+    },
+    {
+      "productName": "B-Aura",
+      "productSlug": "b-aura",
+      "variantCode": "BPS-200C-51",
+      "matchKey": "BPS200C",
+      "officialMaster": "GBPS200",
+      "officialAssetId": "GBPS200200CB",
+      "viewCode": "B",
+      "sourceUrl": "https://media.balmain.com/image/upload/f_jpg,q_92,w_1600/sfcc/balmain/hi-res/GBPS200200CB?_i=AG",
+      "categoryUrls": [
+        "https://es.balmain.com/es/hombre/accesorios/gafas/",
+        "https://es.balmain.com/es/mujer/accesorios/gafas/"
+      ],
+      "audiences": [
+        "hombre",
+        "mujer"
+      ],
+      "localPath": "assets/images/productos-oficiales/personas/b-aura/bps-200c-51/persona-01.jpg",
+      "bytes": 645305
+    },
+    {
+      "productName": "B-Aura",
+      "productSlug": "b-aura",
+      "variantCode": "BPS-200B-51",
+      "matchKey": "BPS200B",
+      "officialMaster": "GBPS200",
+      "officialAssetId": "GBPS200200BB",
+      "viewCode": "B",
+      "sourceUrl": "https://media.balmain.com/image/upload/f_jpg,q_92,w_1600/sfcc/balmain/hi-res/GBPS200200BB?_i=AG",
+      "categoryUrls": [
+        "https://es.balmain.com/es/hombre/accesorios/gafas/",
+        "https://es.balmain.com/es/mujer/accesorios/gafas/"
+      ],
+      "audiences": [
+        "hombre",
+        "mujer"
+      ],
+      "localPath": "assets/images/productos-oficiales/personas/b-aura/bps-200b-51/persona-01.jpg",
+      "bytes": 675600
+    },
+    {
+      "productName": "Pulse",
+      "productSlug": "pulse",
+      "variantCode": "BPS-185A-57",
+      "matchKey": "BPS185A",
+      "officialMaster": "FBPS185",
+      "officialAssetId": "FBPS185185AB",
+      "viewCode": "B",
+      "sourceUrl": "https://media.balmain.com/image/upload/f_jpg,q_92,w_1600/sfcc/balmain/hi-res/FBPS185185AB?_i=AG",
+      "categoryUrls": [
+        "https://es.balmain.com/es/hombre/accesorios/gafas/",
+        "https://es.balmain.com/es/mujer/accesorios/gafas/"
+      ],
+      "audiences": [
+        "hombre",
+        "mujer"
+      ],
+      "localPath": "assets/images/productos-oficiales/personas/pulse/bps-185a-57/persona-01.jpg",
+      "bytes": 750004
+    },
+    {
+      "productName": "Pulse",
+      "productSlug": "pulse",
+      "variantCode": "BPS-185A-57",
+      "matchKey": "BPS185A",
+      "officialMaster": "FBPS185",
+      "officialAssetId": "FBPS185185AB 2",
+      "viewCode": "B",
+      "sourceUrl": "https://media.balmain.com/image/upload/f_jpg,q_92,w_1600/sfcc/balmain/hi-res/FBPS185185AB%202?_i=AG",
+      "categoryUrls": [
+        "https://es.balmain.com/es/hombre/accesorios/gafas/",
+        "https://es.balmain.com/es/mujer/accesorios/gafas/"
+      ],
+      "audiences": [
+        "hombre",
+        "mujer"
+      ],
+      "localPath": "assets/images/productos-oficiales/personas/pulse/bps-185a-57/persona-02.jpg",
+      "bytes": 950795
+    },
+    {
+      "productName": "Pulse",
+      "productSlug": "pulse",
+      "variantCode": "BPS-185A-57",
+      "matchKey": "BPS185A",
+      "officialMaster": "FBPS185",
+      "officialAssetId": "FBPS185185AI",
+      "viewCode": "I",
+      "sourceUrl": "https://media.balmain.com/image/upload/f_jpg,q_92,w_1600/sfcc/balmain/hi-res/FBPS185185AI?_i=AG",
+      "categoryUrls": [
+        "https://es.balmain.com/es/hombre/accesorios/gafas/",
+        "https://es.balmain.com/es/mujer/accesorios/gafas/"
+      ],
+      "audiences": [
+        "hombre",
+        "mujer"
+      ],
+      "localPath": "assets/images/productos-oficiales/personas/pulse/bps-185a-57/persona-03.jpg",
+      "bytes": 788818
+    },
+    {
+      "productName": "Pulse",
+      "productSlug": "pulse",
+      "variantCode": "BPS-185A-57",
+      "matchKey": "BPS185A",
+      "officialMaster": "FBPS185",
+      "officialAssetId": "FBPS185185AI 2",
+      "viewCode": "I",
+      "sourceUrl": "https://media.balmain.com/image/upload/f_jpg,q_92,w_1600/sfcc/balmain/hi-res/FBPS185185AI%202?_i=AG",
+      "categoryUrls": [
+        "https://es.balmain.com/es/hombre/accesorios/gafas/",
+        "https://es.balmain.com/es/mujer/accesorios/gafas/"
+      ],
+      "audiences": [
+        "hombre",
+        "mujer"
+      ],
+      "localPath": "assets/images/productos-oficiales/personas/pulse/bps-185a-57/persona-04.jpg",
+      "bytes": 933196
+    },
+    {
+      "productName": "Pulse",
+      "productSlug": "pulse",
+      "variantCode": "BPS-185B-57",
+      "matchKey": "BPS185B",
+      "officialMaster": "FBPS185",
+      "officialAssetId": "FBPS185185BB",
+      "viewCode": "B",
+      "sourceUrl": "https://media.balmain.com/image/upload/f_jpg,q_92,w_1600/sfcc/balmain/hi-res/FBPS185185BB?_i=AG",
+      "categoryUrls": [
+        "https://es.balmain.com/es/hombre/accesorios/gafas/",
+        "https://es.balmain.com/es/mujer/accesorios/gafas/"
+      ],
+      "audiences": [
+        "hombre",
+        "mujer"
+      ],
+      "localPath": "assets/images/productos-oficiales/personas/pulse/bps-185b-57/persona-01.jpg",
+      "bytes": 769005
+    },
+    {
+      "productName": "Pulse",
+      "productSlug": "pulse",
+      "variantCode": "BPS-185B-57",
+      "matchKey": "BPS185B",
+      "officialMaster": "FBPS185",
+      "officialAssetId": "FBPS185185BI",
+      "viewCode": "I",
+      "sourceUrl": "https://media.balmain.com/image/upload/f_jpg,q_92,w_1600/sfcc/balmain/hi-res/FBPS185185BI?_i=AG",
+      "categoryUrls": [
+        "https://es.balmain.com/es/hombre/accesorios/gafas/",
+        "https://es.balmain.com/es/mujer/accesorios/gafas/"
+      ],
+      "audiences": [
+        "hombre",
+        "mujer"
+      ],
+      "localPath": "assets/images/productos-oficiales/personas/pulse/bps-185b-57/persona-02.jpg",
+      "bytes": 763415
+    },
+    {
+      "productName": "Pulse",
+      "productSlug": "pulse",
+      "variantCode": "BPS-185B-57",
+      "matchKey": "BPS185B",
+      "officialMaster": "FBPS185",
+      "officialAssetId": "FBPS185185BI 2",
+      "viewCode": "I",
+      "sourceUrl": "https://media.balmain.com/image/upload/f_jpg,q_92,w_1600/sfcc/balmain/hi-res/FBPS185185BI%202?_i=AG",
+      "categoryUrls": [
+        "https://es.balmain.com/es/hombre/accesorios/gafas/",
+        "https://es.balmain.com/es/mujer/accesorios/gafas/"
+      ],
+      "audiences": [
+        "hombre",
+        "mujer"
+      ],
+      "localPath": "assets/images/productos-oficiales/personas/pulse/bps-185b-57/persona-03.jpg",
+      "bytes": 798650
+    },
+    {
+      "productName": "O.R.",
+      "productSlug": "or",
+      "variantCode": "BPS-104H-59",
+      "matchKey": "BPS104H",
+      "officialMaster": "EBPS104",
+      "officialAssetId": "EBPS104104HB",
+      "viewCode": "B",
+      "sourceUrl": "https://media.balmain.com/image/upload/f_jpg,q_92,w_1600/sfcc/balmain/hi-res/EBPS104104HB?_i=AG",
+      "categoryUrls": [
+        "https://es.balmain.com/es/hombre/accesorios/gafas/",
+        "https://es.balmain.com/es/mujer/accesorios/gafas/"
+      ],
+      "audiences": [
+        "hombre",
+        "mujer"
+      ],
+      "localPath": "assets/images/productos-oficiales/personas/or/bps-104h-59/persona-01.jpg",
+      "bytes": 645112
+    },
+    {
+      "productName": "O.R.",
+      "productSlug": "or",
+      "variantCode": "BPS-104H-59",
+      "matchKey": "BPS104H",
+      "officialMaster": "EBPS104",
+      "officialAssetId": "EBPS104104HB 2",
+      "viewCode": "B",
+      "sourceUrl": "https://media.balmain.com/image/upload/f_jpg,q_92,w_1600/sfcc/balmain/hi-res/EBPS104104HB%202?_i=AG",
+      "categoryUrls": [
+        "https://es.balmain.com/es/hombre/accesorios/gafas/",
+        "https://es.balmain.com/es/mujer/accesorios/gafas/"
+      ],
+      "audiences": [
+        "hombre",
+        "mujer"
+      ],
+      "localPath": "assets/images/productos-oficiales/personas/or/bps-104h-59/persona-02.jpg",
+      "bytes": 787960
+    },
+    {
+      "productName": "O.R.",
+      "productSlug": "or",
+      "variantCode": "BPS-104H-59",
+      "matchKey": "BPS104H",
+      "officialMaster": "EBPS104",
+      "officialAssetId": "EBPS104104HI",
+      "viewCode": "I",
+      "sourceUrl": "https://media.balmain.com/image/upload/f_jpg,q_92,w_1600/sfcc/balmain/hi-res/EBPS104104HI?_i=AG",
+      "categoryUrls": [
+        "https://es.balmain.com/es/hombre/accesorios/gafas/",
+        "https://es.balmain.com/es/mujer/accesorios/gafas/"
+      ],
+      "audiences": [
+        "hombre",
+        "mujer"
+      ],
+      "localPath": "assets/images/productos-oficiales/personas/or/bps-104h-59/persona-03.jpg",
+      "bytes": 517446
+    },
+    {
+      "productName": "O.R.",
+      "productSlug": "or",
+      "variantCode": "BPS-104H-59",
+      "matchKey": "BPS104H",
+      "officialMaster": "EBPS104",
+      "officialAssetId": "EBPS104104HI 2",
+      "viewCode": "I",
+      "sourceUrl": "https://media.balmain.com/image/upload/f_jpg,q_92,w_1600/sfcc/balmain/hi-res/EBPS104104HI%202?_i=AG",
+      "categoryUrls": [
+        "https://es.balmain.com/es/hombre/accesorios/gafas/",
+        "https://es.balmain.com/es/mujer/accesorios/gafas/"
+      ],
+      "audiences": [
+        "hombre",
+        "mujer"
+      ],
+      "localPath": "assets/images/productos-oficiales/personas/or/bps-104h-59/persona-04.jpg",
+      "bytes": 667024
+    },
+    {
+      "productName": "B-Spirit",
+      "productSlug": "b-spirit",
+      "variantCode": "BPS-179B-56",
+      "matchKey": "BPS179B",
+      "officialMaster": "EBPS179",
+      "officialAssetId": "EBPS179179BB",
+      "viewCode": "B",
+      "sourceUrl": "https://media.balmain.com/image/upload/f_jpg,q_92,w_1600/sfcc/balmain/hi-res/EBPS179179BB?_i=AG",
+      "categoryUrls": [
+        "https://es.balmain.com/es/hombre/accesorios/gafas/",
+        "https://es.balmain.com/es/mujer/accesorios/gafas/"
+      ],
+      "audiences": [
+        "hombre",
+        "mujer"
+      ],
+      "localPath": "assets/images/productos-oficiales/personas/b-spirit/bps-179b-56/persona-01.jpg",
+      "bytes": 634683
+    },
+    {
+      "productName": "B-Spirit",
+      "productSlug": "b-spirit",
+      "variantCode": "BPS-179B-56",
+      "matchKey": "BPS179B",
+      "officialMaster": "EBPS179",
+      "officialAssetId": "EBPS179179BB 2",
+      "viewCode": "B",
+      "sourceUrl": "https://media.balmain.com/image/upload/f_jpg,q_92,w_1600/sfcc/balmain/hi-res/EBPS179179BB%202?_i=AG",
+      "categoryUrls": [
+        "https://es.balmain.com/es/hombre/accesorios/gafas/",
+        "https://es.balmain.com/es/mujer/accesorios/gafas/"
+      ],
+      "audiences": [
+        "hombre",
+        "mujer"
+      ],
+      "localPath": "assets/images/productos-oficiales/personas/b-spirit/bps-179b-56/persona-02.jpg",
+      "bytes": 868243
+    },
+    {
+      "productName": "B-Spirit",
+      "productSlug": "b-spirit",
+      "variantCode": "BPS-179B-56",
+      "matchKey": "BPS179B",
+      "officialMaster": "EBPS179",
+      "officialAssetId": "EBPS179179BI",
+      "viewCode": "I",
+      "sourceUrl": "https://media.balmain.com/image/upload/f_jpg,q_92,w_1600/sfcc/balmain/hi-res/EBPS179179BI?_i=AG",
+      "categoryUrls": [
+        "https://es.balmain.com/es/hombre/accesorios/gafas/",
+        "https://es.balmain.com/es/mujer/accesorios/gafas/"
+      ],
+      "audiences": [
+        "hombre",
+        "mujer"
+      ],
+      "localPath": "assets/images/productos-oficiales/personas/b-spirit/bps-179b-56/persona-03.jpg",
+      "bytes": 724980
+    },
+    {
+      "productName": "B-Spirit",
+      "productSlug": "b-spirit",
+      "variantCode": "BPS-179B-56",
+      "matchKey": "BPS179B",
+      "officialMaster": "EBPS179",
+      "officialAssetId": "EBPS179179BI 2",
+      "viewCode": "I",
+      "sourceUrl": "https://media.balmain.com/image/upload/f_jpg,q_92,w_1600/sfcc/balmain/hi-res/EBPS179179BI%202?_i=AG",
+      "categoryUrls": [
+        "https://es.balmain.com/es/hombre/accesorios/gafas/",
+        "https://es.balmain.com/es/mujer/accesorios/gafas/"
+      ],
+      "audiences": [
+        "hombre",
+        "mujer"
+      ],
+      "localPath": "assets/images/productos-oficiales/personas/b-spirit/bps-179b-56/persona-04.jpg",
+      "bytes": 788176
+    },
+    {
+      "productName": "B-Bold",
+      "productSlug": "b-bold",
+      "variantCode": "BPS-180B-51",
+      "matchKey": "BPS180B",
+      "officialMaster": "EBPS180",
+      "officialAssetId": "EBPS180180BB",
+      "viewCode": "B",
+      "sourceUrl": "https://media.balmain.com/image/upload/f_jpg,q_92,w_1600/sfcc/balmain/hi-res/EBPS180180BB?_i=AG",
+      "categoryUrls": [
+        "https://es.balmain.com/es/mujer/accesorios/gafas/"
+      ],
+      "audiences": [
+        "mujer"
+      ],
+      "localPath": "assets/images/productos-oficiales/personas/b-bold/bps-180b-51/persona-01.jpg",
+      "bytes": 699967
+    },
+    {
+      "productName": "B-Bold",
+      "productSlug": "b-bold",
+      "variantCode": "BPS-180B-51",
+      "matchKey": "BPS180B",
+      "officialMaster": "EBPS180",
+      "officialAssetId": "EBPS180180BI",
+      "viewCode": "I",
+      "sourceUrl": "https://media.balmain.com/image/upload/f_jpg,q_92,w_1600/sfcc/balmain/hi-res/EBPS180180BI?_i=AG",
+      "categoryUrls": [
+        "https://es.balmain.com/es/mujer/accesorios/gafas/"
+      ],
+      "audiences": [
+        "mujer"
+      ],
+      "localPath": "assets/images/productos-oficiales/personas/b-bold/bps-180b-51/persona-02.jpg",
+      "bytes": 618773
+    },
+    {
+      "productName": "Colonel LTD",
+      "productSlug": "colonel-ltd",
+      "variantCode": "BPS-170A-63",
+      "matchKey": "BPS170A",
+      "officialMaster": "EBPS170",
+      "officialAssetId": "EBPS170170AB",
+      "viewCode": "B",
+      "sourceUrl": "https://media.balmain.com/image/upload/f_jpg,q_92,w_1600/sfcc/balmain/hi-res/EBPS170170AB?_i=AG",
+      "categoryUrls": [
+        "https://es.balmain.com/es/hombre/accesorios/gafas/",
+        "https://es.balmain.com/es/mujer/accesorios/gafas/"
+      ],
+      "audiences": [
+        "hombre",
+        "mujer"
+      ],
+      "localPath": "assets/images/productos-oficiales/personas/colonel-ltd/bps-170a-63/persona-01.jpg",
+      "bytes": 839439
+    },
+    {
+      "productName": "Colonel LTD",
+      "productSlug": "colonel-ltd",
+      "variantCode": "BPS-170A-63",
+      "matchKey": "BPS170A",
+      "officialMaster": "EBPS170",
+      "officialAssetId": "EBPS170170AB 2",
+      "viewCode": "B",
+      "sourceUrl": "https://media.balmain.com/image/upload/f_jpg,q_92,w_1600/sfcc/balmain/hi-res/EBPS170170AB%202?_i=AG",
+      "categoryUrls": [
+        "https://es.balmain.com/es/hombre/accesorios/gafas/",
+        "https://es.balmain.com/es/mujer/accesorios/gafas/"
+      ],
+      "audiences": [
+        "hombre",
+        "mujer"
+      ],
+      "localPath": "assets/images/productos-oficiales/personas/colonel-ltd/bps-170a-63/persona-02.jpg",
+      "bytes": 639225
+    },
+    {
+      "productName": "Colonel LTD",
+      "productSlug": "colonel-ltd",
+      "variantCode": "BPS-170A-63",
+      "matchKey": "BPS170A",
+      "officialMaster": "EBPS170",
+      "officialAssetId": "EBPS170170AI",
+      "viewCode": "I",
+      "sourceUrl": "https://media.balmain.com/image/upload/f_jpg,q_92,w_1600/sfcc/balmain/hi-res/EBPS170170AI?_i=AG",
+      "categoryUrls": [
+        "https://es.balmain.com/es/hombre/accesorios/gafas/",
+        "https://es.balmain.com/es/mujer/accesorios/gafas/"
+      ],
+      "audiences": [
+        "hombre",
+        "mujer"
+      ],
+      "localPath": "assets/images/productos-oficiales/personas/colonel-ltd/bps-170a-63/persona-03.jpg",
+      "bytes": 795060
+    },
+    {
+      "productName": "Colonel LTD",
+      "productSlug": "colonel-ltd",
+      "variantCode": "BPS-170A-63",
+      "matchKey": "BPS170A",
+      "officialMaster": "EBPS170",
+      "officialAssetId": "EBPS170170AI 2",
+      "viewCode": "I",
+      "sourceUrl": "https://media.balmain.com/image/upload/f_jpg,q_92,w_1600/sfcc/balmain/hi-res/EBPS170170AI%202?_i=AG",
+      "categoryUrls": [
+        "https://es.balmain.com/es/hombre/accesorios/gafas/",
+        "https://es.balmain.com/es/mujer/accesorios/gafas/"
+      ],
+      "audiences": [
+        "hombre",
+        "mujer"
+      ],
+      "localPath": "assets/images/productos-oficiales/personas/colonel-ltd/bps-170a-63/persona-04.jpg",
+      "bytes": 658670
+    },
+    {
+      "productName": "Sergeant",
+      "productSlug": "sergeant",
+      "variantCode": "BPS-177A-60",
+      "matchKey": "BPS177A",
+      "officialMaster": "EBPS177",
+      "officialAssetId": "EBPS177177AB",
+      "viewCode": "B",
+      "sourceUrl": "https://media.balmain.com/image/upload/f_jpg,q_92,w_1600/sfcc/balmain/hi-res/EBPS177177AB?_i=AG",
+      "categoryUrls": [
+        "https://es.balmain.com/es/hombre/accesorios/gafas/"
+      ],
+      "audiences": [
+        "hombre"
+      ],
+      "localPath": "assets/images/productos-oficiales/personas/sergeant/bps-177a-60/persona-01.jpg",
+      "bytes": 633671
+    },
+    {
+      "productName": "Sergeant",
+      "productSlug": "sergeant",
+      "variantCode": "BPS-177A-60",
+      "matchKey": "BPS177A",
+      "officialMaster": "EBPS177",
+      "officialAssetId": "EBPS177177AB 2",
+      "viewCode": "B",
+      "sourceUrl": "https://media.balmain.com/image/upload/f_jpg,q_92,w_1600/sfcc/balmain/hi-res/EBPS177177AB%202?_i=AG",
+      "categoryUrls": [
+        "https://es.balmain.com/es/hombre/accesorios/gafas/"
+      ],
+      "audiences": [
+        "hombre"
+      ],
+      "localPath": "assets/images/productos-oficiales/personas/sergeant/bps-177a-60/persona-02.jpg",
+      "bytes": 589140
+    },
+    {
+      "productName": "Sergeant",
+      "productSlug": "sergeant",
+      "variantCode": "BPS-177A-60",
+      "matchKey": "BPS177A",
+      "officialMaster": "EBPS177",
+      "officialAssetId": "EBPS177177AI",
+      "viewCode": "I",
+      "sourceUrl": "https://media.balmain.com/image/upload/f_jpg,q_92,w_1600/sfcc/balmain/hi-res/EBPS177177AI?_i=AG",
+      "categoryUrls": [
+        "https://es.balmain.com/es/hombre/accesorios/gafas/"
+      ],
+      "audiences": [
+        "hombre"
+      ],
+      "localPath": "assets/images/productos-oficiales/personas/sergeant/bps-177a-60/persona-03.jpg",
+      "bytes": 605882
+    },
+    {
+      "productName": "Sergeant",
+      "productSlug": "sergeant",
+      "variantCode": "BPS-177A-60",
+      "matchKey": "BPS177A",
+      "officialMaster": "EBPS177",
+      "officialAssetId": "EBPS177177AI 2",
+      "viewCode": "I",
+      "sourceUrl": "https://media.balmain.com/image/upload/f_jpg,q_92,w_1600/sfcc/balmain/hi-res/EBPS177177AI%202?_i=AG",
+      "categoryUrls": [
+        "https://es.balmain.com/es/hombre/accesorios/gafas/"
+      ],
+      "audiences": [
+        "hombre"
+      ],
+      "localPath": "assets/images/productos-oficiales/personas/sergeant/bps-177a-60/persona-04.jpg",
+      "bytes": 519064
+    },
+    {
+      "productName": "Sergeant",
+      "productSlug": "sergeant",
+      "variantCode": "BPS-177C-60",
+      "matchKey": "BPS177C",
+      "officialMaster": "EBPS177",
+      "officialAssetId": "EBPS177177CB",
+      "viewCode": "B",
+      "sourceUrl": "https://media.balmain.com/image/upload/f_jpg,q_92,w_1600/sfcc/balmain/hi-res/EBPS177177CB?_i=AG",
+      "categoryUrls": [
+        "https://es.balmain.com/es/hombre/accesorios/gafas/"
+      ],
+      "audiences": [
+        "hombre"
+      ],
+      "localPath": "assets/images/productos-oficiales/personas/sergeant/bps-177c-60/persona-01.jpg",
+      "bytes": 667442
+    },
+    {
+      "productName": "Sergeant",
+      "productSlug": "sergeant",
+      "variantCode": "BPS-177C-60",
+      "matchKey": "BPS177C",
+      "officialMaster": "EBPS177",
+      "officialAssetId": "EBPS177177CB 2",
+      "viewCode": "B",
+      "sourceUrl": "https://media.balmain.com/image/upload/f_jpg,q_92,w_1600/sfcc/balmain/hi-res/EBPS177177CB%202?_i=AG",
+      "categoryUrls": [
+        "https://es.balmain.com/es/hombre/accesorios/gafas/"
+      ],
+      "audiences": [
+        "hombre"
+      ],
+      "localPath": "assets/images/productos-oficiales/personas/sergeant/bps-177c-60/persona-02.jpg",
+      "bytes": 727724
+    },
+    {
+      "productName": "Sergeant",
+      "productSlug": "sergeant",
+      "variantCode": "BPS-177C-60",
+      "matchKey": "BPS177C",
+      "officialMaster": "EBPS177",
+      "officialAssetId": "EBPS177177CI",
+      "viewCode": "I",
+      "sourceUrl": "https://media.balmain.com/image/upload/f_jpg,q_92,w_1600/sfcc/balmain/hi-res/EBPS177177CI?_i=AG",
+      "categoryUrls": [
+        "https://es.balmain.com/es/hombre/accesorios/gafas/"
+      ],
+      "audiences": [
+        "hombre"
+      ],
+      "localPath": "assets/images/productos-oficiales/personas/sergeant/bps-177c-60/persona-03.jpg",
+      "bytes": 544942
+    },
+    {
+      "productName": "Sergeant",
+      "productSlug": "sergeant",
+      "variantCode": "BPS-177C-60",
+      "matchKey": "BPS177C",
+      "officialMaster": "EBPS177",
+      "officialAssetId": "EBPS177177CI 2",
+      "viewCode": "I",
+      "sourceUrl": "https://media.balmain.com/image/upload/f_jpg,q_92,w_1600/sfcc/balmain/hi-res/EBPS177177CI%202?_i=AG",
+      "categoryUrls": [
+        "https://es.balmain.com/es/hombre/accesorios/gafas/"
+      ],
+      "audiences": [
+        "hombre"
+      ],
+      "localPath": "assets/images/productos-oficiales/personas/sergeant/bps-177c-60/persona-04.jpg",
+      "bytes": 659467
+    },
+    {
+      "productName": "Colonel LTD",
+      "productSlug": "colonel-ltd",
+      "variantCode": "BPS-170C-63",
+      "matchKey": "BPS170C",
+      "officialMaster": "EBPS170",
+      "officialAssetId": "EBPS170170CB",
+      "viewCode": "B",
+      "sourceUrl": "https://media.balmain.com/image/upload/f_jpg,q_92,w_1600/sfcc/balmain/hi-res/EBPS170170CB?_i=AG",
+      "categoryUrls": [
+        "https://es.balmain.com/es/hombre/accesorios/gafas/"
+      ],
+      "audiences": [
+        "hombre"
+      ],
+      "localPath": "assets/images/productos-oficiales/personas/colonel-ltd/bps-170c-63/persona-01.jpg",
+      "bytes": 753617
+    },
+    {
+      "productName": "Colonel LTD",
+      "productSlug": "colonel-ltd",
+      "variantCode": "BPS-170C-63",
+      "matchKey": "BPS170C",
+      "officialMaster": "EBPS170",
+      "officialAssetId": "EBPS170170CI",
+      "viewCode": "I",
+      "sourceUrl": "https://media.balmain.com/image/upload/f_jpg,q_92,w_1600/sfcc/balmain/hi-res/EBPS170170CI?_i=AG",
+      "categoryUrls": [
+        "https://es.balmain.com/es/hombre/accesorios/gafas/"
+      ],
+      "audiences": [
+        "hombre"
+      ],
+      "localPath": "assets/images/productos-oficiales/personas/colonel-ltd/bps-170c-63/persona-02.jpg",
+      "bytes": 702946
+    },
+    {
+      "productName": "Colonel LTD",
+      "productSlug": "colonel-ltd",
+      "variantCode": "BPS-170C-63",
+      "matchKey": "BPS170C",
+      "officialMaster": "EBPS170",
+      "officialAssetId": "EBPS170170CI 2",
+      "viewCode": "I",
+      "sourceUrl": "https://media.balmain.com/image/upload/f_jpg,q_92,w_1600/sfcc/balmain/hi-res/EBPS170170CI%202?_i=AG",
+      "categoryUrls": [
+        "https://es.balmain.com/es/hombre/accesorios/gafas/"
+      ],
+      "audiences": [
+        "hombre"
+      ],
+      "localPath": "assets/images/productos-oficiales/personas/colonel-ltd/bps-170c-63/persona-03.jpg",
+      "bytes": 759133
+    }
+  ]
+}
