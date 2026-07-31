@@ -135,7 +135,7 @@
           <div class="innova-global-mobile-panel">
             <a href="${portal}">Innova Boutique</a>
             <a href="${alfred}">Alfred Kerbs · Óptica y Sol</a>
-            <a href="${base}pages/catalogo.html">Balmain · Todas las colecciones</a>
+            <a href="${base}catalogo.html">Balmain · Todas las colecciones</a>
             <a href="${silhouette}">Silhouette · Óptica, Sol y Atelier</a>
             <a href="${portal}/#seleccion">Pedido global · 18 piezas por marca</a>
           </div>
