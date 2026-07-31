@@ -1,0 +1,1232 @@
+{
+  "generated_at": "2026-07-31T23:21:39.688103+00:00",
+  "source_file": "C:\\Users\\moiss\\Downloads\\Balmain FW26 Masterfile _ Innova eyewear 22.07.26 DATA SEASONS.xlsx",
+  "sheet": "Master File",
+  "header_excel_row": 3,
+  "rules": [
+    "Match exact normalized SKU against the master file.",
+    "Show a product season only when every catalog variant is present and all variants share the same season.",
+    "Hide seasons from 2023 or earlier (older than two years relative to 2026).",
+    "Hide season when any SKU is missing or variants carry different seasons."
+  ],
+  "summary": {
+    "confirmed": 27,
+    "mixed_variant_seasons": 6,
+    "missing_sku_in_masterfile": 37,
+    "older_than_two_years": 4
+  },
+  "products": [
+    {
+      "product": "Admiral",
+      "slug": "admiral",
+      "variant_skus": [
+        "BPX172A50",
+        "BPX172B50",
+        "BPX172C50"
+      ],
+      "excel_seasons": [
+        "SS25",
+        "SS25",
+        "SS25"
+      ],
+      "displayed_season": "SS25",
+      "status": "confirmed"
+    },
+    {
+      "product": "Admiral II",
+      "slug": "admiral-ii",
+      "variant_skus": [
+        "BPX183A54",
+        "BPX183B54",
+        "BPX183C54"
+      ],
+      "excel_seasons": [
+        "FW25",
+        "FW25",
+        "FW25"
+      ],
+      "displayed_season": "FW25",
+      "status": "confirmed"
+    },
+    {
+      "product": "Brigade I",
+      "slug": "brigade-i",
+      "variant_skus": [
+        "BPS110A52",
+        "BPS110B52",
+        "BPS110C52",
+        "BPS110D52"
+      ],
+      "excel_seasons": [
+        "FW20",
+        "FW20",
+        "FW20",
+        "FW24"
+      ],
+      "displayed_season": null,
+      "status": "mixed_variant_seasons"
+    },
+    {
+      "product": "Brigade I RX",
+      "slug": "brigade-i-rx",
+      "variant_skus": [
+        "BPX110A52",
+        "BPX110B52",
+        "BPX110C52",
+        "BPX110E52"
+      ],
+      "excel_seasons": [
+        "FW20",
+        "FW20",
+        "FW20",
+        "FW24"
+      ],
+      "displayed_season": null,
+      "status": "mixed_variant_seasons"
+    },
+    {
+      "product": "Brigade III",
+      "slug": "brigade-iii",
+      "variant_skus": [
+        "BPS117A52",
+        "BPS117C52",
+        "BPS117D52"
+      ],
+      "excel_seasons": [
+        "SS21",
+        "SS21",
+        "SS25"
+      ],
+      "displayed_season": null,
+      "status": "mixed_variant_seasons"
+    },
+    {
+      "product": "Brigade IV",
+      "slug": "brigade-iv",
+      "variant_skus": [
+        "BPS120A52",
+        "BPS120B52",
+        "BPS120C52",
+        "BPS120D52",
+        "BPS120E52",
+        "BPS120F52"
+      ],
+      "excel_seasons": [
+        "FW21",
+        "FW21",
+        "FW21",
+        "SS26",
+        "SS26",
+        "SS26"
+      ],
+      "displayed_season": null,
+      "status": "mixed_variant_seasons"
+    },
+    {
+      "product": "Brigade IV RX",
+      "slug": "brigade-iv-rx",
+      "variant_skus": [
+        "BPX120D52",
+        "BPX120E52",
+        "BPX120F52"
+      ],
+      "excel_seasons": [
+        "SS26",
+        "SS26",
+        "SS26"
+      ],
+      "displayed_season": "SS26",
+      "status": "confirmed"
+    },
+    {
+      "product": "Brigade V",
+      "slug": "brigade-v",
+      "variant_skus": [
+        "BPS142D56",
+        "BPS142E56",
+        "BPS142F56"
+      ],
+      "excel_seasons": [
+        "FW24",
+        "FW24",
+        "FW24"
+      ],
+      "displayed_season": "FW24",
+      "status": "confirmed"
+    },
+    {
+      "product": "Brigade V RX",
+      "slug": "brigade-v-rx",
+      "variant_skus": [
+        "BPX142A56",
+        "BPX142B56",
+        "BPX142C56"
+      ],
+      "excel_seasons": [
+        "",
+        "FW22",
+        "FW22"
+      ],
+      "displayed_season": null,
+      "status": "missing_sku_in_masterfile"
+    },
+    {
+      "product": "Brigade VI",
+      "slug": "brigade-vi",
+      "variant_skus": [
+        "BPX149A56",
+        "BPX149B142",
+        "BPX149D56"
+      ],
+      "excel_seasons": [
+        "FW23",
+        "",
+        "FW24"
+      ],
+      "displayed_season": null,
+      "status": "missing_sku_in_masterfile"
+    },
+    {
+      "product": "Brigade VII",
+      "slug": "brigade-vii",
+      "variant_skus": [
+        "BPS186A57",
+        "BPX186A57",
+        "BPX186B57",
+        "BPX186C57"
+      ],
+      "excel_seasons": [
+        "FW25",
+        "FW25",
+        "FW25",
+        "FW25"
+      ],
+      "displayed_season": "FW25",
+      "status": "confirmed"
+    },
+    {
+      "product": "Capitaine",
+      "slug": "capitaine",
+      "variant_skus": [
+        "BPS125A62",
+        "BPS125B62",
+        "BPS125C62",
+        "BPS125D62",
+        "BPS125E62"
+      ],
+      "excel_seasons": [
+        "FW21",
+        "",
+        "FW21",
+        "PFW23",
+        "FW23"
+      ],
+      "displayed_season": null,
+      "status": "missing_sku_in_masterfile"
+    },
+    {
+      "product": "Fixe RX",
+      "slug": "fixe",
+      "variant_skus": [
+        "BPX123A54",
+        "BPX123B54"
+      ],
+      "excel_seasons": [
+        "",
+        ""
+      ],
+      "displayed_season": null,
+      "status": "missing_sku_in_masterfile"
+    },
+    {
+      "product": "Gendarme",
+      "slug": "gendarme",
+      "variant_skus": [
+        "BPS109D66"
+      ],
+      "excel_seasons": [
+        ""
+      ],
+      "displayed_season": null,
+      "status": "missing_sku_in_masterfile"
+    },
+    {
+      "product": "Hymn",
+      "slug": "hymn",
+      "variant_skus": [
+        "BPX195A55",
+        "BPX195B55",
+        "BPX195C55"
+      ],
+      "excel_seasons": [
+        "SS26",
+        "SS26",
+        "SS26"
+      ],
+      "displayed_season": "SS26",
+      "status": "confirmed"
+    },
+    {
+      "product": "Legion II",
+      "slug": "legion-ii",
+      "variant_skus": [
+        "BPX113A52",
+        "BPX113B52",
+        "BPX113C52",
+        "BPX113D52"
+      ],
+      "excel_seasons": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "displayed_season": null,
+      "status": "missing_sku_in_masterfile"
+    },
+    {
+      "product": "Legion IV",
+      "slug": "legion-iv",
+      "variant_skus": [
+        "BPX141A53",
+        "BPX141B53",
+        "BPX141C53"
+      ],
+      "excel_seasons": [
+        "FW22",
+        "FW22",
+        "FW22"
+      ],
+      "displayed_season": null,
+      "status": "older_than_two_years"
+    },
+    {
+      "product": "Legion V",
+      "slug": "legion-v",
+      "variant_skus": [
+        "BPX174A51",
+        "BPX174B51",
+        "BPX174C51"
+      ],
+      "excel_seasons": [
+        "SS25",
+        "SS25",
+        "SS25"
+      ],
+      "displayed_season": "SS25",
+      "status": "confirmed"
+    },
+    {
+      "product": "Major",
+      "slug": "major",
+      "variant_skus": [
+        "BPS147A142",
+        "BPS147B142",
+        "BPS147C142",
+        "BPS147D142"
+      ],
+      "excel_seasons": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "displayed_season": null,
+      "status": "missing_sku_in_masterfile"
+    },
+    {
+      "product": "Monsieur",
+      "slug": "monsieur",
+      "variant_skus": [
+        "BPS153A53",
+        "BPS153B53",
+        "BPX153C53",
+        "BPX153D53"
+      ],
+      "excel_seasons": [
+        "FW23",
+        "FW23",
+        "FW23",
+        "FW23"
+      ],
+      "displayed_season": null,
+      "status": "older_than_two_years"
+    },
+    {
+      "product": "Officier",
+      "slug": "officier",
+      "variant_skus": [
+        "BPS108A58",
+        "BPS108B58",
+        "BPS108C58"
+      ],
+      "excel_seasons": [
+        "SS21",
+        "SS21",
+        "SS21"
+      ],
+      "displayed_season": null,
+      "status": "older_than_two_years"
+    },
+    {
+      "product": "Olivier III",
+      "slug": "olivier-iii",
+      "variant_skus": [
+        "BPS191A52",
+        "BPS191B52",
+        "BPS191C52"
+      ],
+      "excel_seasons": [
+        "",
+        "",
+        ""
+      ],
+      "displayed_season": null,
+      "status": "missing_sku_in_masterfile"
+    },
+    {
+      "product": "Pierre",
+      "slug": "pierre",
+      "variant_skus": [
+        "BPS150E53",
+        "BPS150F53",
+        "BPS150G53"
+      ],
+      "excel_seasons": [
+        "SS24",
+        "SS24",
+        "SS24"
+      ],
+      "displayed_season": "SS24",
+      "status": "confirmed"
+    },
+    {
+      "product": "Pierre II",
+      "slug": "pierre-ii",
+      "variant_skus": [
+        "BPS187A58",
+        "BPS187B58",
+        "BPS187C58"
+      ],
+      "excel_seasons": [
+        "FW25",
+        "FW25",
+        "FW25"
+      ],
+      "displayed_season": "FW25",
+      "status": "confirmed"
+    },
+    {
+      "product": "Pierre RX",
+      "slug": "pierre-rx",
+      "variant_skus": [
+        "BPX150A53",
+        "BPX150B53",
+        "BPX150C53",
+        "BPX150D53",
+        "BPX150H53"
+      ],
+      "excel_seasons": [
+        "SS23",
+        "SS23",
+        "SS23",
+        "",
+        "FW25"
+      ],
+      "displayed_season": null,
+      "status": "missing_sku_in_masterfile"
+    },
+    {
+      "product": "Premier",
+      "slug": "premier",
+      "variant_skus": [
+        "BPS155A61",
+        "BPS155B61",
+        "BPS155C61",
+        "BPS155D61"
+      ],
+      "excel_seasons": [
+        "FW23",
+        "FW23",
+        "",
+        "FW24"
+      ],
+      "displayed_season": null,
+      "status": "missing_sku_in_masterfile"
+    },
+    {
+      "product": "Rhythm",
+      "slug": "rhythm",
+      "variant_skus": [
+        "BPS202A53",
+        "BPS202B53",
+        "BPS202C53"
+      ],
+      "excel_seasons": [
+        "SS26",
+        "SS26",
+        "SS26"
+      ],
+      "displayed_season": "SS26",
+      "status": "confirmed"
+    },
+    {
+      "product": "Saint-Jean",
+      "slug": "saint-jean",
+      "variant_skus": [
+        "BPX122B50",
+        "BPX122D50"
+      ],
+      "excel_seasons": [
+        "FW21",
+        "FW24"
+      ],
+      "displayed_season": null,
+      "status": "mixed_variant_seasons"
+    },
+    {
+      "product": "Saint-Jean II",
+      "slug": "saint-jean-ii",
+      "variant_skus": [
+        "BPX166A48",
+        "BPX166C48"
+      ],
+      "excel_seasons": [
+        "FW24",
+        "FW24"
+      ],
+      "displayed_season": "FW24",
+      "status": "confirmed"
+    },
+    {
+      "product": "Sergeant",
+      "slug": "sergeant",
+      "variant_skus": [
+        "BPS177A60",
+        "BPS177B60",
+        "BPS177C60"
+      ],
+      "excel_seasons": [
+        "SS25",
+        "SS25",
+        ""
+      ],
+      "displayed_season": null,
+      "status": "missing_sku_in_masterfile"
+    },
+    {
+      "product": "Sergeant II",
+      "slug": "sergeant-ii",
+      "variant_skus": [
+        "BPX178A55",
+        "BPX178B55",
+        "BPX178C55"
+      ],
+      "excel_seasons": [
+        "SS25",
+        "",
+        "SS25"
+      ],
+      "displayed_season": null,
+      "status": "missing_sku_in_masterfile"
+    },
+    {
+      "product": "Sergeant III",
+      "slug": "sergeant-iii",
+      "variant_skus": [
+        "BPX198A51",
+        "BPX198B51",
+        "BPX198C51"
+      ],
+      "excel_seasons": [
+        "SS26",
+        "SS26",
+        "SS26"
+      ],
+      "displayed_season": "SS26",
+      "status": "confirmed"
+    },
+    {
+      "product": "Soldier",
+      "slug": "soldier",
+      "variant_skus": [
+        "BPS160A59",
+        "BPS160B59",
+        "BPS160C59",
+        "BPS160D59"
+      ],
+      "excel_seasons": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "displayed_season": null,
+      "status": "missing_sku_in_masterfile"
+    },
+    {
+      "product": "Triomphe",
+      "slug": "triomphe",
+      "variant_skus": [
+        "BPS168A61",
+        "BPS168B61",
+        "BPS168C61"
+      ],
+      "excel_seasons": [
+        "FW24",
+        "FW24",
+        "FW24"
+      ],
+      "displayed_season": "FW24",
+      "status": "confirmed"
+    },
+    {
+      "product": "Triomphe II",
+      "slug": "triomphe-ii",
+      "variant_skus": [
+        "BPS190A57",
+        "BPS190B57",
+        "BPS190C57"
+      ],
+      "excel_seasons": [
+        "",
+        "",
+        ""
+      ],
+      "displayed_season": null,
+      "status": "missing_sku_in_masterfile"
+    },
+    {
+      "product": "Victoire",
+      "slug": "victoire",
+      "variant_skus": [
+        "BPS169A60",
+        "BPS169B60",
+        "BPS169C60"
+      ],
+      "excel_seasons": [
+        "",
+        "",
+        ""
+      ],
+      "displayed_season": null,
+      "status": "missing_sku_in_masterfile"
+    },
+    {
+      "product": "Arcade",
+      "slug": "arcade",
+      "variant_skus": [
+        "BPS194A55",
+        "BPS194B55",
+        "BPX194C55",
+        "BPX194D55"
+      ],
+      "excel_seasons": [
+        "SS26",
+        "SS26",
+        "SS26",
+        "SS26"
+      ],
+      "displayed_season": "SS26",
+      "status": "confirmed"
+    },
+    {
+      "product": "Colonel LTD",
+      "slug": "colonel-ltd",
+      "variant_skus": [
+        "BPS170A63",
+        "BPS170B63",
+        "BPS170C63"
+      ],
+      "excel_seasons": [
+        "",
+        "",
+        ""
+      ],
+      "displayed_season": null,
+      "status": "missing_sku_in_masterfile"
+    },
+    {
+      "product": "Espion LTD",
+      "slug": "espion",
+      "variant_skus": [
+        "BPS157A138",
+        "BPS157B138",
+        "BPS157C138"
+      ],
+      "excel_seasons": [
+        "",
+        "",
+        ""
+      ],
+      "displayed_season": null,
+      "status": "missing_sku_in_masterfile"
+    },
+    {
+      "product": "Idol LTD",
+      "slug": "idol-ltd",
+      "variant_skus": [
+        "BPS201A60",
+        "BPS201B60",
+        "BPS201C60"
+      ],
+      "excel_seasons": [
+        "",
+        "",
+        ""
+      ],
+      "displayed_season": null,
+      "status": "missing_sku_in_masterfile"
+    },
+    {
+      "product": "Le Masque",
+      "slug": "le-masque",
+      "variant_skus": [
+        "BPS146A147",
+        "BPS146B147",
+        "BPS146C147",
+        "BPS146D147",
+        "BPS146E147"
+      ],
+      "excel_seasons": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "displayed_season": null,
+      "status": "missing_sku_in_masterfile"
+    },
+    {
+      "product": "Legend",
+      "slug": "legend",
+      "variant_skus": [
+        "BPS181A62",
+        "BPS181B62",
+        "BPS181C62"
+      ],
+      "excel_seasons": [
+        "FW25",
+        "FW25",
+        "FW25"
+      ],
+      "displayed_season": "FW25",
+      "status": "confirmed"
+    },
+    {
+      "product": "Olivier",
+      "slug": "olivier",
+      "variant_skus": [
+        "BPS159A42",
+        "BPS159B42",
+        "BPS159C42",
+        "BPS159D42"
+      ],
+      "excel_seasons": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "displayed_season": null,
+      "status": "missing_sku_in_masterfile"
+    },
+    {
+      "product": "Olivier II LTD",
+      "slug": "olivier-ii",
+      "variant_skus": [
+        "BPS167A43"
+      ],
+      "excel_seasons": [
+        ""
+      ],
+      "displayed_season": null,
+      "status": "missing_sku_in_masterfile"
+    },
+    {
+      "product": "O.R.",
+      "slug": "or",
+      "variant_skus": [
+        "BPS104A59",
+        "BPS104B59",
+        "BPS104F59",
+        "BPS104G59",
+        "BPS104H59"
+      ],
+      "excel_seasons": [
+        "SS20",
+        "SS20",
+        "FW22",
+        "",
+        ""
+      ],
+      "displayed_season": null,
+      "status": "missing_sku_in_masterfile"
+    },
+    {
+      "product": "Wonder Boy LTD",
+      "slug": "wonder-boy",
+      "variant_skus": [
+        "BPS102N146"
+      ],
+      "excel_seasons": [
+        ""
+      ],
+      "displayed_season": null,
+      "status": "missing_sku_in_masterfile"
+    },
+    {
+      "product": "B-Army",
+      "slug": "b-army",
+      "variant_skus": [
+        "BPS164A52",
+        "BPS164B52",
+        "BPS164C52"
+      ],
+      "excel_seasons": [
+        "FW24",
+        "FW24",
+        "FW24"
+      ],
+      "displayed_season": "FW24",
+      "status": "confirmed"
+    },
+    {
+      "product": "B-Army II",
+      "slug": "b-army-ii",
+      "variant_skus": [
+        "BPS176A54",
+        "BPS176C54"
+      ],
+      "excel_seasons": [
+        "",
+        ""
+      ],
+      "displayed_season": null,
+      "status": "missing_sku_in_masterfile"
+    },
+    {
+      "product": "B-Army III",
+      "slug": "b-army-iii",
+      "variant_skus": [
+        "BPS175A54",
+        "BPS175C54",
+        "BPS175D54"
+      ],
+      "excel_seasons": [
+        "",
+        "",
+        ""
+      ],
+      "displayed_season": null,
+      "status": "missing_sku_in_masterfile"
+    },
+    {
+      "product": "B-Army RX",
+      "slug": "b-army-rx",
+      "variant_skus": [
+        "BPX164A52",
+        "BPX164C52",
+        "BPX164D52"
+      ],
+      "excel_seasons": [
+        "FW24",
+        "FW24",
+        "FW24"
+      ],
+      "displayed_season": "FW24",
+      "status": "confirmed"
+    },
+    {
+      "product": "B-Eye",
+      "slug": "b-eye",
+      "variant_skus": [
+        "BPS156A54",
+        "BPS156B54",
+        "BPS156C54",
+        "BPS156D54"
+      ],
+      "excel_seasons": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "displayed_season": null,
+      "status": "missing_sku_in_masterfile"
+    },
+    {
+      "product": "B-Grand",
+      "slug": "b-grand",
+      "variant_skus": [
+        "BPS144A57",
+        "BPS144B57",
+        "BPS144C57",
+        "BPS144D57"
+      ],
+      "excel_seasons": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "displayed_season": null,
+      "status": "missing_sku_in_masterfile"
+    },
+    {
+      "product": "B-I",
+      "slug": "b-i",
+      "variant_skus": [
+        "BPS100A56",
+        "BPS100B56",
+        "BPS100C56",
+        "BPS100E56",
+        "BPS100F56",
+        "BPS100G56"
+      ],
+      "excel_seasons": [
+        "SS20",
+        "SS20",
+        "SS20",
+        "SS21",
+        "PFW23",
+        ""
+      ],
+      "displayed_season": null,
+      "status": "missing_sku_in_masterfile"
+    },
+    {
+      "product": "B-Muse",
+      "slug": "b-muse",
+      "variant_skus": [
+        "BPS151A55",
+        "BPS151B55",
+        "BPS151C55"
+      ],
+      "excel_seasons": [
+        "",
+        "",
+        ""
+      ],
+      "displayed_season": null,
+      "status": "missing_sku_in_masterfile"
+    },
+    {
+      "product": "Formee",
+      "slug": "formee",
+      "variant_skus": [
+        "BPX148A52",
+        "BPX148B52",
+        "BPX148D52"
+      ],
+      "excel_seasons": [
+        "SS23",
+        "SS23",
+        "SS25"
+      ],
+      "displayed_season": null,
+      "status": "mixed_variant_seasons"
+    },
+    {
+      "product": "Francoise",
+      "slug": "francoise",
+      "variant_skus": [
+        "BPX173A54",
+        "BPX173B54",
+        "BPX173C54"
+      ],
+      "excel_seasons": [
+        "SS25",
+        "SS25",
+        "SS25"
+      ],
+      "displayed_season": "SS25",
+      "status": "confirmed"
+    },
+    {
+      "product": "Francoise II",
+      "slug": "francoise-ii",
+      "variant_skus": [
+        "BPS184A57AF",
+        "BPX184A57AF",
+        "BPX184B57AF",
+        "BPX184C57AF"
+      ],
+      "excel_seasons": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "displayed_season": null,
+      "status": "missing_sku_in_masterfile"
+    },
+    {
+      "product": "Francoise III",
+      "slug": "francoise-iii",
+      "variant_skus": [
+        "BPX197A57",
+        "BPX197B57",
+        "BPX197C57"
+      ],
+      "excel_seasons": [
+        "SS26",
+        "SS26",
+        "SS26"
+      ],
+      "displayed_season": "SS26",
+      "status": "confirmed"
+    },
+    {
+      "product": "Imperial",
+      "slug": "imperial",
+      "variant_skus": [
+        "BPS145F53"
+      ],
+      "excel_seasons": [
+        ""
+      ],
+      "displayed_season": null,
+      "status": "missing_sku_in_masterfile"
+    },
+    {
+      "product": "Imperial II",
+      "slug": "imperial-ii",
+      "variant_skus": [
+        "BPS196A53",
+        "BPS196B53",
+        "BPS196C53"
+      ],
+      "excel_seasons": [
+        "SS26",
+        "SS26",
+        "SS26"
+      ],
+      "displayed_season": "SS26",
+      "status": "confirmed"
+    },
+    {
+      "product": "Majestic",
+      "slug": "majestic",
+      "variant_skus": [
+        "BPX161A54",
+        "BPX161B54",
+        "BPX161C54"
+      ],
+      "excel_seasons": [
+        "",
+        "",
+        ""
+      ],
+      "displayed_season": null,
+      "status": "missing_sku_in_masterfile"
+    },
+    {
+      "product": "Pulse",
+      "slug": "pulse",
+      "variant_skus": [
+        "BPS185A57",
+        "BPS185B57",
+        "BPS185C57"
+      ],
+      "excel_seasons": [
+        "FW25",
+        "FW25",
+        "FW25"
+      ],
+      "displayed_season": "FW25",
+      "status": "confirmed"
+    },
+    {
+      "product": "Sentinelle II",
+      "slug": "sentinelle-ii",
+      "variant_skus": [
+        "BPX115A52AF",
+        "BPX115B52AF",
+        "BPX115C52AF"
+      ],
+      "excel_seasons": [
+        "",
+        "",
+        ""
+      ],
+      "displayed_season": null,
+      "status": "missing_sku_in_masterfile"
+    },
+    {
+      "product": "Sentinelle IV",
+      "slug": "sentinelle-iv",
+      "variant_skus": [
+        "BPX133A51",
+        "BPX133B51",
+        "BPX133C51"
+      ],
+      "excel_seasons": [
+        "FW22",
+        "FW22",
+        "FW22"
+      ],
+      "displayed_season": null,
+      "status": "older_than_two_years"
+    },
+    {
+      "product": "Sentinelle V",
+      "slug": "sentinelle-v",
+      "variant_skus": [
+        "BPX165A48AF",
+        "BPX165B48AF",
+        "BPX165C48AF"
+      ],
+      "excel_seasons": [
+        "",
+        "",
+        ""
+      ],
+      "displayed_season": null,
+      "status": "missing_sku_in_masterfile"
+    },
+    {
+      "product": "Tempo",
+      "slug": "tempo",
+      "variant_skus": [
+        "BPX182A52AF",
+        "BPX182B52AF",
+        "BPX182C52AF"
+      ],
+      "excel_seasons": [
+        "",
+        "",
+        ""
+      ],
+      "displayed_season": null,
+      "status": "missing_sku_in_masterfile"
+    },
+    {
+      "product": "Yvonne",
+      "slug": "yvonne",
+      "variant_skus": [
+        "BPX162A52",
+        "BPX162B52",
+        "BPX162C52"
+      ],
+      "excel_seasons": [
+        "FW24",
+        "FW24",
+        "FW24"
+      ],
+      "displayed_season": "FW24",
+      "status": "confirmed"
+    },
+    {
+      "product": "Chevalier",
+      "slug": "chevalier",
+      "variant_skus": [
+        "BPX158A48",
+        "BPX158B48",
+        "BPX158C48"
+      ],
+      "excel_seasons": [
+        "SS24",
+        "SS24",
+        "SS24"
+      ],
+      "displayed_season": "SS24",
+      "status": "confirmed"
+    },
+    {
+      "product": "B-Aura",
+      "slug": "b-aura",
+      "variant_skus": [
+        "BPS200A51",
+        "BPS200B51",
+        "BPS200C51"
+      ],
+      "excel_seasons": [
+        "SS26",
+        "SS26",
+        "SS26"
+      ],
+      "displayed_season": "SS26",
+      "status": "confirmed"
+    },
+    {
+      "product": "B-Bold",
+      "slug": "b-bold",
+      "variant_skus": [
+        "BPS180B51",
+        "BPS180C51"
+      ],
+      "excel_seasons": [
+        "SS25",
+        "SS25"
+      ],
+      "displayed_season": "SS25",
+      "status": "confirmed"
+    },
+    {
+      "product": "B-Fame",
+      "slug": "b-fame",
+      "variant_skus": [
+        "BPS193A54",
+        "BPS193B54",
+        "BPS193C54",
+        "BPX193A54"
+      ],
+      "excel_seasons": [
+        "",
+        "",
+        "",
+        "FW25"
+      ],
+      "displayed_season": null,
+      "status": "missing_sku_in_masterfile"
+    },
+    {
+      "product": "B-Scene",
+      "slug": "b-scene",
+      "variant_skus": [
+        "BPS199A56",
+        "BPS199B56",
+        "BPS199C56"
+      ],
+      "excel_seasons": [
+        "",
+        "",
+        ""
+      ],
+      "displayed_season": null,
+      "status": "missing_sku_in_masterfile"
+    },
+    {
+      "product": "B-Spirit",
+      "slug": "b-spirit",
+      "variant_skus": [
+        "BPS179B56",
+        "BPS179C56",
+        "BPS179D56"
+      ],
+      "excel_seasons": [
+        "SS25",
+        "SS25",
+        "SS25"
+      ],
+      "displayed_season": "SS25",
+      "status": "confirmed"
+    },
+    {
+      "product": "B-Stage",
+      "slug": "b-stage",
+      "variant_skus": [
+        "BPS192B55",
+        "BPS192C55"
+      ],
+      "excel_seasons": [
+        "FW25",
+        "FW25"
+      ],
+      "displayed_season": "FW25",
+      "status": "confirmed"
+    }
+  ]
+}

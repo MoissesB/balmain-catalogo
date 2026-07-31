@@ -1,5 +1,6 @@
 (function () {
   const STORAGE_KEY = "innova-boutique-order-v1";
+  const MINIMUM_PER_BRAND = 50;
   const HERO_PROGRESS_KEY = "innova-boutique-hero-progress-v2";
   const config = window.INNOVA_BOUTIQUE_CONFIG || { brands: {} };
   if (config.maintenanceMode) {
@@ -36,19 +37,11 @@
     return new URL(String(path).replace(/^\/+/, ""), normalizedBase).href;
   }
 
-  function brandAssetDestination(brand, path = "") {
-    const base = config.assets?.[brand] || config.brands?.[brand];
-    if (!base) return "#";
-    const normalizedBase = new URL(base, window.location.href);
-    normalizedBase.pathname = `${normalizedBase.pathname.replace(/\/+$/, "")}/`;
-    return new URL(String(path).replace(/^\/+/, ""), normalizedBase).href;
-  }
-
   function brandRouteDestination(brand, path = "") {
-    if (["alfred-kerbs", "silhouette"].includes(brand) && !config.local) {
+    if (brand === "silhouette" && !config.local) {
       const base = brandDestination(brand);
       const route = String(path).replace(/^\/+/, "");
-      return route ? `${base.replace(/\/+$/, "/")}#/${route}` : base;
+      return `${base.replace(/\/+$/, "/")}#/${route}`;
     }
     return brandDestination(brand, path);
   }
@@ -60,7 +53,7 @@
 
   document.querySelectorAll("[data-brand-asset]").forEach((image) => {
     const [brand, ...pathParts] = image.dataset.brandAsset.split(":");
-    image.src = brandAssetDestination(brand, pathParts.join(":"));
+    image.src = brandDestination(brand, pathParts.join(":"));
     image.addEventListener("error", () => {
       if (image.dataset.fallbackApplied) return;
       image.dataset.fallbackApplied = "true";
@@ -86,9 +79,9 @@
 
     if (!track || !products.length) return;
     track.innerHTML = products.map((product) => `
-      <a class="product-preview" href="${escapeAttribute(brandRouteDestination(brand, product.path))}">
+      <a class="product-preview" href="${escapeAttribute(brandDestination(brand, product.path))}">
         <span class="product-preview-media">
-          <img src="${escapeAttribute(brandAssetDestination(brand, product.image))}" alt="${escapeAttribute(`${product.name} · ${brandLabels[brand] || brand}`)}" loading="lazy">
+          <img src="${escapeAttribute(brandDestination(brand, product.image))}" alt="${escapeAttribute(`${product.name} · ${brandLabels[brand] || brand}`)}" loading="lazy">
         </span>
         <span class="product-preview-copy">
           <b>${escapeHtml(product.name)}</b>
@@ -415,7 +408,7 @@
   }
 
   function incompleteBrands() {
-    return Object.entries(brandTotals()).filter(([, total]) => total < 18);
+    return Object.entries(brandTotals()).filter(([, total]) => total < MINIMUM_PER_BRAND);
   }
 
   function resolveOrderItemImage(item) {
@@ -468,7 +461,7 @@
   function renderOrder() {
     const totalUnits = order.items.reduce((total, item) => total + Number(item.quantity || 0), 0);
     const totals = brandTotals();
-    const completedBrands = Object.values(totals).filter((total) => total >= 18).length;
+    const completedBrands = Object.values(totals).filter((total) => total >= MINIMUM_PER_BRAND).length;
     document.querySelectorAll("[data-order-count]").forEach((node) => { node.textContent = String(totalUnits); });
     const units = document.querySelector("[data-order-units]");
     const brands = document.querySelector("[data-order-brands]");
@@ -488,7 +481,7 @@
       if (!order.items.length) {
         blockers.push("Añade productos a la selección.");
       } else if (incomplete.length) {
-        blockers.push(`Completa 18 piezas en ${incomplete.map(([brand]) => brandLabels[brand] || brand).join(", ")}.`);
+        blockers.push(`Completa ${MINIMUM_PER_BRAND} piezas en ${incomplete.map(([brand]) => brandLabels[brand] || brand).join(", ")}.`);
       }
       if (Object.keys(clientErrors).length) {
         blockers.push(`Revisa: ${clientIssueSummary(clientErrors)}.`);
@@ -507,8 +500,8 @@
     const minimumNote = document.querySelector("[data-order-minimum]");
     if (minimumNote) {
       minimumNote.textContent = incomplete.length
-        ? `Pendiente: ${incomplete.map(([brand, total]) => `${brandLabels[brand] || brand} ${total}/18`).join(" · ")}`
-        : order.items.length ? "Mínimo comercial completado en todas las marcas." : "18 piezas mínimas por marca.";
+        ? `Pendiente: ${incomplete.map(([brand, total]) => `${brandLabels[brand] || brand} ${total}/${MINIMUM_PER_BRAND}`).join(" · ")}`
+        : order.items.length ? "Mínimo comercial completado en todas las marcas." : `${MINIMUM_PER_BRAND} piezas mínimas por marca.`;
       minimumNote.classList.toggle("is-complete", order.items.length > 0 && incomplete.length === 0);
     }
 
@@ -526,10 +519,10 @@
 
     itemsRoot.innerHTML = Object.entries(groupItemsByBrand(order.items)).map(([brand, items]) => `
       <section class="order-brand-group">
-        <h3>${escapeHtml(brandLabels[brand] || brand)} <span>${totals[brand]}/18 piezas</span></h3>
-        <div class="brand-minimum ${totals[brand] >= 18 ? "is-complete" : ""}">
-          <span><i style="width:${Math.min(100, (totals[brand] / 18) * 100)}%"></i></span>
-          <small>${totals[brand] >= 18 ? "Mínimo completado" : `Faltan ${18 - totals[brand]} piezas`}</small>
+        <h3>${escapeHtml(brandLabels[brand] || brand)} <span>${totals[brand]}/${MINIMUM_PER_BRAND} piezas</span></h3>
+        <div class="brand-minimum ${totals[brand] >= MINIMUM_PER_BRAND ? "is-complete" : ""}">
+          <span><i style="width:${Math.min(100, (totals[brand] / MINIMUM_PER_BRAND) * 100)}%"></i></span>
+          <small>${totals[brand] >= MINIMUM_PER_BRAND ? "Mínimo completado" : `Faltan ${MINIMUM_PER_BRAND - totals[brand]} piezas`}</small>
         </div>
         ${items.map((item) => `
           <article>
@@ -615,7 +608,7 @@
     if (!order.items.length) return;
     const incomplete = incompleteBrands();
     if (incomplete.length) {
-      status.textContent = `Completa 18 piezas por marca: ${incomplete.map(([brand, total]) => `${brandLabels[brand] || brand} ${total}/18`).join(" · ")}.`;
+      status.textContent = `Completa ${MINIMUM_PER_BRAND} piezas por marca: ${incomplete.map(([brand, total]) => `${brandLabels[brand] || brand} ${total}/${MINIMUM_PER_BRAND}`).join(" · ")}.`;
       return;
     }
     if (!validateClient()) {

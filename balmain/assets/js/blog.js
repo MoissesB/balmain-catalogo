@@ -29,7 +29,7 @@
       slug: "planificar-un-pedido-inicial-balmain",
       title: "Planificar un pedido inicial Balmain para tu óptica",
       excerpt: "Una guía práctica para combinar categorías, variantes y cantidades antes de enviar la selección a revisión de Innova Eyewear.",
-      content: "<p>Un pedido inicial debe ofrecer variedad sin perder dirección. El nuevo selector profesional permite combinar referencias y colores, ajustar cantidades y preparar un PDF con los datos de la óptica.</p><h2>El mínimo como punto de partida</h2><p>La selección Balmain requiere un mínimo inicial de 18 piezas. Antes de confirmar, Innova Eyewear revisa inventario, condiciones comerciales y transporte con cada cliente profesional.</p>",
+      content: "<p>Un pedido inicial debe ofrecer variedad sin perder dirección. El selector profesional permite combinar referencias y colores, ajustar cantidades y preparar un PDF con los datos de la óptica.</p><h2>El mínimo como filtro profesional</h2><p>La selección Balmain requiere un mínimo mayorista de 50 piezas. Antes de confirmar, Innova Eyewear revisa inventario, condiciones comerciales y transporte con cada cliente profesional.</p>",
       image: "assets/images/marketing/editorial-pulse.jpg",
       status: "published",
       createdAt: "2026-07-05T10:00:00.000Z",

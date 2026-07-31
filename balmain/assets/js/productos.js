@@ -404,7 +404,7 @@
       <article class="product-card ${compact ? "compact" : ""} inventory-${status}" data-product-slug="${escapeHtml(product.slug)}">
         <a class="product-media ${imageClass}" href="${productHref(product.slug)}" aria-label="${title}">
           <span class="product-image-stack">${imageMarkup}</span>
-          <span class="tag">${product.coleccion || "SS26"}</span>
+          ${product.coleccion ? `<span class="tag">${escapeHtml(product.coleccion)}</span>` : ""}
           ${status !== "normal" ? `<span class="inventory-badge inventory-badge-${status}">${escapeHtml(statusText)}</span>` : ""}
         </a>
         <div class="product-card-copy">
@@ -513,6 +513,7 @@
 
   function categoryContextMarkup(category, products) {
     const materialItems = pick(category.materiales) || [];
+    const confirmedSeasons = [...new Set(products.map((product) => product.coleccion).filter(Boolean))].sort();
     return `
       <section class="section category-context" id="categoryContext">
         <div class="category-context-copy">
@@ -521,7 +522,7 @@
           <p>${escapeHtml(pick(category.b2b) || pick(category.descripcion))}</p>
           <div class="category-stat-row">
             <span><strong>${products.length}</strong>${t("modelsAvailable")}</span>
-            <span><strong>SS26</strong>${t("commercialCatalogue")}</span>
+            ${confirmedSeasons.length ? `<span><strong>${escapeHtml(confirmedSeasons.join(" · "))}</strong>${t("commercialCatalogue")}</span>` : ""}
           </div>
         </div>
         <div class="category-context-media">
@@ -696,21 +697,8 @@
     const productWhatsapp = whatsappHref(productMessage(product, firstVariant));
     const productCtaText = isSoldOut ? t("checkNextAvailability") : t("requestInformation");
     let selectedVariantIndex = 0;
-    const virtualTryOnHref = (variant, imageSrc) => {
-      const portalUrl = window.InnovaBoutiqueOrder?.portalUrl || window.INNOVA_BOUTIQUE_URL || "http://localhost:3100";
-      const tryOnUrl = new URL("/probador-virtual.html", portalUrl);
-      const frontalImage = primaryImageForVariant(variant) || imageSrc;
-      tryOnUrl.searchParams.set("brand", "Balmain Eyewear");
-      tryOnUrl.searchParams.set("name", `${product.nombre} · ${pick(variant?.color) || variant?.codigo || ""}`);
-      if (frontalImage) tryOnUrl.searchParams.set("image", new URL(asset(frontalImage), window.location.href).href);
-      tryOnUrl.searchParams.set("anchor", "50");
-      tryOnUrl.searchParams.set("fill", "0.83");
-      tryOnUrl.searchParams.set("faceScale", "1.02");
-      tryOnUrl.searchParams.set("return", window.location.href);
-      return tryOnUrl.href;
-    };
     const category = content.categorias?.[product.categoria] || {};
-    const pageTitle = `${product.nombre} ${product.coleccion || "SS26"} | BALMAIN Eyewear B2B Innova`;
+    const pageTitle = `${product.nombre}${product.coleccion ? ` ${product.coleccion}` : ""} | BALMAIN Eyewear B2B Innova`;
     const pageDescription = seoDescription(product);
     updatePageSeo({
       title: pageTitle,
@@ -725,7 +713,7 @@
           ${heroImage ? `<img id="mainProductImage" src="${asset(heroImage)}" alt="${escapeHtml(product.nombre)}" decoding="async" fetchpriority="high">` : placeholder(product.nombre)}
         </div>
         <div class="product-hero-copy">
-          <p class="eyebrow">${escapeHtml(pick(product.categoriaLabel))} · ${escapeHtml(product.coleccion)} · ${t("distributedByInnova")}</p>
+          <p class="eyebrow">${escapeHtml(pick(product.categoriaLabel))}${product.coleccion ? ` · ${escapeHtml(product.coleccion)}` : ""} · ${t("distributedByInnova")}</p>
           ${status !== "normal" ? `<span class="product-status-pill product-status-${status}">${escapeHtml(statusText)}</span>` : ""}
           <h1>${escapeHtml(product.nombre)}</h1>
           <p>${escapeHtml(pick(product.marketingDescription) || pick(product.descripcion))}</p>
@@ -735,7 +723,6 @@
           </dl>
           <div class="hero-actions">
             <button class="button button-dark" id="addToBoutiqueOrder" type="button">Añadir al pedido</button>
-            <a class="button button-outline" id="virtualTryOn" href="${virtualTryOnHref(firstVariant, heroImage)}">Probar virtualmente</a>
             <a class="button button-dark" id="productWhatsApp" href="${productWhatsapp}" target="_blank" rel="noopener">${productCtaText}</a>
             <a class="button button-outline" href="mailto:${contact().email}?subject=${encodeURIComponent(`Consulta B2B ${product.nombre}`)}">${t("emailInnova")}</a>
           </div>
@@ -836,8 +823,6 @@
       document.getElementById("selectedVariantColor").textContent = pick(variant.color) || "";
       const cta = document.getElementById("productWhatsApp");
       if (cta) cta.href = whatsappHref(productMessage(product, variant));
-      const virtualTryOn = document.getElementById("virtualTryOn");
-      if (virtualTryOn) virtualTryOn.href = virtualTryOnHref(variant, first);
       const selectCode = document.getElementById("variantSelectCode");
       const selectColor = document.getElementById("variantSelectColor");
       const selectThumb = document.getElementById("variantSelectThumb");

@@ -1,6 +1,6 @@
 (function () {
   const STORAGE_KEY = "balmain-professional-order-v1";
-  const MINIMUM_UNITS = 18;
+  const MINIMUM_UNITS = 50;
   const INNOVA_EMAIL = "info@innova-eyewear.com";
   const INNOVA_WHATSAPP = "17542704613";
   const emptyClient = {
@@ -330,7 +330,7 @@
           ${items || `
             <div class="order-empty">
               <h3>Todavía no has seleccionado productos.</h3>
-              <p>Explora el catálogo y combina modelos o colores hasta alcanzar 18 piezas.</p>
+              <p>Explora el catálogo y combina modelos o colores hasta alcanzar 50 piezas.</p>
               <a class="button button-dark" href="${document.body.dataset.base || ""}catalogo.html" data-order-action="catalog">Ir al catálogo</a>
             </div>
           `}

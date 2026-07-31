@@ -75,7 +75,7 @@
         </button>
         <aside class="balmain-commercial-help__panel" hidden aria-label="Ayuda comercial de Innova Eyewear">
           <header><div><small>INNOVA EYEWEAR</small><strong>Exclusivo para ópticas</strong></div><button type="button" aria-label="Cerrar ayuda">×</button></header>
-          <p>Este catálogo no realiza ventas al público. Selecciona modelos y cantidades hasta completar un mínimo de 18 piezas de Balmain Eyewear.</p>
+          <p>Este catálogo es exclusivo para ópticas y empresas del sector. Selecciona modelos y cantidades hasta completar el mínimo mayorista de 50 piezas de Balmain Eyewear.</p>
           <p>Después descarga el pedido en PDF. Innova valida la óptica, la disponibilidad, las condiciones comerciales y el transporte antes de confirmar.</p>
           <a href="${balmainUrl}/catalogo.html">Explorar el catálogo <span>→</span></a>
           <a href="${portalUrl}/#seleccion">Ver el proceso de compra <span>→</span></a>

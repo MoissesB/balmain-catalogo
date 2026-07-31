@@ -121,7 +121,7 @@
                 <div class="innova-global-mega-visual__content">
                   <span>PEDIDO GLOBAL</span>
                   <strong>Una selección para las tres firmas.</strong>
-                  <p>El mínimo comercial es de 18 piezas por cada marca incluida.</p>
+                  <p>El mínimo comercial mayorista es de 50 piezas por cada marca incluida.</p>
                   <a href="${portal}/#seleccion">Abrir selección →</a>
                 </div>
               </aside>
@@ -137,7 +137,7 @@
             <a href="${alfred}">Alfred Kerbs · Óptica y Sol</a>
             <a href="${base}catalogo.html">Balmain · Todas las colecciones</a>
             <a href="${silhouette}">Silhouette · Óptica, Sol y Atelier</a>
-            <a href="${portal}/#seleccion">Pedido global · 18 piezas por marca</a>
+            <a href="${portal}/#seleccion">Pedido global · 50 piezas por marca</a>
           </div>
         </details>
       </header>
