@@ -3832,13 +3832,13 @@ body {
 
 @media (max-width: 680px) {
   body {
-    padding-bottom: calc(104px + env(safe-area-inset-bottom));
+    padding-bottom: calc(86px + env(safe-area-inset-bottom));
   }
 
   .balmain-catalog-dock {
-    min-height: 104px;
+    min-height: 86px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 44px 60px;
+    grid-template-rows: 44px 42px;
     padding-bottom: env(safe-area-inset-bottom);
   }
 
@@ -3862,15 +3862,15 @@ body {
 
   .balmain-catalog-dock .balmain-commercial-help {
     width: 100%;
-    min-height: 60px;
+    min-height: 42px;
     grid-column: 1;
     grid-row: 2;
   }
 
   .balmain-catalog-dock .balmain-commercial-help__trigger {
     min-width: 0;
-    min-height: 60px;
-    padding-inline: 15px;
+    min-height: 42px;
+    padding-inline: 12px;
   }
 
   .balmain-catalog-dock .balmain-commercial-help__trigger small {
@@ -3878,8 +3878,9 @@ body {
   }
 
   .balmain-catalog-dock .balmain-commercial-help__trigger i {
-    width: 32px;
-    height: 32px;
+    width: 24px;
+    height: 24px;
+    font-size: 9px;
   }
 
   .balmain-catalog-dock__order-slot {
@@ -3891,16 +3892,22 @@ body {
   [data-balmain-order] .order-fab {
     width: 50%;
     min-width: 0;
-    min-height: 60px;
+    min-height: 42px;
     right: 0;
     bottom: env(safe-area-inset-bottom);
-    padding-inline: 15px;
+    padding-inline: 12px;
+  }
+
+  [data-balmain-order] .order-fab b {
+    width: 24px;
+    height: 24px;
+    font-size: 9px;
   }
 
   .balmain-catalog-dock .balmain-commercial-help__panel {
     width: calc(100vw - 24px);
     right: 12px;
-    bottom: calc(116px + env(safe-area-inset-bottom));
+    bottom: calc(98px + env(safe-area-inset-bottom));
     left: 12px;
   }
 }
