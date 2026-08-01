@@ -587,9 +587,16 @@
       </section>`).join("");
 
     itemsRoot.querySelectorAll("[data-order-quantity]").forEach((input) => {
-      input.addEventListener("change", () => {
+      const persistQuantity = () => {
+        if (input.value === "") return;
         const item = order.items.find((entry) => entry.key === input.dataset.orderQuantity);
-        if (item) item.quantity = Math.max(1, Math.min(999, Number(input.value) || 1));
+        if (!item) return;
+        item.quantity = Math.max(1, Math.min(999, Number(input.value) || 1));
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(order));
+      };
+      input.addEventListener("input", persistQuantity);
+      input.addEventListener("change", () => {
+        persistQuantity();
         saveOrder();
       });
     });
