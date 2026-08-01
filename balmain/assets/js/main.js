@@ -75,10 +75,10 @@
     const portal = isLocal ? "http://localhost:3100" : window.location.origin;
     const alfred = isLocal
       ? "http://localhost:3001"
-      : "https://alfred-kerbs-innova-eyewear.moisses.chatgpt.site";
+      : `${portal.replace(/\/+$/, "")}/alfred-kerbs/`;
     const silhouette = isLocal
       ? "http://localhost:5174"
-      : "https://moissesb.github.io/innova-silhouette-catalogo";
+      : `${portal.replace(/\/+$/, "")}/silhouette/`;
     const silhouetteRoute = (path) => isLocal
       ? `${silhouette}/${String(path).replace(/^\/+/, "")}`
       : `${silhouette}/#/${String(path).replace(/^\/+/, "")}`;

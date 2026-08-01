@@ -5,13 +5,13 @@
   const targetOrigin = new URL(portalUrl).origin;
   const alfredUrl = isLocal
     ? "http://localhost:3001"
-    : "https://alfred-kerbs-innova-eyewear.moisses.chatgpt.site";
+    : `${portalUrl.replace(/\/+$/, "")}/alfred-kerbs/`;
   const balmainUrl = isLocal
     ? "http://localhost:3101"
     : `${portalUrl.replace(/\/+$/, "")}/balmain/`;
   const silhouetteUrl = isLocal
     ? "http://localhost:5174"
-    : "https://moissesb.github.io/innova-silhouette-catalogo";
+    : `${portalUrl.replace(/\/+$/, "")}/silhouette/`;
   let bridge;
 
   function getBridge() {
