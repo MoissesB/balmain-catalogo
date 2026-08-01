@@ -76,6 +76,7 @@
   function write() {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
     window.dispatchEvent(new CustomEvent("balmain:orderchange", { detail: summary() }));
+    syncBoutiqueState();
   }
 
   function totalUnits() {
@@ -153,17 +154,20 @@
     };
   }
 
-  function syncBoutique(item, quantity) {
-    window.InnovaBoutiqueOrder?.add({
+  function syncBoutiqueState() {
+    window.InnovaBoutiqueOrder?.replace(state.items.map((item) => ({
       productId: item.productId,
       sku: item.sku,
       name: item.model,
       model: item.model,
       color: item.color,
+      material: item.material,
+      measurements: item.measurements,
+      collection: item.collection,
       image: item.image,
       catalogUrl: new URL(`producto.html?slug=${encodeURIComponent(item.slug)}`, window.location.href).href,
-      quantity,
-    });
+      quantity: item.quantity,
+    })), state.client);
   }
 
   function addProduct(product, variantIndex = 0, quantity = 1) {
@@ -173,7 +177,6 @@
     if (found) found.quantity = Math.min(9999, found.quantity + safeQuantity);
     else state.items.push({ ...item, quantity: safeQuantity });
     write();
-    syncBoutique(item, safeQuantity);
     updateQuickAddLabels();
     renderDrawer();
   }
@@ -497,10 +500,12 @@
 
     let page = addPage();
     let y = height - 116;
-    page.drawText("PEDIDO BALMAIN PARA REVISION", { x: margin, y, size: 17, font: bold });
+    page.drawText("PEDIDO PROFESIONAL B2B", { x: margin, y, size: 17, font: bold });
     y -= 18;
     page.drawText(`${safeText(state.orderNumber)} - ${new Date().toLocaleDateString("es")}`, { x: margin, y, size: 8, font: regular });
     y -= 28;
+    page.drawRectangle({ x: margin, y: y - 104, width: width - margin * 2, height: 112, color: rgb(0.975, 0.978, 0.98) });
+    y -= 14;
     [
       `Cliente: ${state.client.name}`,
       `Empresa: ${state.client.company}`,
@@ -513,7 +518,7 @@
       page.drawText(safeText(line), { x: margin, y, size: 8, font: regular });
       y -= 13;
     });
-    y -= 12;
+    y -= 22;
 
     for (const item of state.items) {
       if (y < 105) {
@@ -586,6 +591,7 @@
     read();
     ensureUi();
     updateQuickAddLabels();
+    window.setTimeout(syncBoutiqueState, 0);
     window.addEventListener("balmain:languagechange", renderDrawer);
   }
 

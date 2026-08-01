@@ -12,6 +12,15 @@
     }
   }
 
+  function mergeClient(order, client) {
+    if (!client || typeof client !== "object") return order;
+    order.client = { ...(order.client || {}) };
+    for (const [field, value] of Object.entries(client)) {
+      if (typeof value === "string" && value.trim()) order.client[field] = value;
+    }
+    return order;
+  }
+
   function saveItem(item) {
     const order = readOrder();
     const key = String(item.key || `${item.brand}:${item.sku || item.productId}`);
@@ -23,8 +32,8 @@
     return order;
   }
 
-  function replaceBrandItems(brand, items) {
-    const order = readOrder();
+  function replaceBrandItems(brand, items, client) {
+    const order = mergeClient(readOrder(), client);
     order.items = order.items.filter((item) => item.brand !== brand);
     for (const item of items) {
       if (!item || item.brand !== brand) continue;
@@ -54,7 +63,7 @@
       && event.data.brand
       && Array.isArray(event.data.items)
     ) {
-      notifySource(event, replaceBrandItems(event.data.brand, event.data.items));
+      notifySource(event, replaceBrandItems(event.data.brand, event.data.items, event.data.client));
     }
   });
 })();

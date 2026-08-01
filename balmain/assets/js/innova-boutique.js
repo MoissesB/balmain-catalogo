@@ -55,6 +55,32 @@
     }, { once: true });
   }
 
+  function replace(items, client) {
+    const payload = {
+      type: "innova-boutique:replace-brand",
+      brand: "balmain",
+      client: client || {},
+      items: (items || []).map((item) => ({
+        ...item,
+        brand: "balmain",
+        key: `balmain:${item.sku || item.productId}`,
+        image: absoluteUrl(item.image),
+        catalogUrl: absoluteUrl(item.catalogUrl || window.location.href),
+        quantity: Math.max(1, Number(item.quantity) || 1),
+      })),
+    };
+
+    if (window.parent !== window) window.parent.postMessage(payload, targetOrigin);
+
+    const frame = getBridge();
+    const send = () => frame.contentWindow?.postMessage(payload, targetOrigin);
+    if (frame.dataset.ready === "true") send();
+    else frame.addEventListener("load", () => {
+      frame.dataset.ready = "true";
+      send();
+    }, { once: true });
+  }
+
   document.querySelectorAll("[data-boutique-track]").forEach((track) => {
     const shell = track.closest("[data-boutique-rail]");
     shell?.querySelector("[data-boutique-prev]")?.addEventListener("click", () => {
@@ -101,6 +127,6 @@
     panel.querySelector("header button").addEventListener("click", () => setOpen(false));
   }
 
-  window.InnovaBoutiqueOrder = { add, portalUrl };
+  window.InnovaBoutiqueOrder = { add, replace, portalUrl };
   getBridge();
 })();

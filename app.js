@@ -30,7 +30,16 @@
   });
 
   function brandDestination(brand, path = "") {
-    const base = config.brands?.[brand];
+    const assetPath = /\.(?:avif|gif|jpe?g|png|svg|webp)(?:[?#]|$)/i.test(String(path));
+    const base = assetPath ? (config.brandAssets?.[brand] || config.brands?.[brand]) : config.brands?.[brand];
+    if (!base) return "#";
+    const normalizedBase = new URL(base, window.location.href);
+    normalizedBase.pathname = `${normalizedBase.pathname.replace(/\/+$/, "")}/`;
+    return new URL(String(path).replace(/^\/+/, ""), normalizedBase).href;
+  }
+
+  function brandAssetDestination(brand, path = "") {
+    const base = config.brandAssets?.[brand] || config.brands?.[brand];
     if (!base) return "#";
     const normalizedBase = new URL(base, window.location.href);
     normalizedBase.pathname = `${normalizedBase.pathname.replace(/\/+$/, "")}/`;
@@ -38,7 +47,7 @@
   }
 
   function brandRouteDestination(brand, path = "") {
-    if (brand === "silhouette" && !config.local) {
+    if (["alfred-kerbs", "silhouette"].includes(brand) && !config.local) {
       const base = brandDestination(brand);
       const route = String(path).replace(/^\/+/, "");
       return `${base.replace(/\/+$/, "/")}#/${route}`;
@@ -53,7 +62,7 @@
 
   document.querySelectorAll("[data-brand-asset]").forEach((image) => {
     const [brand, ...pathParts] = image.dataset.brandAsset.split(":");
-    image.src = brandDestination(brand, pathParts.join(":"));
+    image.src = brandAssetDestination(brand, pathParts.join(":"));
     image.addEventListener("error", () => {
       if (image.dataset.fallbackApplied) return;
       image.dataset.fallbackApplied = "true";
@@ -79,7 +88,7 @@
 
     if (!track || !products.length) return;
     track.innerHTML = products.map((product) => `
-      <a class="product-preview" href="${escapeAttribute(brandDestination(brand, product.path))}">
+      <a class="product-preview" href="${escapeAttribute(brandRouteDestination(brand, product.path))}">
         <span class="product-preview-media">
           <img src="${escapeAttribute(brandDestination(brand, product.image))}" alt="${escapeAttribute(`${product.name} · ${brandLabels[brand] || brand}`)}" loading="lazy">
         </span>
@@ -255,6 +264,50 @@
     media.addEventListener("pointerleave", () => {
       media.style.setProperty("--zoom-x", "50%");
       media.style.setProperty("--zoom-y", "50%");
+    });
+
+    // En mÃ³vil la imagen se amplÃ­a con un gesto de pinza, siempre recortada
+    // dentro de su propio recuadro. Escritorio conserva el zoom editorial.
+    let touchScale = 1;
+    let touchStartDistance = 0;
+    let touchStartScale = 1;
+    let pinching = false;
+    const image = media.querySelector("img");
+    const distance = (touches) => Math.hypot(
+      touches[0].clientX - touches[1].clientX,
+      touches[0].clientY - touches[1].clientY,
+    );
+    const applyTouchScale = () => {
+      media.style.setProperty("--touch-scale", String(touchScale));
+      media.classList.toggle("is-touch-zoomed", touchScale > 1.01);
+    };
+    media.addEventListener("touchstart", (event) => {
+      if (!window.matchMedia("(max-width: 680px)").matches || event.touches.length !== 2) return;
+      pinching = true;
+      touchStartDistance = distance(event.touches);
+      touchStartScale = touchScale;
+    }, { passive: true });
+    media.addEventListener("touchmove", (event) => {
+      if (!pinching || event.touches.length !== 2) return;
+      event.preventDefault();
+      touchScale = Math.max(1, Math.min(2.35, touchStartScale * (distance(event.touches) / touchStartDistance)));
+      applyTouchScale();
+    }, { passive: false });
+    media.addEventListener("touchend", (event) => {
+      if (event.touches.length < 2) pinching = false;
+      if (touchScale < 1.06) {
+        touchScale = 1;
+        applyTouchScale();
+      }
+    }, { passive: true });
+    image?.addEventListener("dblclick", (event) => {
+      if (!window.matchMedia("(max-width: 680px)").matches) return;
+      event.preventDefault();
+      touchScale = touchScale > 1 ? 1 : 1.7;
+      applyTouchScale();
+    });
+    media.closest("a")?.addEventListener("click", (event) => {
+      if (pinching || (window.matchMedia("(max-width: 680px)").matches && touchScale > 1.01)) event.preventDefault();
     });
   });
 
@@ -593,9 +646,23 @@
   });
 
   window.addEventListener("message", (event) => {
-    if (event.data?.type !== "innova-boutique:add-item") return;
+    if (!["innova-boutique:add-item", "innova-boutique:replace-brand"].includes(event.data?.type)) return;
     const allowed = new Set(config.allowedOrigins || [window.location.origin]);
     if (!allowed.has(event.origin)) return;
+    if (event.data.type === "innova-boutique:replace-brand") {
+      const brand = String(event.data.brand || "");
+      if (!brand) return;
+      order.items = order.items.filter((entry) => entry.brand !== brand);
+      (Array.isArray(event.data.items) ? event.data.items : []).forEach((item) => {
+        const key = String(item.key || `${brand}:${item.sku || item.productId}`);
+        order.items.push({ ...item, brand, key, quantity: Math.max(1, Number(item.quantity) || 1) });
+      });
+      Object.entries(event.data.client || {}).forEach(([key, value]) => {
+        if (typeof value === "string" && value.trim()) order.client[key] = value;
+      });
+      saveOrder();
+      return;
+    }
     const item = event.data.item;
     const key = String(item.key || `${item.brand}:${item.sku || item.productId}`);
     const existing = order.items.find((entry) => entry.key === key);
@@ -622,6 +689,7 @@
       const pdfDocument = await PDFDocument.create();
       const regular = await pdfDocument.embedFont(StandardFonts.Helvetica);
       const bold = await pdfDocument.embedFont(StandardFonts.HelveticaBold);
+      const editorial = await pdfDocument.embedFont(StandardFonts.TimesRoman);
       const pageSize = [595.28, 841.89];
       const margin = 42;
       const black = rgb(0.08, 0.075, 0.075);
@@ -730,8 +798,15 @@
 
       function drawPageHeader(targetPage) {
         drawContained(targetPage, innovaLogo, margin, 786, 118, 30);
-        targetPage.drawText("SELECCION PROFESIONAL", {
-          x: 403,
+        targetPage.drawText("INNOVA BOUTIQUE", {
+          x: 230,
+          y: 800,
+          size: 9,
+          font: bold,
+          color: black,
+        });
+        targetPage.drawText("PEDIDO GLOBAL B2B", {
+          x: 424,
           y: 799,
           size: 7,
           font: bold,
@@ -753,6 +828,18 @@
 
       function drawText(value, x, atY, size = 9, font = regular, color = black) {
         page.drawText(pdfText(value), { x, y: atY, size, font, color });
+      }
+
+      function drawSilhouetteMark(targetPage, x, atY, color = black) {
+        [0, 8, 16].forEach((offset) => targetPage.drawEllipse({
+          x: x + offset,
+          y: atY + 7,
+          xScale: 4.8,
+          yScale: 4.8,
+          borderColor: color,
+          borderWidth: 0.9,
+        }));
+        targetPage.drawText("Silhouette", { x: x + 27, y: atY, size: 15, font: editorial, color });
       }
 
       newPage();
@@ -790,6 +877,13 @@
       });
       y -= 136;
 
+      page.drawRectangle({ x: margin, y: y - 44, width: 511, height: 44, color: white, borderColor: line, borderWidth: 0.7 });
+      drawText("FIRMAS INCLUIDAS", margin + 12, y - 17, 6, bold, gray);
+      drawContained(page, brandLogos["alfred-kerbs"], margin + 95, y - 35, 105, 24);
+      drawContained(page, brandLogos.balmain, margin + 220, y - 35, 100, 24);
+      drawSilhouetteMark(page, margin + 363, y - 29, black);
+      y -= 62;
+
       if (order.client.notes.trim()) {
         drawText("OBSERVACIONES", margin, y, 7, bold, gray);
         y -= 13;
@@ -807,6 +901,8 @@
         if (brandLogos[brand]) {
           page.drawRectangle({ x: margin + 9, y: y - 31, width: 118, height: 24, color: white });
           drawContained(page, brandLogos[brand], margin + 14, y - 28, 108, 18);
+        } else if (brand === "silhouette") {
+          drawSilhouetteMark(page, margin + 14, y - 29, white);
         } else {
           drawText((brandLabels[brand] || brand).toUpperCase(), margin + 14, y - 24, 11, bold, white);
         }
