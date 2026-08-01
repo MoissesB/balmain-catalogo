@@ -596,7 +596,7 @@ img { display: block; width: 100%; }
 .focus-card > span b { font-size: 8px; font-weight: 600; opacity: .55; }
 .focus-card.is-active { flex: 2.25; background: white; }
 .focus-card.is-active img { opacity: 1; filter: none; transform: scale(1); }
-.focus-card[data-focus-card="silhouette"] img { object-fit: contain; padding: clamp(16px, 2.6vw, 44px); }
+.focus-card[data-focus-card="silhouette"] img { object-fit: cover; object-position: center; padding: 0; }
 .focus-card:hover img, .focus-card:focus-visible img { opacity: 1; filter: none; transform: scale(1); }
 
 .brands-section { padding: clamp(80px, 10vw, 170px) max(24px, 7vw); background: var(--paper); }
