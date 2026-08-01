@@ -550,7 +550,10 @@
       current.drawText(`${state.orderNumber} - ${INNOVA_EMAIL}`, { x: margin, y: 23, size: 7, font: regular });
       current.drawText(`${index + 1}/${pages.length}`, { x: width - margin - 18, y: 23, size: 7, font: regular });
     });
-    return new Blob([await pdf.save()], { type: "application/pdf" });
+    const bytes = await pdf.save();
+    const safeBuffer = new Uint8Array(bytes.byteLength);
+    safeBuffer.set(bytes);
+    return new Blob([safeBuffer.buffer], { type: "application/pdf" });
   }
 
   function download(blob, filename) {
@@ -558,8 +561,11 @@
     const anchor = document.createElement("a");
     anchor.href = href;
     anchor.download = filename;
+    anchor.hidden = true;
+    document.body.appendChild(anchor);
     anchor.click();
-    setTimeout(() => URL.revokeObjectURL(href), 1500);
+    anchor.remove();
+    setTimeout(() => URL.revokeObjectURL(href), 2500);
   }
 
   async function runAction(action) {
@@ -579,8 +585,9 @@
       } else {
         statusMessage = "PDF del pedido descargado.";
       }
-    } catch (_error) {
-      statusMessage = "No se pudo preparar el PDF. Inténtalo de nuevo.";
+    } catch (error) {
+      console.error("Balmain PDF error", error);
+      statusMessage = "No se pudo preparar el PDF. Revisa los datos obligatorios e inténtalo de nuevo.";
     } finally {
       working = false;
       if (drawerOpen) renderDrawer();

@@ -110,7 +110,7 @@
       <nav class="balmain-catalog-dock__brands" aria-label="Cambiar catálogo de marca">
         <a href="${alfredUrl}" aria-label="Abrir Alfred Kerbs"><img src="${portalUrl}/assets/alfred-kerbs-logo.png" alt=""></a>
         <a class="is-current" href="${balmainUrl}" aria-label="Abrir Balmain Eyewear" aria-current="page"><img src="${portalUrl}/assets/balmain-logo-transparent.png" alt=""></a>
-        <a class="balmain-catalog-dock__silhouette" href="${silhouetteUrl}" aria-label="Abrir Silhouette"><span>Silhouette</span></a>
+        <a class="balmain-catalog-dock__silhouette" href="${silhouetteUrl}" aria-label="Abrir Silhouette"><img src="${portalUrl}/assets/logos/silhouette-on-light.png" alt="Silhouette"></a>
       </nav>
       <span class="balmain-catalog-dock__order-slot" aria-hidden="true"></span>
     `;

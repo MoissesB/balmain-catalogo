@@ -3802,12 +3802,7 @@ body {
   object-fit: contain;
 }
 
-.balmain-catalog-dock__silhouette span {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 20px;
-  font-weight: 600;
-  letter-spacing: -.055em;
-}
+.balmain-catalog-dock__silhouette img { width: 118px; max-height: 36px; }
 
 .balmain-catalog-dock__order-slot {
   display: block;
@@ -3863,9 +3858,7 @@ body {
     max-height: 25px;
   }
 
-  .balmain-catalog-dock__silhouette span {
-    font-size: 17px;
-  }
+  .balmain-catalog-dock__silhouette img { width: 80px; max-height: 22px; }
 
   .balmain-catalog-dock .balmain-commercial-help {
     width: 100%;

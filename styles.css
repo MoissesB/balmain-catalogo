@@ -420,15 +420,23 @@ img { display: block; width: 100%; }
 
 .brand-marquee { overflow: hidden; padding: 10px 0; background: var(--white); border-bottom: 1px solid var(--line); }
 .marquee-loop { width: max-content; display: flex; animation: marquee 30s linear infinite; }
-.marquee-sequence { flex: none; display: flex; align-items: center; gap: 42px; padding-right: 42px; }
-.marquee-logo, .marquee-frame { flex: none; display: grid; place-items: center; height: 70px; transition: opacity .3s ease, transform .45s var(--ease); }
-.marquee-logo { width: 185px; }
-.marquee-logo img { width: 155px; max-height: 42px; object-fit: contain; }
-.marquee-frame { width: 215px; overflow: hidden; }
-.marquee-frame img { width: 190px; height: 62px; object-fit: contain; mix-blend-mode: multiply; }
-.marquee-frame-balmain img { transform: scale(1.22); }
-.marquee-wordmark { font-family: Georgia, "Times New Roman", serif; font-size: 29px; font-weight: 600; letter-spacing: -.05em; }
-.marquee-logo:hover, .marquee-frame:hover { opacity: .65; transform: scale(1.035); }
+.marquee-sequence { flex: none; display: flex; align-items: center; gap: 52px; padding-right: 52px; }
+.marquee-brand-pair {
+  width: 430px;
+  height: 70px;
+  flex: none;
+  display: grid;
+  grid-template-columns: 218px 1fr;
+  align-items: center;
+  gap: 25px;
+  overflow: hidden;
+  transition: opacity .3s ease, transform .45s var(--ease);
+}
+.marquee-frame-image { width: 210px; height: 64px; object-fit: contain; mix-blend-mode: multiply; }
+.marquee-brand-pair-balmain .marquee-frame-image { transform: scale(1.16); }
+.marquee-brand-logo { width: 168px; max-height: 48px; object-fit: contain; }
+.marquee-brand-logo-silhouette { width: 176px; }
+.marquee-brand-pair:hover { opacity: .65; transform: scale(1.025); }
 .brand-marquee:hover .marquee-loop { animation-play-state: paused; }
 @keyframes marquee { to { transform: translateX(-50%); } }
 
@@ -787,11 +795,11 @@ body > footer > small { position: absolute; left: max(24px, 5vw); right: max(24p
   .hero-film__brands > a small { font-size: 6px; }
   .hero-film__brands > a > span { font-size: 7px; }
   .marquee-sequence { gap: 22px; padding-right: 22px; }
-  .marquee-logo, .marquee-frame { height: 58px; }
-  .marquee-logo { width: 145px; }
-  .marquee-logo img { width: 125px; max-height: 34px; }
-  .marquee-frame { width: 160px; }
-  .marquee-frame img { width: 148px; height: 50px; }
+  .marquee-sequence { gap: 28px; padding-right: 28px; }
+  .marquee-brand-pair { width: 310px; height: 58px; grid-template-columns: 148px 1fr; gap: 18px; }
+  .marquee-frame-image { width: 148px; height: 52px; }
+  .marquee-brand-logo { width: 125px; max-height: 36px; }
+  .marquee-brand-logo-silhouette { width: 132px; }
   .marquee-wordmark { font-size: 24px; }
   .focus-showcase { padding: 72px 15px; }
   .focus-showcase > header { grid-template-columns: 1fr; gap: 15px; margin-bottom: 30px; }

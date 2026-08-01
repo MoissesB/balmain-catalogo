@@ -63,7 +63,7 @@
     const base = document.body.dataset.base || "";
     await loadScript(`${base}assets/js/vendor/pdf-lib.min.js`, "pdf-lib");
     await Promise.all([
-      loadScript(`${base}assets/js/pedido.js?v=20260730a`, "balmain-order"),
+      loadScript(`${base}assets/js/pedido.js?v=20260801-pdf-profesional`, "balmain-order"),
       loadScript(`${base}assets/js/blog.js?v=20260730a`, "balmain-blog"),
     ]);
   }

@@ -467,7 +467,17 @@
   function resolveOrderItemImage(item) {
     if (!item.image) return "";
     try {
-      return new URL(item.image, config.brands?.[item.brand] || window.location.origin).href;
+      const resolved = new URL(item.image, config.brands?.[item.brand] || window.location.origin);
+      const catalogIndex = resolved.pathname.indexOf("/catalog/");
+      if (catalogIndex >= 0 && resolved.origin !== window.location.origin) {
+        if (item.brand === "alfred-kerbs") {
+          return new URL(`/pdf-assets/alfred${resolved.pathname.slice(catalogIndex)}`, window.location.origin).href;
+        }
+        if (item.brand === "silhouette") {
+          return new URL(`/pdf-assets/silhouette${resolved.pathname.slice(catalogIndex)}`, window.location.origin).href;
+        }
+      }
+      return resolved.href;
     } catch {
       return item.image;
     }
@@ -787,6 +797,7 @@
       const brandLogoSources = {
         "alfred-kerbs": "assets/alfred-kerbs-logo.png",
         balmain: "assets/balmain-logo-transparent.png",
+        silhouette: "assets/logos/silhouette-on-light.png",
       };
       const brandLogos = {};
       for (const [brand, source] of Object.entries(brandLogoSources)) {
@@ -837,18 +848,6 @@
         page.drawText(pdfText(value), { x, y: atY, size, font, color });
       }
 
-      function drawSilhouetteMark(targetPage, x, atY, color = black) {
-        [0, 8, 16].forEach((offset) => targetPage.drawEllipse({
-          x: x + offset,
-          y: atY + 7,
-          xScale: 4.8,
-          yScale: 4.8,
-          borderColor: color,
-          borderWidth: 0.9,
-        }));
-        targetPage.drawText("Silhouette", { x: x + 27, y: atY, size: 15, font: editorial, color });
-      }
-
       newPage();
       drawText("PEDIDO MULTIMARCAS", margin, y, 22, bold);
       y -= 22;
@@ -888,7 +887,7 @@
       drawText("FIRMAS INCLUIDAS", margin + 12, y - 17, 6, bold, gray);
       drawContained(page, brandLogos["alfred-kerbs"], margin + 95, y - 35, 105, 24);
       drawContained(page, brandLogos.balmain, margin + 220, y - 35, 100, 24);
-      drawSilhouetteMark(page, margin + 363, y - 29, black);
+      drawContained(page, brandLogos.silhouette, margin + 350, y - 35, 125, 24);
       y -= 62;
 
       if (order.client.notes.trim()) {
@@ -908,8 +907,6 @@
         if (brandLogos[brand]) {
           page.drawRectangle({ x: margin + 9, y: y - 31, width: 118, height: 24, color: white });
           drawContained(page, brandLogos[brand], margin + 14, y - 28, 108, 18);
-        } else if (brand === "silhouette") {
-          drawSilhouetteMark(page, margin + 14, y - 29, white);
         } else {
           drawText((brandLabels[brand] || brand).toUpperCase(), margin + 14, y - 24, 11, bold, white);
         }
