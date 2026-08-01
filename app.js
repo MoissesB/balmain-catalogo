@@ -918,7 +918,7 @@
 
         for (const item of items) {
           if (y < 112) newPage();
-          const cardHeight = 72;
+          const cardHeight = 88;
           const cardBottom = y - cardHeight;
           page.drawRectangle({
             x: margin,
@@ -933,21 +933,25 @@
             x: margin + 8,
             y: cardBottom + 8,
             width: 104,
-            height: 56,
+            height: 72,
             color: rgb(0.985, 0.985, 0.985),
           });
           const productImage = productImages.get(item.key);
           if (productImage) {
-            drawContained(page, productImage, margin + 12, cardBottom + 11, 96, 50);
+            drawContained(page, productImage, margin + 12, cardBottom + 12, 96, 64);
           } else {
             drawText((brandLabels[item.brand] || item.brand || "IN").slice(0, 2).toUpperCase(), margin + 52, cardBottom + 31, 11, bold, gray);
           }
-          drawText(item.name || item.model, margin + 126, cardBottom + 48, 10, bold, black);
-          drawText(`${item.sku || ""}${item.color ? `  ·  ${item.color}` : ""}`, margin + 126, cardBottom + 31, 7.5, regular, gray);
+          drawText(item.name || item.model, margin + 126, cardBottom + 63, 10, bold, black);
+          drawText(`${item.sku || ""}${item.color ? `  ·  ${item.color}` : ""}`, margin + 126, cardBottom + 45, 7.5, regular, gray);
           const technical = [item.material, item.measurements].filter(Boolean).join("  ·  ");
-          if (technical) drawText(technical, margin + 126, cardBottom + 16, 7, regular, gray);
-          drawText(String(item.quantity), 503, cardBottom + 37, 14, bold, black);
-          drawText("PIEZAS", 493, cardBottom + 22, 6, bold, gray);
+          if (technical) {
+            wrap(technical, regular, 6.5, 285).slice(0, 2).forEach((technicalLine, index) => {
+              drawText(technicalLine, margin + 126, cardBottom + 28 - index * 10, 6.5, regular, gray);
+            });
+          }
+          drawText(String(item.quantity), 503, cardBottom + 48, 14, bold, black);
+          drawText("PIEZAS", 493, cardBottom + 33, 6, bold, gray);
           y -= cardHeight + 8;
         }
         y -= 14;
