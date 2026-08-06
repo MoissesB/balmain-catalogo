@@ -652,8 +652,7 @@ img { display: block; width: 100%; }
 body > footer { position: relative; display: grid; grid-template-columns: 1.3fr .8fr 1fr; gap: 60px; padding: 80px max(24px, 5vw) 110px; background: #100f0f; color: white; }
 body > footer > div:not(.footer-brand) { display: flex; flex-direction: column; gap: 12px; font-size: 12px; }
 body > footer > div > span { margin-bottom: 12px; color: rgba(255,255,255,.4); font-size: 9px; text-transform: uppercase; letter-spacing: .18em; }
-.footer-brand span { display: block; font-size: 30px; font-weight: 800; }
-.footer-brand b { display: block; margin-top: 6px; font-size: 10px; letter-spacing: .43em; }
+.footer-brand img { display: block; width: min(210px, 100%); height: auto; filter: brightness(0) invert(1); }
 .footer-brand p, body > footer p { color: rgba(255,255,255,.46); font-size: 11px; line-height: 1.6; }
 body > footer > small { position: absolute; left: max(24px, 5vw); right: max(24px, 5vw); bottom: 30px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,.12); color: rgba(255,255,255,.35); font-size: 9px; }
 

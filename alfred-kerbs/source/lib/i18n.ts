@@ -277,7 +277,7 @@ export const documentTranslations: Record<string, TranslationPair> = {
   },
   "Conocer la filosofía": { en: "Discover the philosophy", fr: "Découvrir la philosophie" },
   "Compara referencias, prepara tu selección y habla con el equipo profesional sobre disponibilidad, condiciones y soporte para tu óptica.": {
-    en: "Compare references, prepare your selection and speak with the professional team about availability, terms and support for your optical store.",
+    en: "Compare references, prepare your selection and speak with the professional team about availability, terms and support for your optical business.",
     fr: "Comparez les références, préparez votre sélection et échangez avec l’équipe professionnelle sur la disponibilité, les conditions et l’accompagnement de votre point de vente.",
   },
   "Ideas para mirar mejor.": { en: "Ideas for seeing better.", fr: "Des idées pour mieux regarder." },
@@ -375,7 +375,7 @@ export const documentTranslations: Record<string, TranslationPair> = {
     fr: "Des produits contextualisés, des données traçables.",
   },
   "Presenta tu óptica al equipo.": {
-    en: "Introduce your optical store to the team.",
+    en: "Introduce your optical business to the team.",
     fr: "Présentez votre point de vente à l’équipe.",
   },
   "Tu contacto profesional para Alfred Kerbs.": {
@@ -391,7 +391,7 @@ export const documentTranslations: Record<string, TranslationPair> = {
     fr: "La disponibilité et les conditions commerciales sont confirmées directement auprès d’Innova.",
   },
   "Busca por modelo o código, filtra la colección y prepara una selección descargable para tu óptica. Los datos proceden de las fichas oficiales auditadas.": {
-    en: "Search by model or code, filter the collection and prepare a downloadable selection for your optical store. The data comes from audited official product sheets.",
+    en: "Search by model or code, filter the collection and prepare a downloadable selection for your optical business. The data comes from audited official product sheets.",
     fr: "Recherchez par modèle ou code, filtrez la collection et préparez une sélection téléchargeable pour votre point de vente. Les données proviennent de fiches officielles vérifiées.",
   },
   "Ideas para mirar, seleccionar y presentar.": {
@@ -416,7 +416,7 @@ export const documentTranslations: Record<string, TranslationPair> = {
     fr: "INNOVA EYEWEAR · DISTRIBUTION PROFESSIONNELLE D’ALFRED KERBS",
   },
   "Distribución profesional por Innova Eyewear para ópticas, cadenas retail y departamentos ópticos.": {
-    en: "Professional distribution by Innova Eyewear for optical stores, retail chains and optical departments.",
+    en: "Professional distribution by Innova Eyewear for optical practices, groups and optical departments.",
     fr: "Distribution professionnelle par Innova Eyewear pour les professionnels de l’optique, les enseignes et les départements optiques.",
   },
   "Innova Eyewear": { en: "Innova Eyewear", fr: "Innova Eyewear" },
@@ -460,7 +460,7 @@ export const documentTranslations: Record<string, TranslationPair> = {
     fr: "Une collection de caractère pour les entreprises qui veulent se différencier.",
   },
   "Descubre una propuesta de eyewear contemporáneo para ópticas, cadenas retail y departamentos ópticos. Innova Eyewear te acompaña desde la selección de producto hasta su incorporación en tu punto de venta.": {
-    en: "Discover a contemporary eyewear proposition for optical stores, retail chains and optical departments. Innova Eyewear supports you from product selection through to its introduction at the point of sale.",
+    en: "Discover a contemporary eyewear proposition for optical practices, groups and optical departments. Innova Eyewear supports you from product selection through to its introduction at the point of sale.",
     fr: "Découvrez une proposition de lunettes contemporaines destinée aux professionnels de l’optique, aux enseignes et aux départements optiques. Innova Eyewear vous accompagne de la sélection des produits jusqu’à leur mise en place en point de vente.",
   },
   "Ver la colección": { en: "View the collection", fr: "Voir la collection" },
@@ -501,7 +501,7 @@ export const documentTranslations: Record<string, TranslationPair> = {
     fr: "Intégrez Alfred Kerbs à votre offre avec une sélection pensée pour le point de vente.",
   },
   "Nuestro equipo acompaña a ópticas independientes, grupos regionales y grandes cuentas en la construcción del surtido, la presentación de la colección y la planificación comercial.": {
-    en: "Our team supports independent optical stores, regional groups and key accounts in assortment building, collection presentation and commercial planning.",
+    en: "Our team supports independent optical practices, regional groups and key accounts in assortment building, collection presentation and commercial planning.",
     fr: "Notre équipe accompagne les opticiens indépendants, groupes régionaux et grands comptes dans la construction de l’assortiment, la présentation de la collection et la planification commerciale.",
   },
   "Hablar con un asesor": { en: "Speak with an advisor", fr: "Parler à un conseiller" },
@@ -534,7 +534,7 @@ export const documentTranslations: Record<string, TranslationPair> = {
     fr: "Un partenaire commercial pour développer Alfred Kerbs sur votre marché.",
   },
   "Desde una óptica independiente hasta una cadena o un departamento óptico, Innova Eyewear crea una propuesta comercial adaptada a la escala, el público y los objetivos de cada negocio.": {
-    en: "From an independent optical store to a chain or optical department, Innova Eyewear creates a commercial proposition tailored to the scale, audience and objectives of every business.",
+    en: "From an independent optical practice to a group or optical department, Innova Eyewear creates a commercial proposition tailored to the scale, audience and objectives of every business.",
     fr: "Du point de vente indépendant à l’enseigne ou au département optique, Innova Eyewear construit une proposition commerciale adaptée à l’échelle, au public et aux objectifs de chaque entreprise.",
   },
   "Una relación comercial pensada para crecer.": {
@@ -575,7 +575,7 @@ export const documentTranslations: Record<string, TranslationPair> = {
     fr: "Parlons de la prochaine collection de votre entreprise.",
   },
   "El equipo de Innova Eyewear atiende a ópticas, cadenas, grupos de compra y departamentos ópticos interesados en incorporar Alfred Kerbs a su propuesta comercial.": {
-    en: "The Innova Eyewear team works with optical stores, chains, buying groups and optical departments interested in adding Alfred Kerbs to their commercial offer.",
+    en: "The Innova Eyewear team works with optical practices, groups, buying organisations and optical departments interested in adding Alfred Kerbs to their commercial offer.",
     fr: "L’équipe Innova Eyewear accompagne les professionnels de l’optique, enseignes, groupements d’achat et départements optiques souhaitant intégrer Alfred Kerbs à leur offre commerciale.",
   },
   "DISTRIBUCIÓN Y ATENCIÓN COMERCIAL": {
@@ -709,7 +709,7 @@ export const documentTranslations: Record<string, TranslationPair> = {
     fr: "Comparez les modèles, les coloris et les mesures pour créer une sélection cohérente avec le profil de votre clientèle.",
   },
   "Una mirada comercial a la curaduría, el producto y la cultura visual para ópticas, cadenas y equipos que buscan construir una oferta con más valor.": {
-    en: "A commercial perspective on curation, product and visual culture for optical stores, chains and teams looking to build a higher-value offer.",
+    en: "A commercial perspective on curation, product and visual culture for optical practices, groups and teams looking to build a higher-value offer.",
     fr: "Un regard commercial sur la sélection, le produit et la culture visuelle pour les professionnels de l’optique, enseignes et équipes souhaitant construire une offre à plus forte valeur.",
   },
   "INNOVA EYEWEAR · CONTACTO COMERCIAL": {
@@ -769,7 +769,7 @@ export const documentTranslations: Record<string, TranslationPair> = {
   "Blog profesional": { en: "Professional journal", fr: "Journal professionnel" },
   "Correo comercial": { en: "Sales email", fr: "E-mail commercial" },
   "Innova Eyewear, distribuidor profesional de Alfred Kerbs": { en: "Innova Eyewear, professional distributor of Alfred Kerbs", fr: "Innova Eyewear, distributeur professionnel d’Alfred Kerbs" },
-  "COMPRA PROFESIONAL": { en: "PROFESSIONAL PURCHASING", fr: "SÉLECTION PROFESSIONNELLE" },
+  "COMPRA PROFESIONAL": { en: "PROFESSIONAL SELECTION", fr: "SÉLECTION PROFESSIONNELLE" },
   "Cómo comprar": { en: "How to prepare your selection", fr: "Comment préparer votre sélection" },
   "Cambiar catálogo de marca": { en: "Change brand catalogue", fr: "Changer de catalogue de marque" },
   "Abrir Alfred Kerbs": { en: "Open Alfred Kerbs", fr: "Ouvrir Alfred Kerbs" },
@@ -808,7 +808,7 @@ export const documentTranslations: Record<string, TranslationPair> = {
     fr: "Lire les mesures d’une monture optique",
   },
   "Cómo presentar color y acabados en una óptica": {
-    en: "How to present colour and finishes in an optical store",
+    en: "How to present colour and finishes at the point of sale",
     fr: "Présenter les coloris et les finitions en point de vente optique",
   },
   "Una selección comercial coherente combina lectura del cliente, arquitectura de color y una proporción consciente entre piezas protagonistas y modelos de continuidad.": {
@@ -816,7 +816,7 @@ export const documentTranslations: Record<string, TranslationPair> = {
     fr: "Un assortiment commercial cohérent associe connaissance de la clientèle, architecture des coloris et équilibre maîtrisé entre pièces fortes et modèles de continuité.",
   },
   "Leer las medidas antes de comprar una montura": {
-    en: "Read frame measurements before purchasing",
+    en: "Assess frame measurements before selection",
     fr: "Interpréter les mesures avant de sélectionner une monture",
   },
   "Ancho total, varilla, puente y lente cuentan historias distintas. Interpretarlas juntas reduce dudas y mejora la recomendación en tienda.": {
@@ -1048,7 +1048,7 @@ export function translateDocumentText(text: string, locale: Locale) {
   if (normalized.includes("amplía la propuesta profesional de Alfred Kerbs")) {
     const name = normalized.split(" amplía la propuesta")[0];
     return locale === "en"
-      ? `${name} expands the professional Alfred Kerbs offer. Designed for optical stores, chains and optical departments seeking to differentiate their assortment, it combines the brand’s contemporary language with clear commercial appeal that is easy to present.`
+      ? `${name} expands the professional Alfred Kerbs offer. Designed for optical practices, groups and optical departments seeking to differentiate their assortment, it combines the brand’s contemporary language with clear commercial appeal that is easy to present.`
       : `${name} enrichit l’offre professionnelle Alfred Kerbs. Pensée pour les professionnels de l’optique, les enseignes et les départements optiques souhaitant différencier leur assortiment, cette monture associe le langage contemporain de la marque à des arguments commerciaux clairs et faciles à présenter.`;
   }
 

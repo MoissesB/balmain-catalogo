@@ -85,17 +85,17 @@
 
     document.body.insertAdjacentHTML("afterbegin", `
       <header class="innova-global-header" data-innova-global-header>
-        <a class="innova-global-home" href="${portal}" aria-label="Volver a Innova Boutique">INNOVA BOUTIQUE</a>
-        <span class="innova-global-context">Distribución profesional · Balmain Eyewear</span>
+        <a class="innova-global-home" href="${portal}" aria-label="Volver a Innova Boutique" data-text-es="INNOVA BOUTIQUE" data-text-en="INNOVA BOUTIQUE" data-text-fr="INNOVA BOUTIQUE">INNOVA BOUTIQUE</a>
+        <span class="innova-global-context" data-text-es="Distribución profesional · Balmain Eyewear" data-text-en="Professional distribution · Balmain Eyewear" data-text-fr="Distribution professionnelle · Balmain Eyewear">Distribución profesional · Balmain Eyewear</span>
         <nav class="innova-global-nav" aria-label="Navegación global de Innova Boutique">
           <div class="innova-global-mega-shell">
-            <button type="button">Marcas <span aria-hidden="true">⌄</span></button>
+            <button type="button"><span data-text-es="Marcas" data-text-en="Brands" data-text-fr="Marques">Marcas</span> <span aria-hidden="true">⌄</span></button>
             <div class="innova-global-mega">
               <div data-innova-mega-brand="alfred-kerbs">
                 <span>01 · Barcelona</span>
                 <a href="${alfred}"><strong>Alfred Kerbs</strong></a>
-                <a href="${alfred}/catalogo?category=optical">Óptica</a>
-                <a href="${alfred}/catalogo?category=sun">Sol</a>
+                <a href="${alfred}/catalogo?category=optical" data-text-es="Óptica" data-text-en="Optical frames" data-text-fr="Montures optiques">Óptica</a>
+                <a href="${alfred}/catalogo?category=sun" data-text-es="Sol" data-text-en="Sunglasses" data-text-fr="Lunettes de soleil">Sol</a>
               </div>
               <div data-innova-mega-brand="balmain">
                 <span>02 · París</span>
@@ -108,8 +108,8 @@
               <div data-innova-mega-brand="silhouette">
                 <span>03 · Austria</span>
                 <a href="${silhouette}"><strong>Silhouette</strong></a>
-                <a href="${silhouetteRoute("catalogo/gafas-graduadas")}">Gafas graduadas</a>
-                <a href="${silhouetteRoute("catalogo/gafas-de-sol")}">Gafas de sol</a>
+                <a href="${silhouetteRoute("catalogo/gafas-graduadas")}" data-text-es="Gafas graduadas" data-text-en="Optical frames" data-text-fr="Montures optiques">Gafas graduadas</a>
+                <a href="${silhouetteRoute("catalogo/gafas-de-sol")}" data-text-es="Gafas de sol" data-text-en="Sunglasses" data-text-fr="Lunettes de soleil">Gafas de sol</a>
                 <a href="${silhouetteRoute("catalogo/atelier-next")}">Atelier</a>
               </div>
               <aside class="innova-global-mega-visual">
@@ -119,25 +119,25 @@
                   <img data-innova-mega-image="silhouette" src="${portal}/assets/campaign-silhouette.webp" alt="">
                 </div>
                 <div class="innova-global-mega-visual__content">
-                  <span>PEDIDO GLOBAL</span>
-                  <strong>Una selección para las tres firmas.</strong>
-                  <p>El mínimo comercial mayorista es de 50 piezas por cada marca incluida.</p>
-                  <a href="${portal}/#seleccion">Abrir selección →</a>
+                  <span data-text-es="PEDIDO GLOBAL" data-text-en="MULTI-BRAND SELECTION" data-text-fr="SÉLECTION MULTIMARQUE">PEDIDO GLOBAL</span>
+                  <strong data-text-es="Una selección para las tres firmas." data-text-en="One selection for all three brands." data-text-fr="Une sélection commune aux trois marques.">Una selección para las tres firmas.</strong>
+                  <p data-text-es="El mínimo comercial mayorista es de 50 piezas por cada marca incluida." data-text-en="Each included brand must reach the 50-piece professional minimum." data-text-fr="Chaque marque incluse doit atteindre le seuil professionnel de 50 pièces.">El mínimo comercial mayorista es de 50 piezas por cada marca incluida.</p>
+                  <a href="${portal}/#seleccion" data-text-es="Abrir selección →" data-text-en="Open selection →" data-text-fr="Ouvrir la sélection →">Abrir selección →</a>
                 </div>
               </aside>
             </div>
           </div>
           <a href="${portal}/#innova">Innova Eyewear</a>
-          <a class="innova-global-order" href="${portal}/#seleccion">Pedido global</a>
+          <a class="innova-global-order" href="${portal}/#seleccion" data-text-es="Pedido global" data-text-en="Multi-brand selection" data-text-fr="Sélection multimarque">Pedido global</a>
         </nav>
         <details class="innova-global-mobile">
-          <summary>Marcas</summary>
+          <summary data-text-es="Marcas" data-text-en="Brands" data-text-fr="Marques">Marcas</summary>
           <div class="innova-global-mobile-panel">
             <a href="${portal}">Innova Boutique</a>
-            <a href="${alfred}">Alfred Kerbs · Óptica y Sol</a>
+            <a href="${alfred}" data-text-es="Alfred Kerbs · Óptica y Sol" data-text-en="Alfred Kerbs · Optical frames and sunglasses" data-text-fr="Alfred Kerbs · Montures optiques et lunettes de soleil">Alfred Kerbs · Óptica y Sol</a>
             <a href="${base}catalogo.html">Balmain · Todas las colecciones</a>
-            <a href="${silhouette}">Silhouette · Óptica, Sol y Atelier</a>
-            <a href="${portal}/#seleccion">Pedido global · 50 piezas por marca</a>
+            <a href="${silhouette}" data-text-es="Silhouette · Óptica, Sol y Atelier" data-text-en="Silhouette · Optical frames, sunglasses and Atelier" data-text-fr="Silhouette · Montures optiques, lunettes de soleil et Atelier">Silhouette · Óptica, Sol y Atelier</a>
+            <a href="${portal}/#seleccion" data-text-es="Pedido global · 50 piezas por marca" data-text-en="Multi-brand selection · 50 pieces per brand" data-text-fr="Sélection multimarque · 50 pièces par marque">Pedido global · 50 piezas por marca</a>
           </div>
         </details>
       </header>

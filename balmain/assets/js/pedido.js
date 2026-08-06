@@ -27,6 +27,86 @@
     return window.BalmainI18n?.pick(value) || value?.es || value?.en || value || "";
   }
 
+  const copy = {
+    addMore: { es: "Añadir más unidades", en: "Add more units", fr: "Ajouter des unités" },
+    addSelection: { es: "Añadir a la selección", en: "Add to selection", fr: "Ajouter à la sélection" },
+    openSelection: { es: "Abrir mi selección", en: "Open my selection", fr: "Ouvrir ma sélection" },
+    mySelection: { es: "Mi selección", en: "My selection", fr: "Ma sélection" },
+    dialogLabel: { es: "Selección Balmain para revisión", en: "Balmain selection for review", fr: "Sélection Balmain à valider" },
+    required: { es: "Este campo es obligatorio.", en: "This field is required.", fr: "Ce champ est obligatoire." },
+    emailRequired: { es: "El correo profesional es obligatorio.", en: "A professional email address is required.", fr: "Une adresse e-mail professionnelle est requise." },
+    emailInvalid: { es: "Usa un correo completo, por ejemplo nombre@empresa.com.", en: "Enter a complete address, for example name@company.com.", fr: "Saisissez une adresse complète, par exemple nom@entreprise.com." },
+    phoneRequired: { es: "El teléfono es obligatorio.", en: "A telephone number is required.", fr: "Un numéro de téléphone est requis." },
+    phoneInvalid: { es: "Incluye +, el código del país y al menos 7 dígitos.", en: "Include +, the country code and at least 7 digits.", fr: "Indiquez +, l'indicatif du pays et au moins 7 chiffres." },
+    name: { es: "nombre y apellido", en: "full name", fr: "nom et prénom" },
+    company: { es: "empresa", en: "company", fr: "entreprise" },
+    optical: { es: "nombre de la óptica", en: "optical practice name", fr: "nom de l'opticien" },
+    email: { es: "correo profesional", en: "professional email", fr: "e-mail professionnel" },
+    phone: { es: "teléfono", en: "telephone", fr: "téléphone" },
+    city: { es: "ciudad", en: "city", fr: "ville" },
+    country: { es: "país", en: "country", fr: "pays" },
+    decrease: { es: "Quitar una unidad", en: "Remove one unit", fr: "Retirer une unité" },
+    quantity: { es: "Cantidad", en: "Quantity", fr: "Quantité" },
+    increase: { es: "Añadir una unidad", en: "Add one unit", fr: "Ajouter une unité" },
+    remove: { es: "Quitar {model}", en: "Remove {model}", fr: "Retirer {model}" },
+    eyebrow: { es: "Selección profesional · Balmain Eyewear", en: "Professional selection · Balmain Eyewear", fr: "Sélection professionnelle · Balmain Eyewear" },
+    title: { es: "Selección Balmain para revisión", en: "Balmain selection for review", fr: "Sélection Balmain à valider" },
+    intro: { es: "Selecciona referencias y cantidades. Innova confirmará disponibilidad, condiciones comerciales y envío.", en: "Select references and quantities. Innova will confirm availability, commercial terms and shipping.", fr: "Sélectionnez les références et les quantités. Innova confirmera la disponibilité, les conditions commerciales et l'expédition." },
+    close: { es: "Cerrar selección", en: "Close selection", fr: "Fermer la sélection" },
+    referencesPieces: { es: "{references} referencias · {units} piezas", en: "{references} references · {units} units", fr: "{references} références · {units} pièces" },
+    remaining: { es: "Faltan {count} piezas para completar el mínimo.", en: "{count} more units are required to reach the minimum.", fr: "Il manque {count} pièces pour atteindre le seuil minimum." },
+    minimumMet: { es: "La selección cumple el mínimo profesional.", en: "The selection meets the professional minimum.", fr: "La sélection atteint le seuil professionnel." },
+    minimum: { es: "Mínimo profesional: {count} piezas", en: "Professional minimum: {count} units", fr: "Seuil professionnel : {count} pièces" },
+    emptyTitle: { es: "Todavía no has seleccionado productos.", en: "You have not selected any products yet.", fr: "Vous n'avez encore sélectionné aucun produit." },
+    emptyBody: { es: "Explora el catálogo y combina modelos o coloridos hasta alcanzar {count} piezas.", en: "Explore the catalogue and combine models or colourways to reach {count} units.", fr: "Parcourez le catalogue et associez modèles et coloris jusqu'à atteindre {count} pièces." },
+    catalogue: { es: "Ir al catálogo", en: "View catalogue", fr: "Voir le catalogue" },
+    clientTitle: { es: "Datos de la óptica o empresa", en: "Optical practice or company details", fr: "Coordonnées de l'opticien ou de l'entreprise" },
+    clientIntro: { es: "Estos datos se incluirán en el PDF profesional enviado a Innova Eyewear.", en: "These details will be included in the professional PDF sent to Innova Eyewear.", fr: "Ces informations figureront dans le PDF professionnel transmis à Innova Eyewear." },
+    fullName: { es: "Nombre y apellido", en: "Full name", fr: "Nom et prénom" },
+    companyLegal: { es: "Empresa / razón social", en: "Company / legal name", fr: "Entreprise / raison sociale" },
+    opticalName: { es: "Nombre de la óptica", en: "Optical practice name", fr: "Nom de l'opticien" },
+    professionalEmail: { es: "Correo profesional", en: "Professional email", fr: "E-mail professionnel" },
+    phoneCountry: { es: "Teléfono (+ código del país)", en: "Telephone (+ country code)", fr: "Téléphone (+ indicatif du pays)" },
+    notes: { es: "Observaciones", en: "Notes", fr: "Observations" },
+    pdf: { es: "Descargar PDF de la selección", en: "Download selection PDF", fr: "Télécharger le PDF de la sélection" },
+    whatsapp: { es: "Descargar PDF y abrir WhatsApp", en: "Download PDF and open WhatsApp", fr: "Télécharger le PDF et ouvrir WhatsApp" },
+    prepareEmail: { es: "Descargar PDF y preparar correo", en: "Download PDF and prepare email", fr: "Télécharger le PDF et préparer l'e-mail" },
+    attachment: { es: "Adjunta manualmente el PDF descargado. El documento no confirma disponibilidad ni condiciones comerciales.", en: "Attach the downloaded PDF manually. The document does not confirm availability or commercial terms.", fr: "Joignez manuellement le PDF téléchargé. Ce document ne confirme ni la disponibilité ni les conditions commerciales." },
+    addProducts: { es: "Añade productos a la selección.", en: "Add products to the selection.", fr: "Ajoutez des produits à la sélection." },
+    review: { es: "Revisa: {fields}.", en: "Review: {fields}.", fr: "Vérifiez : {fields}." },
+    ready: { es: "Selección completa y lista para revisión comercial.", en: "Selection complete and ready for commercial review.", fr: "Sélection complète et prête pour validation commerciale." },
+    notReady: { es: "La descarga aún no está disponible. {blockers}", en: "The download is not available yet. {blockers}", fr: "Le téléchargement n'est pas encore disponible. {blockers}" },
+    pdfWhatsappDone: { es: "PDF descargado. Adjunta el archivo al mensaje de WhatsApp.", en: "PDF downloaded. Attach the file to the WhatsApp message.", fr: "PDF téléchargé. Joignez le fichier au message WhatsApp." },
+    pdfEmailDone: { es: "PDF descargado. Adjunta el archivo al correo preparado.", en: "PDF downloaded. Attach the file to the prepared email.", fr: "PDF téléchargé. Joignez le fichier à l'e-mail préparé." },
+    pdfDone: { es: "PDF de la selección descargado.", en: "Selection PDF downloaded.", fr: "PDF de la sélection téléchargé." },
+    pdfError: { es: "No se pudo preparar el PDF. Revisa los datos obligatorios e inténtalo de nuevo.", en: "The PDF could not be prepared. Review the required details and try again.", fr: "Le PDF n'a pas pu être préparé. Vérifiez les informations obligatoires, puis réessayez." },
+    messageTitle: { es: "SELECCIÓN BALMAIN PARA REVISIÓN", en: "BALMAIN SELECTION FOR REVIEW", fr: "SÉLECTION BALMAIN À VALIDER" },
+    labelName: { es: "Nombre", en: "Name", fr: "Nom" },
+    labelCompany: { es: "Empresa", en: "Company", fr: "Entreprise" },
+    labelOptical: { es: "Óptica", en: "Optical practice", fr: "Opticien" },
+    labelEmail: { es: "Correo", en: "Email", fr: "E-mail" },
+    labelPhone: { es: "Teléfono", en: "Telephone", fr: "Téléphone" },
+    labelCity: { es: "Ciudad", en: "City", fr: "Ville" },
+    labelCountry: { es: "País", en: "Country", fr: "Pays" },
+    labelNotes: { es: "Observaciones", en: "Notes", fr: "Observations" },
+    attachmentLabel: { es: "Adjuntar", en: "Attach", fr: "Pièce jointe" },
+    pdfTitle: { es: "SELECCIÓN PROFESIONAL B2B", en: "B2B PROFESSIONAL SELECTION", fr: "SÉLECTION PROFESSIONNELLE B2B" },
+    client: { es: "Cliente", en: "Client", fr: "Client" },
+    pdfSummary: { es: "{references} referencias - {units} piezas - mínimo profesional {minimum}", en: "{references} references - {units} units - professional minimum {minimum}", fr: "{references} références - {units} pièces - seuil professionnel {minimum}" },
+    colourPending: { es: "Color por confirmar", en: "Colour to be confirmed", fr: "Coloris à confirmer" },
+    materialPending: { es: "Material por confirmar", en: "Material to be confirmed", fr: "Matière à confirmer" },
+    piecesUpper: { es: "PIEZAS", en: "UNITS", fr: "PIÈCES" },
+    disclaimer: { es: "Documento preliminar. Innova Eyewear confirmará inventario, condiciones comerciales y transporte.", en: "Preliminary document. Innova Eyewear will confirm inventory, commercial terms and shipping.", fr: "Document préliminaire. Innova Eyewear confirmera le stock, les conditions commerciales et l'expédition." },
+  };
+
+  function t(key, values = {}) {
+    let value = pick(copy[key] || key);
+    Object.entries(values).forEach(([name, replacement]) => {
+      value = value.replaceAll(`{${name}}`, String(replacement));
+    });
+    return value;
+  }
+
   function safeText(value) {
     return String(value ?? "")
       .replaceAll("•", "-")
@@ -94,30 +174,30 @@
   function clientValidationErrors() {
     const errors = {};
     ["name", "company", "optical", "city", "country"].forEach((field) => {
-      if (!state.client[field].trim()) errors[field] = "Este campo es obligatorio.";
+      if (!state.client[field].trim()) errors[field] = t("required");
     });
     if (!state.client.email.trim()) {
-      errors.email = "El correo profesional es obligatorio.";
+      errors.email = t("emailRequired");
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(state.client.email.trim())) {
-      errors.email = "Usa un correo completo, por ejemplo nombre@empresa.com.";
+      errors.email = t("emailInvalid");
     }
     if (!state.client.phone.trim()) {
-      errors.phone = "El teléfono es obligatorio.";
+      errors.phone = t("phoneRequired");
     } else if (!/^\+\d[\d\s().-]{6,}$/.test(state.client.phone.trim())) {
-      errors.phone = "Incluye +, el código del país y al menos 7 dígitos.";
+      errors.phone = t("phoneInvalid");
     }
     return errors;
   }
 
   function clientIssueSummary(errors) {
     const labels = {
-      name: "nombre y apellido",
-      company: "empresa",
-      optical: "nombre de la óptica",
-      email: "correo profesional",
-      phone: "teléfono",
-      city: "ciudad",
-      country: "país",
+      name: t("name"),
+      company: t("company"),
+      optical: t("optical"),
+      email: t("email"),
+      phone: t("phone"),
+      city: t("city"),
+      country: t("country"),
     };
     return Object.keys(errors).map((field) => labels[field]).join(", ");
   }
@@ -207,23 +287,30 @@
         if (!Number.isFinite(variantIndex)) return true;
         return true;
       });
-      button.textContent = hasProduct ? "Añadir más unidades" : "Añadir al pedido";
+      button.textContent = hasProduct ? t("addMore") : t("addSelection");
       button.classList.toggle("is-added", hasProduct);
     });
     document.querySelectorAll("[data-order-count]").forEach((node) => {
       node.textContent = String(totalUnits());
     });
+    const opener = document.querySelector("[data-order-open]");
+    if (opener) {
+      opener.setAttribute("aria-label", t("openSelection"));
+      const label = opener.querySelector("span");
+      if (label) label.textContent = t("mySelection");
+    }
+    document.querySelector(".order-drawer")?.setAttribute("aria-label", t("dialogLabel"));
   }
 
   function ensureUi() {
     if (document.querySelector("[data-balmain-order]")) return;
     document.body.insertAdjacentHTML("beforeend", `
       <div data-balmain-order>
-        <button class="order-fab" type="button" data-order-open aria-label="Abrir mi pedido">
-          <span>Mi pedido</span><b data-order-count>0</b>
+        <button class="order-fab" type="button" data-order-open aria-label="${escapeHtml(t("openSelection"))}">
+          <span>${escapeHtml(t("mySelection"))}</span><b data-order-count>0</b>
         </button>
         <div class="order-backdrop" data-order-backdrop hidden>
-          <aside class="order-drawer" role="dialog" aria-modal="true" aria-label="Pedido Balmain para revisión">
+          <aside class="order-drawer" role="dialog" aria-modal="true" aria-label="${escapeHtml(t("dialogLabel"))}">
             <div data-order-drawer-content></div>
           </aside>
         </div>
@@ -301,66 +388,66 @@
           <strong>${escapeHtml(item.model)}</strong>
           <span>${escapeHtml(item.sku)} · ${escapeHtml(item.color)}</span>
           <div class="order-quantity">
-            <button type="button" data-order-action="decrease" aria-label="Quitar una unidad">−</button>
-            <input type="number" min="1" max="9999" value="${item.quantity}" data-order-qty data-order-key="${escapeHtml(item.key)}" aria-label="Cantidad">
-            <button type="button" data-order-action="increase" aria-label="Añadir una unidad">+</button>
+            <button type="button" data-order-action="decrease" aria-label="${escapeHtml(t("decrease"))}">−</button>
+            <input type="number" min="1" max="9999" value="${item.quantity}" data-order-qty data-order-key="${escapeHtml(item.key)}" aria-label="${escapeHtml(t("quantity"))}">
+            <button type="button" data-order-action="increase" aria-label="${escapeHtml(t("increase"))}">+</button>
           </div>
         </div>
-        <button class="order-remove" type="button" data-order-action="remove" aria-label="Quitar ${escapeHtml(item.model)}">×</button>
+        <button class="order-remove" type="button" data-order-action="remove" aria-label="${escapeHtml(t("remove", { model: item.model }))}">×</button>
       </article>
     `).join("");
 
     target.innerHTML = `
       <header class="order-drawer-head">
         <div>
-          <p class="eyebrow">Selección profesional · Balmain Eyewear</p>
-          <h2>Pedido Balmain para revisión</h2>
-          <p>Selecciona referencias y cantidades. Innova confirmará disponibilidad, condiciones comerciales y envío.</p>
+          <p class="eyebrow">${escapeHtml(t("eyebrow"))}</p>
+          <h2>${escapeHtml(t("title"))}</h2>
+          <p>${escapeHtml(t("intro"))}</p>
           <small>${escapeHtml(state.orderNumber)}</small>
         </div>
-        <button type="button" data-order-action="close" aria-label="Cerrar pedido">×</button>
+        <button type="button" data-order-action="close" aria-label="${escapeHtml(t("close"))}">×</button>
       </header>
       <section class="order-progress">
-        <div><strong>${state.items.length}</strong> referencias · <strong>${units}</strong> piezas</div>
+        <div>${escapeHtml(t("referencesPieces", { references: state.items.length, units }))}</div>
         <div class="order-progress-track"><i style="width:${progress}%"></i></div>
         <div>
-          <span>${remaining ? `Faltan ${remaining} piezas para completar el mínimo.` : "La selección cumple el mínimo inicial."}</span>
-          <b>Mínimo inicial: ${MINIMUM_UNITS} piezas</b>
+          <span>${escapeHtml(remaining ? t("remaining", { count: remaining }) : t("minimumMet"))}</span>
+          <b>${escapeHtml(t("minimum", { count: MINIMUM_UNITS }))}</b>
         </div>
       </section>
       <div class="order-drawer-body">
         <section class="order-items">
           ${items || `
             <div class="order-empty">
-              <h3>Todavía no has seleccionado productos.</h3>
-              <p>Explora el catálogo y combina modelos o colores hasta alcanzar 50 piezas.</p>
-              <a class="button button-dark" href="${document.body.dataset.base || ""}catalogo.html" data-order-action="catalog">Ir al catálogo</a>
+              <h3>${escapeHtml(t("emptyTitle"))}</h3>
+              <p>${escapeHtml(t("emptyBody", { count: MINIMUM_UNITS }))}</p>
+              <a class="button button-dark" href="${document.body.dataset.base || ""}catalogo.html" data-order-action="catalog">${escapeHtml(t("catalogue"))}</a>
             </div>
           `}
         </section>
         <section class="order-client">
-          <h3>Datos de la óptica o empresa</h3>
-          <p>Estos datos se incluirán en el PDF profesional enviado a Innova Eyewear.</p>
+          <h3>${escapeHtml(t("clientTitle"))}</h3>
+          <p>${escapeHtml(t("clientIntro"))}</p>
           <div class="order-client-grid">
-            ${clientField("name", "Nombre y apellido")}
-            ${clientField("company", "Empresa / razón social")}
-            ${clientField("optical", "Nombre de la óptica")}
-            ${clientField("email", "Correo profesional", "email", "nombre@empresa.com")}
-            ${clientField("phone", "Teléfono (+ código del país)", "tel", "+1 754 000 0000")}
-            ${clientField("city", "Ciudad")}
-            ${clientField("country", "País")}
+            ${clientField("name", t("fullName"))}
+            ${clientField("company", t("companyLegal"))}
+            ${clientField("optical", t("opticalName"))}
+            ${clientField("email", t("professionalEmail"), "email", "name@company.com")}
+            ${clientField("phone", t("phoneCountry"), "tel", "+1 754 000 0000")}
+            ${clientField("city", t("city"))}
+            ${clientField("country", t("country"))}
             <label class="order-client-notes">
-              <span>Observaciones</span>
+              <span>${escapeHtml(t("notes"))}</span>
               <textarea rows="3" data-client-field="notes">${escapeHtml(state.client.notes)}</textarea>
             </label>
           </div>
         </section>
         <section class="order-actions">
           <p data-order-validation></p>
-          <button class="button button-dark" type="button" data-order-action="pdf">Descargar PDF del pedido</button>
-          <button class="button order-whatsapp" type="button" data-order-action="whatsapp">Descargar PDF y abrir WhatsApp</button>
-          <button class="button button-outline" type="button" data-order-action="email">Descargar PDF y preparar correo</button>
-          <small>Adjunta manualmente el PDF descargado. El documento no confirma disponibilidad ni condiciones comerciales.</small>
+          <button class="button button-dark" type="button" data-order-action="pdf">${escapeHtml(t("pdf"))}</button>
+          <button class="button order-whatsapp" type="button" data-order-action="whatsapp">${escapeHtml(t("whatsapp"))}</button>
+          <button class="button button-outline" type="button" data-order-action="email">${escapeHtml(t("prepareEmail"))}</button>
+          <small>${escapeHtml(t("attachment"))}</small>
           ${statusMessage ? `<div class="order-notice" role="status">${escapeHtml(statusMessage)}</div>` : ""}
         </section>
       </div>
@@ -376,12 +463,12 @@
     const validation = document.querySelector("[data-order-validation]");
     if (validation) {
       const blockers = [];
-      if (!state.items.length) blockers.push("Añade productos a la selección.");
-      else if (units < MINIMUM_UNITS) blockers.push(`Faltan ${MINIMUM_UNITS - units} piezas para completar el mínimo.`);
-      if (Object.keys(errors).length) blockers.push(`Revisa: ${clientIssueSummary(errors)}.`);
+      if (!state.items.length) blockers.push(t("addProducts"));
+      else if (units < MINIMUM_UNITS) blockers.push(t("remaining", { count: MINIMUM_UNITS - units }));
+      if (Object.keys(errors).length) blockers.push(t("review", { fields: clientIssueSummary(errors) }));
       validation.textContent = ready
-        ? "Pedido completo y listo para preparar."
-        : `No se puede descargar todavía. ${blockers.join(" ")}`;
+        ? t("ready")
+        : t("notReady", { blockers: blockers.join(" ") });
       validation.classList.toggle("is-ready", ready);
     }
     document.querySelectorAll("[data-client-field]").forEach((field) => {
@@ -420,24 +507,24 @@
   }
 
   function professionalMessage() {
-    const lines = state.items.map((item) => `- ${item.model} | ${item.sku} | ${item.color} | ${item.quantity} piezas`);
+    const lines = state.items.map((item) => `- ${item.model} | ${item.sku} | ${item.color} | ${item.quantity} ${t("piecesUpper").toLowerCase()}`);
     return [
-      "PEDIDO BALMAIN PARA REVISIÓN",
+      t("messageTitle"),
       state.orderNumber,
       "",
-      `Nombre: ${state.client.name}`,
-      `Empresa: ${state.client.company}`,
-      `Óptica: ${state.client.optical}`,
-      `Correo: ${state.client.email}`,
-      `Teléfono: ${state.client.phone}`,
-      `Ciudad: ${state.client.city}`,
-      `País: ${state.client.country}`,
+      `${t("labelName")}: ${state.client.name}`,
+      `${t("labelCompany")}: ${state.client.company}`,
+      `${t("labelOptical")}: ${state.client.optical}`,
+      `${t("labelEmail")}: ${state.client.email}`,
+      `${t("labelPhone")}: ${state.client.phone}`,
+      `${t("labelCity")}: ${state.client.city}`,
+      `${t("labelCountry")}: ${state.client.country}`,
       "",
-      `${state.items.length} referencias · ${totalUnits()} piezas`,
+      t("referencesPieces", { references: state.items.length, units: totalUnits() }),
       ...lines,
-      state.client.notes ? `Observaciones: ${state.client.notes}` : "",
+      state.client.notes ? `${t("labelNotes")}: ${state.client.notes}` : "",
       "",
-      `Adjuntar: ${fileSlug()}.pdf`,
+      `${t("attachmentLabel")}: ${fileSlug()}.pdf`,
     ].filter(Boolean).join("\n");
   }
 
@@ -500,20 +587,21 @@
 
     let page = addPage();
     let y = height - 116;
-    page.drawText("PEDIDO PROFESIONAL B2B", { x: margin, y, size: 17, font: bold });
+    page.drawText(safeText(t("pdfTitle")), { x: margin, y, size: 17, font: bold });
     y -= 18;
-    page.drawText(`${safeText(state.orderNumber)} - ${new Date().toLocaleDateString("es")}`, { x: margin, y, size: 8, font: regular });
+    const dateLocale = { es: "es-ES", en: "en-US", fr: "fr-FR" }[window.BalmainI18n?.current?.()] || "es-ES";
+    page.drawText(`${safeText(state.orderNumber)} - ${new Date().toLocaleDateString(dateLocale)}`, { x: margin, y, size: 8, font: regular });
     y -= 28;
     page.drawRectangle({ x: margin, y: y - 104, width: width - margin * 2, height: 112, color: rgb(0.975, 0.978, 0.98) });
     y -= 14;
     [
-      `Cliente: ${state.client.name}`,
-      `Empresa: ${state.client.company}`,
-      `Optica: ${state.client.optical}`,
-      `Correo: ${state.client.email}`,
-      `Telefono: ${state.client.phone}`,
-      `Ciudad: ${state.client.city} - Pais: ${state.client.country}`,
-      `${state.items.length} referencias - ${totalUnits()} piezas - minimo inicial ${MINIMUM_UNITS}`,
+      `${t("client")}: ${state.client.name}`,
+      `${t("labelCompany")}: ${state.client.company}`,
+      `${t("labelOptical")}: ${state.client.optical}`,
+      `${t("labelEmail")}: ${state.client.email}`,
+      `${t("labelPhone")}: ${state.client.phone}`,
+      `${t("labelCity")}: ${state.client.city} - ${t("labelCountry")}: ${state.client.country}`,
+      t("pdfSummary", { references: state.items.length, units: totalUnits(), minimum: MINIMUM_UNITS }),
     ].forEach((line) => {
       page.drawText(safeText(line), { x: margin, y, size: 8, font: regular });
       y -= 13;
@@ -532,14 +620,14 @@
         page.drawImage(image, { x: margin + 6, y: y - 52, width: dims.width, height: dims.height });
       }
       page.drawText(safeText(item.model), { x: margin + 122, y: y - 13, size: 10, font: bold });
-      page.drawText(safeText(`${item.sku} - ${item.color || "Color por confirmar"}`), { x: margin + 122, y: y - 29, size: 7.5, font: regular });
-      page.drawText(safeText(`${item.material || "Material por confirmar"} - ${item.measurements || ""}`), { x: margin + 122, y: y - 44, size: 7, font: regular });
+      page.drawText(safeText(`${item.sku} - ${item.color || t("colourPending")}`), { x: margin + 122, y: y - 29, size: 7.5, font: regular });
+      page.drawText(safeText(`${item.material || t("materialPending")} - ${item.measurements || ""}`), { x: margin + 122, y: y - 44, size: 7, font: regular });
       page.drawText(String(item.quantity), { x: width - margin - 35, y: y - 26, size: 16, font: bold });
-      page.drawText("PIEZAS", { x: width - margin - 40, y: y - 40, size: 6.5, font: regular });
+      page.drawText(safeText(t("piecesUpper")), { x: width - margin - 40, y: y - 40, size: 6.5, font: regular });
       y -= 75;
     }
 
-    page.drawText("Documento preliminar. Innova Eyewear confirmara inventario, condiciones comerciales y transporte.", {
+    page.drawText(safeText(t("disclaimer")), {
       x: margin,
       y: 55,
       size: 7.5,
@@ -578,16 +666,16 @@
       download(blob, `${fileSlug()}.pdf`);
       if (action === "whatsapp") {
         window.open(`https://wa.me/${INNOVA_WHATSAPP}?text=${encodeURIComponent(professionalMessage())}`, "_blank", "noopener,noreferrer");
-        statusMessage = "PDF descargado. Adjunta el archivo al mensaje de WhatsApp.";
+        statusMessage = t("pdfWhatsappDone");
       } else if (action === "email") {
         window.location.href = `mailto:${INNOVA_EMAIL}?subject=${encodeURIComponent(`${state.orderNumber} · Balmain · ${state.client.optical}`)}&body=${encodeURIComponent(professionalMessage())}`;
-        statusMessage = "PDF descargado. Adjunta el archivo al correo preparado.";
+        statusMessage = t("pdfEmailDone");
       } else {
-        statusMessage = "PDF del pedido descargado.";
+        statusMessage = t("pdfDone");
       }
     } catch (error) {
       console.error("Balmain PDF error", error);
-      statusMessage = "No se pudo preparar el PDF. Revisa los datos obligatorios e inténtalo de nuevo.";
+      statusMessage = t("pdfError");
     } finally {
       working = false;
       if (drawerOpen) renderDrawer();
