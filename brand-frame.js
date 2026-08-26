@@ -58,7 +58,10 @@
   }
 
   frame.addEventListener("load", () => loader?.classList.add("is-hidden"));
-  window.addEventListener("hashchange", showRoute);
+  window.addEventListener("hashchange", () => {
+    showRoute();
+    window.INNOVA_META_PIXEL?.trackPageView();
+  });
   window.addEventListener("message", (event) => {
     if (event.source !== frame.contentWindow || event.origin !== sourceOrigin) return;
     if (event.data?.type === "innova-boutique:replace-brand" && event.data.brand === brand) {
@@ -78,7 +81,10 @@
     if (event.data?.type === "innova-brand-route" && event.data.brand === brand) {
       const route = String(event.data.route || "/");
       const normalized = route.startsWith("/") ? route : `/${route}`;
-      if (currentRoute() !== normalized) window.history.replaceState(null, "", `#${encodeURI(normalized)}`);
+      if (currentRoute() !== normalized) {
+        window.history.replaceState(null, "", `#${encodeURI(normalized)}`);
+        window.INNOVA_META_PIXEL?.trackPageView();
+      }
     }
   });
   showRoute();
