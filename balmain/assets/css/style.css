@@ -4067,3 +4067,126 @@ body.balmain-contact-ready [data-contact-gate] {
     grid-auto-columns: 100%;
   }
 }
+
+/* FW26 keeps the existing Balmain structure while making the collection easy to find. */
+.nav-links .nav-new-collection {
+  white-space: nowrap;
+  border: 1px solid rgba(185, 152, 90, .65);
+  padding: 8px 11px;
+  background: rgba(185, 152, 90, .09);
+  color: #5c4726;
+}
+
+.nav-links .nav-new-collection:hover,
+.nav-links .nav-new-collection[aria-current="page"] {
+  background: #b9985a;
+  color: #111;
+}
+
+.nav-links .nav-new-collection::after { display: none; }
+
+.button-new-collection {
+  border-color: #d8bd83;
+  background: #d8bd83;
+  color: #17130d;
+}
+
+.button-new-collection:hover {
+  border-color: #f0d9a3;
+  background: #f0d9a3;
+  color: #17130d;
+}
+
+.product-card.is-fw26 .new-collection-badge {
+  border-color: #b9985a;
+  background: #e8d4a7;
+  color: #21190e;
+  font-weight: 600;
+}
+
+#fw26HomeTitle,
+#fw26ModelsTitle {
+  scroll-margin-top: 125px;
+}
+
+.fw26-home-section {
+  border-block: 1px solid var(--line);
+  background: #faf8f4;
+}
+
+.fw26-section-head {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 32px;
+  margin-bottom: 30px;
+}
+
+.fw26-section-head > div:first-child { max-width: 700px; }
+.fw26-section-head h2 { margin: 4px 0 10px; }
+.fw26-section-head p:not(.eyebrow) { color: var(--muted); }
+
+.fw26-carousel-controls {
+  display: flex;
+  align-items: center;
+  flex: none;
+  gap: 9px;
+}
+
+.fw26-carousel-controls span {
+  margin-right: 8px;
+  color: var(--muted);
+  font-size: 11px;
+  letter-spacing: .08em;
+  white-space: nowrap;
+}
+
+.fw26-carousel-controls button {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.fw26-carousel-controls button:hover:not(:disabled) {
+  border-color: var(--gold);
+  background: #e8d4a7;
+}
+
+.fw26-carousel-controls button:disabled { opacity: .3; cursor: default; }
+
+.fw26-carousel-viewport {
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.fw26-carousel-viewport::-webkit-scrollbar { display: none; }
+
+.fw26-carousel-track {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% - 36px) / 3);
+  align-items: stretch;
+  gap: 18px;
+}
+
+.fw26-carousel-track .product-card {
+  min-width: 0;
+  scroll-snap-align: start;
+}
+
+.fw26-collection-list { padding-top: 48px; }
+.fw26-collection-list h1 { margin: 4px 0 10px; font-size: clamp(42px, 5vw, 72px); line-height: 1.04; }
+
+@media (max-width: 1080px) {
+  .fw26-carousel-track { grid-auto-columns: calc((100% - 18px) / 2); }
+}
+
+@media (max-width: 680px) {
+  .fw26-section-head { align-items: start; flex-direction: column; gap: 18px; }
+  .fw26-carousel-track { grid-auto-columns: 100%; }
+}

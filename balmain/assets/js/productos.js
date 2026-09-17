@@ -471,6 +471,51 @@
         .map((product) => productCard(product, true))
         .join("");
     }
+    const fw26Target = document.getElementById("fw26HomeTrack");
+    if (fw26Target) {
+      const collection = products.filter((product) => product.coleccion === "FW26");
+      fw26Target.innerHTML = collection.map((product) => productCard(product, true)).join("");
+      initFw26Carousel(collection.length);
+    }
+  }
+
+  function initFw26Carousel(total) {
+    const viewport = document.querySelector("[data-fw26-viewport]");
+    const track = document.getElementById("fw26HomeTrack");
+    const status = document.querySelector("[data-fw26-status]");
+    const previous = document.querySelector("[data-fw26-prev]");
+    const next = document.querySelector("[data-fw26-next]");
+    if (!viewport || !track || !status || !previous || !next || !total) return;
+
+    const perPage = () => window.matchMedia("(max-width: 680px)").matches ? 1
+      : window.matchMedia("(max-width: 1080px)").matches ? 2 : 3;
+    const cardStep = () => {
+      const card = track.querySelector(".product-card");
+      return (card?.getBoundingClientRect().width || viewport.clientWidth)
+        + (parseFloat(getComputedStyle(track).columnGap) || 0);
+    };
+    const pageCount = () => Math.ceil(total / perPage());
+    const currentPage = () => Math.min(pageCount() - 1,
+      Math.max(0, Math.round(viewport.scrollLeft / (cardStep() * perPage()))));
+    const sync = () => {
+      const page = currentPage();
+      const start = page * perPage() + 1;
+      const end = Math.min(total, start + perPage() - 1);
+      status.textContent = `${String(start).padStart(2, "0")}–${String(end).padStart(2, "0")} / ${String(total).padStart(2, "0")}`;
+      previous.disabled = page === 0;
+      next.disabled = page >= pageCount() - 1;
+    };
+    const move = (direction) => {
+      const page = Math.min(pageCount() - 1, Math.max(0, currentPage() + direction));
+      viewport.scrollTo({ left: page * perPage() * cardStep(), behavior: "smooth" });
+    };
+    previous.onclick = () => move(-1);
+    next.onclick = () => move(1);
+    viewport.onscroll = () => window.requestAnimationFrame(sync);
+    if (window.balmainFw26Resize) window.removeEventListener("resize", window.balmainFw26Resize);
+    window.balmainFw26Resize = sync;
+    window.addEventListener("resize", sync, { passive: true });
+    sync();
   }
 
   function productSearchText(product) {
@@ -487,7 +532,8 @@
     const input = document.getElementById("catalogSearch");
     const count = document.getElementById("catalogCount");
     const empty = document.getElementById("catalogEmpty");
-    let activeCategory = new URLSearchParams(window.location.search).get("collection") === "fw26" ? "fw26" : "all";
+    let activeCategory = new URLSearchParams(window.location.search).get("collection") === "fw26"
+      || document.body.dataset.collection === "fw26" ? "fw26" : "all";
     document.querySelectorAll("[data-filter-category]").forEach((button) => {
       button.classList.toggle("active", button.dataset.filterCategory === activeCategory);
     });
