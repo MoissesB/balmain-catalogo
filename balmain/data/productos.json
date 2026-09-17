@@ -10342,6 +10342,1466 @@
         "en": "B-Stage Balmain Eyewear FW25 for B2B inquiry with Innova, variants, codes, and commercial availability without visible pricing.",
         "fr": "B-Stage Balmain Eyewear FW25 pour consultation B2B avec Innova, variantes, codes et disponibilite commerciale sans prix visibles."
       }
+    },
+    {
+      "slug": "ingrid",
+      "nombre": "Ingrid",
+      "categoria": "avant-garde",
+      "categoriaLabel": {
+        "es": "Avant-Garde",
+        "en": "Avant-Garde",
+        "fr": "Avant-Garde"
+      },
+      "coleccion": "FW26",
+      "orden": 75,
+      "destacado": false,
+      "nuevo": true,
+      "descripcion": {
+        "es": "Ingrid combina un frente solar amplio de líneas angulares con un puente marcado y dos pequeños acentos metálicos a cada lado. Su silueta de presencia firme funciona como pieza protagonista dentro de Avant-Garde; la ficha reúne tres variantes FW26 para comparar acabados y referencias.",
+        "en": "Ingrid pairs a broad, angular sunglass front with a defined bridge and two small metal accents on each side. Its assertive silhouette makes it a statement piece within Avant-Garde; this FW26 sheet brings together three variants for comparing finishes and references.",
+        "fr": "Ingrid associe une face solaire large aux lignes anguleuses, un pont marqué et deux petits accents métalliques de chaque côté. Sa silhouette affirmée en fait une pièce phare d’Avant-Garde ; cette fiche FW26 réunit trois variantes pour comparer finitions et références."
+      },
+      "descripcionCorta": {
+        "es": "Ingrid destaca por su frente solar amplio, líneas angulares y detalles metálicos laterales.",
+        "en": "Ingrid stands out for its broad sunglass front, angular lines, and side metal details.",
+        "fr": "Ingrid se distingue par sa face solaire large, ses lignes anguleuses et ses détails métalliques latéraux."
+      },
+      "b2b": {
+        "mensaje": {
+          "es": "Disponibilidad bajo consulta comercial con Innova.",
+          "en": "Availability upon commercial inquiry with Innova.",
+          "fr": "Disponibilité sur demande commerciale auprès d’Innova."
+        }
+      },
+      "especificaciones": {
+        "frame": "",
+        "temple": "",
+        "nosePads": "",
+        "lenses": "NYLON",
+        "size": "56/15-145",
+        "country": "Italy"
+      },
+      "variantes": [
+        {
+          "codigo": "BPS-206A-56",
+          "color": {
+            "es": "Black - Light Gold - Grey Lenses",
+            "en": "Black - Light Gold - Grey Lenses",
+            "fr": "Black - Light Gold - Grey Lenses"
+          },
+          "imagenes": {
+            "frontal": "assets/images/productos/fw26/bps-206a-56/frontal.jpg",
+            "lateral": "assets/images/productos/fw26/bps-206a-56/lateral.jpg",
+            "detalle": "assets/images/productos/fw26/bps-206a-56/detalle.jpg",
+            "hero": "assets/images/productos/fw26/bps-206a-56/frontal.jpg"
+          },
+          "fuente": "Balmain FW26 Collection Grid / Akoni SharePoint"
+        },
+        {
+          "codigo": "BPS-206B-56",
+          "color": {
+            "es": "Havana - Light Gold - Light Petrol Lenses",
+            "en": "Havana - Light Gold - Light Petrol Lenses",
+            "fr": "Havana - Light Gold - Light Petrol Lenses"
+          },
+          "imagenes": {
+            "frontal": "assets/images/productos/fw26/bps-206b-56/frontal.jpg",
+            "lateral": "assets/images/productos/fw26/bps-206b-56/lateral.jpg",
+            "detalle": "assets/images/productos/fw26/bps-206b-56/detalle.jpg",
+            "hero": "assets/images/productos/fw26/bps-206b-56/frontal.jpg"
+          },
+          "fuente": "Balmain FW26 Collection Grid / Akoni SharePoint"
+        },
+        {
+          "codigo": "BPS-206C-56",
+          "color": {
+            "es": "Black Havana - Light Gold - Peach Lenses",
+            "en": "Black Havana - Light Gold - Peach Lenses",
+            "fr": "Black Havana - Light Gold - Peach Lenses"
+          },
+          "imagenes": {
+            "frontal": "assets/images/productos/fw26/bps-206c-56/frontal.jpg",
+            "lateral": "assets/images/productos/fw26/bps-206c-56/lateral.jpg",
+            "detalle": "assets/images/productos/fw26/bps-206c-56/detalle.jpg",
+            "hero": "assets/images/productos/fw26/bps-206c-56/frontal.jpg"
+          },
+          "fuente": "Balmain FW26 Collection Grid / Akoni SharePoint"
+        }
+      ],
+      "relacionados": [
+        "diva",
+        "scarlett",
+        "dean"
+      ],
+      "materiales": [
+        "NYLON"
+      ],
+      "marketingDescription": {
+        "es": "Ingrid es una montura de sol Balmain Eyewear FW26 con 3 referencias identificadas en la ficha de colección.",
+        "en": "Ingrid is a Balmain Eyewear FW26 sunglasses with 3 references identified in the collection grid.",
+        "fr": "Ingrid est une lunettes de soleil Balmain Eyewear FW26 avec 3 références identifiées dans la grille de collection."
+      },
+      "designStory": {
+        "es": "Las vistas disponibles permiten revisar la forma y los acabados de Ingrid por referencia.",
+        "en": "The available product views let buyers review the shape and finishes of Ingrid by reference.",
+        "fr": "Les vues disponibles permettent d'examiner la forme et les finitions de Ingrid par référence."
+      },
+      "commercialUse": {
+        "es": "Consulta códigos, medidas y colores con Innova antes de confirmar disponibilidad y condiciones comerciales.",
+        "en": "Check references, dimensions, and colourways with Innova before confirming availability and commercial terms.",
+        "fr": "Vérifiez les références, tailles et coloris auprès d’Innova avant de confirmer la disponibilité et les conditions commerciales."
+      },
+      "fuenteCatalogo": {
+        "es": "Balmain FW26 Collection Grid.",
+        "en": "Balmain FW26 Collection Grid.",
+        "fr": "Balmain FW26 Collection Grid."
+      }
+    },
+    {
+      "slug": "diva",
+      "nombre": "Diva",
+      "categoria": "avant-garde",
+      "categoriaLabel": {
+        "es": "Avant-Garde",
+        "en": "Avant-Garde",
+        "fr": "Avant-Garde"
+      },
+      "coleccion": "FW26",
+      "orden": 76,
+      "destacado": false,
+      "nuevo": true,
+      "descripcion": {
+        "es": "Diva interpreta la montura solar de inspiración cat-eye con una línea superior elevada y extremos pronunciados. Los cuatro detalles metálicos del frontal acentúan su carácter gráfico; sus tres variantes FW26 permiten elegir la combinación visual más adecuada para una selección editorial.",
+        "en": "Diva reinterprets the cat-eye sunglass with a lifted brow line and pronounced outer corners. Four metal accents across the front sharpen its graphic character; its three FW26 variants offer distinct visual options for an editorial assortment.",
+        "fr": "Diva revisite la solaire cat-eye avec une ligne supérieure relevée et des extrémités prononcées. Quatre accents métalliques sur la face soulignent son caractère graphique ; ses trois variantes FW26 offrent plusieurs options pour une sélection éditoriale."
+      },
+      "descripcionCorta": {
+        "es": "Diva aporta una silueta cat-eye marcada y detalles metálicos en el frontal.",
+        "en": "Diva brings a pronounced cat-eye silhouette and metal details to the front.",
+        "fr": "Diva affiche une silhouette cat-eye marquée et des détails métalliques sur la face."
+      },
+      "b2b": {
+        "mensaje": {
+          "es": "Disponibilidad bajo consulta comercial con Innova.",
+          "en": "Availability upon commercial inquiry with Innova.",
+          "fr": "Disponibilité sur demande commerciale auprès d’Innova."
+        }
+      },
+      "especificaciones": {
+        "frame": "",
+        "temple": "",
+        "nosePads": "",
+        "lenses": "NYLON",
+        "size": "53/20-145",
+        "country": "Italy"
+      },
+      "variantes": [
+        {
+          "codigo": "BPS-209A-53",
+          "color": {
+            "es": "Black - Light Gold - Grey Lenses",
+            "en": "Black - Light Gold - Grey Lenses",
+            "fr": "Black - Light Gold - Grey Lenses"
+          },
+          "imagenes": {
+            "frontal": "assets/images/productos/fw26/bps-209a-53/frontal.jpg",
+            "lateral": "assets/images/productos/fw26/bps-209a-53/lateral.jpg",
+            "detalle": "assets/images/productos/fw26/bps-209a-53/detalle.jpg",
+            "hero": "assets/images/productos/fw26/bps-209a-53/frontal.jpg"
+          },
+          "fuente": "Balmain FW26 Collection Grid / Akoni SharePoint"
+        },
+        {
+          "codigo": "BPS-209B-53",
+          "color": {
+            "es": "Havana - Light Gold - Light Petrol Lenses",
+            "en": "Havana - Light Gold - Light Petrol Lenses",
+            "fr": "Havana - Light Gold - Light Petrol Lenses"
+          },
+          "imagenes": {
+            "frontal": "assets/images/productos/fw26/bps-209b-53/frontal.jpg",
+            "lateral": "assets/images/productos/fw26/bps-209b-53/lateral.jpg",
+            "detalle": "assets/images/productos/fw26/bps-209b-53/detalle.jpg",
+            "hero": "assets/images/productos/fw26/bps-209b-53/frontal.jpg"
+          },
+          "fuente": "Balmain FW26 Collection Grid / Akoni SharePoint"
+        },
+        {
+          "codigo": "BPS-209C-53",
+          "color": {
+            "es": "Crystal Grey - Light Gold - Chocolate Brown Lenses",
+            "en": "Crystal Grey - Light Gold - Chocolate Brown Lenses",
+            "fr": "Crystal Grey - Light Gold - Chocolate Brown Lenses"
+          },
+          "imagenes": {
+            "frontal": "assets/images/productos/fw26/bps-209c-53/frontal.jpg",
+            "lateral": "assets/images/productos/fw26/bps-209c-53/lateral.jpg",
+            "detalle": "assets/images/productos/fw26/bps-209c-53/detalle.jpg",
+            "hero": "assets/images/productos/fw26/bps-209c-53/frontal.jpg"
+          },
+          "fuente": "Balmain FW26 Collection Grid / Akoni SharePoint"
+        }
+      ],
+      "relacionados": [
+        "ingrid",
+        "scarlett",
+        "dean"
+      ],
+      "materiales": [
+        "NYLON"
+      ],
+      "marketingDescription": {
+        "es": "Diva es una montura de sol Balmain Eyewear FW26 con 3 referencias identificadas en la ficha de colección.",
+        "en": "Diva is a Balmain Eyewear FW26 sunglasses with 3 references identified in the collection grid.",
+        "fr": "Diva est une lunettes de soleil Balmain Eyewear FW26 avec 3 références identifiées dans la grille de collection."
+      },
+      "designStory": {
+        "es": "Las vistas disponibles permiten revisar la forma y los acabados de Diva por referencia.",
+        "en": "The available product views let buyers review the shape and finishes of Diva by reference.",
+        "fr": "Les vues disponibles permettent d'examiner la forme et les finitions de Diva par référence."
+      },
+      "commercialUse": {
+        "es": "Consulta códigos, medidas y colores con Innova antes de confirmar disponibilidad y condiciones comerciales.",
+        "en": "Check references, dimensions, and colourways with Innova before confirming availability and commercial terms.",
+        "fr": "Vérifiez les références, tailles et coloris auprès d’Innova avant de confirmer la disponibilité et les conditions commerciales."
+      },
+      "fuenteCatalogo": {
+        "es": "Balmain FW26 Collection Grid.",
+        "en": "Balmain FW26 Collection Grid.",
+        "fr": "Balmain FW26 Collection Grid."
+      }
+    },
+    {
+      "slug": "emblem-ii",
+      "nombre": "Emblem II",
+      "categoria": "iconic",
+      "categoriaLabel": {
+        "es": "Iconic",
+        "en": "Iconic",
+        "fr": "Iconic"
+      },
+      "coleccion": "FW26",
+      "orden": 77,
+      "destacado": false,
+      "nuevo": true,
+      "descripcion": {
+        "es": "Emblem II apuesta por un frente solar rectangular de trazo recto, puente sólido y contorno ancho. La geometría limpia concentra la atención en la forma y aporta una presencia reconocible a la selección Iconic; se presenta en tres variantes FW26.",
+        "en": "Emblem II features a straight-lined rectangular sunglass front, a solid bridge, and a broad outline. Its clean geometry puts the focus on shape and gives the Iconic selection a distinctive presence; it comes in three FW26 variants.",
+        "fr": "Emblem II présente une face solaire rectangulaire aux lignes droites, un pont affirmé et un contour large. Sa géométrie épurée met la forme au premier plan dans la sélection Iconic ; il existe en trois variantes FW26."
+      },
+      "descripcionCorta": {
+        "es": "Emblem II se define por su frente rectangular ancho y su geometría rotunda.",
+        "en": "Emblem II is defined by its broad rectangular front and strong geometry.",
+        "fr": "Emblem II se définit par sa face rectangulaire large et sa géométrie affirmée."
+      },
+      "b2b": {
+        "mensaje": {
+          "es": "Disponibilidad bajo consulta comercial con Innova.",
+          "en": "Availability upon commercial inquiry with Innova.",
+          "fr": "Disponibilité sur demande commerciale auprès d’Innova."
+        }
+      },
+      "especificaciones": {
+        "frame": "",
+        "temple": "",
+        "nosePads": "",
+        "lenses": "NYLON",
+        "size": "54/17-145",
+        "country": "Italy"
+      },
+      "variantes": [
+        {
+          "codigo": "BPS-211A-54",
+          "color": {
+            "es": "Black - Light Gold - Grey Lenses",
+            "en": "Black - Light Gold - Grey Lenses",
+            "fr": "Black - Light Gold - Grey Lenses"
+          },
+          "imagenes": {
+            "frontal": "assets/images/productos/fw26/bps-211a-54/frontal.jpg",
+            "lateral": "assets/images/productos/fw26/bps-211a-54/lateral.jpg",
+            "detalle": "assets/images/productos/fw26/bps-211a-54/detalle.jpg",
+            "hero": "assets/images/productos/fw26/bps-211a-54/frontal.jpg"
+          },
+          "fuente": "Balmain FW26 Collection Grid / Akoni SharePoint"
+        },
+        {
+          "codigo": "BPS-211B-54",
+          "color": {
+            "es": "Black - Black Rhodium - Blue Lenses",
+            "en": "Black - Black Rhodium - Blue Lenses",
+            "fr": "Black - Black Rhodium - Blue Lenses"
+          },
+          "imagenes": {
+            "frontal": "assets/images/productos/fw26/bps-211b-54/frontal.jpg",
+            "lateral": "assets/images/productos/fw26/bps-211b-54/lateral.jpg",
+            "detalle": "assets/images/productos/fw26/bps-211b-54/detalle.jpg",
+            "hero": "assets/images/productos/fw26/bps-211b-54/frontal.jpg"
+          },
+          "fuente": "Balmain FW26 Collection Grid / Akoni SharePoint"
+        },
+        {
+          "codigo": "BPS-211C-54",
+          "color": {
+            "es": "Havana - Light Gold - Light Petrol Lenses",
+            "en": "Havana - Light Gold - Light Petrol Lenses",
+            "fr": "Havana - Light Gold - Light Petrol Lenses"
+          },
+          "imagenes": {
+            "frontal": "assets/images/productos/fw26/bps-211c-54/frontal.jpg",
+            "lateral": "assets/images/productos/fw26/bps-211c-54/lateral.jpg",
+            "detalle": "assets/images/productos/fw26/bps-211c-54/detalle.jpg",
+            "hero": "assets/images/productos/fw26/bps-211c-54/frontal.jpg"
+          },
+          "fuente": "Balmain FW26 Collection Grid / Akoni SharePoint"
+        }
+      ],
+      "relacionados": [
+        "emblem-i"
+      ],
+      "materiales": [
+        "NYLON"
+      ],
+      "marketingDescription": {
+        "es": "Emblem II es una montura de sol Balmain Eyewear FW26 con 3 referencias identificadas en la ficha de colección.",
+        "en": "Emblem II is a Balmain Eyewear FW26 sunglasses with 3 references identified in the collection grid.",
+        "fr": "Emblem II est une lunettes de soleil Balmain Eyewear FW26 avec 3 références identifiées dans la grille de collection."
+      },
+      "designStory": {
+        "es": "Las vistas disponibles permiten revisar la forma y los acabados de Emblem II por referencia.",
+        "en": "The available product views let buyers review the shape and finishes of Emblem II by reference.",
+        "fr": "Les vues disponibles permettent d'examiner la forme et les finitions de Emblem II par référence."
+      },
+      "commercialUse": {
+        "es": "Consulta códigos, medidas y colores con Innova antes de confirmar disponibilidad y condiciones comerciales.",
+        "en": "Check references, dimensions, and colourways with Innova before confirming availability and commercial terms.",
+        "fr": "Vérifiez les références, tailles et coloris auprès d’Innova avant de confirmer la disponibilité et les conditions commerciales."
+      },
+      "fuenteCatalogo": {
+        "es": "Balmain FW26 Collection Grid.",
+        "en": "Balmain FW26 Collection Grid.",
+        "fr": "Balmain FW26 Collection Grid."
+      }
+    },
+    {
+      "slug": "emblem-i",
+      "nombre": "Emblem I",
+      "categoria": "iconic",
+      "categoriaLabel": {
+        "es": "Iconic",
+        "en": "Iconic",
+        "fr": "Iconic"
+      },
+      "coleccion": "FW26",
+      "orden": 78,
+      "destacado": false,
+      "nuevo": true,
+      "descripcion": {
+        "es": "Emblem I propone una montura solar angular con parte superior suavemente quebrada y pequeños acentos metálicos en las esquinas. El contraste entre el contorno oscuro y esos detalles aporta ritmo visual sin perder la identidad Iconic; cuenta con cuatro variantes FW26.",
+        "en": "Emblem I presents an angular sunglass frame with a gently notched upper line and small metal accents at the corners. The contrast between the dark outline and those details adds visual rhythm while retaining its Iconic identity; four FW26 variants are available.",
+        "fr": "Emblem I propose une solaire anguleuse, une ligne supérieure légèrement cassée et de petits accents métalliques aux angles. Le contraste entre le contour sombre et ces détails anime la silhouette Iconic ; quatre variantes FW26 sont proposées."
+      },
+      "descripcionCorta": {
+        "es": "Emblem I combina contorno angular y acentos metálicos en las esquinas.",
+        "en": "Emblem I combines an angular outline with metal accents at the corners.",
+        "fr": "Emblem I associe contour anguleux et accents métalliques aux angles."
+      },
+      "b2b": {
+        "mensaje": {
+          "es": "Disponibilidad bajo consulta comercial con Innova.",
+          "en": "Availability upon commercial inquiry with Innova.",
+          "fr": "Disponibilité sur demande commerciale auprès d’Innova."
+        }
+      },
+      "especificaciones": {
+        "frame": "",
+        "temple": "",
+        "nosePads": "",
+        "lenses": "NYLON",
+        "size": "52/21-145",
+        "country": "Italy"
+      },
+      "variantes": [
+        {
+          "codigo": "BPS-212A-52",
+          "color": {
+            "es": "Black - Light Gold - Grey Lenses",
+            "en": "Black - Light Gold - Grey Lenses",
+            "fr": "Black - Light Gold - Grey Lenses"
+          },
+          "imagenes": {
+            "frontal": "assets/images/productos/fw26/bps-212a-52/frontal.jpg",
+            "lateral": "assets/images/productos/fw26/bps-212a-52/lateral.jpg",
+            "detalle": "assets/images/productos/fw26/bps-212a-52/detalle.jpg",
+            "hero": "assets/images/productos/fw26/bps-212a-52/frontal.jpg"
+          },
+          "fuente": "Balmain FW26 Collection Grid / Akoni SharePoint"
+        },
+        {
+          "codigo": "BPS-212B-52",
+          "color": {
+            "es": "Black - Light Gold - Voilet Lenses",
+            "en": "Black - Light Gold - Voilet Lenses",
+            "fr": "Black - Light Gold - Voilet Lenses"
+          },
+          "imagenes": {
+            "frontal": "assets/images/productos/fw26/bps-212b-52/frontal.jpg",
+            "lateral": "assets/images/productos/fw26/bps-212b-52/lateral.jpg",
+            "detalle": "assets/images/productos/fw26/bps-212b-52/detalle.jpg",
+            "hero": "assets/images/productos/fw26/bps-212b-52/frontal.jpg"
+          },
+          "fuente": "Balmain FW26 Collection Grid / Akoni SharePoint"
+        },
+        {
+          "codigo": "BPS-212C-52",
+          "color": {
+            "es": "Havana - Light Gold - Orange Lenses",
+            "en": "Havana - Light Gold - Orange Lenses",
+            "fr": "Havana - Light Gold - Orange Lenses"
+          },
+          "imagenes": {
+            "frontal": "assets/images/productos/fw26/bps-212c-52/frontal.jpg",
+            "lateral": "assets/images/productos/fw26/bps-212c-52/lateral.jpg",
+            "detalle": "assets/images/productos/fw26/bps-212c-52/detalle.jpg",
+            "hero": "assets/images/productos/fw26/bps-212c-52/frontal.jpg"
+          },
+          "fuente": "Balmain FW26 Collection Grid / Akoni SharePoint"
+        },
+        {
+          "codigo": "BPS-212D-52",
+          "color": {
+            "es": "Dark Bordeaux - Light Gold - Chocolate Lenses",
+            "en": "Dark Bordeaux - Light Gold - Chocolate Lenses",
+            "fr": "Dark Bordeaux - Light Gold - Chocolate Lenses"
+          },
+          "imagenes": {
+            "frontal": "assets/images/productos/fw26/bps-212d-52/frontal.jpg",
+            "lateral": "assets/images/productos/fw26/bps-212d-52/lateral.jpg",
+            "detalle": "assets/images/productos/fw26/bps-212d-52/detalle.jpg",
+            "hero": "assets/images/productos/fw26/bps-212d-52/frontal.jpg"
+          },
+          "fuente": "Balmain FW26 Collection Grid / Akoni SharePoint"
+        }
+      ],
+      "relacionados": [
+        "emblem-ii"
+      ],
+      "materiales": [
+        "NYLON"
+      ],
+      "marketingDescription": {
+        "es": "Emblem I es una montura de sol Balmain Eyewear FW26 con 4 referencias identificadas en la ficha de colección.",
+        "en": "Emblem I is a Balmain Eyewear FW26 sunglasses with 4 references identified in the collection grid.",
+        "fr": "Emblem I est une lunettes de soleil Balmain Eyewear FW26 avec 4 références identifiées dans la grille de collection."
+      },
+      "designStory": {
+        "es": "Las vistas disponibles permiten revisar la forma y los acabados de Emblem I por referencia.",
+        "en": "The available product views let buyers review the shape and finishes of Emblem I by reference.",
+        "fr": "Les vues disponibles permettent d'examiner la forme et les finitions de Emblem I par référence."
+      },
+      "commercialUse": {
+        "es": "Consulta códigos, medidas y colores con Innova antes de confirmar disponibilidad y condiciones comerciales.",
+        "en": "Check references, dimensions, and colourways with Innova before confirming availability and commercial terms.",
+        "fr": "Vérifiez les références, tailles et coloris auprès d’Innova avant de confirmer la disponibilité et les conditions commerciales."
+      },
+      "fuenteCatalogo": {
+        "es": "Balmain FW26 Collection Grid.",
+        "en": "Balmain FW26 Collection Grid.",
+        "fr": "Balmain FW26 Collection Grid."
+      }
+    },
+    {
+      "slug": "scarlett",
+      "nombre": "Scarlett",
+      "categoria": "avant-garde",
+      "categoriaLabel": {
+        "es": "Avant-Garde",
+        "en": "Avant-Garde",
+        "fr": "Avant-Garde"
+      },
+      "coleccion": "FW26",
+      "orden": 79,
+      "destacado": false,
+      "nuevo": true,
+      "descripcion": {
+        "es": "Scarlett dibuja una silueta solar fina de inspiración cat-eye, con extremos ascendentes y doble puente delicado. El frente abierto y las lentes de gran tamaño crean una lectura ligera pero expresiva dentro de Avant-Garde; sus cuatro variantes FW26 amplían las opciones de color.",
+        "en": "Scarlett traces a slim cat-eye-inspired sunglass silhouette with rising outer corners and a delicate double bridge. The open front and large lenses feel light yet expressive within Avant-Garde; its four FW26 variants broaden the colour options.",
+        "fr": "Scarlett dessine une solaire fine d’inspiration cat-eye, aux extrémités relevées et au double pont délicat. Sa face ouverte et ses grands verres créent une allure légère mais expressive dans Avant-Garde ; quatre variantes FW26 élargissent le choix de couleurs."
+      },
+      "descripcionCorta": {
+        "es": "Scarlett reúne línea fina, doble puente y extremos ascendentes.",
+        "en": "Scarlett combines a fine line, double bridge, and lifted outer corners.",
+        "fr": "Scarlett réunit ligne fine, double pont et extrémités relevées."
+      },
+      "b2b": {
+        "mensaje": {
+          "es": "Disponibilidad bajo consulta comercial con Innova.",
+          "en": "Availability upon commercial inquiry with Innova.",
+          "fr": "Disponibilité sur demande commerciale auprès d’Innova."
+        }
+      },
+      "especificaciones": {
+        "frame": "",
+        "temple": "",
+        "nosePads": "",
+        "lenses": "CR-39",
+        "size": "60/16-145",
+        "country": "Japan"
+      },
+      "variantes": [
+        {
+          "codigo": "BPS-213A-60",
+          "color": {
+            "es": "Light Gold - Grey Lenses",
+            "en": "Light Gold - Grey Lenses",
+            "fr": "Light Gold - Grey Lenses"
+          },
+          "imagenes": {
+            "frontal": "assets/images/productos/fw26/bps-213a-60/frontal.jpg",
+            "lateral": "assets/images/productos/fw26/bps-213a-60/lateral.jpg",
+            "detalle": "assets/images/productos/fw26/bps-213a-60/detalle.jpg",
+            "hero": "assets/images/productos/fw26/bps-213a-60/frontal.jpg"
+          },
+          "fuente": "Balmain FW26 Collection Grid / Akoni SharePoint"
+        },
+        {
+          "codigo": "BPS-213B-60",
+          "color": {
+            "es": "Rose Gold - Chocolate Lenses",
+            "en": "Rose Gold - Chocolate Lenses",
+            "fr": "Rose Gold - Chocolate Lenses"
+          },
+          "imagenes": {
+            "frontal": "assets/images/productos/fw26/bps-213b-60/frontal.jpg",
+            "lateral": "assets/images/productos/fw26/bps-213b-60/lateral.jpg",
+            "detalle": "assets/images/productos/fw26/bps-213b-60/detalle.jpg",
+            "hero": "assets/images/productos/fw26/bps-213b-60/frontal.jpg"
+          },
+          "fuente": "Balmain FW26 Collection Grid / Akoni SharePoint"
+        },
+        {
+          "codigo": "BPS-213C-60",
+          "color": {
+            "es": "Black - Grey Lenses",
+            "en": "Black - Grey Lenses",
+            "fr": "Black - Grey Lenses"
+          },
+          "imagenes": {
+            "frontal": "assets/images/productos/fw26/bps-213c-60/frontal.jpg",
+            "lateral": "assets/images/productos/fw26/bps-213c-60/lateral.jpg",
+            "detalle": "assets/images/productos/fw26/bps-213c-60/detalle.jpg",
+            "hero": "assets/images/productos/fw26/bps-213c-60/frontal.jpg"
+          },
+          "fuente": "Balmain FW26 Collection Grid / Akoni SharePoint"
+        },
+        {
+          "codigo": "BPS-213D-60",
+          "color": {
+            "es": "Silver - Silver mirror Lenses",
+            "en": "Silver - Silver mirror Lenses",
+            "fr": "Silver - Silver mirror Lenses"
+          },
+          "imagenes": {
+            "frontal": "assets/images/productos/fw26/bps-213d-60/frontal.jpg",
+            "lateral": "assets/images/productos/fw26/bps-213d-60/lateral.jpg",
+            "detalle": "assets/images/productos/fw26/bps-213d-60/detalle.jpg",
+            "hero": "assets/images/productos/fw26/bps-213d-60/frontal.jpg"
+          },
+          "fuente": "Balmain FW26 Collection Grid / Akoni SharePoint"
+        }
+      ],
+      "relacionados": [
+        "ingrid",
+        "diva",
+        "dean"
+      ],
+      "materiales": [
+        "CR-39"
+      ],
+      "marketingDescription": {
+        "es": "Scarlett es una montura de sol Balmain Eyewear FW26 con 4 referencias identificadas en la ficha de colección.",
+        "en": "Scarlett is a Balmain Eyewear FW26 sunglasses with 4 references identified in the collection grid.",
+        "fr": "Scarlett est une lunettes de soleil Balmain Eyewear FW26 avec 4 références identifiées dans la grille de collection."
+      },
+      "designStory": {
+        "es": "Las vistas disponibles permiten revisar la forma y los acabados de Scarlett por referencia.",
+        "en": "The available product views let buyers review the shape and finishes of Scarlett by reference.",
+        "fr": "Les vues disponibles permettent d'examiner la forme et les finitions de Scarlett par référence."
+      },
+      "commercialUse": {
+        "es": "Consulta códigos, medidas y colores con Innova antes de confirmar disponibilidad y condiciones comerciales.",
+        "en": "Check references, dimensions, and colourways with Innova before confirming availability and commercial terms.",
+        "fr": "Vérifiez les références, tailles et coloris auprès d’Innova avant de confirmer la disponibilité et les conditions commerciales."
+      },
+      "fuenteCatalogo": {
+        "es": "Balmain FW26 Collection Grid.",
+        "en": "Balmain FW26 Collection Grid.",
+        "fr": "Balmain FW26 Collection Grid."
+      }
+    },
+    {
+      "slug": "dean",
+      "nombre": "Dean",
+      "categoria": "avant-garde",
+      "categoriaLabel": {
+        "es": "Avant-Garde",
+        "en": "Avant-Garde",
+        "fr": "Avant-Garde"
+      },
+      "coleccion": "FW26",
+      "orden": 80,
+      "destacado": false,
+      "nuevo": true,
+      "descripcion": {
+        "es": "Dean se reconoce por su frente solar amplio de ángulos suavizados, doble puente y pequeños acentos sobre la barra superior. La construcción visual equilibra escala y ligereza para una propuesta Avant-Garde de impacto; la colección FW26 incluye tres variantes.",
+        "en": "Dean is recognised by a broad sunglass front with softened angles, a double bridge, and small accents along the upper bar. The visual construction balances scale and lightness for an impactful Avant-Garde option; the FW26 collection includes three variants.",
+        "fr": "Dean se reconnaît à sa large face solaire aux angles adoucis, son double pont et ses petits accents sur la barre supérieure. L’ensemble équilibre ampleur et légèreté pour une proposition Avant-Garde marquante ; la collection FW26 comprend trois variantes."
+      },
+      "descripcionCorta": {
+        "es": "Dean ofrece un frente amplio con doble puente y acentos en la barra superior.",
+        "en": "Dean offers a broad front with a double bridge and upper-bar accents.",
+        "fr": "Dean offre une face large avec double pont et accents sur la barre supérieure."
+      },
+      "b2b": {
+        "mensaje": {
+          "es": "Disponibilidad bajo consulta comercial con Innova.",
+          "en": "Availability upon commercial inquiry with Innova.",
+          "fr": "Disponibilité sur demande commerciale auprès d’Innova."
+        }
+      },
+      "especificaciones": {
+        "frame": "",
+        "temple": "",
+        "nosePads": "",
+        "lenses": "CR-39",
+        "size": "60/14-145",
+        "country": "Japan"
+      },
+      "variantes": [
+        {
+          "codigo": "BPS-214A-60",
+          "color": {
+            "es": "Light Gold - Grey Lenses",
+            "en": "Light Gold - Grey Lenses",
+            "fr": "Light Gold - Grey Lenses"
+          },
+          "imagenes": {
+            "frontal": "assets/images/productos/fw26/bps-214a-60/frontal.jpg",
+            "lateral": "assets/images/productos/fw26/bps-214a-60/lateral.jpg",
+            "detalle": "assets/images/productos/fw26/bps-214a-60/detalle.jpg",
+            "hero": "assets/images/productos/fw26/bps-214a-60/frontal.jpg"
+          },
+          "fuente": "Balmain FW26 Collection Grid / Akoni SharePoint"
+        },
+        {
+          "codigo": "BPS-214B-60",
+          "color": {
+            "es": "Black Palladium - Blue Lenses",
+            "en": "Black Palladium - Blue Lenses",
+            "fr": "Black Palladium - Blue Lenses"
+          },
+          "imagenes": {
+            "frontal": "assets/images/productos/fw26/bps-214b-60/frontal.jpg",
+            "lateral": "assets/images/productos/fw26/bps-214b-60/lateral.jpg",
+            "detalle": "assets/images/productos/fw26/bps-214b-60/detalle.jpg",
+            "hero": "assets/images/productos/fw26/bps-214b-60/frontal.jpg"
+          },
+          "fuente": "Balmain FW26 Collection Grid / Akoni SharePoint"
+        },
+        {
+          "codigo": "BPS-214C-60",
+          "color": {
+            "es": "Rose Gold - Chocolate Lenses",
+            "en": "Rose Gold - Chocolate Lenses",
+            "fr": "Rose Gold - Chocolate Lenses"
+          },
+          "imagenes": {
+            "frontal": "assets/images/productos/fw26/bps-214c-60/frontal.jpg",
+            "lateral": "assets/images/productos/fw26/bps-214c-60/lateral.jpg",
+            "detalle": "assets/images/productos/fw26/bps-214c-60/detalle.jpg",
+            "hero": "assets/images/productos/fw26/bps-214c-60/frontal.jpg"
+          },
+          "fuente": "Balmain FW26 Collection Grid / Akoni SharePoint"
+        }
+      ],
+      "relacionados": [
+        "ingrid",
+        "diva",
+        "scarlett"
+      ],
+      "materiales": [
+        "CR-39"
+      ],
+      "marketingDescription": {
+        "es": "Dean es una montura de sol Balmain Eyewear FW26 con 3 referencias identificadas en la ficha de colección.",
+        "en": "Dean is a Balmain Eyewear FW26 sunglasses with 3 references identified in the collection grid.",
+        "fr": "Dean est une lunettes de soleil Balmain Eyewear FW26 avec 3 références identifiées dans la grille de collection."
+      },
+      "designStory": {
+        "es": "Las vistas disponibles permiten revisar la forma y los acabados de Dean por referencia.",
+        "en": "The available product views let buyers review the shape and finishes of Dean by reference.",
+        "fr": "Les vues disponibles permettent d'examiner la forme et les finitions de Dean par référence."
+      },
+      "commercialUse": {
+        "es": "Consulta códigos, medidas y colores con Innova antes de confirmar disponibilidad y condiciones comerciales.",
+        "en": "Check references, dimensions, and colourways with Innova before confirming availability and commercial terms.",
+        "fr": "Vérifiez les références, tailles et coloris auprès d’Innova avant de confirmer la disponibilité et les conditions commerciales."
+      },
+      "fuenteCatalogo": {
+        "es": "Balmain FW26 Collection Grid.",
+        "en": "Balmain FW26 Collection Grid.",
+        "fr": "Balmain FW26 Collection Grid."
+      }
+    },
+    {
+      "slug": "amelia",
+      "nombre": "Amelia",
+      "categoria": "fashion-drops",
+      "categoriaLabel": {
+        "es": "Fashion Drops",
+        "en": "Fashion Drops",
+        "fr": "Fashion Drops"
+      },
+      "coleccion": "FW26",
+      "orden": 81,
+      "destacado": false,
+      "nuevo": true,
+      "descripcion": {
+        "es": "Amelia lleva Fashion Drops hacia una silueta solar envolvente de perfil bajo y lente continua visualmente dominante. El frente ancho y horizontal crea un efecto deportivo-editorial reconocible, pensado para destacar en exhibición; sus seis variantes FW26 permiten explorar diferentes acabados.",
+        "en": "Amelia takes Fashion Drops toward a low-profile, wrap-inspired sunglass silhouette with a visually dominant continuous lens. Its wide horizontal front creates a recognisable sport-editorial effect designed to stand out on display; six FW26 variants offer different finishes.",
+        "fr": "Amelia oriente Fashion Drops vers une solaire enveloppante au profil bas et au verre continu très présent. Sa face large et horizontale crée un effet sport-éditorial marquant en vitrine ; six variantes FW26 permettent d’explorer différentes finitions."
+      },
+      "descripcionCorta": {
+        "es": "Amelia destaca por su silueta envolvente y frente solar ancho de perfil bajo.",
+        "en": "Amelia stands out for its wrap-inspired silhouette and wide, low-profile sunglass front.",
+        "fr": "Amelia se distingue par sa silhouette enveloppante et sa large face solaire basse."
+      },
+      "b2b": {
+        "mensaje": {
+          "es": "Disponibilidad bajo consulta comercial con Innova.",
+          "en": "Availability upon commercial inquiry with Innova.",
+          "fr": "Disponibilité sur demande commerciale auprès d’Innova."
+        }
+      },
+      "especificaciones": {
+        "frame": "",
+        "temple": "",
+        "nosePads": "",
+        "lenses": "Polycarbonate",
+        "size": "136/120",
+        "country": "Italy"
+      },
+      "variantes": [
+        {
+          "codigo": "BPS-218A-136",
+          "color": {
+            "es": "Shiny Black - Light Gold - Grey w/ flash Lenses",
+            "en": "Shiny Black - Light Gold - Grey w/ flash Lenses",
+            "fr": "Shiny Black - Light Gold - Grey w/ flash Lenses"
+          },
+          "imagenes": {
+            "frontal": "assets/images/productos/fw26/bps-218a-136/frontal.jpg",
+            "lateral": "assets/images/productos/fw26/bps-218a-136/lateral.jpg",
+            "hero": "assets/images/productos/fw26/bps-218a-136/frontal.jpg"
+          },
+          "fuente": "Balmain FW26 Collection Grid / Akoni SharePoint"
+        },
+        {
+          "codigo": "BPS-218B-136",
+          "color": {
+            "es": "Tortoise - Light Gold - Brown Lenses",
+            "en": "Tortoise - Light Gold - Brown Lenses",
+            "fr": "Tortoise - Light Gold - Brown Lenses"
+          },
+          "imagenes": {
+            "frontal": "assets/images/productos/fw26/bps-218b-136/frontal.jpg",
+            "lateral": "assets/images/productos/fw26/bps-218b-136/lateral.jpg",
+            "hero": "assets/images/productos/fw26/bps-218b-136/frontal.jpg"
+          },
+          "fuente": "Balmain FW26 Collection Grid / Akoni SharePoint"
+        },
+        {
+          "codigo": "BPS-218C-136",
+          "color": {
+            "es": "Dark Bordeaux - Light Gold - Amber Lenses",
+            "en": "Dark Bordeaux - Light Gold - Amber Lenses",
+            "fr": "Dark Bordeaux - Light Gold - Amber Lenses"
+          },
+          "imagenes": {
+            "frontal": "assets/images/productos/fw26/bps-218c-136/frontal.jpg",
+            "lateral": "assets/images/productos/fw26/bps-218c-136/lateral.jpg",
+            "hero": "assets/images/productos/fw26/bps-218c-136/frontal.jpg"
+          },
+          "fuente": "Balmain FW26 Collection Grid / Akoni SharePoint"
+        },
+        {
+          "codigo": "BPS-218D-136",
+          "color": {
+            "es": "Crystal Petrol - Light Gold - Brown Lenses",
+            "en": "Crystal Petrol - Light Gold - Brown Lenses",
+            "fr": "Crystal Petrol - Light Gold - Brown Lenses"
+          },
+          "imagenes": {
+            "frontal": "assets/images/productos/fw26/bps-218d-136/frontal.jpg",
+            "lateral": "assets/images/productos/fw26/bps-218d-136/lateral.jpg",
+            "hero": "assets/images/productos/fw26/bps-218d-136/frontal.jpg"
+          },
+          "fuente": "Balmain FW26 Collection Grid / Akoni SharePoint"
+        },
+        {
+          "codigo": "BPS-218E-136",
+          "color": {
+            "es": "Bordeaux gradient - Light Gold - Amber Lenses",
+            "en": "Bordeaux gradient - Light Gold - Amber Lenses",
+            "fr": "Bordeaux gradient - Light Gold - Amber Lenses"
+          },
+          "imagenes": {
+            "frontal": "assets/images/productos/fw26/bps-218e-136/frontal.jpg",
+            "lateral": "assets/images/productos/fw26/bps-218e-136/lateral.jpg",
+            "hero": "assets/images/productos/fw26/bps-218e-136/frontal.jpg"
+          },
+          "fuente": "Balmain FW26 Collection Grid / Akoni SharePoint"
+        },
+        {
+          "codigo": "BPS-218F-136",
+          "color": {
+            "es": "Blue gradient - Light Gold - Grey w/ flash Lenses",
+            "en": "Blue gradient - Light Gold - Grey w/ flash Lenses",
+            "fr": "Blue gradient - Light Gold - Grey w/ flash Lenses"
+          },
+          "imagenes": {
+            "frontal": "assets/images/productos/fw26/bps-218f-136/frontal.jpg",
+            "lateral": "assets/images/productos/fw26/bps-218f-136/lateral.jpg",
+            "hero": "assets/images/productos/fw26/bps-218f-136/frontal.jpg"
+          },
+          "fuente": "Balmain FW26 Collection Grid / Akoni SharePoint"
+        }
+      ],
+      "relacionados": [],
+      "materiales": [
+        "Polycarbonate"
+      ],
+      "marketingDescription": {
+        "es": "Amelia es una montura de sol Balmain Eyewear FW26 con 6 referencias identificadas en la ficha de colección.",
+        "en": "Amelia is a Balmain Eyewear FW26 sunglasses with 6 references identified in the collection grid.",
+        "fr": "Amelia est une lunettes de soleil Balmain Eyewear FW26 avec 6 références identifiées dans la grille de collection."
+      },
+      "designStory": {
+        "es": "Las vistas disponibles permiten revisar la forma y los acabados de Amelia por referencia.",
+        "en": "The available product views let buyers review the shape and finishes of Amelia by reference.",
+        "fr": "Les vues disponibles permettent d'examiner la forme et les finitions de Amelia par référence."
+      },
+      "commercialUse": {
+        "es": "Consulta códigos, medidas y colores con Innova antes de confirmar disponibilidad y condiciones comerciales.",
+        "en": "Check references, dimensions, and colourways with Innova before confirming availability and commercial terms.",
+        "fr": "Vérifiez les références, tailles et coloris auprès d’Innova avant de confirmer la disponibilité et les conditions commerciales."
+      },
+      "fuenteCatalogo": {
+        "es": "Balmain FW26 Collection Grid.",
+        "en": "Balmain FW26 Collection Grid.",
+        "fr": "Balmain FW26 Collection Grid."
+      }
+    },
+    {
+      "slug": "essence-i",
+      "nombre": "Essence I",
+      "categoria": "aspirational",
+      "categoriaLabel": {
+        "es": "Aspirational",
+        "en": "Aspirational",
+        "fr": "Aspirational"
+      },
+      "coleccion": "FW26",
+      "orden": 82,
+      "destacado": false,
+      "nuevo": true,
+      "descripcion": {
+        "es": "Essence I presenta una montura óptica de frente rectangular definido, línea superior recta y pequeños acentos metálicos en los extremos. Su proporción clásica recibe una lectura gráfica propia de Aspirational; las tres variantes FW26 facilitan comparar colores y referencias.",
+        "en": "Essence I presents an optical frame with a defined rectangular front, straight upper line, and small metal accents at the outer edges. Its classic proportion gains a graphic Aspirational reading; three FW26 variants make colours and references easy to compare.",
+        "fr": "Essence I présente une monture optique à face rectangulaire définie, ligne supérieure droite et petits accents métalliques aux extrémités. Ses proportions classiques prennent une dimension graphique Aspirational ; trois variantes FW26 facilitent la comparaison."
+      },
+      "descripcionCorta": {
+        "es": "Essence I aporta una forma óptica rectangular con detalles metálicos laterales.",
+        "en": "Essence I brings a rectangular optical shape with side metal details.",
+        "fr": "Essence I propose une forme optique rectangulaire aux détails métalliques latéraux."
+      },
+      "b2b": {
+        "mensaje": {
+          "es": "Disponibilidad bajo consulta comercial con Innova.",
+          "en": "Availability upon commercial inquiry with Innova.",
+          "fr": "Disponibilité sur demande commerciale auprès d’Innova."
+        }
+      },
+      "especificaciones": {
+        "frame": "",
+        "temple": "",
+        "nosePads": "",
+        "lenses": "",
+        "size": "53/20-145",
+        "country": "Italy"
+      },
+      "variantes": [
+        {
+          "codigo": "BPX-207A-53",
+          "color": {
+            "es": "Black - Light Gold - Clear Lenses",
+            "en": "Black - Light Gold - Clear Lenses",
+            "fr": "Black - Light Gold - Clear Lenses"
+          },
+          "imagenes": {
+            "frontal": "assets/images/productos/fw26/bpx-207a-53/frontal.jpg",
+            "lateral": "assets/images/productos/fw26/bpx-207a-53/lateral.jpg",
+            "detalle": "assets/images/productos/fw26/bpx-207a-53/detalle.jpg",
+            "hero": "assets/images/productos/fw26/bpx-207a-53/frontal.jpg"
+          },
+          "fuente": "Balmain FW26 Collection Grid / Akoni SharePoint"
+        },
+        {
+          "codigo": "BPX-207B-53",
+          "color": {
+            "es": "Havana - Light Gold - Clear Lenses",
+            "en": "Havana - Light Gold - Clear Lenses",
+            "fr": "Havana - Light Gold - Clear Lenses"
+          },
+          "imagenes": {
+            "frontal": "assets/images/productos/fw26/bpx-207b-53/frontal.jpg",
+            "lateral": "assets/images/productos/fw26/bpx-207b-53/lateral.jpg",
+            "detalle": "assets/images/productos/fw26/bpx-207b-53/detalle.jpg",
+            "hero": "assets/images/productos/fw26/bpx-207b-53/frontal.jpg"
+          },
+          "fuente": "Balmain FW26 Collection Grid / Akoni SharePoint"
+        },
+        {
+          "codigo": "BPX-207C-53",
+          "color": {
+            "es": "Crystal Grey - Black Rhodium - Clear Lenses",
+            "en": "Crystal Grey - Black Rhodium - Clear Lenses",
+            "fr": "Crystal Grey - Black Rhodium - Clear Lenses"
+          },
+          "imagenes": {
+            "frontal": "assets/images/productos/fw26/bpx-207c-53/frontal.jpg",
+            "lateral": "assets/images/productos/fw26/bpx-207c-53/lateral.jpg",
+            "detalle": "assets/images/productos/fw26/bpx-207c-53/detalle.jpg",
+            "hero": "assets/images/productos/fw26/bpx-207c-53/frontal.jpg"
+          },
+          "fuente": "Balmain FW26 Collection Grid / Akoni SharePoint"
+        }
+      ],
+      "relacionados": [
+        "essence-ii",
+        "focus-i",
+        "fade",
+        "focus-ii"
+      ],
+      "materiales": [],
+      "marketingDescription": {
+        "es": "Essence I es una montura óptica Balmain Eyewear FW26 con 3 referencias identificadas en la ficha de colección.",
+        "en": "Essence I is a Balmain Eyewear FW26 optical frame with 3 references identified in the collection grid.",
+        "fr": "Essence I est une monture optique Balmain Eyewear FW26 avec 3 références identifiées dans la grille de collection."
+      },
+      "designStory": {
+        "es": "Las vistas disponibles permiten revisar la forma y los acabados de Essence I por referencia.",
+        "en": "The available product views let buyers review the shape and finishes of Essence I by reference.",
+        "fr": "Les vues disponibles permettent d'examiner la forme et les finitions de Essence I par référence."
+      },
+      "commercialUse": {
+        "es": "Consulta códigos, medidas y colores con Innova antes de confirmar disponibilidad y condiciones comerciales.",
+        "en": "Check references, dimensions, and colourways with Innova before confirming availability and commercial terms.",
+        "fr": "Vérifiez les références, tailles et coloris auprès d’Innova avant de confirmer la disponibilité et les conditions commerciales."
+      },
+      "fuenteCatalogo": {
+        "es": "Balmain FW26 Collection Grid.",
+        "en": "Balmain FW26 Collection Grid.",
+        "fr": "Balmain FW26 Collection Grid."
+      }
+    },
+    {
+      "slug": "essence-ii",
+      "nombre": "Essence II",
+      "categoria": "aspirational",
+      "categoriaLabel": {
+        "es": "Aspirational",
+        "en": "Aspirational",
+        "fr": "Aspirational"
+      },
+      "coleccion": "FW26",
+      "orden": 83,
+      "destacado": false,
+      "nuevo": true,
+      "descripcion": {
+        "es": "Essence II suaviza el lenguaje rectangular con una línea superior levemente arqueada y esquinas exteriores levantadas. Los detalles metálicos laterales subrayan el frente sin restarle limpieza, ofreciendo una opción óptica expresiva en Aspirational; se presenta en cuatro variantes FW26.",
+        "en": "Essence II softens the rectangular language with a gently arched upper line and lifted outer corners. Side metal details emphasise the front without cluttering it, offering an expressive optical option in Aspirational; it comes in four FW26 variants.",
+        "fr": "Essence II adoucit le vocabulaire rectangulaire avec une ligne supérieure légèrement arquée et des angles extérieurs relevés. Les détails métalliques latéraux soulignent la face sans la surcharger, pour une option optique expressive dans Aspirational ; quatre variantes FW26 sont proposées."
+      },
+      "descripcionCorta": {
+        "es": "Essence II combina frente óptico amplio, curva superior suave y acentos laterales.",
+        "en": "Essence II combines a broad optical front, gentle upper curve, and side accents.",
+        "fr": "Essence II associe face optique large, courbe supérieure douce et accents latéraux."
+      },
+      "b2b": {
+        "mensaje": {
+          "es": "Disponibilidad bajo consulta comercial con Innova.",
+          "en": "Availability upon commercial inquiry with Innova.",
+          "fr": "Disponibilité sur demande commerciale auprès d’Innova."
+        }
+      },
+      "especificaciones": {
+        "frame": "",
+        "temple": "",
+        "nosePads": "",
+        "lenses": "",
+        "size": "53/15-145",
+        "country": "Italy"
+      },
+      "variantes": [
+        {
+          "codigo": "BPX-208A-53",
+          "color": {
+            "es": "Black - Light Gold - Clear Lenses",
+            "en": "Black - Light Gold - Clear Lenses",
+            "fr": "Black - Light Gold - Clear Lenses"
+          },
+          "imagenes": {
+            "frontal": "assets/images/productos/fw26/bpx-208a-53/frontal.jpg",
+            "lateral": "assets/images/productos/fw26/bpx-208a-53/lateral.jpg",
+            "detalle": "assets/images/productos/fw26/bpx-208a-53/detalle.jpg",
+            "hero": "assets/images/productos/fw26/bpx-208a-53/frontal.jpg"
+          },
+          "fuente": "Balmain FW26 Collection Grid / Akoni SharePoint"
+        },
+        {
+          "codigo": "BPX-208B-53",
+          "color": {
+            "es": "Havana - Light Gold - Clear Lenses",
+            "en": "Havana - Light Gold - Clear Lenses",
+            "fr": "Havana - Light Gold - Clear Lenses"
+          },
+          "imagenes": {
+            "frontal": "assets/images/productos/fw26/bpx-208b-53/frontal.jpg",
+            "lateral": "assets/images/productos/fw26/bpx-208b-53/lateral.jpg",
+            "detalle": "assets/images/productos/fw26/bpx-208b-53/detalle.jpg",
+            "hero": "assets/images/productos/fw26/bpx-208b-53/frontal.jpg"
+          },
+          "fuente": "Balmain FW26 Collection Grid / Akoni SharePoint"
+        },
+        {
+          "codigo": "BPX-208C-53",
+          "color": {
+            "es": "Crystal Grey - Light Gold - Clear Lenses",
+            "en": "Crystal Grey - Light Gold - Clear Lenses",
+            "fr": "Crystal Grey - Light Gold - Clear Lenses"
+          },
+          "imagenes": {
+            "frontal": "assets/images/productos/fw26/bpx-208c-53/frontal.jpg",
+            "lateral": "assets/images/productos/fw26/bpx-208c-53/lateral.jpg",
+            "detalle": "assets/images/productos/fw26/bpx-208c-53/detalle.jpg",
+            "hero": "assets/images/productos/fw26/bpx-208c-53/frontal.jpg"
+          },
+          "fuente": "Balmain FW26 Collection Grid / Akoni SharePoint"
+        },
+        {
+          "codigo": "BPX-208D-53",
+          "color": {
+            "es": "Crystal Red - Light Gold - Clear Lenses",
+            "en": "Crystal Red - Light Gold - Clear Lenses",
+            "fr": "Crystal Red - Light Gold - Clear Lenses"
+          },
+          "imagenes": {
+            "frontal": "assets/images/productos/fw26/bpx-208d-53/frontal.jpg",
+            "lateral": "assets/images/productos/fw26/bpx-208d-53/lateral.jpg",
+            "detalle": "assets/images/productos/fw26/bpx-208d-53/detalle.jpg",
+            "hero": "assets/images/productos/fw26/bpx-208d-53/frontal.jpg"
+          },
+          "fuente": "Balmain FW26 Collection Grid / Akoni SharePoint"
+        }
+      ],
+      "relacionados": [
+        "essence-i",
+        "focus-i",
+        "fade",
+        "focus-ii"
+      ],
+      "materiales": [],
+      "marketingDescription": {
+        "es": "Essence II es una montura óptica Balmain Eyewear FW26 con 4 referencias identificadas en la ficha de colección.",
+        "en": "Essence II is a Balmain Eyewear FW26 optical frame with 4 references identified in the collection grid.",
+        "fr": "Essence II est une monture optique Balmain Eyewear FW26 avec 4 références identifiées dans la grille de collection."
+      },
+      "designStory": {
+        "es": "Las vistas disponibles permiten revisar la forma y los acabados de Essence II por referencia.",
+        "en": "The available product views let buyers review the shape and finishes of Essence II by reference.",
+        "fr": "Les vues disponibles permettent d'examiner la forme et les finitions de Essence II par référence."
+      },
+      "commercialUse": {
+        "es": "Consulta códigos, medidas y colores con Innova antes de confirmar disponibilidad y condiciones comerciales.",
+        "en": "Check references, dimensions, and colourways with Innova before confirming availability and commercial terms.",
+        "fr": "Vérifiez les références, tailles et coloris auprès d’Innova avant de confirmer la disponibilité et les conditions commerciales."
+      },
+      "fuenteCatalogo": {
+        "es": "Balmain FW26 Collection Grid.",
+        "en": "Balmain FW26 Collection Grid.",
+        "fr": "Balmain FW26 Collection Grid."
+      }
+    },
+    {
+      "slug": "focus-i",
+      "nombre": "Focus I",
+      "categoria": "aspirational",
+      "categoriaLabel": {
+        "es": "Aspirational",
+        "en": "Aspirational",
+        "fr": "Aspirational"
+      },
+      "coleccion": "FW26",
+      "orden": 84,
+      "destacado": false,
+      "nuevo": true,
+      "descripcion": {
+        "es": "Focus I utiliza una estructura óptica fina de contorno geométrico, con puente estrecho y acentos visibles en las uniones laterales. La forma mantiene una presencia clara sin cargar el rostro, una lectura precisa para Aspirational; sus tres variantes FW26 ofrecen distintas combinaciones de acabado.",
+        "en": "Focus I uses a slim optical structure with a geometric outline, narrow bridge, and visible accents at the side joints. The shape reads clearly without overwhelming the face, a precise Aspirational option; its three FW26 variants offer different finish combinations.",
+        "fr": "Focus I adopte une structure optique fine au contour géométrique, avec un pont étroit et des accents visibles aux jonctions latérales. La forme reste affirmée sans alourdir le visage, dans l’esprit Aspirational ; trois variantes FW26 proposent plusieurs finitions."
+      },
+      "descripcionCorta": {
+        "es": "Focus I ofrece un contorno óptico fino y geométrico con detalles en las uniones.",
+        "en": "Focus I offers a slim geometric optical outline with details at the joints.",
+        "fr": "Focus I offre un contour optique fin et géométrique avec détails aux jonctions."
+      },
+      "b2b": {
+        "mensaje": {
+          "es": "Disponibilidad bajo consulta comercial con Innova.",
+          "en": "Availability upon commercial inquiry with Innova.",
+          "fr": "Disponibilité sur demande commerciale auprès d’Innova."
+        }
+      },
+      "especificaciones": {
+        "frame": "",
+        "temple": "",
+        "nosePads": "",
+        "lenses": "Acrylic",
+        "size": "53/17-145",
+        "country": "Japan"
+      },
+      "variantes": [
+        {
+          "codigo": "BPX-215A-53",
+          "color": {
+            "es": "Light Gold - Black - Clear Lenses",
+            "en": "Light Gold - Black - Clear Lenses",
+            "fr": "Light Gold - Black - Clear Lenses"
+          },
+          "imagenes": {
+            "frontal": "assets/images/productos/fw26/bpx-215a-53/frontal.jpg",
+            "lateral": "assets/images/productos/fw26/bpx-215a-53/lateral.jpg",
+            "detalle": "assets/images/productos/fw26/bpx-215a-53/detalle.jpg",
+            "hero": "assets/images/productos/fw26/bpx-215a-53/frontal.jpg"
+          },
+          "fuente": "Balmain FW26 Collection Grid / Akoni SharePoint"
+        },
+        {
+          "codigo": "BPX-215B-53",
+          "color": {
+            "es": "Silver - Crystal Grey - Clear Lenses",
+            "en": "Silver - Crystal Grey - Clear Lenses",
+            "fr": "Silver - Crystal Grey - Clear Lenses"
+          },
+          "imagenes": {
+            "frontal": "assets/images/productos/fw26/bpx-215b-53/frontal.jpg",
+            "lateral": "assets/images/productos/fw26/bpx-215b-53/lateral.jpg",
+            "detalle": "assets/images/productos/fw26/bpx-215b-53/detalle.jpg",
+            "hero": "assets/images/productos/fw26/bpx-215b-53/frontal.jpg"
+          },
+          "fuente": "Balmain FW26 Collection Grid / Akoni SharePoint"
+        },
+        {
+          "codigo": "BPX-215C-53",
+          "color": {
+            "es": "Rose Gold - Havana - Clear Lenses",
+            "en": "Rose Gold - Havana - Clear Lenses",
+            "fr": "Rose Gold - Havana - Clear Lenses"
+          },
+          "imagenes": {
+            "frontal": "assets/images/productos/fw26/bpx-215c-53/frontal.jpg",
+            "lateral": "assets/images/productos/fw26/bpx-215c-53/lateral.jpg",
+            "detalle": "assets/images/productos/fw26/bpx-215c-53/detalle.jpg",
+            "hero": "assets/images/productos/fw26/bpx-215c-53/frontal.jpg"
+          },
+          "fuente": "Balmain FW26 Collection Grid / Akoni SharePoint"
+        }
+      ],
+      "relacionados": [
+        "essence-i",
+        "essence-ii",
+        "fade",
+        "focus-ii"
+      ],
+      "materiales": [
+        "Acrylic"
+      ],
+      "marketingDescription": {
+        "es": "Focus I es una montura óptica Balmain Eyewear FW26 con 3 referencias identificadas en la ficha de colección.",
+        "en": "Focus I is a Balmain Eyewear FW26 optical frame with 3 references identified in the collection grid.",
+        "fr": "Focus I est une monture optique Balmain Eyewear FW26 avec 3 références identifiées dans la grille de collection."
+      },
+      "designStory": {
+        "es": "Las vistas disponibles permiten revisar la forma y los acabados de Focus I por referencia.",
+        "en": "The available product views let buyers review the shape and finishes of Focus I by reference.",
+        "fr": "Les vues disponibles permettent d'examiner la forme et les finitions de Focus I par référence."
+      },
+      "commercialUse": {
+        "es": "Consulta códigos, medidas y colores con Innova antes de confirmar disponibilidad y condiciones comerciales.",
+        "en": "Check references, dimensions, and colourways with Innova before confirming availability and commercial terms.",
+        "fr": "Vérifiez les références, tailles et coloris auprès d’Innova avant de confirmer la disponibilité et les conditions commerciales."
+      },
+      "fuenteCatalogo": {
+        "es": "Balmain FW26 Collection Grid.",
+        "en": "Balmain FW26 Collection Grid.",
+        "fr": "Balmain FW26 Collection Grid."
+      }
+    },
+    {
+      "slug": "fade",
+      "nombre": "Fade",
+      "categoria": "aspirational",
+      "categoriaLabel": {
+        "es": "Aspirational",
+        "en": "Aspirational",
+        "fr": "Aspirational"
+      },
+      "coleccion": "FW26",
+      "orden": 85,
+      "destacado": false,
+      "nuevo": true,
+      "descripcion": {
+        "es": "Fade se distingue por una montura óptica de línea superior marcada y contorno rectangular amplio. Los pequeños acentos horizontales cerca de las bisagras aportan contraste a una silueta sobria y contemporánea; la ficha Aspirational reúne cuatro variantes FW26.",
+        "en": "Fade stands out with an optical frame defined by a strong upper line and broad rectangular outline. Small horizontal accents near the hinges bring contrast to a restrained contemporary silhouette; the Aspirational sheet brings together four FW26 variants.",
+        "fr": "Fade se distingue par une monture optique à ligne supérieure marquée et contour rectangulaire large. De petits accents horizontaux près des charnières contrastent avec sa silhouette contemporaine épurée ; la fiche Aspirational réunit quatre variantes FW26."
+      },
+      "descripcionCorta": {
+        "es": "Fade combina frente rectangular amplio y detalles horizontales junto a las bisagras.",
+        "en": "Fade combines a broad rectangular front with horizontal details near the hinges.",
+        "fr": "Fade associe large face rectangulaire et détails horizontaux près des charnières."
+      },
+      "b2b": {
+        "mensaje": {
+          "es": "Disponibilidad bajo consulta comercial con Innova.",
+          "en": "Availability upon commercial inquiry with Innova.",
+          "fr": "Disponibilité sur demande commerciale auprès d’Innova."
+        }
+      },
+      "especificaciones": {
+        "frame": "",
+        "temple": "",
+        "nosePads": "",
+        "lenses": "Acrylic",
+        "size": "53/17-145",
+        "country": "Japan"
+      },
+      "variantes": [
+        {
+          "codigo": "BPX-216A-53",
+          "color": {
+            "es": "Black - Silver - Clear Lenses",
+            "en": "Black - Silver - Clear Lenses",
+            "fr": "Black - Silver - Clear Lenses"
+          },
+          "imagenes": {
+            "frontal": "assets/images/productos/fw26/bpx-216a-53/frontal.jpg",
+            "lateral": "assets/images/productos/fw26/bpx-216a-53/lateral.jpg",
+            "detalle": "assets/images/productos/fw26/bpx-216a-53/detalle.jpg",
+            "hero": "assets/images/productos/fw26/bpx-216a-53/frontal.jpg"
+          },
+          "fuente": "Balmain FW26 Collection Grid / Akoni SharePoint"
+        },
+        {
+          "codigo": "BPX-216B-53",
+          "color": {
+            "es": "Havana - Light Gold - Clear Lenses",
+            "en": "Havana - Light Gold - Clear Lenses",
+            "fr": "Havana - Light Gold - Clear Lenses"
+          },
+          "imagenes": {
+            "frontal": "assets/images/productos/fw26/bpx-216b-53/frontal.jpg",
+            "lateral": "assets/images/productos/fw26/bpx-216b-53/lateral.jpg",
+            "detalle": "assets/images/productos/fw26/bpx-216b-53/detalle.jpg",
+            "hero": "assets/images/productos/fw26/bpx-216b-53/frontal.jpg"
+          },
+          "fuente": "Balmain FW26 Collection Grid / Akoni SharePoint"
+        },
+        {
+          "codigo": "BPX-216C-53",
+          "color": {
+            "es": "Crystal Mud - Black Rhodium - Clear Lenses",
+            "en": "Crystal Mud - Black Rhodium - Clear Lenses",
+            "fr": "Crystal Mud - Black Rhodium - Clear Lenses"
+          },
+          "imagenes": {
+            "frontal": "assets/images/productos/fw26/bpx-216c-53/frontal.jpg",
+            "lateral": "assets/images/productos/fw26/bpx-216c-53/lateral.jpg",
+            "detalle": "assets/images/productos/fw26/bpx-216c-53/detalle.jpg",
+            "hero": "assets/images/productos/fw26/bpx-216c-53/frontal.jpg"
+          },
+          "fuente": "Balmain FW26 Collection Grid / Akoni SharePoint"
+        },
+        {
+          "codigo": "BPX-216D-53",
+          "color": {
+            "es": "Crystal Grey - Light Gold - Clear Lenses",
+            "en": "Crystal Grey - Light Gold - Clear Lenses",
+            "fr": "Crystal Grey - Light Gold - Clear Lenses"
+          },
+          "imagenes": {
+            "frontal": "assets/images/productos/fw26/bpx-216d-53/frontal.jpg",
+            "lateral": "assets/images/productos/fw26/bpx-216d-53/lateral.jpg",
+            "detalle": "assets/images/productos/fw26/bpx-216d-53/detalle.jpg",
+            "hero": "assets/images/productos/fw26/bpx-216d-53/frontal.jpg"
+          },
+          "fuente": "Balmain FW26 Collection Grid / Akoni SharePoint"
+        }
+      ],
+      "relacionados": [
+        "essence-i",
+        "essence-ii",
+        "focus-i",
+        "focus-ii"
+      ],
+      "materiales": [
+        "Acrylic"
+      ],
+      "marketingDescription": {
+        "es": "Fade es una montura óptica Balmain Eyewear FW26 con 4 referencias identificadas en la ficha de colección.",
+        "en": "Fade is a Balmain Eyewear FW26 optical frame with 4 references identified in the collection grid.",
+        "fr": "Fade est une monture optique Balmain Eyewear FW26 avec 4 références identifiées dans la grille de collection."
+      },
+      "designStory": {
+        "es": "Las vistas disponibles permiten revisar la forma y los acabados de Fade por referencia.",
+        "en": "The available product views let buyers review the shape and finishes of Fade by reference.",
+        "fr": "Les vues disponibles permettent d'examiner la forme et les finitions de Fade par référence."
+      },
+      "commercialUse": {
+        "es": "Consulta códigos, medidas y colores con Innova antes de confirmar disponibilidad y condiciones comerciales.",
+        "en": "Check references, dimensions, and colourways with Innova before confirming availability and commercial terms.",
+        "fr": "Vérifiez les références, tailles et coloris auprès d’Innova avant de confirmer la disponibilité et les conditions commerciales."
+      },
+      "fuenteCatalogo": {
+        "es": "Balmain FW26 Collection Grid.",
+        "en": "Balmain FW26 Collection Grid.",
+        "fr": "Balmain FW26 Collection Grid."
+      }
+    },
+    {
+      "slug": "focus-ii",
+      "nombre": "Focus II",
+      "categoria": "aspirational",
+      "categoriaLabel": {
+        "es": "Aspirational",
+        "en": "Aspirational",
+        "fr": "Aspirational"
+      },
+      "coleccion": "FW26",
+      "orden": 86,
+      "destacado": false,
+      "nuevo": true,
+      "descripcion": {
+        "es": "Focus II amplía la familia Focus con un frente óptico de formato más generoso y contorno geométrico fino. El puente ligero y las uniones laterales visibles mantienen una lectura abierta y estructurada dentro de Aspirational; está disponible en tres variantes FW26.",
+        "en": "Focus II extends the Focus family with a more generous optical front and slim geometric outline. Its light bridge and visible side joints keep the look open yet structured within Aspirational; it is available in three FW26 variants.",
+        "fr": "Focus II élargit la famille Focus avec une face optique plus ample et un contour géométrique fin. Son pont léger et ses jonctions latérales visibles gardent une allure ouverte et structurée dans Aspirational ; trois variantes FW26 sont disponibles."
+      },
+      "descripcionCorta": {
+        "es": "Focus II amplía el formato óptico con contorno fino y puente ligero.",
+        "en": "Focus II expands the optical format with a slim outline and light bridge.",
+        "fr": "Focus II agrandit la forme optique avec un contour fin et un pont léger."
+      },
+      "b2b": {
+        "mensaje": {
+          "es": "Disponibilidad bajo consulta comercial con Innova.",
+          "en": "Availability upon commercial inquiry with Innova.",
+          "fr": "Disponibilité sur demande commerciale auprès d’Innova."
+        }
+      },
+      "especificaciones": {
+        "frame": "",
+        "temple": "",
+        "nosePads": "",
+        "lenses": "Acrylic",
+        "size": "57/16-145",
+        "country": "Japan"
+      },
+      "variantes": [
+        {
+          "codigo": "BPX-217A-57",
+          "color": {
+            "es": "Light Gold - Black - Clear Lenses",
+            "en": "Light Gold - Black - Clear Lenses",
+            "fr": "Light Gold - Black - Clear Lenses"
+          },
+          "imagenes": {
+            "frontal": "assets/images/productos/fw26/bpx-217a-57/frontal.jpg",
+            "lateral": "assets/images/productos/fw26/bpx-217a-57/lateral.jpg",
+            "detalle": "assets/images/productos/fw26/bpx-217a-57/detalle.jpg",
+            "hero": "assets/images/productos/fw26/bpx-217a-57/frontal.jpg"
+          },
+          "fuente": "Balmain FW26 Collection Grid / Akoni SharePoint"
+        },
+        {
+          "codigo": "BPX-217B-57",
+          "color": {
+            "es": "Silver - Crystal Grey - Clear Lenses",
+            "en": "Silver - Crystal Grey - Clear Lenses",
+            "fr": "Silver - Crystal Grey - Clear Lenses"
+          },
+          "imagenes": {
+            "frontal": "assets/images/productos/fw26/bpx-217b-57/frontal.jpg",
+            "lateral": "assets/images/productos/fw26/bpx-217b-57/lateral.jpg",
+            "detalle": "assets/images/productos/fw26/bpx-217b-57/detalle.jpg",
+            "hero": "assets/images/productos/fw26/bpx-217b-57/frontal.jpg"
+          },
+          "fuente": "Balmain FW26 Collection Grid / Akoni SharePoint"
+        },
+        {
+          "codigo": "BPX-217C-57",
+          "color": {
+            "es": "Rose Gold - Havana - Clear Lenses",
+            "en": "Rose Gold - Havana - Clear Lenses",
+            "fr": "Rose Gold - Havana - Clear Lenses"
+          },
+          "imagenes": {
+            "frontal": "assets/images/productos/fw26/bpx-217c-57/frontal.jpg",
+            "lateral": "assets/images/productos/fw26/bpx-217c-57/lateral.jpg",
+            "detalle": "assets/images/productos/fw26/bpx-217c-57/detalle.jpg",
+            "hero": "assets/images/productos/fw26/bpx-217c-57/frontal.jpg"
+          },
+          "fuente": "Balmain FW26 Collection Grid / Akoni SharePoint"
+        }
+      ],
+      "relacionados": [
+        "essence-i",
+        "essence-ii",
+        "focus-i",
+        "fade"
+      ],
+      "materiales": [
+        "Acrylic"
+      ],
+      "marketingDescription": {
+        "es": "Focus II es una montura óptica Balmain Eyewear FW26 con 3 referencias identificadas en la ficha de colección.",
+        "en": "Focus II is a Balmain Eyewear FW26 optical frame with 3 references identified in the collection grid.",
+        "fr": "Focus II est une monture optique Balmain Eyewear FW26 avec 3 références identifiées dans la grille de collection."
+      },
+      "designStory": {
+        "es": "Las vistas disponibles permiten revisar la forma y los acabados de Focus II por referencia.",
+        "en": "The available product views let buyers review the shape and finishes of Focus II by reference.",
+        "fr": "Les vues disponibles permettent d'examiner la forme et les finitions de Focus II par référence."
+      },
+      "commercialUse": {
+        "es": "Consulta códigos, medidas y colores con Innova antes de confirmar disponibilidad y condiciones comerciales.",
+        "en": "Check references, dimensions, and colourways with Innova before confirming availability and commercial terms.",
+        "fr": "Vérifiez les références, tailles et coloris auprès d’Innova avant de confirmer la disponibilité et les conditions commerciales."
+      },
+      "fuenteCatalogo": {
+        "es": "Balmain FW26 Collection Grid.",
+        "en": "Balmain FW26 Collection Grid.",
+        "fr": "Balmain FW26 Collection Grid."
+      }
     }
   ]
 }

@@ -476,6 +476,8 @@ img { display: block; width: 100%; }
 .product-preview { min-width: 0; background: var(--white); border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .product-preview-media { position: relative; display: block; height: clamp(250px, 24vw, 390px); overflow: hidden; background: white; }
 .product-preview-media::after { content: "ACERCAR"; position: absolute; top: 14px; right: 14px; padding: 7px 8px; background: rgba(255,255,255,.88); font-size: 7px; font-weight: 700; letter-spacing: .15em; opacity: 0; transform: translateY(-4px); transition: opacity .3s ease, transform .3s ease; }
+.product-preview-media.has-new-collection::after { display: none; }
+.product-preview-new-collection { position: absolute; z-index: 1; top: 14px; right: 14px; padding: 7px 8px; border: 1px solid rgba(156,121,71,.55); background: rgba(255,255,255,.94); color: #5e4b32; font-size: 7px; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
 .product-preview-media img { width: 100%; height: 100%; object-fit: contain; transform-origin: var(--zoom-x, 50%) var(--zoom-y, 50%); transition: transform .75s var(--ease); }
 .product-preview:hover .product-preview-media img { transform: scale(1.42); }
 .product-preview:hover .product-preview-media::after { opacity: 1; transform: translateY(0); }

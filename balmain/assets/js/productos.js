@@ -41,6 +41,7 @@
     requestInformation: { es: "Solicitar informacion", en: "Request information", fr: "Demander des informations" },
     variants: { es: "variantes", en: "variants", fr: "variantes" },
     models: { es: "modelos", en: "models", fr: "modèles" },
+    newCollection: { es: "Collection Fall Winter 2026", en: "Collection Fall Winter 2026", fr: "Collection Fall Winter 2026" },
     viewDetails: { es: "Ver detalles", en: "View details", fr: "Voir les détails" },
     viewCategory: { es: "Ver categoria", en: "View category", fr: "Voir la catégorie" },
     b2bCategoryFocus: { es: "Enfoque B2B de categoria", en: "B2B category overview", fr: "Présentation B2B de la catégorie" },
@@ -401,10 +402,11 @@
       : placeholder(title);
 
     return `
-      <article class="product-card ${compact ? "compact" : ""} inventory-${status}" data-product-slug="${escapeHtml(product.slug)}">
+      <article class="product-card ${compact ? "compact" : ""} ${product.coleccion === "FW26" ? "is-fw26" : ""} inventory-${status}" data-product-slug="${escapeHtml(product.slug)}">
         <a class="product-media ${imageClass}" href="${productHref(product.slug)}" aria-label="${title}">
           <span class="product-image-stack">${imageMarkup}</span>
           ${product.coleccion ? `<span class="tag">${escapeHtml(product.coleccion)}</span>` : ""}
+          ${product.coleccion === "FW26" ? `<span class="new-collection-badge">${t("newCollection")}</span>` : ""}
           ${status !== "normal" ? `<span class="inventory-badge inventory-badge-${status}">${escapeHtml(statusText)}</span>` : ""}
         </a>
         <div class="product-card-copy">
@@ -485,12 +487,16 @@
     const input = document.getElementById("catalogSearch");
     const count = document.getElementById("catalogCount");
     const empty = document.getElementById("catalogEmpty");
-    let activeCategory = "all";
+    let activeCategory = new URLSearchParams(window.location.search).get("collection") === "fw26" ? "fw26" : "all";
+    document.querySelectorAll("[data-filter-category]").forEach((button) => {
+      button.classList.toggle("active", button.dataset.filterCategory === activeCategory);
+    });
 
     function draw() {
       const query = (input?.value || "").trim().toLowerCase();
       const filtered = products.filter((product) => {
-        const categoryOk = activeCategory === "all" || product.categoria === activeCategory;
+        const categoryOk = activeCategory === "all" ||
+          (activeCategory === "fw26" ? product.coleccion === "FW26" : product.categoria === activeCategory);
         const queryOk = !query || productSearchText(product).includes(query);
         return categoryOk && queryOk;
       });
@@ -502,6 +508,10 @@
     document.querySelectorAll("[data-filter-category]").forEach((button) => {
       button.addEventListener("click", () => {
         activeCategory = button.dataset.filterCategory || "all";
+        const nextUrl = new URL(window.location.href);
+        if (activeCategory === "fw26") nextUrl.searchParams.set("collection", "fw26");
+        else nextUrl.searchParams.delete("collection");
+        window.history.replaceState({}, "", nextUrl);
         document.querySelectorAll("[data-filter-category]").forEach((item) => item.classList.toggle("active", item === button));
         draw();
       });
@@ -716,7 +726,7 @@
           <p class="eyebrow">${escapeHtml(pick(product.categoriaLabel))}${product.coleccion ? ` · ${escapeHtml(product.coleccion)}` : ""} · ${t("distributedByInnova")}</p>
           ${status !== "normal" ? `<span class="product-status-pill product-status-${status}">${escapeHtml(statusText)}</span>` : ""}
           <h1>${escapeHtml(product.nombre)}</h1>
-          <p>${escapeHtml(pick(product.marketingDescription) || pick(product.descripcion))}</p>
+          <p>${escapeHtml(product.coleccion === "FW26" ? pick(product.descripcion) : (pick(product.marketingDescription) || pick(product.descripcion)))}</p>
           <dl class="selected-variant-card">
             <div><dt>${t("selectedCode")}</dt><dd id="selectedVariantCode">${escapeHtml(firstVariant.codigo || "")}</dd></div>
             <div><dt>${t("color")}</dt><dd id="selectedVariantColor">${escapeHtml(pick(firstVariant.color))}</dd></div>
