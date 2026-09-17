@@ -4023,6 +4023,28 @@ body {
   min-width: 0;
 }
 
+body:not(.balmain-contact-ready) a[href^="mailto:"],
+body:not(.balmain-contact-ready) a[href^="tel:"],
+body:not(.balmain-contact-ready) a[href*="wa.me/"],
+body:not(.balmain-contact-ready) a[href*="instagram.com/innova_eyewear"],
+body:not(.balmain-contact-ready) [data-contact-address],
+body.balmain-contact-ready [data-contact-gate] {
+  display: none !important;
+}
+
+.contact-gate-prompt {
+  display: block;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+
 @media (max-width: 680px) {
   .related-products-heading {
     align-items: center;

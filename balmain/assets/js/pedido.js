@@ -57,6 +57,7 @@
     remaining: { es: "Faltan {count} piezas para completar el mínimo.", en: "{count} more units are required to reach the minimum.", fr: "Il manque {count} pièces pour atteindre le seuil minimum." },
     minimumMet: { es: "La selección cumple el mínimo profesional.", en: "The selection meets the professional minimum.", fr: "La sélection atteint le seuil professionnel." },
     minimum: { es: "Mínimo profesional: {count} piezas", en: "Professional minimum: {count} units", fr: "Seuil professionnel : {count} pièces" },
+    contactGate: { es: "Completa 50 piezas y tus datos profesionales para contactar a Innova. Abrir mi selección →", en: "Complete 50 units and your professional details to contact Innova. Open my selection →", fr: "Complétez 50 pièces et vos coordonnées professionnelles pour contacter Innova. Ouvrir ma sélection →" },
     emptyTitle: { es: "Todavía no has seleccionado productos.", en: "You have not selected any products yet.", fr: "Vous n'avez encore sélectionné aucun produit." },
     emptyBody: { es: "Explora el catálogo y combina modelos o coloridos hasta alcanzar {count} piezas.", en: "Explore the catalogue and combine models or colourways to reach {count} units.", fr: "Parcourez le catalogue et associez modèles et coloris jusqu'à atteindre {count} pièces." },
     catalogue: { es: "Ir al catálogo", en: "View catalogue", fr: "Voir le catalogue" },
@@ -157,6 +158,7 @@
     localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
     window.dispatchEvent(new CustomEvent("balmain:orderchange", { detail: summary() }));
     syncBoutiqueState();
+    syncContactGate();
   }
 
   function totalUnits() {
@@ -300,6 +302,7 @@
       if (label) label.textContent = t("mySelection");
     }
     document.querySelector(".order-drawer")?.setAttribute("aria-label", t("dialogLabel"));
+    syncContactGate();
   }
 
   function ensureUi() {
@@ -335,6 +338,7 @@
       const action = event.target.closest("[data-order-action]")?.dataset.orderAction;
       if (!action) return;
       if (action === "close") close();
+      if (action === "open") open();
       if (action === "catalog") close();
       if (action === "remove") updateQuantity(event.target.closest("[data-order-key]")?.dataset.orderKey, 0);
       if (action === "decrease" || action === "increase") {
@@ -480,6 +484,25 @@
     });
     document.querySelectorAll("[data-order-action='pdf'], [data-order-action='whatsapp'], [data-order-action='email']")
       .forEach((button) => { button.disabled = !ready || working; });
+    syncContactGate();
+  }
+
+  function syncContactGate() {
+    document.body.classList.toggle("balmain-contact-ready", isReady());
+    document.querySelectorAll(".contact-panel, .site-footer > div:last-child, .innova-contact-line").forEach((surface) => {
+      if (surface.querySelector("[data-contact-gate]")) return;
+      const prompt = document.createElement("button");
+      prompt.type = "button";
+      prompt.className = "contact-gate-prompt";
+      prompt.dataset.contactGate = "";
+      prompt.dataset.orderAction = "open";
+      prompt.textContent = t("contactGate");
+      const firstContact = surface.querySelector("a[href^='mailto:'], a[href^='tel:'], a[href*='wa.me/']");
+      if (firstContact) firstContact.before(prompt);
+    });
+    document.querySelectorAll("[data-contact-gate]").forEach((prompt) => {
+      prompt.textContent = t("contactGate");
+    });
   }
 
   function open() {
@@ -685,6 +708,7 @@
   function init() {
     read();
     ensureUi();
+    syncContactGate();
     updateQuickAddLabels();
     window.setTimeout(syncBoutiqueState, 0);
     window.addEventListener("balmain:languagechange", renderDrawer);
