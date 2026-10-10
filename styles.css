@@ -457,6 +457,7 @@ img { display: block; width: 100%; }
 .product-brand-intro > span { color: rgba(255,255,255,.74); font-size: 9px; font-weight: 700; letter-spacing: .2em; }
 .product-brand-intro h3 { max-width: 820px; margin: 20px 0 26px; font-size: clamp(58px, 8vw, 126px); line-height: .84; letter-spacing: -.07em; font-weight: 500; }
 .product-brand-intro p { max-width: 360px; margin: 0 0 34px; color: rgba(255,255,255,.82); font-size: 14px; line-height: 1.65; }
+.product-brand-intro .alfred-new-collection { width: fit-content; margin: 0 0 24px; padding: 8px 11px; border: 1px solid rgba(255,255,255,.7); color: #fff; font-size: 9px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
 .product-brand-intro a { display: inline-flex; gap: 18px; padding-bottom: 8px; border-bottom: 1px solid currentColor; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .13em; }
 .product-brand-intro a span { transition: transform .35s var(--ease); }
 .product-brand-intro a:hover span { transform: translateX(6px); }
@@ -475,6 +476,7 @@ img { display: block; width: 100%; }
 .product-carousel-controls a { min-height: 46px; display: inline-flex; align-items: center; margin-left: 12px; padding: 0 20px; border: 1px solid var(--ink); background: var(--ink); color: white; font-size: 9px; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
 .product-preview { min-width: 0; background: var(--white); border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .product-preview-media { position: relative; display: block; height: clamp(250px, 24vw, 390px); overflow: hidden; background: white; }
+.product-preview-new { position: absolute; top: 16px; left: 16px; padding: 7px 9px; border: 1px solid var(--ink); background: rgba(255,255,255,.94); color: var(--ink); font-size: 8px; font-style: normal; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
 .product-preview-media::after { content: "ACERCAR"; position: absolute; top: 14px; right: 14px; padding: 7px 8px; background: rgba(255,255,255,.88); font-size: 7px; font-weight: 700; letter-spacing: .15em; opacity: 0; transform: translateY(-4px); transition: opacity .3s ease, transform .3s ease; }
 .product-preview-media.has-new-collection::after { display: none; }
 .product-preview-new-collection { position: absolute; z-index: 1; top: 14px; right: 14px; padding: 7px 8px; border: 1px solid rgba(156,121,71,.55); background: rgba(255,255,255,.94); color: #5e4b32; font-size: 7px; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }

@@ -90,8 +90,9 @@
     track.innerHTML = products.map((product) => `
       <a class="product-preview" href="${escapeAttribute(brandRouteDestination(brand, product.path))}">
         <span class="product-preview-media${brand === "balmain" && product.collection === "FW26" ? " has-new-collection" : ""}">
-          <img src="${escapeAttribute(brandDestination(brand, product.image))}" alt="${escapeAttribute(`${product.name} · ${brandLabels[brand] || brand}`)}" loading="lazy">
+          <img src="${escapeAttribute(product.portalImage || brandDestination(brand, product.image))}" alt="${escapeAttribute(`${product.name} · ${brandLabels[brand] || brand}`)}" loading="lazy">
           ${brand === "balmain" && product.collection === "FW26" ? '<span class="product-preview-new-collection">Collection Fall Winter 2026</span>' : ""}
+          ${brand === "alfred-kerbs" && product.new ? '<em class="product-preview-new">Nuevo</em>' : ""}
         </span>
         <span class="product-preview-copy">
           <b>${escapeHtml(product.name)}</b>

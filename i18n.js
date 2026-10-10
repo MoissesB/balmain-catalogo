@@ -6,6 +6,9 @@
     : "es";
 
   const en = {
+    "Nuevo": "New",
+    "Nueva colección · nueve modelos ópticos": "New collection · nine optical models",
+    "Óptica · Nuevo": "Optical · New",
     "Innova Boutique · Luxury Eyewear Portfolio": "Innova Boutique · Luxury Eyewear Portfolio",
     "INNOVA EYEWEAR · DISTRIBUCIÓN PROFESIONAL DE MARCAS DE LUJO": "INNOVA EYEWEAR · PROFESSIONAL DISTRIBUTION OF LUXURY BRANDS",
     "Boutique": "Boutique",
@@ -131,6 +134,9 @@
 
   const fr = {
     ...en,
+    "Nuevo": "Nouveau",
+    "Nueva colección · nueve modelos ópticos": "Nouvelle collection · neuf modèles optiques",
+    "Óptica · Nuevo": "Optique · Nouveau",
     "INNOVA EYEWEAR · DISTRIBUCIÓN PROFESIONAL DE MARCAS DE LUJO": "INNOVA EYEWEAR · DISTRIBUTION PROFESSIONNELLE DE MARQUES DE LUXE",
     "Marcas y colecciones": "Marques et collections",
     "Óptica": "Optique",
