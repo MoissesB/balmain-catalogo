@@ -5,6 +5,8 @@
   const source = body.dataset.source || "";
   const frame = document.querySelector("[data-brand-frame]");
   const loader = document.querySelector("[data-brand-loader]");
+  const orderOverlay = document.querySelector("[data-brand-order-overlay]");
+  const orderFrame = document.querySelector("[data-brand-order-frame]");
   if (!frame || !source) return;
 
   const sourceUrl = new URL(source);
@@ -58,12 +60,34 @@
   }
 
   frame.addEventListener("load", () => loader?.classList.add("is-hidden"));
+  function showOrder() {
+    if (!orderOverlay || !orderFrame) return;
+    orderOverlay.hidden = false;
+    if (!orderFrame.src) orderFrame.src = `${location.origin}/?embeddedOrder=1#pedido`;
+    else orderFrame.contentWindow?.location.reload();
+  }
+  function hideOrder() {
+    if (orderOverlay) orderOverlay.hidden = true;
+    frame.contentWindow?.focus();
+  }
+  orderOverlay?.querySelector("[data-brand-order-close]")?.addEventListener("click", hideOrder);
+  window.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && orderOverlay && !orderOverlay.hidden) hideOrder();
+  });
   window.addEventListener("hashchange", () => {
     showRoute();
     window.INNOVA_META_PIXEL?.trackPageView();
   });
   window.addEventListener("message", (event) => {
+    if (event.source === orderFrame?.contentWindow && event.origin === location.origin && event.data?.type === "innova-boutique:close-order") {
+      hideOrder();
+      return;
+    }
     if (event.source !== frame.contentWindow || event.origin !== sourceOrigin) return;
+    if (event.data?.type === "innova-boutique:open-order" && brand === "jisco") {
+      showOrder();
+      return;
+    }
     if (event.data?.type === "innova-boutique:replace-brand" && event.data.brand === brand) {
       saveBrandOrder(event.data);
       return;

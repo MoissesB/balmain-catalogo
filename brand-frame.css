@@ -84,3 +84,8 @@ body {
   from { transform: translateX(-110%); }
   to { transform: translateX(190%); }
 }
+
+.brand-order-overlay[hidden] { display: none; }
+.brand-order-overlay { position: fixed; z-index: 5; inset: 0; background: rgba(0,0,0,.4); }
+.brand-order-frame { width: 100%; height: 100%; border: 0; }
+.brand-order-close { position: absolute; z-index: 6; top: 8px; right: 8px; width: 32px; height: 32px; border: 1px solid #777; background: #fff; color: #111; font-size: 22px; cursor: pointer; }

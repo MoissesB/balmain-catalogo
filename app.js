@@ -2,7 +2,7 @@
   const STORAGE_KEY = "innova-boutique-order-v1";
   const MINIMUM_PER_BRAND = 50;
   const brandMinimum = (brand) => brand === "jisco" ? 0 : MINIMUM_PER_BRAND;
-  const HERO_PROGRESS_KEY = "innova-boutique-hero-progress-v2";
+  const HERO_PROGRESS_KEY = "innova-boutique-hero-progress-v3";
   const config = window.INNOVA_BOUTIQUE_CONFIG || { brands: {} };
   if (config.maintenanceMode) {
     document.documentElement.classList.add("maintenance-active");
@@ -97,7 +97,6 @@
           <img src="${escapeAttribute(product.portalImage || brandDestination(brand, product.image))}" alt="${escapeAttribute(`${product.name} · ${brandLabels[brand] || brand}`)}" loading="lazy">
           ${brand === "balmain" && product.collection === "FW26" ? '<span class="product-preview-new-collection">Collection Fall Winter 2026</span>' : ""}
           ${brand === "alfred-kerbs" && product.new ? '<em class="product-preview-new">Nuevo</em>' : ""}
-          ${brand === "jisco" ? `<span class="jisco-photo-credit"><img src="${escapeAttribute(brandAssetDestination("jisco", "assets/images/materiales/big/logo-jisco-2024.png"))}" alt="Logo JISCO"> Imagen original © JISCO Eyewear</span>` : ""}
         </span>
         <span class="product-preview-copy">
           <b>${escapeHtml(product.name)}</b>
@@ -636,6 +635,9 @@
     shell.hidden = !open;
     document.body.classList.toggle("order-open", open);
     if (open) shell.querySelector("[data-order-close]")?.focus();
+    if (!open && new URLSearchParams(location.search).has("embeddedOrder") && window.parent !== window) {
+      window.parent.postMessage({ type: "innova-boutique:close-order" }, location.origin);
+    }
   }
 
   const chatPanel = document.querySelector("[data-chat-panel]");
