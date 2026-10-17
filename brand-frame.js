@@ -18,7 +18,7 @@
   }
 
   function targetUrl(route) {
-    if (brand === "jisco") return `${source.replace(/\/+$/, "/")}?v=20261018-new-arrivals#${route}`;
+    if (brand === "jisco") return `${source.replace(/\/+$/, "/")}?v=20261018-four-brand-nav#${route}`;
     if (brand === "silhouette") return `${source.replace(/\/+$/, "/")}#${route}`;
     return new URL(route.replace(/^\/+/, ""), source.replace(/\/+$/, "/")).href;
   }

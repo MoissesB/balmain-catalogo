@@ -79,6 +79,7 @@
     const silhouette = isLocal
       ? "http://localhost:5174"
       : `${portal.replace(/\/+$/, "")}/silhouette/`;
+    const jisco = `${portal.replace(/\/+$/, "")}/jisco/`;
     const silhouetteRoute = (path) => isLocal
       ? `${silhouette}/${String(path).replace(/^\/+/, "")}`
       : `${silhouette}/#/${String(path).replace(/^\/+/, "")}`;
@@ -112,16 +113,24 @@
                 <a href="${silhouetteRoute("catalogo/gafas-de-sol")}" data-text-es="Gafas de sol" data-text-en="Sunglasses" data-text-fr="Lunettes de soleil">Gafas de sol</a>
                 <a href="${silhouetteRoute("catalogo/atelier-next")}">Atelier</a>
               </div>
+              <div data-innova-mega-brand="jisco">
+                <span>04 · Mediterráneo</span>
+                <a href="${jisco}" target="_top"><strong>JISCO</strong></a>
+                <a href="${jisco}#/catalogo?category=optical" target="_top" data-text-es="Óptica" data-text-en="Optical frames" data-text-fr="Montures optiques">Óptica</a>
+                <a href="${jisco}#/catalogo?category=sun" target="_top" data-text-es="Sol" data-text-en="Sunglasses" data-text-fr="Lunettes de soleil">Sol</a>
+                <a href="${jisco}#/historia" target="_top" data-text-es="La marca" data-text-en="The brand" data-text-fr="La marque">La marca</a>
+              </div>
               <aside class="innova-global-mega-visual">
                 <div class="innova-global-mega-visual__media" aria-hidden="true">
                   <img class="is-active" data-innova-mega-image="alfred-kerbs" src="${portal}/assets/campaign-alfred.webp" alt="">
                   <img data-innova-mega-image="balmain" src="${portal}/assets/campaign-balmain.webp" alt="">
                   <img data-innova-mega-image="silhouette" src="${portal}/assets/campaign-silhouette.webp" alt="">
+                  <img data-innova-mega-image="jisco" src="${portal}/assets/jisco-showcase/home_2.jpg" alt="">
                 </div>
                 <div class="innova-global-mega-visual__content">
                   <span data-text-es="PEDIDO GLOBAL" data-text-en="MULTI-BRAND SELECTION" data-text-fr="SÉLECTION MULTIMARQUE">PEDIDO GLOBAL</span>
-                  <strong data-text-es="Una selección para las tres firmas." data-text-en="One selection for all three brands." data-text-fr="Une sélection commune aux trois marques.">Una selección para las tres firmas.</strong>
-                  <p data-text-es="El mínimo comercial mayorista es de 50 piezas por cada marca incluida." data-text-en="Each included brand must reach the 50-piece professional minimum." data-text-fr="Chaque marque incluse doit atteindre le seuil professionnel de 50 pièces.">El mínimo comercial mayorista es de 50 piezas por cada marca incluida.</p>
+                  <strong data-text-es="Una selección para las cuatro firmas." data-text-en="One selection for all four brands." data-text-fr="Une sélection commune aux quatre marques.">Una selección para las cuatro firmas.</strong>
+                  <p data-text-es="Alfred Kerbs, Balmain y Silhouette requieren 50 piezas por marca. JISCO no tiene un mínimo configurado." data-text-en="Alfred Kerbs, Balmain and Silhouette require 50 pieces per brand. JISCO has no configured minimum." data-text-fr="Alfred Kerbs, Balmain et Silhouette exigent 50 pièces par marque. Aucun minimum n’est configuré pour JISCO.">Alfred Kerbs, Balmain y Silhouette requieren 50 piezas por marca. JISCO no tiene un mínimo configurado.</p>
                   <a href="${portal}/#seleccion" data-text-es="Abrir selección →" data-text-en="Open selection →" data-text-fr="Ouvrir la sélection →">Abrir selección →</a>
                 </div>
               </aside>
@@ -137,7 +146,8 @@
             <a href="${alfred}" data-text-es="Alfred Kerbs · Óptica y Sol" data-text-en="Alfred Kerbs · Optical frames and sunglasses" data-text-fr="Alfred Kerbs · Montures optiques et lunettes de soleil">Alfred Kerbs · Óptica y Sol</a>
             <a href="${base}catalogo.html">Balmain · Todas las colecciones</a>
             <a href="${silhouette}" data-text-es="Silhouette · Óptica, Sol y Atelier" data-text-en="Silhouette · Optical frames, sunglasses and Atelier" data-text-fr="Silhouette · Montures optiques, lunettes de soleil et Atelier">Silhouette · Óptica, Sol y Atelier</a>
-            <a href="${portal}/#seleccion" data-text-es="Pedido global · 50 piezas por marca" data-text-en="Multi-brand selection · 50 pieces per brand" data-text-fr="Sélection multimarque · 50 pièces par marque">Pedido global · 50 piezas por marca</a>
+            <a href="${jisco}" target="_top" data-text-es="JISCO · Óptica y Sol" data-text-en="JISCO · Optical and sun" data-text-fr="JISCO · Optique et solaire">JISCO · Óptica y Sol</a>
+            <a href="${portal}/#seleccion" data-text-es="Pedido global" data-text-en="Multi-brand selection" data-text-fr="Sélection multimarque">Pedido global</a>
           </div>
         </details>
       </header>

@@ -12,6 +12,7 @@
   const silhouetteUrl = isLocal
     ? "http://localhost:5174"
     : `${portalUrl.replace(/\/+$/, "")}/silhouette/`;
+  const jiscoUrl = `${portalUrl.replace(/\/+$/, "")}/jisco/`;
   let bridge;
 
   function getBridge() {
@@ -108,9 +109,10 @@
         </aside>
       </div>
       <nav class="balmain-catalog-dock__brands" aria-label="Cambiar catálogo de marca">
-        <a href="${alfredUrl}" aria-label="Abrir Alfred Kerbs"><img src="${portalUrl}/assets/alfred-kerbs-logo.png" alt=""></a>
-        <a class="is-current" href="${balmainUrl}" aria-label="Abrir Balmain Eyewear" aria-current="page"><img src="${portalUrl}/assets/balmain-logo-transparent.png" alt=""></a>
-        <a class="balmain-catalog-dock__silhouette" href="${silhouetteUrl}" aria-label="Abrir Silhouette"><img src="${portalUrl}/assets/logos/silhouette-on-light.png" alt="Silhouette"></a>
+        <a href="${alfredUrl}" target="_top" aria-label="Abrir Alfred Kerbs"><img src="${portalUrl}/assets/alfred-kerbs-logo.png" alt=""></a>
+        <a class="is-current" href="${balmainUrl}" target="_top" aria-label="Abrir Balmain Eyewear" aria-current="page"><img src="${portalUrl}/assets/balmain-logo-transparent.png" alt=""></a>
+        <a class="balmain-catalog-dock__silhouette" href="${silhouetteUrl}" target="_top" aria-label="Abrir Silhouette"><img src="${portalUrl}/assets/logos/silhouette-on-light.png" alt="Silhouette"></a>
+        <a class="balmain-catalog-dock__jisco" href="${jiscoUrl}" target="_top" aria-label="Abrir JISCO"><img src="${portalUrl}/assets/jisco-logo-original.png" alt="JISCO"></a>
       </nav>
       <span class="balmain-catalog-dock__order-slot" aria-hidden="true"></span>
     `;

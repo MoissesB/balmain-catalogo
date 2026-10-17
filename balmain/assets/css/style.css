@@ -769,7 +769,7 @@ body.order-open {
   right: 0;
   padding: 34px max(28px, 5vw);
   display: grid;
-  grid-template-columns: repeat(3, minmax(160px, 1fr)) minmax(260px, 0.9fr);
+  grid-template-columns: repeat(4, minmax(145px, 1fr)) minmax(230px, 0.9fr);
   color: var(--ink);
   background: var(--paper);
   border-bottom: 1px solid var(--line);
@@ -3843,6 +3843,7 @@ body {
 }
 
 .balmain-catalog-dock__silhouette img { width: 118px; max-height: 36px; }
+.balmain-catalog-dock__jisco img { width: 100px; max-height: 32px; }
 
 .balmain-catalog-dock__order-slot {
   display: block;
@@ -3889,7 +3890,7 @@ body {
   }
 
   .balmain-catalog-dock__brands > a {
-    width: min(33.333vw, 150px);
+    width: min(25vw, 150px);
     padding: 7px 13px;
   }
 
@@ -3899,6 +3900,7 @@ body {
   }
 
   .balmain-catalog-dock__silhouette img { width: 80px; max-height: 22px; }
+  .balmain-catalog-dock__jisco img { width: 75px; max-height: 22px; }
 
   .balmain-catalog-dock .balmain-commercial-help {
     width: 100%;
