@@ -3761,25 +3761,19 @@ body {
   .balmain-commercial-help__trigger { min-width: 215px; }
 }
 
-/* Pie fijo compartido entre los tres catálogos */
-body {
-  padding-bottom: 72px;
-}
+/* Selector de marcas al final del catálogo */
 
 .balmain-catalog-dock {
   min-height: 72px;
-  position: fixed;
+  position: relative;
   z-index: 120;
-  right: 0;
-  bottom: 0;
-  left: 0;
   display: grid;
   grid-template-columns: minmax(210px, 1fr) auto minmax(210px, 1fr);
   align-items: stretch;
   color: #fff;
   background: #171514;
   border-top: 1px solid rgba(255,255,255,.18);
-  box-shadow: 0 -12px 36px rgba(23,21,20,.16);
+  box-shadow: none;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -3848,6 +3842,13 @@ body {
 .balmain-catalog-dock__order-slot {
   display: block;
 }
+.balmain-catalog-dock__order-slot .order-fab {
+  position: static;
+  width: min(270px, 100%);
+  min-width: 0;
+  height: 100%;
+  box-shadow: none;
+}
 
 .balmain-catalog-dock ~ [data-balmain-order] .order-fab,
 [data-balmain-order] .order-fab {
@@ -3872,10 +3873,6 @@ body {
 }
 
 @media (max-width: 680px) {
-  body {
-    padding-bottom: calc(86px + env(safe-area-inset-bottom));
-  }
-
   .balmain-catalog-dock {
     min-height: 86px;
     grid-template-columns: 1fr 1fr;
@@ -3929,6 +3926,7 @@ body {
     grid-column: 2;
     grid-row: 2;
   }
+  .balmain-catalog-dock__order-slot .order-fab { width: 100%; }
 
   .balmain-catalog-dock ~ [data-balmain-order] .order-fab,
   [data-balmain-order] .order-fab {

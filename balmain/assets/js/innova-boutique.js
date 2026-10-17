@@ -114,7 +114,7 @@
         <a class="balmain-catalog-dock__silhouette" href="${silhouetteUrl}" target="_top" aria-label="Abrir Silhouette"><img src="${portalUrl}/assets/logos/silhouette-on-light.png" alt="Silhouette"></a>
         <a class="balmain-catalog-dock__jisco" href="${jiscoUrl}" target="_top" aria-label="Abrir JISCO"><img src="${portalUrl}/assets/jisco-logo-original.png" alt="JISCO"></a>
       </nav>
-      <span class="balmain-catalog-dock__order-slot" aria-hidden="true"></span>
+      <span class="balmain-catalog-dock__order-slot"></span>
     `;
     document.body.appendChild(dock);
 

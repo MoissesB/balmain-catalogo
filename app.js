@@ -1,6 +1,7 @@
 (function () {
   const STORAGE_KEY = "innova-boutique-order-v1";
   const MINIMUM_PER_BRAND = 50;
+  const SPECIAL_ORDER_CODE = "DAN2026";
   const brandMinimum = (brand) => brand === "jisco" ? 0 : MINIMUM_PER_BRAND;
   const HERO_PROGRESS_KEY = "innova-boutique-hero-progress-v3";
   const config = window.INNOVA_BOUTIQUE_CONFIG || { brands: {} };
@@ -416,6 +417,7 @@
   function blankOrder() {
     return {
       items: [],
+      specialCode: "",
       client: {
         name: "",
         company: "",
@@ -441,6 +443,7 @@
   }
 
   let order = readOrder();
+  const specialOrderEnabled = () => String(order.specialCode || "").trim().toUpperCase() === SPECIAL_ORDER_CODE;
   const shell = document.querySelector("[data-order-shell]");
   const itemsRoot = document.querySelector("[data-order-items]");
   const status = document.querySelector("[data-order-status]");
@@ -473,6 +476,7 @@
   }
 
   function incompleteBrands() {
+    if (specialOrderEnabled()) return [];
     return Object.entries(brandTotals()).filter(([brand, total]) => total < brandMinimum(brand));
   }
 
@@ -534,9 +538,10 @@
   }
 
   function renderOrder() {
+    const special = specialOrderEnabled();
     const totalUnits = order.items.reduce((total, item) => total + Number(item.quantity || 0), 0);
     const totals = brandTotals();
-    const completedBrands = Object.entries(totals).filter(([brand, total]) => total > 0 && total >= brandMinimum(brand)).length;
+    const completedBrands = Object.entries(totals).filter(([brand, total]) => total > 0 && (special || total >= brandMinimum(brand))).length;
     document.querySelectorAll("[data-order-count]").forEach((node) => { node.textContent = String(totalUnits); });
     const units = document.querySelector("[data-order-units]");
     const brands = document.querySelector("[data-order-brands]");
@@ -551,6 +556,13 @@
       "disabled",
       !ready,
     );
+    const contactLink = document.querySelector("[data-order-contact]");
+    if (contactLink) {
+      contactLink.hidden = !ready;
+      const subject = special ? `Pedido especial Innova · ${SPECIAL_ORDER_CODE}` : "Pedido profesional Innova Boutique";
+      const message = `${special ? `Código: ${SPECIAL_ORDER_CODE}\n` : ""}Adjunto el PDF de mi selección para revisión comercial.\n\nDisponibilidad y condiciones sujetas a confirmación de Innova.`;
+      contactLink.href = `mailto:info@innova-eyewear.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+    }
     if (status) {
       const blockers = [];
       if (!order.items.length) {
@@ -561,7 +573,7 @@
       if (Object.keys(clientErrors).length) {
         blockers.push(`Revisa: ${clientIssueSummary(clientErrors)}.`);
       }
-      status.textContent = ready ? "Pedido completo y listo para preparar." : `No se puede descargar todavía. ${blockers.join(" ")}`;
+      status.textContent = ready ? (special ? "Código aplicado. Pedido de cualquier cantidad listo para preparar y consultar con Innova." : "Pedido completo y listo para preparar.") : `No se puede descargar todavía. ${blockers.join(" ")}`;
       status.classList.toggle("is-ready", ready);
     }
     document.querySelectorAll("[data-client]").forEach((field) => {
@@ -572,9 +584,11 @@
       const error = document.querySelector(`[data-client-error="${key}"]`);
       if (error) error.textContent = message;
     });
+    const codeStatus = document.querySelector("[data-order-code-status]");
+    if (codeStatus) codeStatus.textContent = special ? "Código aplicado: puedes descargar el PDF con cualquier cantidad. Pedido sujeto a confirmación de Innova." : order.specialCode ? "Código no reconocido. Se mantienen los mínimos habituales." : "Con un código autorizado puedes preparar un pedido de cualquier cantidad. Sujeto a confirmación comercial.";
     const minimumNote = document.querySelector("[data-order-minimum]");
     if (minimumNote) {
-      minimumNote.textContent = incomplete.length
+      minimumNote.textContent = special ? "Pedido especial: sin mínimo de piezas. Disponibilidad y condiciones sujetas a confirmación comercial." : incomplete.length
         ? `Pendiente: ${incomplete.map(([brand, total]) => `${brandLabels[brand] || brand} ${total}/${brandMinimum(brand)}`).join(" · ")}`
         : order.items.length ? translate("Mínimos comerciales completados para las marcas que los requieren.") : translate(`${MINIMUM_PER_BRAND} piezas mínimas por marca, excepto JISCO, sin mínimo configurado.`);
       minimumNote.classList.toggle("is-complete", order.items.length > 0 && incomplete.length === 0);
@@ -594,10 +608,10 @@
 
     itemsRoot.innerHTML = Object.entries(groupItemsByBrand(order.items)).map(([brand, items]) => `
       <section class="order-brand-group">
-        <h3>${escapeHtml(brandLabels[brand] || brand)} <span>${brandMinimum(brand) ? `${totals[brand]}/${brandMinimum(brand)}` : totals[brand]} ${translate("piezas")}</span></h3>
-        <div class="brand-minimum ${totals[brand] >= brandMinimum(brand) ? "is-complete" : ""}">
-          <span><i style="width:${brandMinimum(brand) ? Math.min(100, (totals[brand] / brandMinimum(brand)) * 100) : 100}%"></i></span>
-          <small>${brandMinimum(brand) ? (totals[brand] >= brandMinimum(brand) ? "Mínimo completado" : `Faltan ${brandMinimum(brand) - totals[brand]} piezas`) : translate("Sin mínimo configurado · sujeto a confirmación comercial")}</small>
+        <h3>${escapeHtml(brandLabels[brand] || brand)} <span>${special || !brandMinimum(brand) ? totals[brand] : `${totals[brand]}/${brandMinimum(brand)}`} ${translate("piezas")}</span></h3>
+        <div class="brand-minimum ${special || totals[brand] >= brandMinimum(brand) ? "is-complete" : ""}">
+          <span><i style="width:${special || !brandMinimum(brand) ? 100 : Math.min(100, (totals[brand] / brandMinimum(brand)) * 100)}%"></i></span>
+          <small>${special ? "Pedido especial · sujeto a confirmación" : brandMinimum(brand) ? (totals[brand] >= brandMinimum(brand) ? "Mínimo completado" : `Faltan ${brandMinimum(brand) - totals[brand]} piezas`) : translate("Sin mínimo configurado · sujeto a confirmación comercial")}</small>
         </div>
         ${items.map((item) => `
           <article>
@@ -670,10 +684,20 @@
       renderOrder();
     });
   });
+  const specialCodeField = document.querySelector("[data-order-code]");
+  if (specialCodeField) {
+    specialCodeField.value = order.specialCode || "";
+    specialCodeField.addEventListener("input", () => {
+      order.specialCode = specialCodeField.value.trim().toUpperCase().slice(0, 32);
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(order));
+      renderOrder();
+    });
+  }
 
   window.addEventListener("storage", (event) => {
     if (event.key !== STORAGE_KEY) return;
     order = readOrder();
+    if (specialCodeField) specialCodeField.value = order.specialCode || "";
     renderOrder();
   });
 
@@ -908,6 +932,13 @@
       });
       y -= 62;
 
+      if (specialOrderEnabled()) {
+        drawText(`CODIGO DE PEDIDO ESPECIAL: ${SPECIAL_ORDER_CODE}`, margin, y, 8, bold, black);
+        y -= 14;
+        drawText("Cantidad abierta. Sujeto a revision y confirmacion comercial de Innova.", margin, y, 7.5, regular, gray);
+        y -= 24;
+      }
+
       if (order.client.notes.trim()) {
         drawText("OBSERVACIONES", margin, y, 7, bold, gray);
         y -= 13;
@@ -927,7 +958,7 @@
           drawContained(page, brandLogos[brand], margin + 14, y - 28, 108, 18);
         }
         drawText((brandLabels[brand] || brand).toUpperCase(), margin + 140, y - 24, 8, bold, white);
-        drawText(`${brandTotal} PIEZAS  ·  ${brandMinimum(brand) ? "MINIMO COMPLETADO" : "A CONFIRMAR"}`, 386, y - 23, 7, bold, white);
+        drawText(`${brandTotal} PIEZAS  ·  ${specialOrderEnabled() ? "CODIGO ESPECIAL" : brandMinimum(brand) ? "MINIMO COMPLETADO" : "A CONFIRMAR"}`, 360, y - 23, 7, bold, white);
         y -= 50;
 
         for (const item of items) {

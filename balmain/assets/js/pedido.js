@@ -319,6 +319,7 @@
         </div>
       </div>
     `);
+    document.querySelector(".balmain-catalog-dock__order-slot")?.append(document.querySelector("[data-balmain-order] .order-fab"));
 
     document.querySelector("[data-order-open]")?.addEventListener("click", open);
     document.querySelector("[data-order-backdrop]")?.addEventListener("mousedown", (event) => {
