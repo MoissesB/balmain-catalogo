@@ -710,6 +710,9 @@ body > footer > small { position: absolute; left: max(24px, 5vw); right: max(24p
 .commerce-chat-panel > a:hover span, .commerce-chat-panel > .chat-order-action:hover span { transform: translateX(5px); }
 
 .order-shell { position: fixed; z-index: 100; inset: 0; display: grid; grid-template-columns: 1fr minmax(520px, 46vw); }
+.is-embedded-order, .is-embedded-order body { background: transparent !important; }
+.is-embedded-order body > :not(.order-shell) { display: none !important; }
+.is-embedded-order .order-backdrop { background: transparent; backdrop-filter: none; }
 .order-backdrop { border: 0; background: rgba(0,0,0,.55); backdrop-filter: blur(4px); }
 .order-drawer { min-width: 0; display: grid; grid-template-rows: auto 1fr auto; background: var(--paper); box-shadow: -20px 0 70px rgba(0,0,0,.25); overflow: hidden; }
 .order-drawer > header { display: flex; justify-content: space-between; align-items: center; padding: 28px 30px; border-bottom: 1px solid var(--line); }
