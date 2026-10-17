@@ -1,6 +1,7 @@
 (function () {
   const STORAGE_KEY = "innova-boutique-order-v1";
   const MINIMUM_PER_BRAND = 50;
+  const brandMinimum = (brand) => brand === "jisco" ? 0 : MINIMUM_PER_BRAND;
   const HERO_PROGRESS_KEY = "innova-boutique-hero-progress-v2";
   const config = window.INNOVA_BOUTIQUE_CONFIG || { brands: {} };
   if (config.maintenanceMode) {
@@ -11,6 +12,7 @@
     "alfred-kerbs": "Alfred Kerbs",
     balmain: "Balmain Eyewear",
     silhouette: "Silhouette",
+    jisco: "JISCO",
   };
   const translate = (value) => window.INNOVA_I18N?.t(value) || value;
 
@@ -47,7 +49,7 @@
   }
 
   function brandRouteDestination(brand, path = "") {
-    if (["alfred-kerbs", "silhouette"].includes(brand) && !config.local) {
+    if (brand === "jisco" || (["alfred-kerbs", "silhouette"].includes(brand) && !config.local)) {
       const base = brandDestination(brand);
       const route = String(path).replace(/^\/+/, "");
       return `${base.replace(/\/+$/, "/")}#/${route}`;
@@ -66,7 +68,9 @@
     image.addEventListener("error", () => {
       if (image.dataset.fallbackApplied) return;
       image.dataset.fallbackApplied = "true";
-      image.src = brand === "silhouette"
+      image.src = brand === "jisco"
+        ? brandAssetDestination("jisco", "assets/images/materiales/big/logo-jisco-2024.png")
+        : brand === "silhouette"
         ? "assets/campaign-silhouette.webp"
         : brand === "balmain"
           ? "assets/campaign-balmain.webp"
@@ -93,6 +97,7 @@
           <img src="${escapeAttribute(product.portalImage || brandDestination(brand, product.image))}" alt="${escapeAttribute(`${product.name} · ${brandLabels[brand] || brand}`)}" loading="lazy">
           ${brand === "balmain" && product.collection === "FW26" ? '<span class="product-preview-new-collection">Collection Fall Winter 2026</span>' : ""}
           ${brand === "alfred-kerbs" && product.new ? '<em class="product-preview-new">Nuevo</em>' : ""}
+          ${brand === "jisco" ? `<span class="jisco-photo-credit"><img src="${escapeAttribute(brandAssetDestination("jisco", "assets/images/materiales/big/logo-jisco-2024.png"))}" alt="Logo JISCO"> Imagen original © JISCO Eyewear</span>` : ""}
         </span>
         <span class="product-preview-copy">
           <b>${escapeHtml(product.name)}</b>
@@ -115,7 +120,9 @@
     window.addEventListener("resize", () => update(Math.min(page, totalPages() - 1)), { passive: true });
     track.querySelectorAll("img").forEach((image) => {
       image.addEventListener("error", () => {
-        image.src = brand === "silhouette"
+        image.src = brand === "jisco"
+          ? brandAssetDestination("jisco", "assets/images/materiales/big/logo-jisco-2024.png")
+          : brand === "silhouette"
           ? "assets/campaign-silhouette.webp"
           : brand === "balmain"
             ? "assets/campaign-balmain.webp"
@@ -149,7 +156,11 @@
     if (video.readyState > 0) {
       onReady(seconds);
     } else {
-      video.addEventListener("loadedmetadata", () => onReady(seconds), { once: true });
+      let settled = false;
+      const finish = () => { if (!settled) { settled = true; onReady(seconds); } };
+      video.addEventListener("loadedmetadata", finish, { once: true });
+      video.addEventListener("error", finish, { once: true });
+      window.setTimeout(finish, 4000);
     }
   }
 
@@ -463,7 +474,7 @@
   }
 
   function incompleteBrands() {
-    return Object.entries(brandTotals()).filter(([, total]) => total < MINIMUM_PER_BRAND);
+    return Object.entries(brandTotals()).filter(([brand, total]) => total < brandMinimum(brand));
   }
 
   function resolveOrderItemImage(item) {
@@ -526,7 +537,7 @@
   function renderOrder() {
     const totalUnits = order.items.reduce((total, item) => total + Number(item.quantity || 0), 0);
     const totals = brandTotals();
-    const completedBrands = Object.values(totals).filter((total) => total >= MINIMUM_PER_BRAND).length;
+    const completedBrands = Object.entries(totals).filter(([brand, total]) => total > 0 && total >= brandMinimum(brand)).length;
     document.querySelectorAll("[data-order-count]").forEach((node) => { node.textContent = String(totalUnits); });
     const units = document.querySelector("[data-order-units]");
     const brands = document.querySelector("[data-order-brands]");
@@ -565,8 +576,8 @@
     const minimumNote = document.querySelector("[data-order-minimum]");
     if (minimumNote) {
       minimumNote.textContent = incomplete.length
-        ? `Pendiente: ${incomplete.map(([brand, total]) => `${brandLabels[brand] || brand} ${total}/${MINIMUM_PER_BRAND}`).join(" · ")}`
-        : order.items.length ? "Mínimo comercial completado en todas las marcas." : `${MINIMUM_PER_BRAND} piezas mínimas por marca.`;
+        ? `Pendiente: ${incomplete.map(([brand, total]) => `${brandLabels[brand] || brand} ${total}/${brandMinimum(brand)}`).join(" · ")}`
+        : order.items.length ? translate("Mínimos comerciales completados para las marcas que los requieren.") : translate(`${MINIMUM_PER_BRAND} piezas mínimas por marca, excepto JISCO, sin mínimo configurado.`);
       minimumNote.classList.toggle("is-complete", order.items.length > 0 && incomplete.length === 0);
     }
 
@@ -576,7 +587,7 @@
         <div class="empty-order">
           <span>SELECCIÓN PROFESIONAL</span>
           <h3>Tu pedido multimarcas comienza en cada catálogo.</h3>
-          <p>Entra en Alfred Kerbs, Balmain o Silhouette y añade las referencias que quieras revisar con Innova.</p>
+          <p>Entra en Alfred Kerbs, Balmain, Silhouette o JISCO y añade las referencias que quieras revisar con Innova.</p>
           <a href="#marcas" data-order-close>Explorar marcas →</a>
         </div>`;
       return;
@@ -584,10 +595,10 @@
 
     itemsRoot.innerHTML = Object.entries(groupItemsByBrand(order.items)).map(([brand, items]) => `
       <section class="order-brand-group">
-        <h3>${escapeHtml(brandLabels[brand] || brand)} <span>${totals[brand]}/${MINIMUM_PER_BRAND} piezas</span></h3>
-        <div class="brand-minimum ${totals[brand] >= MINIMUM_PER_BRAND ? "is-complete" : ""}">
-          <span><i style="width:${Math.min(100, (totals[brand] / MINIMUM_PER_BRAND) * 100)}%"></i></span>
-          <small>${totals[brand] >= MINIMUM_PER_BRAND ? "Mínimo completado" : `Faltan ${MINIMUM_PER_BRAND - totals[brand]} piezas`}</small>
+        <h3>${escapeHtml(brandLabels[brand] || brand)} <span>${brandMinimum(brand) ? `${totals[brand]}/${brandMinimum(brand)}` : totals[brand]} ${translate("piezas")}</span></h3>
+        <div class="brand-minimum ${totals[brand] >= brandMinimum(brand) ? "is-complete" : ""}">
+          <span><i style="width:${brandMinimum(brand) ? Math.min(100, (totals[brand] / brandMinimum(brand)) * 100) : 100}%"></i></span>
+          <small>${brandMinimum(brand) ? (totals[brand] >= brandMinimum(brand) ? "Mínimo completado" : `Faltan ${brandMinimum(brand) - totals[brand]} piezas`) : translate("Sin mínimo configurado · sujeto a confirmación comercial")}</small>
         </div>
         ${items.map((item) => `
           <article>
@@ -694,7 +705,7 @@
     if (!order.items.length) return;
     const incomplete = incompleteBrands();
     if (incomplete.length) {
-      status.textContent = `Completa ${MINIMUM_PER_BRAND} piezas por marca: ${incomplete.map(([brand, total]) => `${brandLabels[brand] || brand} ${total}/${MINIMUM_PER_BRAND}`).join(" · ")}.`;
+      status.textContent = `Completa el mínimo por marca: ${incomplete.map(([brand, total]) => `${brandLabels[brand] || brand} ${total}/${brandMinimum(brand)}`).join(" · ")}.`;
       return;
     }
     if (!validateClient()) {
@@ -800,6 +811,7 @@
         "alfred-kerbs": "assets/alfred-kerbs-logo.png",
         balmain: "assets/balmain-logo-transparent.png",
         silhouette: "assets/logos/silhouette-on-light.png",
+        jisco: "assets/jisco-logo-original.png",
       };
       const brandLogos = {};
       for (const [brand, source] of Object.entries(brandLogoSources)) {
@@ -887,9 +899,11 @@
 
       page.drawRectangle({ x: margin, y: y - 44, width: 511, height: 44, color: white, borderColor: line, borderWidth: 0.7 });
       drawText("FIRMAS INCLUIDAS", margin + 12, y - 17, 6, bold, gray);
-      drawContained(page, brandLogos["alfred-kerbs"], margin + 95, y - 35, 105, 24);
-      drawContained(page, brandLogos.balmain, margin + 220, y - 35, 100, 24);
-      drawContained(page, brandLogos.silhouette, margin + 350, y - 35, 125, 24);
+      const includedBrands = Object.keys(groupItemsByBrand(order.items));
+      const logoWidth = 405 / includedBrands.length;
+      includedBrands.forEach((brand, index) => {
+        drawContained(page, brandLogos[brand], margin + 95 + index * logoWidth, y - 35, logoWidth - 12, 24);
+      });
       y -= 62;
 
       if (order.client.notes.trim()) {
@@ -909,10 +923,9 @@
         if (brandLogos[brand]) {
           page.drawRectangle({ x: margin + 9, y: y - 31, width: 118, height: 24, color: white });
           drawContained(page, brandLogos[brand], margin + 14, y - 28, 108, 18);
-        } else {
-          drawText((brandLabels[brand] || brand).toUpperCase(), margin + 14, y - 24, 11, bold, white);
         }
-        drawText(`${brandTotal} PIEZAS  ·  MINIMO COMPLETADO`, 386, y - 23, 7, bold, white);
+        drawText((brandLabels[brand] || brand).toUpperCase(), margin + 140, y - 24, 8, bold, white);
+        drawText(`${brandTotal} PIEZAS  ·  ${brandMinimum(brand) ? "MINIMO COMPLETADO" : "A CONFIRMAR"}`, 386, y - 23, 7, bold, white);
         y -= 50;
 
         for (const item of items) {
@@ -940,6 +953,9 @@
             drawContained(page, productImage, margin + 12, cardBottom + 12, 96, 64);
           } else {
             drawText((brandLabels[item.brand] || item.brand || "IN").slice(0, 2).toUpperCase(), margin + 52, cardBottom + 31, 11, bold, gray);
+          }
+          if (item.brand === "jisco") {
+            drawContained(page, brandLogos.jisco, margin + 61, cardBottom + 9, 46, 12);
           }
           drawText(item.name || item.model, margin + 126, cardBottom + 63, 10, bold, black);
           drawText(`${item.sku || ""}${item.color ? `  ·  ${item.color}` : ""}`, margin + 126, cardBottom + 45, 7.5, regular, gray);
@@ -1023,4 +1039,5 @@
 
   document.querySelector("[data-order-pdf]")?.addEventListener("click", downloadPdf);
   renderOrder();
+  if (window.location.hash === "#pedido") setDrawer(true);
 })();

@@ -16,7 +16,7 @@
   }
 
   function targetUrl(route) {
-    if (brand === "silhouette") return `${source.replace(/\/+$/, "/")}#${route}`;
+    if (brand === "silhouette" || brand === "jisco") return `${source.replace(/\/+$/, "/")}#${route}`;
     return new URL(route.replace(/^\/+/, ""), source.replace(/\/+$/, "/")).href;
   }
 

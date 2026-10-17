@@ -225,7 +225,7 @@ img { display: block; width: 100%; }
   left: 0;
   right: 0;
   display: grid;
-  grid-template-columns: repeat(3, minmax(150px, 1fr)) minmax(250px, .9fr);
+  grid-template-columns: repeat(4, minmax(130px, 1fr)) minmax(230px, .9fr);
   gap: 0;
   padding: 36px max(30px, 5vw);
   background: #f7f8fa;
@@ -326,6 +326,13 @@ img { display: block; width: 100%; }
 .hero-film__video--alfred { object-position: center 43%; }
 .hero-film__video--balmain { object-position: center 48%; }
 .hero-film__video--silhouette { object-position: center; }
+.hero-film__video--jisco { object-fit: contain; filter: none; transform: none; }
+.hero-film__video--jisco.is-active { transform: none; }
+.hero-film[data-active-brand="jisco"] .hero-film__veil { display: none; }
+.hero-film[data-active-brand="jisco"] .hero-film__copy { background: rgba(15,31,48,.95); max-width: 47%; }
+.hero-jisco-credit { position: absolute; z-index: 4; right: 24px; top: 105px; display: none; align-items: center; gap: 10px; padding: 6px 10px; background: rgba(255,255,255,.94); color: #1c2943; font-size: 9px; }
+.hero-jisco-credit img { width: 64px; height: 24px; object-fit: contain; }
+.hero-film[data-active-brand="jisco"] .hero-jisco-credit { display: flex; }
 .hero-film__veil {
   position: absolute;
   z-index: 3;
@@ -364,7 +371,7 @@ img { display: block; width: 100%; }
   right: 230px;
   bottom: 0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   border-top: 1px solid rgba(255,255,255,.28);
   border-left: 1px solid rgba(255,255,255,.28);
   background: rgba(13,12,12,.58);
@@ -450,6 +457,30 @@ img { display: block; width: 100%; }
 .product-brand-row-alfred { --brand-campaign: url("assets/campaign-alfred.webp"); --brand-position: center; }
 .product-brand-row-balmain { --brand-campaign: url("assets/campaign-balmain.webp"); --brand-position: center; }
 .product-brand-row-silhouette { --brand-campaign: url("assets/campaign-silhouette.webp"); --brand-position: center; }
+.product-brand-row-jisco { --brand-campaign: url("https://moissesb.github.io/innova-jisco-catalogo/assets/images/materiales/big/marea-1.jpg"); --brand-position: center; }
+.product-brand-row-jisco .product-brand-intro { background: #19344b; }
+.product-brand-row-jisco .product-brand-intro::before { inset: 0 0 0 auto; width: 58%; background-size: contain; background-repeat: no-repeat; transform: none; }
+.product-brand-row-jisco:hover .product-brand-intro::before { transform: none; }
+.product-brand-row-jisco .product-brand-intro::after { display: none; }
+.product-brand-row-jisco .product-brand-intro > p { max-width: 34%; }
+.product-brand-row-jisco .jisco-intro-credit { display: flex; align-items: center; gap: 8px; margin-top: 22px; width: fit-content; padding: 5px 8px; background: rgba(255,255,255,.95); color: #1c2943; font-size: 8px; letter-spacing: 0; }
+.jisco-intro-credit img { width: 65px; height: 22px; object-fit: contain; }
+.product-brand-row-jisco .product-preview-media img { object-fit: contain; }
+.product-brand-row-jisco .product-preview:hover .product-preview-media img { transform: none; }
+.product-brand-row-jisco .product-preview-media::after { display: none; }
+.jisco-photo-credit { position: absolute; z-index: 2; left: 8px; bottom: 8px; display: flex; align-items: center; gap: 5px; padding: 4px 6px; background: rgba(255,255,255,.96); color: #1c2943; font-size: 7px; }
+.jisco-photo-credit img { width: 45px; height: 16px; object-fit: contain; }
+.focus-card-jisco > img:first-child { object-fit: contain; filter: none; transform: none; opacity: 1; background: #19344b; }
+.focus-card-jisco:hover > img:first-child, .focus-card-jisco.is-active > img:first-child { transform: none; }
+.focus-card-jisco .focus-jisco-logo { position: absolute; top: 12px; left: 12px; width: 72px; height: 28px; padding: 3px; object-fit: contain; background: white; filter: none; opacity: 1; transform: none; }
+.marquee-brand-pair-jisco:hover { transform: none; }
+.global-mega-visual__media img[data-mega-image="jisco"] { object-fit: contain; filter: none; transform: none; background: #f7f8fa; }
+@media (max-width: 760px) {
+  .product-brand-row-jisco .product-brand-intro { min-height: 650px; }
+  .product-brand-row-jisco .product-brand-intro::before { inset: 0 0 auto 0; width: 100%; height: 55%; background-position: center top; }
+  .product-brand-row-jisco .product-brand-intro > p { max-width: 100%; }
+  .hero-film[data-active-brand="jisco"] .hero-film__copy { max-width: none; }
+}
 .product-brand-intro { position: relative; isolation: isolate; min-height: clamp(520px, 50vw, 760px); display: flex; flex-direction: column; justify-content: flex-end; overflow: hidden; padding: clamp(36px, 5vw, 78px); color: white; }
 .product-brand-intro::before { content: ""; position: absolute; z-index: -2; inset: 0; background-image: var(--brand-campaign); background-position: var(--brand-position); background-size: cover; transform: scale(1.01); transition: transform 1.1s var(--ease); }
 .product-brand-intro::after { content: ""; position: absolute; z-index: -1; inset: 0; background: linear-gradient(90deg, rgba(20,18,17,.76) 0%, rgba(20,18,17,.38) 42%, rgba(20,18,17,.04) 72%), linear-gradient(180deg, rgba(20,18,17,.04) 36%, rgba(20,18,17,.76) 100%); }

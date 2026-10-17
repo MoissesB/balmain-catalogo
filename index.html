@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Innova Boutique reúne Alfred Kerbs, Balmain Eyewear y Silhouette en una selección profesional de óptica de lujo.">
+    <meta name="description" content="Innova Boutique reúne Alfred Kerbs, Balmain Eyewear, Silhouette y JISCO en una selección profesional de óptica de lujo.">
     <link rel="icon" type="image/png" sizes="101x121" href="assets/innova-browser-icon.png?v=20260801">
     <link rel="apple-touch-icon" href="assets/innova-browser-icon.png?v=20260801">
     <title>Innova Boutique · Luxury Eyewear Portfolio</title>
-    <link rel="stylesheet" href="styles.css?v=20261010-alfred-new-collection">
-    <script src="config.js?v=20260826-meta-pixel"></script>
+    <link rel="stylesheet" href="styles.css?v=20261017-jisco">
+    <script src="config.js?v=20261017-jisco"></script>
     <script src="meta-pixel.js?v=20260826-pageview"></script>
   </head>
   <body>
@@ -23,7 +23,7 @@
         <div class="maintenance-copy">
           <span class="maintenance-eyebrow">INNOVA BOUTIQUE · LUXURY EYEWEAR</span>
           <h1 id="maintenanceTitle">Estamos preparando una nueva experiencia.</h1>
-          <p>Actualizamos nuestra boutique profesional para presentar las colecciones de Alfred Kerbs, Balmain Eyewear y Silhouette con una experiencia más completa.</p>
+          <p>Actualizamos nuestra boutique profesional para presentar las colecciones de Alfred Kerbs, Balmain Eyewear, Silhouette y JISCO con una experiencia más completa.</p>
           <div class="maintenance-status">
             <strong>Volvemos muy pronto.</strong>
             <a href="mailto:info@innova-eyewear.com">info@innova-eyewear.com <span aria-hidden="true">↗</span></a>
@@ -42,6 +42,10 @@
           <figure>
             <img src="assets/campaign-silhouette.webp" alt="Campaña Silhouette">
             <figcaption><span>03</span> Silhouette</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/jisco-logo-original.png" alt="Logo JISCO">
+            <figcaption><span>04</span> JISCO</figcaption>
           </figure>
         </div>
       </div>
@@ -83,15 +87,23 @@
               <a data-brand-route="silhouette:catalogo/gafas-de-sol" href="#">Gafas de sol</a>
               <a data-brand-route="silhouette:catalogo/atelier-next" href="#">Atelier</a>
             </div>
+            <div data-mega-brand="jisco">
+              <span>04 · Mediterráneo</span>
+              <a data-brand-link="jisco" href="#"><strong>JISCO</strong></a>
+              <a data-brand-route="jisco:/catalogo?category=optical" href="#">Óptica</a>
+              <a data-brand-route="jisco:/catalogo?category=sun" href="#">Sol</a>
+              <a data-brand-route="jisco:/historia" href="#">La marca</a>
+            </div>
             <aside class="global-mega-visual" data-mega-visual>
               <div class="global-mega-visual__media" aria-hidden="true">
                 <img class="is-active" data-mega-image="alfred-kerbs" src="assets/campaign-alfred.webp" alt="">
                 <img data-mega-image="balmain" src="assets/campaign-balmain.webp" alt="">
                 <img data-mega-image="silhouette" src="assets/campaign-silhouette.webp" alt="">
+                <img data-mega-image="jisco" src="assets/jisco-logo-original.png" alt="">
               </div>
               <div class="global-mega-visual__content">
                 <span>PEDIDO GLOBAL</span>
-                <strong>50 piezas mínimas por cada marca incluida.</strong>
+                <strong>50 piezas mínimas en Alfred Kerbs, Balmain y Silhouette. JISCO sin mínimo configurado.</strong>
                 <button type="button" data-order-open>Abrir selección →</button>
               </div>
             </aside>
@@ -144,12 +156,16 @@
             <source media="(max-width: 680px)" src="assets/video/silhouette-mobile.mp4" type="video/mp4">
             <source src="assets/video/silhouette.mp4" type="video/mp4">
           </video>
+          <video class="hero-film__video hero-film__video--jisco" data-hero-video="jisco" muted playsinline preload="metadata" poster="https://moissesb.github.io/innova-jisco-catalogo/assets/images/materiales/big/marea-1.jpg">
+            <source src="https://moissesb.github.io/innova-jisco-catalogo/assets/materiales/marea/Marea_video_2.mp4" type="video/mp4">
+          </video>
+          <div class="hero-jisco-credit"><img src="assets/jisco-logo-original.png" alt="Logo JISCO"> Vídeo original © JISCO Eyewear</div>
           <div class="hero-film__veil"></div>
         </div>
 
         <div class="hero-copy hero-film__copy">
           <span class="eyebrow">INNOVA BOUTIQUE · LUXURY EYEWEAR</span>
-          <h1>Tres firmas.<br>Una visión<br>extraordinaria.</h1>
+          <h1>Cuatro firmas.<br>Una visión<br>extraordinaria.</h1>
           <p>Una puerta de entrada profesional a colecciones de diseño, ingeniería y carácter para ópticas, cadenas y departamentos especializados.</p>
           <div class="hero-actions">
             <a class="button button-light" href="#marcas">Explorar las marcas</a>
@@ -184,6 +200,9 @@
           >
             <span>03</span><b>Silhouette</b><small>Austria</small><i aria-hidden="true"></i>
           </a>
+          <a data-hero-switch="jisco" data-brand-route="jisco:/catalogo" href="#" aria-label="Abrir el catálogo de JISCO">
+            <span>04</span><b>JISCO</b><small>Mediterráneo</small><i aria-hidden="true"></i>
+          </a>
         </nav>
       </section>
 
@@ -202,6 +221,10 @@
               <img class="marquee-frame-image" data-brand-asset="silhouette:catalog/silhouette/clear-sky-2973/2973-3060/frame-0002.jpg" alt="Vista frontal de la montura Clear Sky de Silhouette">
               <img class="marquee-brand-logo marquee-brand-logo-silhouette" src="assets/logos/silhouette-on-light.png" alt="Silhouette">
             </a>
+            <a class="marquee-brand-pair marquee-brand-pair-jisco" data-brand-route="jisco:/catalogo" href="#">
+              <img class="marquee-frame-image" data-brand-asset="jisco:assets/images/materiales/big/marea-1.jpg" alt="Campaña original JISCO MARÉA">
+              <img class="marquee-brand-logo" src="assets/jisco-logo-original.png" alt="JISCO">
+            </a>
           </div>
           <div class="marquee-sequence" aria-hidden="true">
             <a class="marquee-brand-pair" data-brand-route="alfred-kerbs:/catalogo/optical-aquiles" href="#" tabindex="-1">
@@ -215,6 +238,10 @@
             <a class="marquee-brand-pair" data-brand-route="silhouette:/producto/clear-sky-2973" href="#" tabindex="-1">
               <img class="marquee-frame-image" data-brand-asset="silhouette:catalog/silhouette/clear-sky-2973/2973-3060/frame-0002.jpg" alt="">
               <img class="marquee-brand-logo marquee-brand-logo-silhouette" src="assets/logos/silhouette-on-light.png" alt="">
+            </a>
+            <a class="marquee-brand-pair marquee-brand-pair-jisco" data-brand-route="jisco:/catalogo" href="#" tabindex="-1">
+              <img class="marquee-frame-image" data-brand-asset="jisco:assets/images/materiales/big/marea-1.jpg" alt="">
+              <img class="marquee-brand-logo" src="assets/jisco-logo-original.png" alt="">
             </a>
           </div>
         </div>
@@ -239,13 +266,18 @@
             <img src="assets/silhouette-iconic-shades-4093.webp" alt="Campaña Silhouette Iconic Shades 4093">
             <span><b>03</b><strong>Silhouette</strong><small>Óptica · Sol · Atelier</small></span>
           </a>
+          <a class="focus-card focus-card-jisco" data-focus-card="jisco" data-brand-link="jisco" href="#">
+            <img src="https://moissesb.github.io/innova-jisco-catalogo/assets/images/materiales/big/marea-1.jpg" alt="Campaña original MARÉA de JISCO">
+            <span><b>04</b><strong>JISCO</strong><small>Óptica · Sol · © JISCO Eyewear</small></span>
+            <img class="focus-jisco-logo" src="assets/jisco-logo-original.png" alt="Logo JISCO">
+          </a>
         </div>
       </section>
 
       <section class="brand-product-showcases" id="marcas" aria-labelledby="productShowcaseTitle">
         <header class="product-showcases-heading">
           <span class="eyebrow">SELECCIÓN DE PRODUCTO</span>
-          <h2 id="productShowcaseTitle">Tres formas de entender la mirada.</h2>
+          <h2 id="productShowcaseTitle">Cuatro formas de entender la mirada.</h2>
           <p>Acerca cada montura para revisar su silueta y entra con un clic en el catálogo completo de la firma.</p>
         </header>
 
@@ -303,6 +335,24 @@
             </div>
           </div>
         </article>
+        <article class="product-brand-row product-brand-row-jisco">
+          <div class="product-brand-intro">
+            <span>04 · MEDITERRÁNEO</span>
+            <h3>JISCO</h3>
+            <p>Diseño mediterráneo, color y materia. Distribución profesional para Centroamérica y Latinoamérica.</p>
+            <a data-brand-link="jisco" href="#">Explorar JISCO <span aria-hidden="true">→</span></a>
+            <span class="jisco-intro-credit"><img src="assets/jisco-logo-original.png" alt="Logo JISCO"> Imagen original © JISCO Eyewear</span>
+          </div>
+          <div class="product-carousel" data-product-carousel="jisco">
+            <div class="product-preview-grid" data-product-track></div>
+            <div class="product-carousel-controls">
+              <button type="button" data-product-prev aria-label="Producto anterior">←</button>
+              <span data-product-page>01 / 01</span>
+              <button type="button" data-product-next aria-label="Producto siguiente">→</button>
+              <a data-brand-route="jisco:/catalogo" href="#">Ver catálogo completo</a>
+            </div>
+          </div>
+        </article>
       </section>
 
       <section class="silhouette-home-feature" id="silhouette-home" aria-labelledby="silhouetteHomeTitle">
@@ -330,11 +380,11 @@
           <h2>Combina marcas.<br>Conserva la precisión.</h2>
         </div>
         <div class="selection-copy">
-          <p>Explora cada catálogo de forma independiente y reúne las referencias elegidas en un único pedido profesional. Cada marca incluida debe alcanzar un mínimo de 50 piezas.</p>
+          <p>Explora cada catálogo de forma independiente y reúne las referencias elegidas en un único pedido profesional. Alfred Kerbs, Balmain y Silhouette requieren 50 piezas por marca; JISCO no tiene mínimo configurado.</p>
           <ol>
             <li><span>01</span><div><b>Explora</b><p>Accede al universo completo de cada firma.</p></div></li>
             <li><span>02</span><div><b>Selecciona</b><p>Añade modelos, colores y cantidades desde cada catálogo.</p></div></li>
-            <li><span>03</span><div><b>Completa el mínimo</b><p>Alcanza 50 piezas dentro de cada marca que quieras incluir.</p></div></li>
+            <li><span>03</span><div><b>Completa el mínimo</b><p>Alcanza 50 piezas en Alfred Kerbs, Balmain o Silhouette. JISCO no tiene mínimo configurado.</p></div></li>
             <li><span>04</span><div><b>Envía</b><p>Descarga el PDF para revisión comercial de Innova.</p></div></li>
           </ol>
           <button class="button button-dark" type="button" data-order-open>Abrir mi selección</button>
@@ -346,7 +396,7 @@
         <div class="innova-copy">
           <img src="assets/innova-official.png" alt="Innova Fashion Accessories">
           <span class="eyebrow">DISTRIBUCIÓN PROFESIONAL</span>
-          <h2>Una relación comercial. Tres universos de marca.</h2>
+          <h2>Una relación comercial. Cuatro universos de marca.</h2>
           <p>Innova Eyewear acompaña la selección, disponibilidad, condiciones comerciales y coordinación del pedido para ópticas, cadenas retail y departamentos ópticos.</p>
           <div class="contact-grid">
             <a href="mailto:info@innova-eyewear.com"><span>Correo</span><b>info@innova-eyewear.com</b></a>
@@ -358,7 +408,7 @@
 
     <footer>
       <div class="footer-brand"><img src="assets/innova-official.png" alt="Innova Eyewear"><p>Luxury eyewear portfolio by Innova Eyewear.</p></div>
-      <div><span>Marcas</span><a data-brand-link="alfred-kerbs" href="#">Alfred Kerbs</a><a data-brand-link="balmain" href="#">Balmain</a><a data-brand-link="silhouette" href="#">Silhouette</a></div>
+      <div><span>Marcas</span><a data-brand-link="alfred-kerbs" href="#">Alfred Kerbs</a><a data-brand-link="balmain" href="#">Balmain</a><a data-brand-link="silhouette" href="#">Silhouette</a><a data-brand-link="jisco" href="#">JISCO</a></div>
       <div><span>Equipo comercial</span><a href="mailto:info@innova-eyewear.com">info@innova-eyewear.com</a><a href="tel:+17542704613">+1 (754) 270-4613</a><p>1206 Stirling Road Ste 3B<br>Dania Beach, FL 33004</p></div>
       <small>© 2026 Innova Eyewear</small>
     </footer>
@@ -376,7 +426,7 @@
           <div><span>INNOVA EYEWEAR</span><strong>Exclusivo para ópticas</strong></div>
           <button type="button" data-chat-close aria-label="Cerrar ayuda">×</button>
         </header>
-        <p>Innova Boutique trabaja exclusivamente con ópticas y empresas del sector. Selecciona modelos y cantidades hasta completar un mínimo mayorista de 50 piezas en cada marca incluida.</p>
+        <p>Innova Boutique trabaja exclusivamente con ópticas y empresas del sector. Selecciona modelos y cantidades; Alfred Kerbs, Balmain y Silhouette requieren 50 piezas por marca, mientras JISCO queda sujeto a confirmación comercial sin mínimo configurado.</p>
         <p>Después descarga el pedido en PDF. Innova valida la óptica, la disponibilidad, las condiciones comerciales y el transporte antes de confirmar.</p>
         <a href="#marcas">Explorar los catálogos <span>→</span></a>
         <button class="chat-order-action" type="button" data-chat-order>Abrir mi pedido <span>→</span></button>
@@ -410,7 +460,7 @@
         </div>
         <footer class="order-footer">
           <div><span>Total</span><b><strong data-order-units>0</strong> piezas · <strong data-order-brands>0</strong> <span data-order-brands-label>marcas listas</span></b></div>
-          <div class="order-minimum-note" data-order-minimum>50 piezas mínimas por marca.</div>
+          <div class="order-minimum-note" data-order-minimum>50 piezas mínimas por marca, excepto JISCO.</div>
           <p data-order-status role="status"></p>
           <button class="button button-dark" type="button" data-order-pdf>Descargar pedido en PDF</button>
         </footer>
@@ -418,9 +468,9 @@
     </div>
 
     <script src="vendor/pdf-lib.min.js"></script>
-    <script src="catalog-showcase-data.js?v=20261010-alfred-new-collection"></script>
+    <script src="catalog-showcase-data.js?v=20261017-jisco"></script>
     <script src="fw26-showcase.js?v=20260916"></script>
-    <script src="i18n.js?v=20261010-alfred-new-collection"></script>
-    <script src="app.js?v=20261010-alfred-new-collection"></script>
+    <script src="i18n.js?v=20261017-jisco"></script>
+    <script src="app.js?v=20261017-jisco"></script>
   </body>
 </html>
