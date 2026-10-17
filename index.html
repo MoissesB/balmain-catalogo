@@ -8,7 +8,7 @@
     <link rel="apple-touch-icon" href="assets/innova-browser-icon.png?v=20260801">
     <title>Innova Boutique · Luxury Eyewear Portfolio</title>
     <script>if(new URLSearchParams(location.search).has('embeddedOrder'))document.documentElement.classList.add('is-embedded-order');</script>
-    <link rel="stylesheet" href="styles.css?v=20261018-special-order">
+    <link rel="stylesheet" href="styles.css?v=20261018-special-code-apply-remove">
     <script src="config.js?v=20261017-jisco-revision1"></script>
     <script src="meta-pixel.js?v=20260826-pageview"></script>
   </head>
@@ -458,7 +458,7 @@
         </div>
         <footer class="order-footer">
           <div><span>Total</span><b><strong data-order-units>0</strong> piezas · <strong data-order-brands>0</strong> <span data-order-brands-label>marcas listas</span></b></div>
-          <label class="order-access-code"><span>Código de pedido especial</span><input type="text" data-order-code autocomplete="off" autocapitalize="characters" spellcheck="false" placeholder="Introduce tu código" aria-describedby="order-code-status"><small id="order-code-status" data-order-code-status role="status">Con un código autorizado puedes preparar un pedido de cualquier cantidad. Sujeto a confirmación comercial.</small></label>
+          <section class="order-access-code"><label for="order-code-input">Código de pedido especial</label><div class="order-code-actions"><input id="order-code-input" type="text" data-order-code autocomplete="off" autocapitalize="characters" spellcheck="false" placeholder="Introduce tu código" aria-describedby="order-code-status"><button type="button" data-order-code-apply>Aplicar</button><button type="button" data-order-code-remove hidden>Quitar cupón</button></div><small id="order-code-status" data-order-code-status role="status">Con un código autorizado puedes preparar un pedido de cualquier cantidad. Sujeto a confirmación comercial.</small></section>
           <div class="order-minimum-note" data-order-minimum>50 piezas mínimas por marca, excepto JISCO.</div>
           <p data-order-status role="status"></p>
           <button class="button button-dark" type="button" data-order-pdf>Descargar pedido en PDF</button>
@@ -471,6 +471,6 @@
     <script src="catalog-showcase-data.js?v=20261017-jisco-revision1"></script>
     <script src="fw26-showcase.js?v=20260916"></script>
     <script src="i18n.js?v=20261017-jisco-revision1"></script>
-    <script src="app.js?v=20261018-special-order"></script>
+    <script src="app.js?v=20261018-special-code-apply-remove"></script>
   </body>
 </html>

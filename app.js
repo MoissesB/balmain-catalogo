@@ -447,6 +447,7 @@
   const shell = document.querySelector("[data-order-shell]");
   const itemsRoot = document.querySelector("[data-order-items]");
   const status = document.querySelector("[data-order-status]");
+  let codeFeedback = "";
 
   function saveOrder() {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(order));
@@ -585,7 +586,19 @@
       if (error) error.textContent = message;
     });
     const codeStatus = document.querySelector("[data-order-code-status]");
-    if (codeStatus) codeStatus.textContent = special ? "Código aplicado: puedes descargar el PDF con cualquier cantidad. Pedido sujeto a confirmación de Innova." : order.specialCode ? "Código no reconocido. Se mantienen los mínimos habituales." : "Con un código autorizado puedes preparar un pedido de cualquier cantidad. Sujeto a confirmación comercial.";
+    if (codeStatus) codeStatus.textContent = special ? "Código aplicado: puedes descargar el PDF con cualquier cantidad. Pedido sujeto a confirmación de Innova." : codeFeedback || "Con un código autorizado puedes preparar un pedido de cualquier cantidad. Sujeto a confirmación comercial.";
+    const codeInput = document.querySelector("[data-order-code]");
+    const applyCode = document.querySelector("[data-order-code-apply]");
+    const removeCode = document.querySelector("[data-order-code-remove]");
+    if (codeInput) {
+      codeInput.readOnly = special;
+      codeInput.toggleAttribute("aria-invalid", Boolean(codeFeedback));
+    }
+    if (applyCode) {
+      applyCode.hidden = special;
+      applyCode.disabled = !special && !codeInput?.value.trim();
+    }
+    if (removeCode) removeCode.hidden = !special;
     const minimumNote = document.querySelector("[data-order-minimum]");
     if (minimumNote) {
       minimumNote.textContent = special ? "Pedido especial: sin mínimo de piezas. Disponibilidad y condiciones sujetas a confirmación comercial." : incomplete.length
@@ -686,18 +699,42 @@
   });
   const specialCodeField = document.querySelector("[data-order-code]");
   if (specialCodeField) {
-    specialCodeField.value = order.specialCode || "";
+    specialCodeField.value = specialOrderEnabled() ? SPECIAL_ORDER_CODE : "";
     specialCodeField.addEventListener("input", () => {
-      order.specialCode = specialCodeField.value.trim().toUpperCase().slice(0, 32);
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(order));
-      renderOrder();
+      codeFeedback = "";
+      document.querySelector("[data-order-code-status]").textContent = "Pulsa Aplicar para activar el código.";
+      specialCodeField.removeAttribute("aria-invalid");
+      document.querySelector("[data-order-code-apply]").disabled = !specialCodeField.value.trim();
+    });
+    const applySpecialCode = () => {
+      if (specialCodeField.value.trim().toUpperCase() !== SPECIAL_ORDER_CODE) {
+        codeFeedback = "Código no reconocido. Se mantienen los mínimos habituales.";
+        renderOrder();
+        return;
+      }
+      order.specialCode = SPECIAL_ORDER_CODE;
+      specialCodeField.value = SPECIAL_ORDER_CODE;
+      codeFeedback = "";
+      saveOrder();
+    };
+    document.querySelector("[data-order-code-apply]")?.addEventListener("click", applySpecialCode);
+    specialCodeField.addEventListener("keydown", (event) => {
+      if (event.key === "Enter") { event.preventDefault(); applySpecialCode(); }
+    });
+    document.querySelector("[data-order-code-remove]")?.addEventListener("click", () => {
+      order.specialCode = "";
+      specialCodeField.value = "";
+      codeFeedback = "";
+      saveOrder();
+      specialCodeField.focus();
     });
   }
 
   window.addEventListener("storage", (event) => {
     if (event.key !== STORAGE_KEY) return;
     order = readOrder();
-    if (specialCodeField) specialCodeField.value = order.specialCode || "";
+    if (specialCodeField) specialCodeField.value = specialOrderEnabled() ? SPECIAL_ORDER_CODE : "";
+    codeFeedback = "";
     renderOrder();
   });
 
