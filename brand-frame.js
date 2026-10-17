@@ -63,7 +63,7 @@
   function showOrder() {
     if (!orderOverlay || !orderFrame) return;
     orderOverlay.hidden = false;
-    if (!orderFrame.src) orderFrame.src = `${location.origin}/?embeddedOrder=1#pedido`;
+    if (!orderFrame.src) orderFrame.src = `${location.origin}/?embeddedOrder=1&v=20261017-revision2#pedido`;
     else orderFrame.contentWindow?.location.reload();
   }
   function hideOrder() {
