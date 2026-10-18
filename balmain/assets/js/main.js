@@ -79,7 +79,7 @@
     const silhouette = isLocal
       ? "http://localhost:5174"
       : `${portal.replace(/\/+$/, "")}/silhouette/`;
-    const jisco = `${portal.replace(/\/+$/, "")}/jisco/`;
+    const jisco = `${portal.replace(/\/+$/, "")}/jisco-en-construccion/`;
     const silhouetteRoute = (path) => isLocal
       ? `${silhouette}/${String(path).replace(/^\/+/, "")}`
       : `${silhouette}/#/${String(path).replace(/^\/+/, "")}`;
@@ -116,9 +116,9 @@
               <div data-innova-mega-brand="jisco">
                 <span>04 · Mediterráneo</span>
                 <a href="${jisco}" target="_top"><strong>JISCO</strong></a>
-                <a href="${jisco}#/catalogo?category=optical" target="_top" data-text-es="Óptica" data-text-en="Optical frames" data-text-fr="Montures optiques">Óptica</a>
-                <a href="${jisco}#/catalogo?category=sun" target="_top" data-text-es="Sol" data-text-en="Sunglasses" data-text-fr="Lunettes de soleil">Sol</a>
-                <a href="${jisco}#/historia" target="_top" data-text-es="La marca" data-text-en="The brand" data-text-fr="La marque">La marca</a>
+                <a href="${jisco}" target="_top" data-text-es="Óptica" data-text-en="Optical frames" data-text-fr="Montures optiques">Óptica</a>
+                <a href="${jisco}" target="_top" data-text-es="Sol" data-text-en="Sunglasses" data-text-fr="Lunettes de soleil">Sol</a>
+                <a href="${jisco}" target="_top" data-text-es="La marca" data-text-en="The brand" data-text-fr="La marque">La marca</a>
               </div>
               <aside class="innova-global-mega-visual">
                 <div class="innova-global-mega-visual__media" aria-hidden="true">

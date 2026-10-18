@@ -12,7 +12,7 @@
   const silhouetteUrl = isLocal
     ? "http://localhost:5174"
     : `${portalUrl.replace(/\/+$/, "")}/silhouette/`;
-  const jiscoUrl = `${portalUrl.replace(/\/+$/, "")}/jisco/`;
+  const jiscoUrl = `${portalUrl.replace(/\/+$/, "")}/jisco-en-construccion/`;
   let bridge;
 
   function getBridge() {

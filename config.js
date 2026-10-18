@@ -15,7 +15,7 @@
       "alfred-kerbs": local ? "http://localhost:3001" : "/alfred-kerbs/",
       balmain: local ? "http://localhost:3101" : "/balmain/",
       silhouette: local ? "http://localhost:5174" : "/silhouette/",
-      jisco: "/jisco/",
+      jisco: "/jisco-en-construccion/",
     },
     brandAssets: {
       "alfred-kerbs": local ? "http://localhost:3001" : alfredProductionUrl,

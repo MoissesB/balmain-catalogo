@@ -36,7 +36,7 @@
       <a href="${location.origin}/alfred-kerbs/" aria-label="Abrir Alfred Kerbs"><img src="${location.origin}/assets/alfred-kerbs-logo.png" alt="Alfred Kerbs"></a>
       <a href="${location.origin}/balmain/" aria-label="Abrir Balmain Eyewear"><img src="${location.origin}/assets/balmain-logo-transparent.png" alt="Balmain"></a>
       <a href="${location.origin}/silhouette/" aria-label="Abrir Silhouette"><img src="${location.origin}/assets/logos/silhouette-on-light.png" alt="Silhouette"></a>
-      <a href="${location.origin}/jisco/" aria-label="Abrir JISCO"><img src="${location.origin}/assets/jisco-logo-original.png" alt="JISCO"></a>
+      <a href="${location.origin}/jisco-en-construccion/" aria-label="Abrir JISCO"><img src="${location.origin}/assets/jisco-logo-original.png" alt="JISCO"></a>
     </nav>
     <button class="brand-catalog-dock__order" type="button" aria-label="Abrir mi selección"><span>MI SELECCIÓN</span><b data-brand-order-count>0</b></button>`;
   document.body.appendChild(dock);
