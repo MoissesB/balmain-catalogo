@@ -102,9 +102,10 @@
         </button>
         <aside class="balmain-commercial-help__panel" hidden aria-label="Ayuda comercial de Innova Eyewear">
           <header><div><small>INNOVA EYEWEAR</small><strong>Exclusivo para ópticas</strong></div><button type="button" aria-label="Cerrar ayuda">×</button></header>
-          <p>Este catálogo es exclusivo para ópticas y empresas del sector. Selecciona modelos y cantidades hasta completar el mínimo mayorista de 50 piezas de Balmain Eyewear.</p>
+          <p>Este catálogo es exclusivo para ópticas y empresas del sector. El pedido global reúne las cuatro marcas; el código especial autorizado permite cualquier cantidad de cada una.</p>
           <p>Después descarga el pedido en PDF. Innova valida la óptica, la disponibilidad, las condiciones comerciales y el transporte antes de confirmar.</p>
           <a href="${balmainUrl}/catalogo.html">Explorar el catálogo <span>→</span></a>
+          <button type="button" data-balmain-local-order>Ver selección Balmain →</button>
           <a href="${portalUrl}/#seleccion">Ver el proceso de compra <span>→</span></a>
         </aside>
       </div>
@@ -114,7 +115,7 @@
         <a class="balmain-catalog-dock__silhouette" href="${silhouetteUrl}" target="_top" aria-label="Abrir Silhouette"><img src="${portalUrl}/assets/logos/silhouette-on-light.png" alt="Silhouette"></a>
         <a class="balmain-catalog-dock__jisco" href="${jiscoUrl}" target="_top" aria-label="Abrir JISCO"><img src="${portalUrl}/assets/jisco-logo-original.png" alt="JISCO"></a>
       </nav>
-      <span class="balmain-catalog-dock__order-slot"></span>
+      <span class="balmain-catalog-dock__order-slot"><button class="balmain-global-order" type="button" data-balmain-global-order>MI SELECCIÓN <b data-balmain-global-count>0</b></button></span>
     `;
     document.body.appendChild(dock);
 
@@ -127,6 +128,36 @@
     };
     trigger.addEventListener("click", () => setOpen(panel.hidden));
     panel.querySelector("header button").addEventListener("click", () => setOpen(false));
+    panel.querySelector("[data-balmain-local-order]").addEventListener("click", () => { setOpen(false); window.BalmainOrder?.open(); });
+    const globalCount = dock.querySelector("[data-balmain-global-count]");
+    const updateGlobalCount = () => {
+      try {
+        const saved = JSON.parse(localStorage.getItem("innova-boutique-order-v1") || "null");
+        globalCount.textContent = String((saved?.items || []).reduce((sum, item) => sum + Number(item.quantity || 0), 0));
+      } catch { globalCount.textContent = "0"; }
+    };
+    updateGlobalCount();
+    window.addEventListener("storage", updateGlobalCount);
+    dock.querySelector("[data-balmain-global-order]").addEventListener("click", () => {
+      let overlay = document.querySelector("[data-balmain-global-overlay]");
+      if (!overlay) {
+        overlay = document.createElement("div");
+        overlay.className = "balmain-global-overlay";
+        overlay.dataset.balmainGlobalOverlay = "";
+        overlay.innerHTML = '<button type="button" class="balmain-global-overlay__close" aria-label="Cerrar selección">×</button><iframe title="Mi selección global de Innova" class="balmain-global-overlay__frame"></iframe>';
+        document.body.appendChild(overlay);
+        overlay.querySelector("button").addEventListener("click", () => { overlay.hidden = true; });
+      }
+      overlay.hidden = false;
+      overlay.querySelector("iframe").src = `${portalUrl}/?embeddedOrder=1#pedido`;
+      updateGlobalCount();
+    });
+    document.addEventListener("click", (event) => {
+      if (event.target.closest('[data-order-action="open-global"]')) dock.querySelector("[data-balmain-global-order]").click();
+    });
+    window.addEventListener("message", (event) => {
+      if (event.origin === targetOrigin && event.data?.type === "innova-boutique:close-order") document.querySelector("[data-balmain-global-overlay]")?.setAttribute("hidden", "");
+    });
   }
 
   window.InnovaBoutiqueOrder = { add, replace, portalUrl };

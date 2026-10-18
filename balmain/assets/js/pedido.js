@@ -58,6 +58,7 @@
     minimumMet: { es: "La selección cumple el mínimo profesional.", en: "The selection meets the professional minimum.", fr: "La sélection atteint le seuil professionnel." },
     minimum: { es: "Mínimo profesional: {count} piezas", en: "Professional minimum: {count} units", fr: "Seuil professionnel : {count} pièces" },
     contactGate: { es: "Completa 50 piezas y tus datos profesionales para contactar a Innova. Abrir mi selección →", en: "Complete 50 units and your professional details to contact Innova. Open my selection →", fr: "Complétez 50 pièces et vos coordonnées professionnelles pour contacter Innova. Ouvrir ma sélection →" },
+    globalSelection: { es: "Abrir mi selección global →", en: "Open my global selection →", fr: "Ouvrir ma sélection globale →" },
     emptyTitle: { es: "Todavía no has seleccionado productos.", en: "You have not selected any products yet.", fr: "Vous n'avez encore sélectionné aucun produit." },
     emptyBody: { es: "Explora el catálogo y combina modelos o coloridos hasta alcanzar {count} piezas.", en: "Explore the catalogue and combine models or colourways to reach {count} units.", fr: "Parcourez le catalogue et associez modèles et coloris jusqu'à atteindre {count} pièces." },
     catalogue: { es: "Ir al catálogo", en: "View catalogue", fr: "Voir le catalogue" },
@@ -319,8 +320,6 @@
         </div>
       </div>
     `);
-    document.querySelector(".balmain-catalog-dock__order-slot")?.append(document.querySelector("[data-balmain-order] .order-fab"));
-
     document.querySelector("[data-order-open]")?.addEventListener("click", open);
     document.querySelector("[data-order-backdrop]")?.addEventListener("mousedown", (event) => {
       if (event.target === event.currentTarget) close();
@@ -496,13 +495,13 @@
       prompt.type = "button";
       prompt.className = "contact-gate-prompt";
       prompt.dataset.contactGate = "";
-      prompt.dataset.orderAction = "open";
-      prompt.textContent = t("contactGate");
+      prompt.dataset.orderAction = "open-global";
+      prompt.textContent = t("globalSelection");
       const firstContact = surface.querySelector("a[href^='mailto:'], a[href^='tel:'], a[href*='wa.me/']");
       if (firstContact) firstContact.before(prompt);
     });
     document.querySelectorAll("[data-contact-gate]").forEach((prompt) => {
-      prompt.textContent = t("contactGate");
+      prompt.textContent = t("globalSelection");
     });
   }
 

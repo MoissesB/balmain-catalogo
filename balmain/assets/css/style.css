@@ -3761,19 +3761,24 @@ body {
   .balmain-commercial-help__trigger { min-width: 215px; }
 }
 
-/* Selector de marcas al final del catálogo */
+/* Selector de marcas siempre visible */
+
+body { padding-bottom: 72px; }
 
 .balmain-catalog-dock {
   min-height: 72px;
-  position: relative;
+  position: fixed;
   z-index: 120;
+  right: 0;
+  bottom: 0;
+  left: 0;
   display: grid;
   grid-template-columns: minmax(210px, 1fr) auto minmax(210px, 1fr);
   align-items: stretch;
   color: #fff;
   background: #171514;
   border-top: 1px solid rgba(255,255,255,.18);
-  box-shadow: none;
+  box-shadow: 0 -12px 36px rgba(23,21,20,.16);
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -3842,6 +3847,14 @@ body {
 .balmain-catalog-dock__order-slot {
   display: block;
 }
+.balmain-catalog-dock__order-slot .balmain-global-order{width:min(270px,100%);min-width:210px;height:72px;display:flex;align-items:center;justify-content:space-between;gap:15px;padding:0 20px 0 25px;border:0;border-left:1px solid rgba(255,255,255,.18);background:#171514;color:#fff;font-size:10px;font-weight:700;letter-spacing:.08em;cursor:pointer}
+.balmain-global-order b{width:32px;height:32px;flex:0 0 32px;display:grid;place-items:center;border-radius:50%;background:#fff;color:#171514;font-size:12px}
+.balmain-catalog-dock ~ [data-balmain-order] .order-fab{display:none}
+.balmain-commercial-help__panel [data-balmain-local-order]{display:block;width:100%;padding:10px 0;border:0;background:none;color:inherit;text-align:left;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;cursor:pointer}
+.balmain-global-overlay{position:fixed;inset:0;z-index:200;background:#fff}
+.balmain-global-overlay[hidden]{display:none}
+.balmain-global-overlay__frame{width:100%;height:100%;border:0}
+.balmain-global-overlay__close{position:absolute;top:12px;right:16px;z-index:1;width:38px;height:38px;border:1px solid #d0d0d0;background:#fff;color:#171514;font-size:26px;cursor:pointer}
 .balmain-catalog-dock__order-slot .order-fab {
   position: static;
   width: min(270px, 100%);
@@ -3873,6 +3886,7 @@ body {
 }
 
 @media (max-width: 680px) {
+  body { padding-bottom: calc(86px + env(safe-area-inset-bottom)); }
   .balmain-catalog-dock {
     min-height: 86px;
     grid-template-columns: 1fr 1fr;
@@ -3926,6 +3940,7 @@ body {
     grid-column: 2;
     grid-row: 2;
   }
+  .balmain-catalog-dock__order-slot .balmain-global-order{width:100%;min-width:0;height:42px;padding:0 12px}
   .balmain-catalog-dock__order-slot .order-fab { width: 100%; }
 
   .balmain-catalog-dock ~ [data-balmain-order] .order-fab,
