@@ -3789,22 +3789,28 @@ body { padding-bottom: 72px; }
 .balmain-catalog-dock__toggle:focus-visible { outline: 2px solid #d7b678; outline-offset: -4px; }
 
 .balmain-catalog-dock .balmain-commercial-help {
-  width: min(190px, 100%);
-  min-width: 0;
-  min-height: 72px;
-  position: static;
-  justify-self: start;
-}
-
-.balmain-catalog-dock .balmain-commercial-help__trigger {
   width: 100%;
   min-width: 0;
   min-height: 72px;
-  padding: 0 12px 0 15px;
-  border: 0;
-  border-right: 1px solid rgba(255,255,255,.18);
+  position: static;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.balmain-catalog-dock .balmain-commercial-help__trigger {
+  width: 144px;
+  min-width: 0;
+  min-height: 40px;
+  gap: 6px;
+  padding: 0 9px;
+  border: 1px solid rgba(255,255,255,.35);
+  background: #211f1e;
   box-shadow: none;
 }
+.balmain-catalog-dock .balmain-commercial-help__trigger small { margin-bottom: 2px; font-size: 6px; letter-spacing: .08em; }
+.balmain-catalog-dock .balmain-commercial-help__trigger b { font-size: 10px; }
+.balmain-catalog-dock .balmain-commercial-help__trigger i { width: 21px; height: 21px; flex: 0 0 21px; font-size: 11px; }
 
 .balmain-catalog-dock__brands {
   height: 72px;
@@ -3851,10 +3857,12 @@ body { padding-bottom: 72px; }
 .balmain-catalog-dock__jisco img { width: 100px; max-height: 32px; }
 
 .balmain-catalog-dock__order-slot {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.balmain-catalog-dock__order-slot .balmain-global-order{width:min(190px,100%);min-width:0;height:72px;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:0 14px;border:0;border-left:1px solid rgba(255,255,255,.18);background:#171514;color:#fff;font-size:10px;font-weight:700;letter-spacing:.08em;cursor:pointer}
-.balmain-global-order b{width:32px;height:32px;flex:0 0 32px;display:grid;place-items:center;border-radius:50%;background:#fff;color:#171514;font-size:12px}
+.balmain-catalog-dock__order-slot .balmain-global-order{width:144px;min-width:0;height:40px;display:flex;align-items:center;justify-content:space-between;gap:6px;padding:0 9px;border:1px solid rgba(255,255,255,.35);background:#211f1e;color:#fff;font-size:9px;font-weight:700;letter-spacing:.02em;white-space:nowrap;cursor:pointer}
+.balmain-global-order b{width:23px;height:23px;flex:0 0 23px;display:grid;place-items:center;border-radius:50%;background:#fff;color:#171514;font-size:9px;letter-spacing:0}
 .balmain-catalog-dock ~ [data-balmain-order] .order-fab{display:none}
 .balmain-commercial-help__panel [data-balmain-local-order]{display:block;width:100%;padding:10px 0;border:0;background:none;color:inherit;text-align:left;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;cursor:pointer}
 .balmain-global-overlay{position:fixed;inset:0;z-index:200;background:#fff}
@@ -3891,9 +3899,9 @@ body { padding-bottom: 72px; }
   left: 18px;
 }
 @media (min-width: 681px) and (max-width: 900px) {
-  .balmain-catalog-dock .balmain-commercial-help { width: min(150px,100%); }
+  .balmain-catalog-dock .balmain-commercial-help { padding-left: 5px; }
   .balmain-catalog-dock__brands > a { width: 100px; padding-inline: 10px; }
-  .balmain-catalog-dock__order-slot .balmain-global-order { width: min(150px,100%); padding-inline: 10px; }
+  .balmain-catalog-dock__order-slot .balmain-global-order { width: min(140px,100%); padding-inline: 7px; }
 }
 
 @media (max-width: 680px) {
@@ -3933,12 +3941,13 @@ body { padding-bottom: 72px; }
     min-height: 42px;
     grid-column: 1;
     grid-row: 2;
+    padding-left: 5px;
   }
 
   .balmain-catalog-dock .balmain-commercial-help__trigger {
-    min-width: 0;
-    min-height: 42px;
-    padding-inline: 12px;
+    width: min(130px,calc(100% - 8px));
+    min-height: 34px;
+    padding-inline: 7px;
   }
 
   .balmain-catalog-dock .balmain-commercial-help__trigger small {
@@ -3946,8 +3955,9 @@ body { padding-bottom: 72px; }
   }
 
   .balmain-catalog-dock .balmain-commercial-help__trigger i {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
+    flex-basis: 20px;
     font-size: 9px;
   }
 
@@ -3955,7 +3965,7 @@ body { padding-bottom: 72px; }
     grid-column: 2;
     grid-row: 2;
   }
-  .balmain-catalog-dock__order-slot .balmain-global-order{width:100%;min-width:0;height:42px;padding:0 12px}
+  .balmain-catalog-dock__order-slot .balmain-global-order{width:min(130px,calc(100% - 8px));min-width:0;height:34px;padding-inline:7px;font-size:8px}
   .balmain-catalog-dock__order-slot .order-fab { width: 100%; }
 
   .balmain-catalog-dock ~ [data-balmain-order] .order-fab,
