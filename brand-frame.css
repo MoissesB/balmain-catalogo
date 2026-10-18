@@ -98,7 +98,7 @@ body {
 .brand-catalog-dock__toggle:focus-visible { outline: 2px solid #5388d9; outline-offset: -4px; }
 .brand-catalog-dock button { font-family: inherit; cursor: pointer; }
 .brand-catalog-dock__help { display: flex; align-items: center; padding-left: 10px; }
-.brand-catalog-dock__help-trigger,.brand-catalog-dock__order { width: 144px; min-height: 40px; display: flex; align-items: center; gap: 6px; padding: 0 9px; border: 1px solid rgba(255,255,255,.35); background: #211f1e; color: #fff; text-align: left; }
+.brand-catalog-dock__help-trigger,.brand-catalog-dock__order { width: 144px; height: 40px; display: flex; align-items: center; gap: 6px; padding: 0 9px; border: 1px solid rgba(255,255,255,.35); background: #211f1e; color: #fff; text-align: left; }
 .brand-catalog-dock__help-trigger span { flex: 1; }
 .brand-catalog-dock__help-trigger small,.brand-catalog-dock__help-trigger b { display: block; }
 .brand-catalog-dock__help-trigger small { margin-bottom: 2px; color: rgba(255,255,255,.55); font-size: 6px; letter-spacing: .08em; }
@@ -110,7 +110,7 @@ body {
 .brand-catalog-dock__brands a:hover,.brand-catalog-dock__brands a:focus-visible { background: #f2f4f6; }
 .brand-catalog-dock__brands a[aria-current="page"] { box-shadow: inset 0 3px 0 #171514; }
 .brand-catalog-dock__brands img { width: 100%; max-width: 112px; max-height: 34px; object-fit: contain; }
-.brand-catalog-dock__order { justify-self: center; justify-content: space-between; font-size: 9px; font-weight: 700 !important; letter-spacing: .02em; white-space: nowrap; }
+.brand-catalog-dock__order { align-self: center; justify-self: center; justify-content: space-between; font-size: 9px; font-weight: 700 !important; letter-spacing: .02em; white-space: nowrap; }
 .brand-catalog-dock__order b { width: 23px; height: 23px; display: grid; place-items: center; flex: 0 0 23px; border-radius: 50%; background: #fff; color: #171514; font-size: 9px; letter-spacing: 0; }
 .brand-catalog-dock__help-panel[hidden] { display: none; }
 .brand-catalog-dock__help-panel { position: absolute; left: 18px; bottom: 84px; width: min(370px,calc(100vw - 36px)); padding: 20px; background: #fafafa; color: #171514; border: 1px solid #ddd; box-shadow: 0 24px 65px rgba(0,0,0,.22); font-size: 13px; line-height: 1.55; }
@@ -129,7 +129,7 @@ body {
   .brand-catalog-dock__brands a { width: calc((100vw - 42px)/4); padding: 7px 10px; }
   .brand-catalog-dock__brands img { max-width: 88px; max-height: 25px; }
   .brand-catalog-dock__help { grid-column: 1; grid-row: 2; padding-left: 5px; }
-  .brand-catalog-dock__help-trigger,.brand-catalog-dock__order { width: min(130px,calc(100% - 8px)); min-height: 34px; padding-inline: 7px; }
+  .brand-catalog-dock__help-trigger,.brand-catalog-dock__order { width: min(130px,calc(100% - 8px)); height: 34px; padding-inline: 7px; }
   .brand-catalog-dock__order { grid-column: 2; grid-row: 2; font-size: 8px; }
   .brand-catalog-dock__help-trigger small { display: none; }
   .brand-catalog-dock__help-trigger i,.brand-catalog-dock__order b { width: 20px; height: 20px; flex-basis: 20px; font-size: 9px; }
