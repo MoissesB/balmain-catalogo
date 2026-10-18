@@ -195,8 +195,7 @@ img { display: block; width: 100%; }
 }
 
 .global-header {
-  position: sticky;
-  top: 0;
+  position: relative;
   z-index: 60;
   min-height: 82px;
   display: grid;

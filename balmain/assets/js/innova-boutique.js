@@ -94,6 +94,7 @@
 
   if (!document.querySelector("[data-balmain-commercial-help]")) {
     const dock = document.createElement("div");
+    dock.id = "balmain-catalog-dock";
     dock.className = "balmain-catalog-dock";
     dock.innerHTML = `
       <div class="balmain-commercial-help" data-balmain-commercial-help>
@@ -118,6 +119,32 @@
       <span class="balmain-catalog-dock__order-slot"><button class="balmain-global-order" type="button" data-balmain-global-order>MI SELECCIÓN <b data-balmain-global-count>0</b></button></span>
     `;
     document.body.appendChild(dock);
+    const dockToggle = document.createElement("button");
+    dockToggle.className = "balmain-catalog-dock__toggle";
+    dockToggle.type = "button";
+    dockToggle.setAttribute("aria-controls", dock.id);
+    document.body.appendChild(dockToggle);
+    const dockPreferenceKey = "innova-brand-dock-collapsed-v1";
+    let dockCollapsed = false;
+    try { dockCollapsed = localStorage.getItem(dockPreferenceKey) === "1"; } catch {}
+    const updateDockVisibility = () => {
+      dock.hidden = dockCollapsed;
+      document.body.classList.toggle("balmain-dock-collapsed", dockCollapsed);
+      dockToggle.setAttribute("aria-expanded", String(!dockCollapsed));
+      dockToggle.setAttribute("aria-label", dockCollapsed ? "Mostrar barra de marcas y selección" : "Ocultar barra de marcas y selección");
+      dockToggle.textContent = dockCollapsed ? "↑" : "↓";
+      dockToggle.classList.toggle("is-collapsed", dockCollapsed);
+    };
+    dockToggle.addEventListener("click", () => {
+      dockCollapsed = !dockCollapsed;
+      if (dockCollapsed) {
+        help.querySelector(".balmain-commercial-help__panel").hidden = true;
+        help.querySelector(".balmain-commercial-help__trigger").setAttribute("aria-expanded", "false");
+      }
+      try { localStorage.setItem(dockPreferenceKey, dockCollapsed ? "1" : "0"); } catch {}
+      updateDockVisibility();
+    });
+    updateDockVisibility();
 
     const help = dock.querySelector(".balmain-commercial-help");
     const trigger = help.querySelector(".balmain-commercial-help__trigger");

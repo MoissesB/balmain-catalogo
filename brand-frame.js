@@ -20,6 +20,7 @@
   }
 
   const dock = document.createElement("div");
+  dock.id = "brand-catalog-dock";
   dock.className = "brand-catalog-dock";
   dock.innerHTML = `
     <div class="brand-catalog-dock__help">
@@ -39,6 +40,34 @@
     </nav>
     <button class="brand-catalog-dock__order" type="button" aria-label="Abrir mi selección"><span>MI SELECCIÓN</span><b data-brand-order-count>0</b></button>`;
   document.body.appendChild(dock);
+  const dockToggle = document.createElement("button");
+  dockToggle.className = "brand-catalog-dock__toggle";
+  dockToggle.type = "button";
+  dockToggle.setAttribute("aria-controls", dock.id);
+  document.body.appendChild(dockToggle);
+  const dockPreferenceKey = "innova-brand-dock-collapsed-v1";
+  let dockCollapsed = false;
+  let brandModalOpen = false;
+  try { dockCollapsed = localStorage.getItem(dockPreferenceKey) === "1"; } catch {}
+  function updateDockVisibility() {
+    dock.hidden = dockCollapsed || brandModalOpen;
+    dockToggle.hidden = brandModalOpen;
+    dockToggle.setAttribute("aria-expanded", String(!dockCollapsed));
+    dockToggle.setAttribute("aria-label", dockCollapsed ? "Mostrar barra de marcas y selección" : "Ocultar barra de marcas y selección");
+    dockToggle.textContent = dockCollapsed ? "↑" : "↓";
+    dockToggle.classList.toggle("is-collapsed", dockCollapsed);
+  }
+  dockToggle.addEventListener("click", () => {
+    dockCollapsed = !dockCollapsed;
+    if (dockCollapsed) {
+      const panel = dock.querySelector(".brand-catalog-dock__help-panel");
+      panel.hidden = true;
+      dock.querySelector(".brand-catalog-dock__help-trigger").setAttribute("aria-expanded", "false");
+    }
+    try { localStorage.setItem(dockPreferenceKey, dockCollapsed ? "1" : "0"); } catch {}
+    updateDockVisibility();
+  });
+  updateDockVisibility();
   const currentBrand = dock.querySelector(`.brand-catalog-dock__brands a[href="${location.origin}/${brand}/"]`);
   currentBrand?.setAttribute("aria-current", "page");
   const helpTrigger = dock.querySelector(".brand-catalog-dock__help-trigger");
@@ -58,7 +87,7 @@
   }
 
   function targetUrl(route) {
-    if (brand === "jisco") return `${source.replace(/\/+$/, "/")}?v=20261018-story-new-models#${route}`;
+    if (brand === "jisco") return `${source.replace(/\/+$/, "/")}?v=20261018-jisco-blog#${route}`;
     if (brand === "silhouette") return `${source.replace(/\/+$/, "/")}?v=20261018-jisco-nav#${route}`;
     return new URL(route.replace(/^\/+/, ""), source.replace(/\/+$/, "/")).href;
   }
@@ -134,7 +163,8 @@
     }
     if (event.source !== frame.contentWindow || event.origin !== sourceOrigin) return;
     if (event.data?.type === "innova-boutique:modal-state" && event.data.brand === brand) {
-      dock.hidden = Boolean(event.data.open);
+      brandModalOpen = Boolean(event.data.open);
+      updateDockVisibility();
       return;
     }
     if (event.data?.type === "innova-boutique:open-order" && brand === "jisco") {
@@ -159,6 +189,7 @@
     if (event.data?.type === "innova-brand-route" && event.data.brand === brand) {
       const route = String(event.data.route || "/");
       const normalized = route.startsWith("/") ? route : `/${route}`;
+      if (brand === "jisco" && typeof event.data.title === "string" && event.data.title.length < 180) document.title = event.data.title;
       if (currentRoute() !== normalized) {
         window.history.replaceState(null, "", `#${encodeURI(normalized)}`);
         window.INNOVA_META_PIXEL?.trackPageView();
