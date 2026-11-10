@@ -6,6 +6,17 @@
     : "es";
 
   const en = {
+    "AKONI": "AKONI",
+    "05 · Suiza / Japón": "05 · Switzerland / Japan",
+    "05 · SUIZA / JAPÓN": "05 · SWITZERLAND / JAPAN",
+    "Novedades": "New arrivals",
+    "Explorar Akoni": "Explore Akoni",
+    "Precisión suiza y artesanía japonesa en monturas de diseño y detalles excepcionales.": "Swiss precision and Japanese artistry in designer frames with exceptional details.",
+    "Cinco firmas. Una visión extraordinaria.": "Five houses. One extraordinary vision.",
+    "Cinco formas de entender la mirada.": "Five ways to see the world.",
+    "Una relación comercial. Cinco universos de marca.": "One commercial relationship. Five brand universes.",
+    "JISCO y Akoni no tienen mínimo configurado.": "JISCO and Akoni have no configured minimum.",
+    "50 piezas mínimas en Alfred Kerbs, Balmain y Silhouette. JISCO y Akoni sin mínimo configurado.": "50-piece minimum in Alfred Kerbs, Balmain and Silhouette. No configured minimum for JISCO or Akoni.",
     "Nuevo": "New",
     "Nueva colección · nueve modelos ópticos": "New collection · nine optical models",
     "Óptica · Nuevo": "Optical · New",
@@ -150,6 +161,17 @@
   };
 
   const fr = {
+    "AKONI": "AKONI",
+    "05 · Suiza / Japón": "05 · Suisse / Japon",
+    "05 · SUIZA / JAPÓN": "05 · SUISSE / JAPON",
+    "Novedades": "Nouveautés",
+    "Explorar Akoni": "Explorer Akoni",
+    "Precisión suiza y artesanía japonesa en monturas de diseño y detalles excepcionales.": "Précision suisse et savoir-faire japonais dans des montures aux détails d’exception.",
+    "Cinco firmas. Una visión extraordinaria.": "Cinq maisons. Une vision extraordinaire.",
+    "Cinco formas de entender la mirada.": "Cinq façons de voir le monde.",
+    "Una relación comercial. Cinco universos de marca.": "Une relation commerciale. Cinq univers de marque.",
+    "JISCO y Akoni no tienen mínimo configurado.": "JISCO et Akoni n’ont pas de minimum configuré.",
+    "50 piezas mínimas en Alfred Kerbs, Balmain y Silhouette. JISCO y Akoni sin mínimo configurado.": "Minimum de 50 pièces pour Alfred Kerbs, Balmain et Silhouette. Aucun minimum configuré pour JISCO et Akoni.",
     ...en,
     "Nuevo": "Nouveau",
     "Nueva colección · nueve modelos ópticos": "Nouvelle collection · neuf modèles optiques",

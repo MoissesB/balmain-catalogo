@@ -27,7 +27,7 @@
       <button class="brand-catalog-dock__help-trigger" type="button" aria-expanded="false" aria-controls="brand-buying-help"><span><small>COMPRA PROFESIONAL</small><b>Cómo comprar</b></span><i aria-hidden="true">?</i></button>
       <aside class="brand-catalog-dock__help-panel" id="brand-buying-help" hidden>
         <strong>Cómo preparar tu selección</strong>
-        <p>Elige modelos, acabados y cantidades en cualquiera de las cuatro marcas. Revisa el pedido global y descarga el PDF para contactar a Innova.</p>
+        <p>Elige modelos, acabados y cantidades en cualquiera de las cinco marcas. Revisa el pedido global y descarga el PDF para contactar a Innova.</p>
         <p>Disponibilidad y condiciones sujetas a confirmación comercial.</p>
         <a href="${location.origin}/#seleccion" target="_top">Ver el proceso de compra →</a>
       </aside>
@@ -37,6 +37,7 @@
       <a href="${location.origin}/balmain/" aria-label="Abrir Balmain Eyewear"><img src="${location.origin}/assets/balmain-logo-transparent.png" alt="Balmain"></a>
       <a href="${location.origin}/silhouette/" aria-label="Abrir Silhouette"><img src="${location.origin}/assets/logos/silhouette-on-light.png" alt="Silhouette"></a>
       <a href="${location.origin}/jisco-en-construccion/" aria-label="Abrir JISCO"><img src="${location.origin}/assets/jisco-logo-original.png" alt="JISCO"></a>
+      <a href="${location.origin}/akoni/" aria-label="Abrir Akoni"><strong class="brand-catalog-dock__akoni">AKONI</strong></a>
     </nav>
     <button class="brand-catalog-dock__order" type="button" aria-label="Abrir mi selección"><span>MI SELECCIÓN</span><b data-brand-order-count>0</b></button>`;
   document.body.appendChild(dock);
@@ -48,6 +49,8 @@
   const dockPreferenceKey = "innova-brand-dock-collapsed-v1";
   let dockCollapsed = false;
   let brandModalOpen = false;
+  let akoniMode = "b2b";
+  let akoniPersonalCount = 0;
   try { dockCollapsed = localStorage.getItem(dockPreferenceKey) === "1"; } catch {}
   function updateDockVisibility() {
     dock.hidden = dockCollapsed || brandModalOpen;
@@ -76,7 +79,11 @@
     helpPanel.hidden = !helpPanel.hidden;
     helpTrigger.setAttribute("aria-expanded", String(!helpPanel.hidden));
   });
-  dock.querySelector(".brand-catalog-dock__order").addEventListener("click", showOrder);
+  dock.querySelector(".brand-catalog-dock__order").addEventListener("click", () => {
+    if (brand === "akoni" && akoniMode === "b2c") {
+      frame.contentWindow?.postMessage({ type: "innova-boutique:open-personal-selection" }, sourceOrigin);
+    } else showOrder();
+  });
 
   const sourceUrl = new URL(source);
   const sourceOrigin = sourceUrl.origin;
@@ -88,6 +95,7 @@
 
   function targetUrl(route) {
     if (brand === "jisco") return `${source.replace(/\/+$/, "/")}?v=20261018-jisco-blog#${route}`;
+    if (brand === "akoni") return `${source.replace(/\/+$/, "/")}#${route}`;
     if (brand === "silhouette") return `${source.replace(/\/+$/, "/")}?v=20261018-jisco-nav#${route}`;
     return new URL(route.replace(/^\/+/, ""), source.replace(/\/+$/, "/")).href;
   }
@@ -109,7 +117,9 @@
   }
 
   function updateOrderCount() {
-    const count = readGlobalOrder().items.reduce((total, item) => total + Number(item.quantity || 0), 0);
+    const count = brand === "akoni" && akoniMode === "b2c"
+      ? akoniPersonalCount
+      : readGlobalOrder().items.reduce((total, item) => total + Number(item.quantity || 0), 0);
     dock.querySelector("[data-brand-order-count]").textContent = String(count);
   }
   updateOrderCount();
@@ -162,12 +172,21 @@
       return;
     }
     if (event.source !== frame.contentWindow || event.origin !== sourceOrigin) return;
+    if (event.data?.type === "innova-boutique:akoni-mode" && brand === "akoni") {
+      akoniMode = event.data.mode === "b2c" ? "b2c" : "b2b";
+      akoniPersonalCount = Math.max(0, Number(event.data.count) || 0);
+      const help = dock.querySelector(".brand-catalog-dock__help-trigger");
+      help.querySelector("small").textContent = akoniMode === "b2c" ? "CONSULTA PARTICULAR" : "COMPRA PROFESIONAL";
+      help.querySelector("b").textContent = akoniMode === "b2c" ? "Mi consulta" : "Cómo comprar";
+      updateOrderCount();
+      return;
+    }
     if (event.data?.type === "innova-boutique:modal-state" && event.data.brand === brand) {
       brandModalOpen = Boolean(event.data.open);
       updateDockVisibility();
       return;
     }
-    if (event.data?.type === "innova-boutique:open-order" && brand === "jisco") {
+    if (event.data?.type === "innova-boutique:open-order" && ["jisco", "akoni"].includes(brand)) {
       showOrder();
       return;
     }
@@ -189,7 +208,7 @@
     if (event.data?.type === "innova-brand-route" && event.data.brand === brand) {
       const route = String(event.data.route || "/");
       const normalized = route.startsWith("/") ? route : `/${route}`;
-      if (brand === "jisco" && typeof event.data.title === "string" && event.data.title.length < 180) document.title = event.data.title;
+      if (["jisco", "akoni"].includes(brand) && typeof event.data.title === "string" && event.data.title.length < 180) document.title = event.data.title;
       if (currentRoute() !== normalized) {
         window.history.replaceState(null, "", `#${encodeURI(normalized)}`);
         window.INNOVA_META_PIXEL?.trackPageView();

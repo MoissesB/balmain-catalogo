@@ -2,7 +2,7 @@
   const STORAGE_KEY = "innova-boutique-order-v1";
   const MINIMUM_PER_BRAND = 50;
   const SPECIAL_ORDER_CODE = "DAN2026";
-  const brandMinimum = (brand) => brand === "jisco" ? 0 : MINIMUM_PER_BRAND;
+  const brandMinimum = (brand) => ["jisco", "akoni"].includes(brand) ? 0 : MINIMUM_PER_BRAND;
   const HERO_PROGRESS_KEY = "innova-boutique-hero-progress-v3";
   const config = window.INNOVA_BOUTIQUE_CONFIG || { brands: {} };
   if (config.maintenanceMode) {
@@ -14,6 +14,7 @@
     balmain: "Balmain Eyewear",
     silhouette: "Silhouette",
     jisco: "JISCO",
+    akoni: "AKONI",
   };
   const translate = (value) => window.INNOVA_I18N?.t(value) || value;
 
@@ -51,6 +52,7 @@
 
   function brandRouteDestination(brand, path = "") {
     if (brand === "jisco") return brandDestination(brand);
+    if (brand === "akoni") return `${brandDestination(brand).replace(/\/+$/, "/")}#/${String(path).replace(/^\/+/, "")}`;
     if (["alfred-kerbs", "silhouette"].includes(brand) && !config.local) {
       const base = brandDestination(brand);
       const route = String(path).replace(/^\/+/, "");
@@ -70,7 +72,7 @@
     image.addEventListener("error", () => {
       if (image.dataset.fallbackApplied) return;
       image.dataset.fallbackApplied = "true";
-      image.src = brand === "jisco"
+      image.src = brand === "akoni" ? "assets/akoni-hero.jpg" : brand === "jisco"
         ? brandAssetDestination("jisco", "assets/images/materiales/big/logo-jisco-2024.png")
         : brand === "silhouette"
         ? "assets/campaign-silhouette.webp"
@@ -121,7 +123,7 @@
     window.addEventListener("resize", () => update(Math.min(page, totalPages() - 1)), { passive: true });
     track.querySelectorAll("img").forEach((image) => {
       image.addEventListener("error", () => {
-        image.src = brand === "jisco"
+        image.src = brand === "akoni" ? "assets/akoni-hero.jpg" : brand === "jisco"
           ? brandAssetDestination("jisco", "assets/images/materiales/big/logo-jisco-2024.png")
           : brand === "silhouette"
           ? "assets/campaign-silhouette.webp"
@@ -604,7 +606,7 @@
     if (minimumNote) {
       minimumNote.textContent = special ? "Pedido especial: sin mínimo de piezas. Disponibilidad y condiciones sujetas a confirmación comercial." : incomplete.length
         ? `Pendiente: ${incomplete.map(([brand, total]) => `${brandLabels[brand] || brand} ${total}/${brandMinimum(brand)}`).join(" · ")}`
-        : order.items.length ? translate("Mínimos comerciales completados para las marcas que los requieren.") : translate(`${MINIMUM_PER_BRAND} piezas mínimas por marca, excepto JISCO, sin mínimo configurado.`);
+        : order.items.length ? translate("Mínimos comerciales completados para las marcas que los requieren.") : translate(`${MINIMUM_PER_BRAND} piezas mínimas en Alfred Kerbs, Balmain y Silhouette. JISCO y Akoni sin mínimo configurado.`);
       minimumNote.classList.toggle("is-complete", order.items.length > 0 && incomplete.length === 0);
     }
 
@@ -614,7 +616,7 @@
         <div class="empty-order">
           <span>SELECCIÓN PROFESIONAL</span>
           <h3>Tu pedido multimarcas comienza en cada catálogo.</h3>
-          <p>Entra en Alfred Kerbs, Balmain, Silhouette o JISCO y añade las referencias que quieras revisar con Innova.</p>
+          <p>Entra en Alfred Kerbs, Balmain, Silhouette, JISCO o Akoni y añade las referencias que quieras revisar con Innova.</p>
           <a href="#marcas" data-order-close>Explorar marcas →</a>
         </div>`;
       return;
@@ -966,7 +968,9 @@
       const includedBrands = Object.keys(groupItemsByBrand(order.items));
       const logoWidth = 405 / includedBrands.length;
       includedBrands.forEach((brand, index) => {
-        drawContained(page, brandLogos[brand], margin + 95 + index * logoWidth, y - 35, logoWidth - 12, 24);
+        const logoX = margin + 95 + index * logoWidth;
+        if (brandLogos[brand]) drawContained(page, brandLogos[brand], logoX, y - 35, logoWidth - 12, 24);
+        else drawText((brandLabels[brand] || brand).toUpperCase(), logoX + 2, y - 28, 8, bold, black);
       });
       y -= 62;
 
