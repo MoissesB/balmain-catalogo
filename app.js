@@ -23,9 +23,9 @@
   }
   if (!window.location.hash) {
     window.history.replaceState(null, "", "#inicio");
-    window.requestAnimationFrame(() => {
-      document.getElementById("inicio")?.scrollIntoView({ block: "start" });
-    });
+  }
+  if (window.location.hash === "#inicio") {
+    window.requestAnimationFrame(() => window.scrollTo(0, 0));
   }
 
   document.querySelectorAll("[data-brand-link]").forEach((link) => {
