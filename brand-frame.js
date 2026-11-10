@@ -80,9 +80,8 @@
     helpTrigger.setAttribute("aria-expanded", String(!helpPanel.hidden));
   });
   dock.querySelector(".brand-catalog-dock__order").addEventListener("click", () => {
-    if (brand === "akoni" && akoniMode === "b2c") {
-      frame.contentWindow?.postMessage({ type: "innova-boutique:open-personal-selection" }, sourceOrigin);
-    } else showOrder();
+    if (brand === "akoni" && akoniMode === "b2c") return;
+    showOrder();
   });
 
   const sourceUrl = new URL(source);
@@ -95,7 +94,7 @@
 
   function targetUrl(route) {
     if (brand === "jisco") return `${source.replace(/\/+$/, "/")}?v=20261018-jisco-blog#${route}`;
-    if (brand === "akoni") return `${source.replace(/\/+$/, "/")}?v=20261110c#${route}`;
+    if (brand === "akoni") return `${source.replace(/\/+$/, "/")}?v=20261110-views#${route}`;
     if (brand === "silhouette") return `${source.replace(/\/+$/, "/")}?v=20261018-jisco-nav#${route}`;
     return new URL(route.replace(/^\/+/, ""), source.replace(/\/+$/, "/")).href;
   }
@@ -174,10 +173,11 @@
     if (event.source !== frame.contentWindow || event.origin !== sourceOrigin) return;
     if (event.data?.type === "innova-boutique:akoni-mode" && brand === "akoni") {
       akoniMode = event.data.mode === "b2c" ? "b2c" : "b2b";
-      akoniPersonalCount = Math.max(0, Number(event.data.count) || 0);
+      akoniPersonalCount = 0;
       const help = dock.querySelector(".brand-catalog-dock__help-trigger");
-      help.querySelector("small").textContent = akoniMode === "b2c" ? "CONSULTA PARTICULAR" : "COMPRA PROFESIONAL";
-      help.querySelector("b").textContent = akoniMode === "b2c" ? "Mi consulta" : "Cómo comprar";
+      help.querySelector("small").textContent = akoniMode === "b2c" ? "CATÁLOGO ABIERTO" : "COMPRA PROFESIONAL";
+      help.querySelector("b").textContent = akoniMode === "b2c" ? "Visita tu óptica" : "Cómo comprar";
+      dock.querySelector(".brand-catalog-dock__order").hidden = akoniMode === "b2c";
       updateOrderCount();
       return;
     }

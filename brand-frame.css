@@ -4,6 +4,8 @@
   background: #fff;
 }
 
+[hidden] { display: none !important; }
+
 * {
   box-sizing: border-box;
 }
