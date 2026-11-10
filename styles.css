@@ -937,3 +937,4 @@ body > footer > small { position: absolute; left: max(24px, 5vw); right: max(24p
 .focus-card-akoni>img:first-child{object-fit:cover;object-position:center}
 @media(max-width:1100px){.global-mega{grid-template-columns:repeat(5,minmax(95px,1fr)) minmax(180px,.8fr)}.global-mega>div{padding-inline:10px}.global-mega a{font-size:13px}}
 @media(max-width:680px){.hero-film__brands{width:min(100vw,850px);right:0;grid-template-columns:repeat(5,minmax(95px,1fr));overflow-x:auto}.hero-film__brands>a{padding-inline:8px}.hero-film__brands>a b{font-size:11px}}
+.asset-recovery-notice{position:relative;z-index:50;display:flex;align-items:center;justify-content:center;gap:16px;padding:10px 20px;background:#182c38;color:#fff;font-size:12px;text-align:center}.asset-recovery-notice button{border:1px solid currentColor;padding:5px 10px;background:transparent;color:inherit;cursor:pointer}
