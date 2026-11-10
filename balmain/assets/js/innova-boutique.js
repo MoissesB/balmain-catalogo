@@ -13,6 +13,7 @@
     ? "http://localhost:5174"
     : `${portalUrl.replace(/\/+$/, "")}/silhouette/`;
   const jiscoUrl = `${portalUrl.replace(/\/+$/, "")}/jisco-en-construccion/`;
+  const akoniUrl = `${portalUrl.replace(/\/+$/, "")}/akoni/#/`;
   let bridge;
 
   function getBridge() {
@@ -103,7 +104,7 @@
         </button>
         <aside class="balmain-commercial-help__panel" hidden aria-label="Ayuda comercial de Innova Eyewear">
           <header><div><small>INNOVA EYEWEAR</small><strong>Exclusivo para ópticas</strong></div><button type="button" aria-label="Cerrar ayuda">×</button></header>
-          <p>Este catálogo es exclusivo para ópticas y empresas del sector. El pedido global reúne las cuatro marcas; el código especial autorizado permite cualquier cantidad de cada una.</p>
+          <p>Este catálogo es exclusivo para ópticas y empresas del sector. El pedido global reúne las cinco marcas; el código especial autorizado permite cualquier cantidad de cada una.</p>
           <p>Después descarga el pedido en PDF. Innova valida la óptica, la disponibilidad, las condiciones comerciales y el transporte antes de confirmar.</p>
           <a href="${balmainUrl}/catalogo.html">Explorar el catálogo <span>→</span></a>
           <button type="button" data-balmain-local-order>Ver selección Balmain →</button>
@@ -115,6 +116,7 @@
         <a class="is-current" href="${balmainUrl}" target="_top" aria-label="Abrir Balmain Eyewear" aria-current="page"><img src="${portalUrl}/assets/balmain-logo-transparent.png" alt=""></a>
         <a class="balmain-catalog-dock__silhouette" href="${silhouetteUrl}" target="_top" aria-label="Abrir Silhouette"><img src="${portalUrl}/assets/logos/silhouette-on-light.png" alt="Silhouette"></a>
         <a class="balmain-catalog-dock__jisco" href="${jiscoUrl}" target="_top" aria-label="Abrir JISCO"><img src="${portalUrl}/assets/jisco-logo-original.png" alt="JISCO"></a>
+        <a class="balmain-catalog-dock__akoni" href="${akoniUrl}" target="_top" aria-label="Abrir la portada de Akoni"><strong>AKONI</strong></a>
       </nav>
       <span class="balmain-catalog-dock__order-slot"><button class="balmain-global-order" type="button" data-balmain-global-order>MI SELECCIÓN <b data-balmain-global-count>0</b></button></span>
     `;

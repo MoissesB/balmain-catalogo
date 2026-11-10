@@ -95,7 +95,7 @@
 
   function targetUrl(route) {
     if (brand === "jisco") return `${source.replace(/\/+$/, "/")}?v=20261018-jisco-blog#${route}`;
-    if (brand === "akoni") return `${source.replace(/\/+$/, "/")}?v=20261110b#${route}`;
+    if (brand === "akoni") return `${source.replace(/\/+$/, "/")}?v=20261110c#${route}`;
     if (brand === "silhouette") return `${source.replace(/\/+$/, "/")}?v=20261018-jisco-nav#${route}`;
     return new URL(route.replace(/^\/+/, ""), source.replace(/\/+$/, "/")).href;
   }
