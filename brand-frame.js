@@ -146,7 +146,15 @@
     }, sourceOrigin);
   }
 
-  frame.addEventListener("load", () => loader?.classList.add("is-hidden"));
+  frame.addEventListener("load", () => {
+    let destination;
+    try { destination = new URL(frame.contentWindow.location.href); } catch {}
+    if (destination?.origin === window.location.origin && /^https?:$/.test(destination.protocol)) {
+      window.location.assign(destination.href);
+      return;
+    }
+    loader?.classList.add("is-hidden");
+  });
   function showOrder() {
     if (!orderOverlay || !orderFrame) return;
     orderOverlay.hidden = false;
