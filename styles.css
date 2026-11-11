@@ -423,30 +423,30 @@ img { display: block; width: 100%; }
 }
 @keyframes heroFilmProgress { to { right: 0; } }
 
-.brand-marquee { overflow: hidden; padding: 10px 0; background: var(--white); border-bottom: 1px solid var(--line); }
+.brand-marquee { overflow: hidden; padding: 6px 0; background: var(--white); border-bottom: 1px solid var(--line); }
 .marquee-loop { width: max-content; display: flex; animation: marquee 30s linear infinite; }
-.marquee-sequence { flex: none; display: flex; align-items: center; gap: 52px; padding-right: 52px; }
+.marquee-sequence { flex: none; display: flex; align-items: center; gap: 40px; padding-right: 40px; }
 .marquee-brand-pair {
-  width: 430px;
-  height: 70px;
+  width: 340px;
+  height: 50px;
   flex: none;
   display: grid;
-  grid-template-columns: 218px 1fr;
+  grid-template-columns: 170px 1fr;
   align-items: center;
-  gap: 25px;
+  gap: 18px;
   overflow: hidden;
   transition: opacity .3s ease, transform .45s var(--ease);
 }
-.marquee-frame-image { width: 210px; height: 64px; object-fit: cover; object-position: center; mix-blend-mode: multiply; }
+.marquee-frame-image { width: 165px; height: 45px; object-fit: cover; object-position: center; mix-blend-mode: multiply; }
 .marquee-brand-pair-balmain .marquee-frame-image,
 .marquee-brand-pair-akoni .marquee-frame-image { filter: brightness(1.02); }
 .marquee-brand-pair-alfred .marquee-frame-image { transform: scale(.88); }
 .marquee-brand-pair-balmain .marquee-frame-image { transform: scale(.93); }
-.marquee-brand-pair-silhouette .marquee-frame-image { transform: translateY(-5px) scale(1.34); }
+.marquee-brand-pair-silhouette .marquee-frame-image { transform: translateY(-2px) scale(1.25); }
 .marquee-brand-pair-jisco .marquee-frame-image { transform: scale(.81); }
 .marquee-brand-pair-akoni .marquee-frame-image { transform: scale(.98); }
-.marquee-brand-logo { width: 168px; max-height: 48px; object-fit: contain; }
-.marquee-brand-logo-silhouette { width: 176px; }
+.marquee-brand-logo { width: 135px; max-height: 35px; object-fit: contain; }
+.marquee-brand-logo-silhouette { width: 140px; }
 .marquee-brand-pair:hover { opacity: .65; transform: scale(1.025); }
 .brand-marquee:hover .marquee-loop { animation-play-state: paused; }
 @keyframes marquee { to { transform: translateX(-50%); } }
@@ -845,11 +845,10 @@ body > footer > small { position: absolute; left: max(24px, 5vw); right: max(24p
   .hero-film__brands > a small { font-size: 6px; }
   .hero-film__brands > a > span { font-size: 7px; }
   .marquee-sequence { gap: 22px; padding-right: 22px; }
-  .marquee-sequence { gap: 28px; padding-right: 28px; }
-  .marquee-brand-pair { width: 310px; height: 58px; grid-template-columns: 148px 1fr; gap: 18px; }
-  .marquee-frame-image { width: 148px; height: 52px; }
-  .marquee-brand-logo { width: 125px; max-height: 36px; }
-  .marquee-brand-logo-silhouette { width: 132px; }
+  .marquee-brand-pair { width: 250px; height: 44px; grid-template-columns: 120px 1fr; gap: 12px; }
+  .marquee-frame-image { width: 120px; height: 39px; }
+  .marquee-brand-logo { width: 104px; max-height: 30px; }
+  .marquee-brand-logo-silhouette { width: 110px; }
   .marquee-wordmark { font-size: 24px; }
   .focus-showcase { padding: 72px 15px; }
   .focus-showcase > header { grid-template-columns: 1fr; gap: 15px; margin-bottom: 30px; }
@@ -935,7 +934,7 @@ body > footer > small { position: absolute; left: max(24px, 5vw); right: max(24p
 .hero-film__brands{width:min(850px,calc(100vw - 340px));right:150px;grid-template-columns:repeat(5,1fr)}
 .hero-film__brands>a{padding-inline:13px;gap:2px 7px}
 .hero-film__brands>a b{font-size:15px;letter-spacing:.04em}
-.marquee-akoni-logo{align-self:center;font-size:25px;letter-spacing:-.09em;font-weight:500;color:#143a32}
+.marquee-akoni-logo{align-self:center;font-size:21px;letter-spacing:-.09em;font-weight:500;color:#143a32}
 .product-brand-row-akoni{--brand-campaign:url("assets/akoni-campaign.jpg");--brand-position:center}
 .product-brand-row-akoni .product-brand-intro{background:#12342c}
 .product-brand-row-akoni .product-brand-intro::after{background:linear-gradient(90deg,rgba(4,24,19,.8),rgba(4,24,19,.16) 72%,transparent)}
