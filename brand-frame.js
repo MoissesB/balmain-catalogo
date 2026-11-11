@@ -37,7 +37,7 @@
       <a href="${location.origin}/balmain/" aria-label="Abrir Balmain Eyewear"><img src="${location.origin}/assets/balmain-logo-transparent.png" alt="Balmain"></a>
       <a href="${location.origin}/silhouette/" aria-label="Abrir Silhouette"><img src="${location.origin}/assets/logos/silhouette-on-light.png" alt="Silhouette"></a>
       <a href="${location.origin}/jisco-en-construccion/" aria-label="Abrir JISCO"><img src="${location.origin}/assets/jisco-logo-original.png" alt="JISCO"></a>
-      <a href="${location.origin}/akoni/" aria-label="Abrir Akoni"><strong class="brand-catalog-dock__akoni">AKONI</strong></a>
+      <a href="${location.origin}/akoni-en-construccion/" aria-label="Ver Akoni en construcción"><strong class="brand-catalog-dock__akoni">AKONI</strong></a>
     </nav>
     <button class="brand-catalog-dock__order" type="button" aria-label="Abrir mi selección"><span>MI SELECCIÓN</span><b data-brand-order-count>0</b></button>`;
   document.body.appendChild(dock);
@@ -71,7 +71,8 @@
     updateDockVisibility();
   });
   updateDockVisibility();
-  const currentBrand = dock.querySelector(`.brand-catalog-dock__brands a[href="${location.origin}/${brand}/"]`);
+  const dockBrandPath = ["jisco", "akoni"].includes(brand) ? `${brand}-en-construccion` : brand;
+  const currentBrand = dock.querySelector(`.brand-catalog-dock__brands a[href="${location.origin}/${dockBrandPath}/"]`);
   currentBrand?.setAttribute("aria-current", "page");
   const helpTrigger = dock.querySelector(".brand-catalog-dock__help-trigger");
   const helpPanel = dock.querySelector(".brand-catalog-dock__help-panel");

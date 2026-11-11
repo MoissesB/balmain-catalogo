@@ -51,8 +51,7 @@
   }
 
   function brandRouteDestination(brand, path = "") {
-    if (brand === "jisco") return brandDestination(brand);
-    if (brand === "akoni") return `${brandDestination(brand).replace(/\/+$/, "/")}#/${String(path).replace(/^\/+/, "")}`;
+    if (["jisco", "akoni"].includes(brand)) return brandDestination(brand);
     if (["alfred-kerbs", "silhouette"].includes(brand) && !config.local) {
       const base = brandDestination(brand);
       const route = String(path).replace(/^\/+/, "");
