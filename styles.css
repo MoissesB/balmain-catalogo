@@ -438,6 +438,7 @@ img { display: block; width: 100%; }
   transition: opacity .3s ease, transform .45s var(--ease);
 }
 .marquee-frame-image { width: 210px; height: 64px; object-fit: contain; mix-blend-mode: multiply; }
+.marquee-brand-pair-akoni .marquee-frame-image { object-fit: cover; filter: brightness(1.02); }
 .marquee-brand-pair-balmain .marquee-frame-image { transform: scale(1.16); }
 .marquee-brand-logo { width: 168px; max-height: 48px; object-fit: contain; }
 .marquee-brand-logo-silhouette { width: 176px; }
