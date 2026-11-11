@@ -440,10 +440,11 @@ img { display: block; width: 100%; }
 .marquee-frame-image { width: 210px; height: 64px; object-fit: cover; object-position: center; mix-blend-mode: multiply; }
 .marquee-brand-pair-balmain .marquee-frame-image,
 .marquee-brand-pair-akoni .marquee-frame-image { filter: brightness(1.02); }
-.marquee-brand-pair-alfred .marquee-frame-image { transform: scale(.95); }
-.marquee-brand-pair-silhouette .marquee-frame-image { transform: scale(1.45); }
-.marquee-brand-pair-jisco .marquee-frame-image { transform: scale(.88); }
-.marquee-brand-pair-akoni .marquee-frame-image { transform: scale(1.06); }
+.marquee-brand-pair-alfred .marquee-frame-image { transform: scale(.88); }
+.marquee-brand-pair-balmain .marquee-frame-image { transform: scale(.93); }
+.marquee-brand-pair-silhouette .marquee-frame-image { transform: translateY(-5px) scale(1.34); }
+.marquee-brand-pair-jisco .marquee-frame-image { transform: scale(.81); }
+.marquee-brand-pair-akoni .marquee-frame-image { transform: scale(.98); }
 .marquee-brand-logo { width: 168px; max-height: 48px; object-fit: contain; }
 .marquee-brand-logo-silhouette { width: 176px; }
 .marquee-brand-pair:hover { opacity: .65; transform: scale(1.025); }
