@@ -13,7 +13,7 @@
     ? "http://localhost:5174"
     : `${portalUrl.replace(/\/+$/, "")}/silhouette/`;
   const jiscoUrl = `${portalUrl.replace(/\/+$/, "")}/jisco/`;
-  const akoniUrl = `${portalUrl.replace(/\/+$/, "")}/akoni-en-construccion/`;
+  const akoniUrl = `${portalUrl.replace(/\/+$/, "")}/akoni/`;
   let bridge;
 
   function getBridge() {

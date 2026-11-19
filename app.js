@@ -51,8 +51,7 @@
   }
 
   function brandRouteDestination(brand, path = "") {
-    if (brand === "akoni") return brandDestination(brand);
-    if (brand === "jisco") {
+    if (["jisco", "akoni"].includes(brand)) {
       const route = String(path).replace(/^\/+/, "");
       return route ? `${brandDestination(brand)}#/${route}` : brandDestination(brand);
     }

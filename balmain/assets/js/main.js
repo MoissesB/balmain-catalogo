@@ -80,7 +80,7 @@
       ? "http://localhost:5174"
       : `${portal.replace(/\/+$/, "")}/silhouette/`;
     const jisco = `${portal.replace(/\/+$/, "")}/jisco/`;
-    const akoni = `${portal.replace(/\/+$/, "")}/akoni-en-construccion/`;
+    const akoni = `${portal.replace(/\/+$/, "")}/akoni/`;
     const jiscoRoute = (path) => `${jisco}#/${String(path).replace(/^\/+/, "")}`;
     const silhouetteRoute = (path) => isLocal
       ? `${silhouette}/${String(path).replace(/^\/+/, "")}`

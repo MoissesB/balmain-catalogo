@@ -3,7 +3,7 @@
   const alfredProductionUrl = "https://alfred-kerbs-innova-eyewear.moisses.chatgpt.site/";
   const silhouetteProductionUrl = "https://moissesb.github.io/innova-silhouette-catalogo/";
   const jiscoProductionUrl = "https://moissesb.github.io/innova-jisco-catalogo/";
-  const akoniProductionUrl = "https://moissesb.github.io/innova-akoni-catalogo/";
+  const akoniProductionUrl = "https://thalia-innova.com/innova-akoni-catalogo/";
   window.INNOVA_BOUTIQUE_CONFIG = {
     local,
     maintenanceMode: false,
@@ -17,7 +17,7 @@
       balmain: local ? "http://localhost:3101" : "/balmain/",
       silhouette: local ? "http://localhost:5174" : "/silhouette/",
       jisco: "/jisco/",
-      akoni: "/akoni-en-construccion/",
+      akoni: "/akoni/",
     },
     brandAssets: {
       "alfred-kerbs": local ? "http://localhost:3001" : alfredProductionUrl,
