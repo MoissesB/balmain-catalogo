@@ -51,12 +51,18 @@
   let brandModalOpen = false;
   let akoniMode = "b2b";
   let akoniPersonalCount = 0;
+  let akoniLanguage = "es";
+  const akoniDockCopy = {
+    es: {trade:"COMPRA PROFESIONAL",browse:"CATÁLOGO ABIERTO",help:"Cómo comprar",optician:"Visita tu óptica",title:"Cómo preparar tu selección",body:"Elige modelos, acabados y cantidades de cualquiera de las cinco marcas. Revisa el pedido global y descarga el PDF para contactar a Innova.",availability:"Disponibilidad y condiciones sujetas a confirmación comercial.",visitorTitle:"Encuentra tus próximas gafas",visitorBody:"Explora los modelos y consulta su disponibilidad en una óptica cercana. Innova atiende pedidos exclusivamente de profesionales de la óptica.",process:"Ver el proceso de compra →",selection:"MI SELECCIÓN",open:"Abrir mi selección",close:"Cerrar selección",brands:"Cambiar catálogo de marca",brandOpen:"Abrir",show:"Mostrar barra de marcas y selección",hide:"Ocultar barra de marcas y selección"},
+    en: {trade:"FOR OPTICAL PROFESSIONALS",browse:"EXPLORE THE COLLECTION",help:"How to order",optician:"Ask your optician",title:"Put together your selection",body:"Choose models, finishes and quantities from any of the five brands. Review your combined order and download the PDF to send your enquiry to Innova.",availability:"Please contact Innova to confirm availability and commercial terms.",visitorTitle:"Find your next pair of glasses",visitorBody:"Explore the frames and ask your local optician about availability. Innova supplies optical professionals exclusively.",process:"How to place a trade enquiry →",selection:"MY SELECTION",open:"Open my selection",close:"Close selection",brands:"Switch brand catalogue",brandOpen:"Open",show:"Show brands and selection bar",hide:"Hide brands and selection bar"},
+    fr: {trade:"ESPACE PROFESSIONNEL",browse:"DÉCOUVRIR LA COLLECTION",help:"Comment commander",optician:"Votre opticien",title:"Préparez votre sélection",body:"Choisissez vos modèles, finitions et quantités parmi les cinq marques. Vérifiez votre commande multimarque, puis téléchargez le PDF pour adresser votre demande à Innova.",availability:"La disponibilité et les conditions commerciales sont à confirmer auprès d’Innova.",visitorTitle:"Trouvez vos prochaines lunettes",visitorBody:"Découvrez les montures et renseignez-vous sur leur disponibilité auprès de votre opticien. Innova fournit exclusivement les professionnels de l’optique.",process:"Comment préparer une demande professionnelle →",selection:"MA SÉLECTION",open:"Ouvrir ma sélection",close:"Fermer la sélection",brands:"Changer de catalogue de marque",brandOpen:"Ouvrir",show:"Afficher la barre des marques et de sélection",hide:"Masquer la barre des marques et de sélection"}
+  };
   try { dockCollapsed = localStorage.getItem(dockPreferenceKey) === "1"; } catch {}
   function updateDockVisibility() {
     dock.hidden = dockCollapsed || brandModalOpen;
     dockToggle.hidden = brandModalOpen;
     dockToggle.setAttribute("aria-expanded", String(!dockCollapsed));
-    dockToggle.setAttribute("aria-label", dockCollapsed ? "Mostrar barra de marcas y selección" : "Ocultar barra de marcas y selección");
+    dockToggle.setAttribute("aria-label", brand === "akoni" ? akoniDockCopy[akoniLanguage][dockCollapsed ? "show" : "hide"] : dockCollapsed ? "Mostrar barra de marcas y selección" : "Ocultar barra de marcas y selección");
     dockToggle.textContent = dockCollapsed ? "↑" : "↓";
     dockToggle.classList.toggle("is-collapsed", dockCollapsed);
   }
@@ -95,7 +101,7 @@
 
   function targetUrl(route) {
     if (brand === "jisco") return `${source.replace(/\/+$/, "/")}?v=20261018-jisco-blog#${route}`;
-    if (brand === "akoni") return `${source.replace(/\/+$/, "/")}?v=20261119-akoni-live#${route}`;
+    if (brand === "akoni") return `${source.replace(/\/+$/, "/")}?v=20261121-languages-materials#${route}`;
     if (brand === "silhouette") return `${source.replace(/\/+$/, "/")}?v=20261018-jisco-nav#${route}`;
     return new URL(route.replace(/^\/+/, ""), source.replace(/\/+$/, "/")).href;
   }
@@ -182,12 +188,26 @@
     if (event.source !== frame.contentWindow || event.origin !== sourceOrigin) return;
     if (event.data?.type === "innova-boutique:akoni-mode" && brand === "akoni") {
       akoniMode = event.data.mode === "b2c" ? "b2c" : "b2b";
+      akoniLanguage = ["es", "en", "fr"].includes(event.data.lang) ? event.data.lang : "es";
+      const words = akoniDockCopy[akoniLanguage];
+      document.documentElement.lang = akoniLanguage;
       akoniPersonalCount = 0;
       const help = dock.querySelector(".brand-catalog-dock__help-trigger");
-      help.querySelector("small").textContent = akoniMode === "b2c" ? "CATÁLOGO ABIERTO" : "COMPRA PROFESIONAL";
-      help.querySelector("b").textContent = akoniMode === "b2c" ? "Visita tu óptica" : "Cómo comprar";
+      help.querySelector("small").textContent = akoniMode === "b2c" ? words.browse : words.trade;
+      help.querySelector("b").textContent = akoniMode === "b2c" ? words.optician : words.help;
+      helpPanel.querySelector("strong").textContent = akoniMode === "b2c" ? words.visitorTitle : words.title;
+      helpPanel.querySelectorAll("p")[0].textContent = akoniMode === "b2c" ? words.visitorBody : words.body;
+      helpPanel.querySelectorAll("p")[1].textContent = words.availability;
+      helpPanel.querySelector("a").textContent = words.process;
+      helpPanel.querySelector("a").hidden = akoniMode === "b2c";
+      dock.querySelector(".brand-catalog-dock__order span").textContent = words.selection;
+      dock.querySelector(".brand-catalog-dock__order").setAttribute("aria-label", words.open);
+      dock.querySelector("nav").setAttribute("aria-label", words.brands);
+      dock.querySelectorAll("nav a").forEach(link => link.setAttribute("aria-label", `${words.brandOpen} ${link.querySelector("img")?.alt || "Akoni"}`));
+      orderOverlay.querySelector("[data-brand-order-close]").setAttribute("aria-label", words.close);
       dock.querySelector(".brand-catalog-dock__order").hidden = akoniMode === "b2c";
       updateOrderCount();
+      updateDockVisibility();
       return;
     }
     if (event.data?.type === "innova-boutique:modal-state" && event.data.brand === brand) {
